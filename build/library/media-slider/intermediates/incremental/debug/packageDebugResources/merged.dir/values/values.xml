@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blackDark">#1d1c1c</color>
+    <color name="color_shadow">#44000000</color>
+    <color name="progressbarColor">#ffffff</color>
+    <color name="transparentWhite">#33FFFFFF</color>
+    <color name="transparent_clear">#00000000</color>
+    <string name="app_name">MediaSlider</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/transparent</item>
+    </style>
+    <style name="ProgressBar" parent="AppTheme">
+        <item name="colorAccent">@color/progressbarColor</item>
+    </style>
+    <declare-styleable name="MediaSlider">
+        <attr format="color" name="headerColor"/>
+    </declare-styleable>
+    <declare-styleable name="TouchImageView">
+        <attr format="boolean" name="zoom_enabled"/>
+    </declare-styleable>
+</resources>

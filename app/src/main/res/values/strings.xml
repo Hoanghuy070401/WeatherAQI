@@ -1,0 +1,216 @@
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyD_UDwWKI0gmjnC87t0ilKt0UljLJY2988</string>
+
+    <string name="open_weather_key" templateMergeStrategy="preserve">8bb7583761a8e203e2065433efe37142</string>
+    <string name="app_name">WeatherAQI</string>
+    <string name="infor_app"> Giới thiệu WeatherAQI</string>
+    <string name="start">Bắt đầu</string>
+    <string name="version">Phiên bản</string>
+    <string name="update_title_version">Phiên bản mới</string>
+    <string name="update_content">Cập nhật nội dung</string>
+    <string name="version_update"> Để sau</string>
+    <string name="update_yes_version">Cập nhật ngay</string>
+    <string name="token_expired">Phiên đăng nhập hết hạn. Vui lòng đăng nhập lại</string>
+    <string name="loading">Đang tải…</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="cancel_upload">Hủy</string>
+    <string name="uploading">Tiến trình - [[PROGRESS]]</string>
+    <string name="upload_success">Tải thành công trong [[ELAPSED_TIME]]</string>
+    <string name="upload_error">Lỗi xảy ra khi tải lên</string>
+    <string name="multipart_upload">Tải lên Server</string>
+    <string name="upload_cancelled">Trình tải lên đã hủy</string>
+    <string name="enter_quantity">Nhập số lượng</string>
+    <string name="zero">0</string>
+    <string name="clear">C</string>
+    <string name="decrease">Giảm</string>
+    <string name="increase">Tăng</string>
+    <string name="done">Xong</string>
+    <string name="common_loading">Đang tải&#8230;</string>
+    <string name="common_confirm">Xác nhận</string>
+    <string name="common_cancel">Hủy bỏ</string>
+    <string name="status_layout_no_data">Trống rỗng</string>
+    <string name="status_layout_error_request">Yêu cầu lỗi, vui lòng thử lại</string>
+    <string name="status_layout_error_network">Lỗi mạng, vui lòng thử lại</string>
+    <string name="status_layout_retry">Thử lại</string>
+    <string name="from">Từ</string>
+    <string name="to">Đến</string>
+    <string name="common_network_error">Mạng hiện tại không khả dụng, vui lòng kiểm tra cài đặt mạng</string>
+    <string name="common_no_more_data">Không có thêm dữ liệu</string>
+    <string name="common_web_ssl_error_title">Chứng chỉ bảo mật trang web hiện tại đã hết hạn hoặc không đáng tin cậy\nTiếp tục duyệt</string>
+    <string name="common_web_ssl_error_allow">Tiếp tục</string>
+    <string name="common_web_ssl_error_reject">Quay lại</string>
+    <string name="common_web_call_phone_title">Số lượng hiện tại %s</string>
+    <string name="common_web_call_phone_allow">Quay số</string>
+    <string name="common_web_call_phone_reject">Hủy bỏ</string>
+    <string name="http_data_explain_error">Ngoại lệ phân tích cú pháp dữ liệu, vui lòng đợi</string>
+    <string name="http_server_out_time">Không có phản hồi từ máy chủ</string>
+    <string name="http_network_error">Yêu cầu không thành công, vui lòng kiểm tra cài đặt mạng</string>
+    <string name="http_response_error">Máy chủ phản hồi bất thường, vui lòng thử lại sau</string>
+    <string name="http_server_error">Lỗi kết nối máy chủ, vui lòng thử lại sau</string>
+    <string name="http_request_cancel">Yêu cầu đã bị gián đoạn, vui lòng thử lại</string>
+    <string name="http_response_null_body">Dữ liệu máy chủ trả về ngoại lệ, vui lòng thử lại sau</string>
+    <string name="http_response_md5_error">Tải xuống không thành công, xác minh tệp md5 không thành công</string>
+    <string name="monday">Thứ 2</string>
+    <string name="tuesday">Thứ 3</string>
+    <string name="wednesday">Thứ 4</string>
+    <string name="thursday">Thứ 5</string>
+    <string name="friday">Thứ 6</string>
+    <string name="saturday">Thứ 7</string>
+    <string name="sunday">Chủ nhật</string>
+    <string name="today">Hôm nay</string>
+    <string name="yesterday">Hôm qua</string>
+    <string name="this_week">Tuần này</string>
+    <string name="this_month">Tháng này</string>
+    <string name="last_month">Tháng trước</string>
+    <string name="three_months">3 tháng gần nhất</string>
+    <string name="this_year">Năm nay</string>
+    <string name="last_year">Năm trước</string>
+    <string name="three_years">3 năm gần nhất</string>
+    <string name="all_years">Tất cả các năm</string>
+    <string name="day_to_day">Ngày đến ngày</string>
+    <string name="month_to_month">Tháng đến tháng</string>
+    <string name="year_to_year">Năm đến năm</string>
+    <string name="chat">Chat</string>
+    <string name="home">Trang chủ</string>
+    <string name="notification">Thông báo</string>
+    <string name="account">Tài Khoản</string>
+    <string name="no_support">Tài khoản của bạn hiện tại không hỗ trợ tính năng này</string>
+
+    <string name="no_data">Hiện tại không có dữ liệu</string>
+    <string name="data_empty">Không có dữ liệu</string>
+
+    <string name="load_success">Tải thành công </string>
+    <string name="load_fail">Tải thất bại </string>
+
+
+    <string name="setting">Cài đặt </string>
+    <string name="terms_of_use">Điều khoản sử dụng</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="feedback">Góp ý nhà phát triển</string>
+    <string name="rating_app">Đánh giá ứng dụng</string>
+    <string name="info">Thông tin ứng dụng</string>
+    <string name="information">Thông tin</string>
+    <string name="control_location">Quản lý vị trí </string>
+    <string name="control_city">Quản lý thành phố </string>
+    <string name="notification_setting">Quản lý thông báo </string>
+    <string name="setting_environment">Thiết lập môi trường</string>
+    <string name="setting_unit">Thiết lập đơn vị </string>
+
+
+    <string name="update">Cập nhật</string>
+    <string name="save">Lưu lại</string>
+    <string name="info_profile">Thông tin tài khoản</string>
+    <string name="sex">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="birthday_day">Ngày sinh</string>
+    <string name="email">Email</string>
+    <string name="address">Địa chỉ</string>
+    <string name="choose_city">Chọn thành phố</string>
+    <string name="choose_district">Chọn quận/huyện</string>
+    <string name="choose_ward">Chọn phường/xã</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="identity_card">CMND/CCCD</string>
+    <string name="check_out">Check out</string>
+    <string name="check_out_succesful">Check out thành công</string>
+    <string name="empty_mail">Vui lòng nhập email</string>
+    <string name="e_mail">Email</string>
+    <string name="not_empty_name">Tên không được để trống</string>
+    <string name="invalid_name">Tên không hợp lệ</string>
+    <string name="invalid_email">Email không hợp lệ</string>
+    <string name="not_empty_address">Địa chỉ không được để trống</string>
+    <string name="no_select_city">Bạn chưa chọn Tỉnh/Thành phố</string>
+    <string name="no_select_district">Bạn chưa chọn Quận/Huyện</string>
+    <string name="please_choose_city">Vui lòng chọn tỉnh thành</string>
+    <string name="please_choose_district">Vui lòng chọn quận huyện</string>
+    <string name="please_choose_ward">Vui lòng chọn phường xã</string>
+    <string name="update_success">Cập nhật thành công</string>
+    <string name="create_success">Tạo thành công</string>
+    <string name="error_phone">Số điện thoại chưa đúng 10 số</string>
+    <string name="max_phone">Số điện thoại tối đa 10 số</string>
+    <string name="email_invalid_length">Email không được vượt quá 50 ký tự</string>
+    <string name="invalid_address">Địa chỉ không hợp lệ</string>
+    <string name="no_search_invalid_address">Không tìm thấy địa chỉ</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="feed_back">Góp ý nhà phát triển</string>
+    <string name="feed_back_full_name">Người gửi</string>
+    <string name="feed_back_hint">Nội dung góp ý</string>
+    <string name="feed_back_email">Email</string>
+    <string name="feed_back_phone">Điện thoại</string>
+    <string name="feed_back_type">Bạn muốn góp ý điều gì?</string>
+    <string name="requires_improvement">Yêu cầu cải tiến</string>
+    <string name="suggest_to_do_more">Đề nghị làm thêm</string>
+    <string name="input_describe_error">Nhập mô tả lỗi</string>
+    <string name="please_input_describe_error">Vui lòng nhập miêu tả lỗi</string>
+    <string name="empty_feedback">Vui lòng nhập chi tiết nội dung góp ý</string>
+    <string name="describe_max">Mô tả tối đa 2000 ký tự</string>
+    <string name="send_error_success">Gửi thành công</string>
+    <string name="cancel">Hủy</string>
+    <string name="common_year">Năm</string>
+    <string name="common_month">Tháng</string>
+    <string name="common_day">Ngày</string>
+    <string name="back_confirm">Nhấn lần nữa để thoát ứng dụng</string>
+    <string name="link_youtube_1">youtu.be/</string>
+    <string name="link_youtube_2">youtube.com/</string>
+    <string name="link_youtube_4">youtube.com/watch?v=</string>
+    <string name="link_youtube_3">youtube.com/shorts/</string>
+
+    <string name="finish_now">Vừa xong</string>
+    <string name="minute_ago">%d phút</string>
+    <string name="minute_ago_notify">%d phút trước</string>
+    <string name="hour_ago">%d giờ</string>
+    <string name="hour_ago_notify">%d giờ trước</string>
+    <string name="day_ago">%d ngày</string>
+    <string name="day_ago_notify">%d ngày trước</string>
+    <string name="close">Đóng</string>
+    <string name="good">Tốt</string>
+    <string name="moderate">Vừa phải</string>
+    <string name="unhealthy_for_sensitive">Gây hại cho người nhạy cảm </string>
+    <string name="unhealthy">Không lành mạnh </string>
+    <string name="no_health">Có hại </string>
+    <string name="warring">Nguy hiểm </string>
+    <string name="no_connect1">Máy chủ phản hồi thất thường, vui lòng thử lại sau 1</string>
+    <string name="no_connect2">Máy chủ phản hồi thất thường, vui lòng thử lại sau 2</string>
+    <string name="city_added">Thành phố đã được thêm </string>
+
+
+    <string name="my_location">Vị trí của tôi</string>
+    <string name="location">Định vị</string>
+    <string name="fill_location">Nhập vị trí</string>
+
+    <string name="title_homepage">HomePage</string>
+    <string name="title_setting">Setting</string>
+    <string name="common">Chung</string>
+    <string name="user_preferences">Ưa thích của người dùng</string>
+    <string name="AQI_number">Chỉ số AQI</string>
+    <string name="AQI_made">AQI Mỹ</string>
+    <string name="AQI">AQI</string>
+    <string name="km_temperate_mbar">km/m , độ C , Áp suất </string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="system_setting">Cài đặt hệ thống</string>
+    <string name="display_setting">Cài đặt hiển thị</string>
+    <string name="location_address">khu phố Hải Sơn ,phường Phước Hòa , thị xã Phú Mỹ , tỉnh Bà Rịa Vũng Tàu </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fee_like_temperate">Cảm giác như : </string>
+    <string name="title_map">Map</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_weather">Bản đồ thời tiết</string>
+    <string name="weather">Thời tiết</string>
+    <string name="map_air">Bản đồ không khí</string>
+    <string name="air">Không khí</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="option_get_place">Get place</string>
+    <string name="title_home">Module Home</string>
+    <string name="delete">Xóa</string>
+    <string name="oC">\u2103</string>
+    <string name="oF">°F</string>
+    <string name="temperate_max">Cao nhất</string>
+    <string name="temperate_min">Thấp nhất</string>
+    <string name="mm">mm</string>
+    <string name="persent">%</string>
+</resources>
+
+
+

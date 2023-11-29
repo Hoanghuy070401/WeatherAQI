@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "262352616839",
+    "firebase_url": "https://weather-aqi-9fc6a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "weather-aqi-9fc6a",
+    "storage_bucket": "weather-aqi-9fc6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262352616839:android:0db97f3596024a6d05e722",
+        "android_client_info": {
+          "package_name": "vn.techres.android.weather"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6_eg7HyDDrdBfvoEHKpESMAQdIR9rIi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262352616839:android:9add2d6cc2654c9e05e722",
+        "android_client_info": {
+          "package_name": "vn.techres.android.weather.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6_eg7HyDDrdBfvoEHKpESMAQdIR9rIi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

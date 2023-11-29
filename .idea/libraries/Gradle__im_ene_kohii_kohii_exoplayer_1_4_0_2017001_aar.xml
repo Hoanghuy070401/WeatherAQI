@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: im.ene.kohii:kohii-exoplayer:1.4.0.2017001@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e3c200e6512e7e8d2b2d4b847106b20d/transformed/jetified-kohii-exoplayer-1.4.0.2017001/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e3c200e6512e7e8d2b2d4b847106b20d/transformed/jetified-kohii-exoplayer-1.4.0.2017001/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e3c200e6512e7e8d2b2d4b847106b20d/transformed/jetified-kohii-exoplayer-1.4.0.2017001/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/im.ene.kohii/kohii-exoplayer/1.4.0.2017001/b8fb2f7632471b7979a4ed5719329904453c8bca/kohii-exoplayer-1.4.0.2017001-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/im.ene.kohii/kohii-exoplayer/1.4.0.2017001/48fb562f1337feae96f2a937697387b68cb7af0e/kohii-exoplayer-1.4.0.2017001-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\a8188ba2e2f3473d437eb32a2f6f8bc7\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "169",
+                        "endLines": "8",
+                        "endColumns": "13",
+                        "endOffsets": "441"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\4c3c8af912f8b9ba961dc1e974efe021\\transformed\\jetified-core-1.9.13\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        }
+    ]
+}

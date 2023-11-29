@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\4c3c8af912f8b9ba961dc1e974efe021\\transformed\\jetified-core-1.9.13\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        }
+    ]
+}

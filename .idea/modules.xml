@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/project_example.iml" filepath="$PROJECT_DIR$/.idea/project_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/project_example.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/project_example.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/project_example.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/project_example.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/project_example.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/project_example.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/project_example.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/project_example.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/project_example.features.iml" filepath="$PROJECT_DIR$/.idea/modules/features/project_example.features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/project_example.features.home.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/project_example.features.map.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/project_example.features.setting.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/project_example.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/project_example.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView-FacebookProvider/project_example.library.AXEmojiView-FacebookProvider.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/AXEmojiView/project_example.library.AXEmojiView.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.iml" filepath="$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/base/project_example.library.base.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.iml" filepath="$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/media-slider/project_example.library.media-slider.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.iml" filepath="$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/readmoreoption/project_example.library.readmoreoption.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.iml" filepath="$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/selector/project_example.library.selector.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.iml" filepath="$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/widget/project_example.library.widget.unitTest.iml" />
+    </modules>
+  </component>
+</project>

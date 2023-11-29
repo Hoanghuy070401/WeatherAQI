@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+	xmlns:dist
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:3:5-61
+	android:versionCode
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:2:11-69
+dist:module
+ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:5:5-13:19
+	dist:instant
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:6:9-29
+	dist:title
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:7:9-39
+dist:delivery
+ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:8:9-10:25
+dist:install-time
+ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:9:13-34
+dist:fusing
+ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:12:9-44
+	dist:include
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:12:22-41
+application
+ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml:15:5-19:19
+uses-sdk
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		ADDED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml
+		INJECTED from D:\weather\project_example\features\map\src\main\AndroidManifest.xml

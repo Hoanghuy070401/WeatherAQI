@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.getActivity:EasyHttp:11.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f07386d5696763eb208253e3306f4966/transformed/jetified-EasyHttp-11.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f07386d5696763eb208253e3306f4966/transformed/jetified-EasyHttp-11.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.getActivity/EasyHttp/11.2/922fa2859c1fe6d1914181e1652b58c82beec46d/EasyHttp-11.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

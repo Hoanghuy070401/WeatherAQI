@@ -1,0 +1,2 @@
+com.devs.readmoreoption
+string app_name

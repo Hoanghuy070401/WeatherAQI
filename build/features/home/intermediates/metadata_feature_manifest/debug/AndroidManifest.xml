@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    featureSplit="home"
+    package="vn.techres.android.weather"
+    android:versionCode="15"
+    android:versionName="1.3.72" >
+
+    <uses-sdk android:targetSdkVersion="24" />
+
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_home" >
+        <dist:delivery>
+            <dist:install-time />
+        </dist:delivery>
+
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application
+        android:debuggable="true"
+        android:extractNativeLibs="false" >
+        <activity
+            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
+            android:exported="false"
+            android:splitName="home" />
+        <activity
+            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
+            android:exported="false"
+            android:splitName="home" />
+    </application>
+
+</manifest>

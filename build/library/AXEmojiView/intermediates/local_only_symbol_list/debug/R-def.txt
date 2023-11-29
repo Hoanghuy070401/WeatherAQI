@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+attr emojiSize
+dimen emoji_grid_view_column_width
+dimen sticker_grid_view_column_width
+drawable arrow_back
+drawable emoji_backspace
+drawable emoji_ios_category_activity
+drawable emoji_ios_category_flags
+drawable emoji_ios_category_food
+drawable emoji_ios_category_nature
+drawable emoji_ios_category_objects
+drawable emoji_ios_category_people
+drawable emoji_ios_category_symbols
+drawable emoji_ios_category_travel
+drawable emoji_recent
+drawable stickers_back_all
+drawable stickers_back_arrow
+id cardview
+id container
+id emoji_image
+layout emoji_item
+layout emoji_skin_popup
+string app_name
+string no_emoji_found
+styleable AXEmojiButton emojiSize
+styleable AXEmojiCheckbox emojiSize
+styleable AXEmojiEditText emojiSize
+styleable AXEmojiMultiAutoCompleteTextView emojiSize
+styleable AXEmojiRadioButton emojiSize
+styleable AXEmojiTextView emojiSize

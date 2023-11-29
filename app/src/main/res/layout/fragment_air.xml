@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layoutDirection="locale"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/snippet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff7f7f7f" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rlSearch"
+            android:layout_marginEnd="@dimen/dp_56"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/acSearchAIR"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_38"
+                android:background="@drawable/bg_border_gray_300"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:minWidth="@dimen/dp_32"
+                android:maxWidth="@dimen/dp_296"
+                android:theme="@style/SearchView"
+                app:closeIcon="@drawable/ic_cross"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="@string/search"
+                app:searchIcon="@drawable/ic_search"
+                app:showAsAction="collapseActionView|always" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDataCity"
+                android:layout_below="@+id/acSearchAIR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@drawable/bg_border_button_bottom"
+                android:backgroundTint="@color/white"
+                tools:listitem="@layout/item_city"
+                android:visibility="gone"/>
+            <ProgressBar
+                android:id="@+id/mProgressBar"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+
+        <Spinner
+            android:id="@+id/spnStyleMapAir"
+            android:background="@drawable/bg_border_white"
+            android:layout_below="@+id/llControlMap"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            />
+
+        <Spinner
+            android:id="@+id/spnModeAir"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:background="@drawable/bg_border_white"
+            android:layout_below="@+id/llControlMap"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"/>
+        <LinearLayout
+            android:id="@+id/llControlMap"
+            android:background="@drawable/bg_radio_button_circle_background_blue"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_46"
+            android:padding="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/imvControlMap"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/ic_style_map"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llControlWeather"
+            android:background="@drawable/bg_radio_button_circle_background_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_below="@+id/llControlMap"
+            android:layout_alignParentEnd="true">
+        <ImageView
+            android:id="@+id/imvControlWeather"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/ic_change_map"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llLegend"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp_2"
+            android:orientation="horizontal">
+
+            <vn.techres.android.weather.widget.AppButton
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:background="@color/green_900"
+                android:textColor="@color/white"
+                android:text="@string/good"
+                android:textSize="@dimen/sp_10" />
+
+            <vn.techres.android.weather.widget.AppButton
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:text="@string/moderate"
+                android:textColor="@color/black"
+                android:background="@color/quantum_yellow500"
+                android:textSize="@dimen/sp_10" />
+
+            <vn.techres.android.weather.widget.AppButton
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="@string/unhealthy_for_sensitive"
+                android:background="@color/orange_700"
+                android:textSize="@dimen/sp_8" />
+
+            <vn.techres.android.weather.widget.AppButton
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="@string/unhealthy"
+                android:background="@color/red_700"
+                android:textSize="@dimen/sp_10" />
+
+            <vn.techres.android.weather.widget.AppButton
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:text="@string/no_health"
+                android:textColor="@color/white"
+                android:background="#CC00FF"
+                android:textSize="@dimen/sp_10" />
+
+            <vn.techres.android.weather.widget.AppButton
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:text="@string/warring"
+                android:background="#990000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

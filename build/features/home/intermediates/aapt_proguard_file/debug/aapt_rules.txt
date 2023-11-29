@@ -1,0 +1,26 @@
+-keep class vn.techres.android.weather.home.ui.activity.ListAddressActivity { <init>(); }
+-keep class vn.techres.android.weather.home.ui.activity.SearchActivity { <init>(); }
+-keep class androidx.appcompat.widget.SearchView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.viewpager2.widget.ViewPager2 { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.daimajia.swipe.SwipeLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.github.matteobattilana.weather.WeatherView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.tabs.TabLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.hjq.bar.TitleBar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class me.relex.circleindicator.CircleIndicator3 { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class vn.techres.android.weather.widget.AppTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class vn.techres.android.weather.widget.AppTextViewBold { <init>(android.content.Context, android.util.AttributeSet); }
+

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "vn.techres.android.weather.home-mergeDebugResources-3:/values/values.xml",
+            "map": [
+                {
+                    "source": "D:\\weather\\project_example\\features\\home\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "74,144,176",
+                        "endColumns": "69,31,33",
+                        "endOffsets": "139,171,205"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "95,165,197",
+                        "endColumns": "69,31,33",
+                        "endOffsets": "160,192,226"
+                    }
+                },
+                {
+                    "source": "D:\\weather\\project_example\\features\\home\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "40",
+                        "endOffsets": "93"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "39",
+                        "endOffsets": "90"
+                    }
+                }
+            ]
+        }
+    ]
+}

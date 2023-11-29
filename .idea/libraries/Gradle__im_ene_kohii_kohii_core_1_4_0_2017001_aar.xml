@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: im.ene.kohii:kohii-core:1.4.0.2017001@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/261fd46b2ac8eaee5055a84646f7cb2a/transformed/jetified-kohii-core-1.4.0.2017001/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/261fd46b2ac8eaee5055a84646f7cb2a/transformed/jetified-kohii-core-1.4.0.2017001/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/im.ene.kohii/kohii-core/1.4.0.2017001/b8fb2f7632471b7979a4ed5719329904453c8bca/kohii-core-1.4.0.2017001-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/im.ene.kohii/kohii-core/1.4.0.2017001/5e0ca594a76e801bfd24e7a36685dd1374bd9532/kohii-core-1.4.0.2017001-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

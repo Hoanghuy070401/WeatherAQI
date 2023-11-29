@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="dimension" name="emojiSize"/>
+    <dimen name="emoji_grid_view_column_width">46dp</dimen>
+    <dimen name="sticker_grid_view_column_width">88dp</dimen>
+    <string name="app_name">AXEmojiView</string>
+    <string name="no_emoji_found">No emoji found</string>
+    <declare-styleable name="AXEmojiButton">
+        <attr name="emojiSize"/>
+    </declare-styleable>
+    <declare-styleable name="AXEmojiCheckbox">
+        <attr name="emojiSize"/>
+    </declare-styleable>
+    <declare-styleable name="AXEmojiEditText">
+        <attr name="emojiSize"/>
+    </declare-styleable>
+    <declare-styleable name="AXEmojiMultiAutoCompleteTextView">
+        <attr name="emojiSize"/>
+    </declare-styleable>
+    <declare-styleable name="AXEmojiRadioButton">
+        <attr name="emojiSize"/>
+    </declare-styleable>
+    <declare-styleable name="AXEmojiTextView">
+        <attr name="emojiSize"/>
+    </declare-styleable>
+</resources>

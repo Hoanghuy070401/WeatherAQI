@@ -1,0 +1,7 @@
+
+xkotlin:S100"URename function "API_GET_WARD" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(²„âøşÿÿÿÿ8­³ìÌ¤1
+xkotlin:S100"ZRename function "API_GET_DISTRICTS" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(‘š8ˆ”ìÌ¤1
+rkotlin:S100"URename function "API_GET_ICON" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(õéÃI8¢ÜÕ­¤1
+{kotlin:S100"]Rename function "API_GET_DATA_WEATHER" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(·è°8¯³ìÌ¤1
+|kotlin:S100"^Rename function "API_GET_LOCATION_CITY" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(éÿîø8¯³ìÌ¤1
+wkotlin:S100!"YRename function "GET_HOST_API_AIR" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(ØÉ¹â8°³ìÌ¤1
