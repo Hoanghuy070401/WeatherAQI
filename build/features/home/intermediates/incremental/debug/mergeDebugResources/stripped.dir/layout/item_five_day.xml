@@ -115,12 +115,33 @@
             tools:text="50%"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/llSnow"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:src="@drawable/ic_rain_snow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"/>
+        <vn.techres.android.weather.widget.AppTextViewBold
+            android:id="@+id/tvSnow"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:text="50%"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_marginTop="@dimen/dp_16"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
         <ImageView
+            android:id="@+id/imvRainAndSnow"
             android:src="@drawable/ic_rain_forecast"
             android:layout_width="@dimen/dp_20"
             android:layout_height="@dimen/dp_20"/>

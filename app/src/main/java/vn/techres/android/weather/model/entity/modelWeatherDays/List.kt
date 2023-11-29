@@ -51,5 +51,5 @@ class List {
     var snow = -1.0//khối lượng tuyết rơi
 
     @SerializedName("pop")
-    var pop = 0.0//xác xuất mưa
+    var pop = -1.0//xác xuất mưa
 }

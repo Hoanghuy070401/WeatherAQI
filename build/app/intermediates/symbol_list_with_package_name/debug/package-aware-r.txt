@@ -4571,6 +4571,7 @@ drawable ic_city
 drawable ic_clock_black_24dp
 drawable ic_clock_future
 drawable ic_close_black
+drawable ic_cloud_snow
 drawable ic_coins
 drawable ic_comment
 drawable ic_confirm
@@ -4685,6 +4686,7 @@ drawable ic_promotion
 drawable ic_pulse
 drawable ic_question_square
 drawable ic_rain_forecast
+drawable ic_rain_snow
 drawable ic_rank_bronze
 drawable ic_rank_gold
 drawable ic_rank_silver

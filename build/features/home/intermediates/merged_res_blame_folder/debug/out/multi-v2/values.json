@@ -4,13 +4,13 @@
             "outputFile": "vn.techres.android.weather.home-mergeDebugResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "D:\\weather\\project_example\\features\\home\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\WeatherAQI\\features\\home\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
-                        "startOffsets": "74,144,176",
+                        "startOffsets": "76,147,180",
                         "endColumns": "69,31,33",
-                        "endOffsets": "139,171,205"
+                        "endOffsets": "141,174,209"
                     },
                     "to": {
                         "startLines": "3,4,5",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\weather\\project_example\\features\\home\\src\\main\\res\\values\\ids.xml",
+                    "source": "D:\\WeatherAQI\\features\\home\\src\\main\\res\\values\\ids.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

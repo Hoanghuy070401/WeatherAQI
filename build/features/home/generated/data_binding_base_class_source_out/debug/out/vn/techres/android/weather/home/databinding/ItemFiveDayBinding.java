@@ -25,10 +25,19 @@ public final class ItemFiveDayBinding implements ViewBinding {
   public final ImageView imvIconWeather;
 
   @NonNull
+  public final ImageView imvRainAndSnow;
+
+  @NonNull
+  public final LinearLayout llSnow;
+
+  @NonNull
   public final AppTextView tvDay;
 
   @NonNull
   public final AppTextViewBold tvRain;
+
+  @NonNull
+  public final AppTextViewBold tvSnow;
 
   @NonNull
   public final AppTextViewBold tvSunRise;
@@ -46,14 +55,18 @@ public final class ItemFiveDayBinding implements ViewBinding {
   public final AppTextViewBold tvWind;
 
   private ItemFiveDayBinding(@NonNull LinearLayout rootView, @NonNull ImageView imvIconWeather,
-      @NonNull AppTextView tvDay, @NonNull AppTextViewBold tvRain,
+      @NonNull ImageView imvRainAndSnow, @NonNull LinearLayout llSnow, @NonNull AppTextView tvDay,
+      @NonNull AppTextViewBold tvRain, @NonNull AppTextViewBold tvSnow,
       @NonNull AppTextViewBold tvSunRise, @NonNull AppTextViewBold tvSunSet,
       @NonNull AppTextViewBold tvTemperatureDay, @NonNull AppTextViewBold tvTemperatureNight,
       @NonNull AppTextViewBold tvWind) {
     this.rootView = rootView;
     this.imvIconWeather = imvIconWeather;
+    this.imvRainAndSnow = imvRainAndSnow;
+    this.llSnow = llSnow;
     this.tvDay = tvDay;
     this.tvRain = tvRain;
+    this.tvSnow = tvSnow;
     this.tvSunRise = tvSunRise;
     this.tvSunSet = tvSunSet;
     this.tvTemperatureDay = tvTemperatureDay;
@@ -94,6 +107,18 @@ public final class ItemFiveDayBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imvRainAndSnow;
+      ImageView imvRainAndSnow = ViewBindings.findChildViewById(rootView, id);
+      if (imvRainAndSnow == null) {
+        break missingId;
+      }
+
+      id = R.id.llSnow;
+      LinearLayout llSnow = ViewBindings.findChildViewById(rootView, id);
+      if (llSnow == null) {
+        break missingId;
+      }
+
       id = R.id.tvDay;
       AppTextView tvDay = ViewBindings.findChildViewById(rootView, id);
       if (tvDay == null) {
@@ -103,6 +128,12 @@ public final class ItemFiveDayBinding implements ViewBinding {
       id = R.id.tvRain;
       AppTextViewBold tvRain = ViewBindings.findChildViewById(rootView, id);
       if (tvRain == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSnow;
+      AppTextViewBold tvSnow = ViewBindings.findChildViewById(rootView, id);
+      if (tvSnow == null) {
         break missingId;
       }
 
@@ -136,8 +167,8 @@ public final class ItemFiveDayBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemFiveDayBinding((LinearLayout) rootView, imvIconWeather, tvDay, tvRain,
-          tvSunRise, tvSunSet, tvTemperatureDay, tvTemperatureNight, tvWind);
+      return new ItemFiveDayBinding((LinearLayout) rootView, imvIconWeather, imvRainAndSnow, llSnow,
+          tvDay, tvRain, tvSnow, tvSunRise, tvSunSet, tvTemperatureDay, tvTemperatureNight, tvWind);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

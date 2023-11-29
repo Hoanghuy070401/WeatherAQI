@@ -77,7 +77,7 @@ class HomeActivity : AppActivity() {
     }
 
     override fun initData() {
-        if (ListAddressCache.getAllLocations().size > 1) {
+        if (ListAddressCache.getAllLocations().size > 0) {
             titles.clear()
         }
         titles.addAll(ListAddressCache.getAllLocations())
@@ -150,17 +150,21 @@ class HomeActivity : AppActivity() {
 
 
     }
-    private fun getTimeZoneOffsetInMillis(): Long {
-        val timeZone = TimeZone.getDefault()
-        return timeZone.rawOffset.toLong()
-    }
+
     @Subscribe(sticky = true)
     fun addLocationSuggest(isCheck: AddListSuggestEvenBus) {
         if (isCheck.isCheck) {
             data = Gson().fromJson(
                 intent.getStringExtra(AppConstants.DATA_LIST), AddressCity::class.java
             )
-            titles.add(data)
+            titles.forEach {
+                if (it.id!= data.id){
+                    titles.add(data)
+                }else{
+                    ///
+                }
+            }
+
         }
     }
 

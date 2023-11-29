@@ -18,8 +18,8 @@
 18
 19    <uses-sdk
 20        android:minSdkVersion="23"
-20-->D:\weather\project_example\library\readmoreoption\src\main\AndroidManifest.xml
+20-->D:\WeatherAQI\library\readmoreoption\src\main\AndroidManifest.xml
 21        android:targetSdkVersion="34" />
-21-->D:\weather\project_example\library\readmoreoption\src\main\AndroidManifest.xml
+21-->D:\WeatherAQI\library\readmoreoption\src\main\AndroidManifest.xml
 22
 23</manifest>

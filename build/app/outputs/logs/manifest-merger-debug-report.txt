@@ -1,31 +1,31 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:158:9-166:20
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:158:9-166:20
 	android:grantUriPermissions
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:162:13-47
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:162:13-47
 	android:authorities
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:160:13-60
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:160:13-60
 	android:exported
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:161:13-37
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:161:13-37
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:159:13-62
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:159:13-62
 manifest
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-MERGED from [:library:widget] D:\weather\project_example\build\library\widget\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:library:base] D:\weather\project_example\build\library\base\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+MERGED from [:library:widget] D:\WeatherAQI\build\library\widget\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:library:base] D:\WeatherAQI\build\library\base\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.getActivity:ShapeView:6.0] C:\Users\ADMIN\.gradle\caches\transforms-3\2b8b0d2dbbff9ebff27c8abba840541e\transformed\jetified-ShapeView-6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.androidadvance:topsnackbar:1.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\3698f6353419b8aede8551fba53ae884\transformed\jetified-topsnackbar-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\449d9db6fd635acae8f5cad09141d327\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
-MERGED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-37:12
+MERGED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ADMIN\.gradle\caches\transforms-3\7a20b3f505b934913254a9ea1ce89d16\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
-MERGED from [:library:AXEmojiView-FacebookProvider] D:\weather\project_example\build\library\AXEmojiView-FacebookProvider\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:library:AXEmojiView] D:\weather\project_example\build\library\AXEmojiView\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:library:media-slider] D:\weather\project_example\build\library\media-slider\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:library:AXEmojiView-FacebookProvider] D:\WeatherAQI\build\library\AXEmojiView-FacebookProvider\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:library:AXEmojiView] D:\WeatherAQI\build\library\AXEmojiView\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:library:media-slider] D:\WeatherAQI\build\library\media-slider\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.airbnb.android:lottie:5.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9ce3b1dedad1656335df9274bd664ac8\transformed\jetified-lottie-5.2.0\AndroidManifest.xml:2:1-11:12
 MERGED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:2:1-21:12
 MERGED from [androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ADMIN\.gradle\caches\transforms-3\f27922d49bb0c35fdcae8ba7643b15d4\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:17:1-27:12
@@ -141,7 +141,7 @@ MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\ADMIN\.gradle\caches\tra
 MERGED from [androidx.core:core-ktx:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\f4812f079e1de08dec5f667ce65828ee\transformed\jetified-core-ktx-1.13.0-alpha01\AndroidManifest.xml:2:1-7:12
 MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\9cb26977230fd49b58a09e0e262b5cbc\transformed\jetified-rxandroid-1.2.1\AndroidManifest.xml:15:1-21:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\b1ee9ca4053e24ff550e2b240e9a8f7c\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
-MERGED from [:library:readmoreoption] D:\weather\project_example\build\library\readmoreoption\intermediates\merged_manifest\debug\AndroidManifest.xml:16:1-23:12
+MERGED from [:library:readmoreoption] D:\WeatherAQI\build\library\readmoreoption\intermediates\merged_manifest\debug\AndroidManifest.xml:16:1-23:12
 MERGED from [com.github.getActivity:TitleBar:9.2] C:\Users\ADMIN\.gradle\caches\transforms-3\8548ace32284c1f4ecac1df259000f61\transformed\jetified-TitleBar-9.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.getActivity:GsonFactory:6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\ac4bb564bc2f06477c89007e4f45c4e2\transformed\jetified-GsonFactory-6.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.gyf.immersionbar:immersionbar:3.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9d30a6dd51c075907b998c7440a3a622\transformed\jetified-immersionbar-3.0.0\AndroidManifest.xml:2:1-9:12
@@ -188,32 +188,32 @@ MERGED from [com.github.getActivity:ToastUtils:10.5] C:\Users\ADMIN\.gradle\cach
 MERGED from [org.simple:androideventbus:1.0.5.1] C:\Users\ADMIN\.gradle\caches\transforms-3\5e75ebd14b2c12c6a8f075dc34b8c205\transformed\jetified-androideventbus-1.0.5.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\7b2639535cbf31e6c528bf9e9578a0b0\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.github.jinatonic.confetti:confetti:1.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\f9fecec9fa78b0cb8240fa19e379ea51\transformed\jetified-confetti-1.1.2\AndroidManifest.xml:2:1-9:12
-MERGED from [:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-23:12
-MERGED from [:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-26:12
-MERGED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-34:12
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
+MERGED from [:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-23:12
+MERGED from [:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-26:12
+MERGED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-34:12
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
 	package
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:5:5-41
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:5:5-41
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:4:5-51
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:4:5-51
 	xmlns:dist
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:3:5-61
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:1-212:12
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:1-212:12
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:7:5-79
 MERGED from [im.ene.kohii:kohii-core:1.4.0.2017001] C:\Users\ADMIN\.gradle\caches\transforms-3\261fd46b2ac8eaee5055a84646f7cb2a\transformed\jetified-kohii-core-1.4.0.2017001\AndroidManifest.xml:24:5-79
 MERGED from [im.ene.kohii:kohii-core:1.4.0.2017001] C:\Users\ADMIN\.gradle\caches\transforms-3\261fd46b2ac8eaee5055a84646f7cb2a\transformed\jetified-kohii-core-1.4.0.2017001\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\a07b687f8305829791393c48bbd92a50\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
@@ -253,15 +253,15 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\42274a6d3100dc0ca56a8ca5fddca751\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\42274a6d3100dc0ca56a8ca5fddca751\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:8:5-76
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:8:5-76
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:11:5-76
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:11:5-76
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:8:22-73
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:8:22-73
 uses-permission#android.permission.INTERNET
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:9:5-67
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:9:5-67
 MERGED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:11:5-67
 MERGED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:12:5-67
@@ -293,189 +293,189 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\c220c2e060df39a3cb6495057666e7f8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\c220c2e060df39a3cb6495057666e7f8\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:10:5-80
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:10:5-80
 MERGED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:12:5-80
 MERGED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:10:22-77
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:11:5-79
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:12:5-81
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:9:5-81
 MERGED from [com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\6897a85fcf86c7f16c7109c7c7eb59fe\transformed\jetified-places-3.2.0\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:13:5-15:40
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:13:5-15:40
 	tools:ignore
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:15:9-37
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:15:9-37
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:14:9-65
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:14:9-65
 uses-permission#android.permission.USE_BIOMETRIC
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:16:5-72
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:16:5-72
 MERGED from [androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ADMIN\.gradle\caches\transforms-3\f27922d49bb0c35fdcae8ba7643b15d4\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:5-72
 MERGED from [androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ADMIN\.gradle\caches\transforms-3\f27922d49bb0c35fdcae8ba7643b15d4\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:5-72
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:16:22-69
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:16:22-69
 uses-permission#android.permission.CAMERA
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:17:5-19:71
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:17:5-19:71
 	tools:ignore
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:19:9-68
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:19:9-68
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:18:9-49
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:18:9-49
 uses-permission#android.permission.WRITE_MEDIA_STORAGE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:20:5-22:47
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:20:5-22:47
 	tools:ignore
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:22:9-44
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:22:9-44
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:21:9-62
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:21:9-62
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:23:5-25:47
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:23:5-25:47
 	tools:ignore
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:25:9-44
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:25:9-44
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:24:9-57
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:24:9-57
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:26:5-80
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:26:5-80
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:26:22-77
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:26:22-77
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:27:5-71
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:27:5-71
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:27:22-68
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:27:22-68
 uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:28:5-30:40
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:28:5-30:40
 	tools:ignore
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:30:9-37
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:30:9-37
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:29:9-66
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:29:9-66
 uses-permission#android.permission.VIBRATE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:31:5-66
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:31:5-66
 MERGED from [com.wdullaer:materialdatetimepicker:4.2.3] C:\Users\ADMIN\.gradle\caches\transforms-3\b521659edeb24c2a03fc1a84f86a0ee9\transformed\jetified-materialdatetimepicker-4.2.3\AndroidManifest.xml:26:5-66
 MERGED from [com.wdullaer:materialdatetimepicker:4.2.3] C:\Users\ADMIN\.gradle\caches\transforms-3\b521659edeb24c2a03fc1a84f86a0ee9\transformed\jetified-materialdatetimepicker-4.2.3\AndroidManifest.xml:26:5-66
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:31:22-63
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:31:22-63
 uses-permission#android.permission.READ_MEDIA_IMAGES
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:32:5-76
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:32:5-76
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:32:22-73
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:32:22-73
 uses-permission#android.permission.READ_MEDIA_AUDIO
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:33:5-75
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:33:5-75
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:33:22-72
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:33:22-72
 uses-permission#android.permission.READ_MEDIA_VIDEO
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:34:5-75
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:34:5-75
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:34:22-72
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:34:22-72
 dist:module
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:36:5-40
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:36:5-40
 	dist:instant
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:36:18-37
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:36:18-37
 queries
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:38:5-45:15
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:38:5-45:15
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cf626ae41e3ae046c1ca2f975c7d4b68\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cf626ae41e3ae046c1ca2f975c7d4b68\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:39:9-41:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:39:9-41:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:40:13-73
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:13-73
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:40:21-70
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:21-70
 intent#action:name:android.media.action.ACTION_VIDEO_CAPTURE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:42:9-44:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:42:9-44:18
 action#android.media.action.ACTION_VIDEO_CAPTURE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:43:13-80
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:43:13-80
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:43:21-77
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:43:21-77
 compatible-screens
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:83:5-122:26
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:83:5-122:26
 screen#small+ldpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:86:9-88:42
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:86:9-88:42
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:87:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:87:13-41
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:88:13-39
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:88:13-39
 screen#small+mdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:89:9-91:42
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:89:9-91:42
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:90:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:90:13-41
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:91:13-39
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:91:13-39
 screen#small+hdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:92:9-94:42
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:92:9-94:42
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:93:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:93:13-41
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:94:13-39
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:94:13-39
 screen#small+xhdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:95:9-97:42
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:95:9-97:42
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:96:13-42
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:96:13-42
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:97:13-39
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:97:13-39
 screen#small+xxhdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:98:9-100:42
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:98:9-100:42
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:99:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:99:13-43
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:100:13-39
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:100:13-39
 screen#small+xxxhdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:101:9-103:42
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:101:9-103:42
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:102:13-44
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:102:13-44
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:103:13-39
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:103:13-39
 screen#normal+ldpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:104:9-106:43
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:104:9-106:43
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:105:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:105:13-41
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:106:13-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:106:13-40
 screen#normal+mdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:107:9-109:43
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:107:9-109:43
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:108:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:108:13-41
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:109:13-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:109:13-40
 screen#normal+hdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:110:9-112:43
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:110:9-112:43
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:111:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:111:13-41
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:112:13-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:112:13-40
 screen#normal+xhdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:113:9-115:43
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:113:9-115:43
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:114:13-42
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:114:13-42
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:115:13-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:115:13-40
 screen#normal+xxhdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:116:9-118:43
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:116:9-118:43
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:117:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:117:13-43
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:118:13-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:118:13-40
 screen#normal+xxxhdpi
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:119:9-121:43
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:119:9-121:43
 	android:screenDensity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:120:13-44
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:120:13-44
 	android:screenSize
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:121:13-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:121:13-40
 application
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:124:5-210:19
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:124:5-210:19
 MERGED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\449d9db6fd635acae8f5cad09141d327\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\449d9db6fd635acae8f5cad09141d327\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
-MERGED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-35:19
-MERGED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-35:19
+MERGED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-35:19
+MERGED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-35:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ADMIN\.gradle\caches\transforms-3\7a20b3f505b934913254a9ea1ce89d16\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ADMIN\.gradle\caches\transforms-3\7a20b3f505b934913254a9ea1ce89d16\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:5.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9ce3b1dedad1656335df9274bd664ac8\transformed\jetified-lottie-5.2.0\AndroidManifest.xml:9:5-20
@@ -590,155 +590,155 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\AD
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\d8dbbf0dbda0cd57bdbb6e322cc040ea\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\46c0c2fde5a6888e636abcec2b933854\transformed\jetified-core-1.10.3\AndroidManifest.xml:15:5-44:19
 MERGED from [com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\46c0c2fde5a6888e636abcec2b933854\transformed\jetified-core-1.10.3\AndroidManifest.xml:15:5-44:19
-MERGED from [:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-54
-MERGED from [:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-54
-MERGED from [:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-24:19
-MERGED from [:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-24:19
-MERGED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-32:19
-MERGED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-32:19
+MERGED from [:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-54
+MERGED from [:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-54
+MERGED from [:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-24:19
+MERGED from [:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-24:19
+MERGED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-32:19
+MERGED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-32:19
 	android:extractNativeLibs
-		ADDED from [:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:18-51
+		ADDED from [:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:18-51
 	android:requestLegacyExternalStorage
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:130:9-52
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:130:9-52
 	tools:ignore
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:136:9-61
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:136:9-61
 	android:roundIcon
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:132:9-48
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:132:9-48
 	android:icon
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:127:9-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:127:9-43
 	android:networkSecurityConfig
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:129:9-69
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:129:9-69
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:133:9-36
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:133:9-36
 		REJECTED from [com.whiteelephant:monthandyearpicker:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\ba51722e8ce537591464ebe798ad932c\transformed\jetified-monthandyearpicker-1.3.0\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:128:9-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:128:9-41
 		REJECTED from [com.whiteelephant:monthandyearpicker:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\ba51722e8ce537591464ebe798ad932c\transformed\jetified-monthandyearpicker-1.3.0\AndroidManifest.xml:14:9-41
 		REJECTED from [com.github.tslamic.fancybackground:library:1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\09f53d73146b59c1696797d1976a336b\transformed\jetified-library-1.0\AndroidManifest.xml:13:9-41
 	android:debuggable
-		ADDED from [:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
+		ADDED from [:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
 	android:resizeableActivity
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:131:9-42
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:131:9-42
 	tools:targetApi
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:138:9-28
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:138:9-28
 	android:allowBackup
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:126:9-35
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:126:9-35
 		REJECTED from [com.whiteelephant:monthandyearpicker:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\ba51722e8ce537591464ebe798ad932c\transformed\jetified-monthandyearpicker-1.3.0\AndroidManifest.xml:12:9-35
 		REJECTED from [com.github.tslamic.fancybackground:library:1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\09f53d73146b59c1696797d1976a336b\transformed\jetified-library-1.0\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:134:9-40
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:134:9-40
 	tools:replace
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:137:9-78
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:137:9-78
 	android:usesCleartextTraffic
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:135:9-44
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:135:9-44
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:125:9-69
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:125:9-69
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:151:9-153:55
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:151:9-153:55
 	android:value
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:153:13-52
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:153:13-52
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:152:13-58
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:152:13-58
 meta-data#ScopedStorage
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:154:9-156:36
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:154:9-156:36
 	android:value
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:156:13-33
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:156:13-33
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:155:13-41
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:155:13-41
 activity#vn.techres.android.weather.ui.activity.CrashActivity
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:168:9-172:53
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:168:9-172:53
 	android:screenOrientation
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:172:13-50
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:172:13-50
 	android:process
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:171:13-37
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:171:13-37
 	android:launchMode
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:170:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:170:13-43
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:169:13-80
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:169:13-80
 activity#vn.techres.android.weather.ui.activity.RestartActivity
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:173:9-177:52
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:173:9-177:52
 	android:screenOrientation
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:177:13-49
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:177:13-49
 	android:launchMode
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:176:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:176:13-43
 	android:exported
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:175:13-36
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:175:13-36
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:174:13-82
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:174:13-82
 activity#vn.techres.android.weather.ui.activity.BrowserActivity
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:178:9-182:52
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:178:9-182:52
 	android:screenOrientation
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:182:13-49
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:182:13-49
 	android:launchMode
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:181:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:181:13-43
 	android:exported
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:180:13-36
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:180:13-36
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:179:13-82
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:179:13-82
 activity#vn.techres.android.weather.ui.activity.MediaActivity
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:183:9-187:52
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:183:9-187:52
 	android:screenOrientation
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:187:13-49
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:187:13-49
 	android:launchMode
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:186:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:186:13-43
 	android:exported
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:185:13-36
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:185:13-36
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:184:13-80
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:184:13-80
 activity#vn.techres.android.weather.ui.activity.HomeActivity
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:188:9-192:52
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:188:9-192:52
 	android:screenOrientation
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:192:13-49
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:192:13-49
 	android:launchMode
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:191:13-44
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:191:13-44
 	android:exported
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:190:13-36
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:190:13-36
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:189:13-79
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:189:13-79
 activity#vn.techres.android.weather.ui.activity.SplashActivity
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:193:9-205:20
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:193:9-205:20
 	android:screenOrientation
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:197:13-49
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:197:13-49
 	android:launchMode
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:196:13-43
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:196:13-43
 	android:exported
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:195:13-36
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:195:13-36
 	android:theme
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:198:13-47
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:198:13-47
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:194:13-81
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:194:13-81
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:199:13-204:29
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:199:13-204:29
 action#android.intent.action.MAIN
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:200:17-69
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:200:17-69
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:200:25-66
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:200:25-66
 action#android.intent.action.VIEW
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:201:17-69
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:17-69
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:201:25-66
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:203:17-77
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:203:17-77
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:203:27-74
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:203:27-74
 meta-data#com.google.android.gms.version
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:207:9-209:69
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:207:9-209:69
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\3ff8daeb14d597990e59f92185cbecf9\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\3ff8daeb14d597990e59f92185cbecf9\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:209:13-66
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:209:13-66
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:208:13-58
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:208:13-58
 uses-sdk
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-MERGED from [:library:widget] D:\weather\project_example\build\library\widget\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:widget] D:\weather\project_example\build\library\widget\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:base] D:\weather\project_example\build\library\base\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:base] D:\weather\project_example\build\library\base\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+MERGED from [:library:widget] D:\WeatherAQI\build\library\widget\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:widget] D:\WeatherAQI\build\library\widget\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:base] D:\WeatherAQI\build\library\base\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:base] D:\WeatherAQI\build\library\base\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.getActivity:ShapeView:6.0] C:\Users\ADMIN\.gradle\caches\transforms-3\2b8b0d2dbbff9ebff27c8abba840541e\transformed\jetified-ShapeView-6.0\AndroidManifest.xml:7:5-44
 MERGED from [com.github.getActivity:ShapeView:6.0] C:\Users\ADMIN\.gradle\caches\transforms-3\2b8b0d2dbbff9ebff27c8abba840541e\transformed\jetified-ShapeView-6.0\AndroidManifest.xml:7:5-44
 MERGED from [com.androidadvance:topsnackbar:1.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\3698f6353419b8aede8551fba53ae884\transformed\jetified-topsnackbar-1.1.1\AndroidManifest.xml:7:5-9:41
@@ -747,16 +747,16 @@ MERGED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3
 MERGED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:22:5-24:41
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\449d9db6fd635acae8f5cad09141d327\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\449d9db6fd635acae8f5cad09141d327\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
-MERGED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ADMIN\.gradle\caches\transforms-3\7a20b3f505b934913254a9ea1ce89d16\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ADMIN\.gradle\caches\transforms-3\7a20b3f505b934913254a9ea1ce89d16\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:AXEmojiView-FacebookProvider] D:\weather\project_example\build\library\AXEmojiView-FacebookProvider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:AXEmojiView-FacebookProvider] D:\weather\project_example\build\library\AXEmojiView-FacebookProvider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:AXEmojiView] D:\weather\project_example\build\library\AXEmojiView\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:AXEmojiView] D:\weather\project_example\build\library\AXEmojiView\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:media-slider] D:\weather\project_example\build\library\media-slider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:library:media-slider] D:\weather\project_example\build\library\media-slider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:AXEmojiView-FacebookProvider] D:\WeatherAQI\build\library\AXEmojiView-FacebookProvider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:AXEmojiView-FacebookProvider] D:\WeatherAQI\build\library\AXEmojiView-FacebookProvider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:AXEmojiView] D:\WeatherAQI\build\library\AXEmojiView\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:AXEmojiView] D:\WeatherAQI\build\library\AXEmojiView\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:media-slider] D:\WeatherAQI\build\library\media-slider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:library:media-slider] D:\WeatherAQI\build\library\media-slider\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.airbnb.android:lottie:5.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9ce3b1dedad1656335df9274bd664ac8\transformed\jetified-lottie-5.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.airbnb.android:lottie:5.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9ce3b1dedad1656335df9274bd664ac8\transformed\jetified-lottie-5.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:5:5-7:41
@@ -987,8 +987,8 @@ MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\ADMIN\.gradle\caches\transfo
 MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\9cb26977230fd49b58a09e0e262b5cbc\transformed\jetified-rxandroid-1.2.1\AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\b1ee9ca4053e24ff550e2b240e9a8f7c\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:18:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\ADMIN\.gradle\caches\transforms-3\b1ee9ca4053e24ff550e2b240e9a8f7c\transformed\jetified-rxandroid-2.1.1\AndroidManifest.xml:18:5-43
-MERGED from [:library:readmoreoption] D:\weather\project_example\build\library\readmoreoption\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:41
-MERGED from [:library:readmoreoption] D:\weather\project_example\build\library\readmoreoption\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:41
+MERGED from [:library:readmoreoption] D:\WeatherAQI\build\library\readmoreoption\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:41
+MERGED from [:library:readmoreoption] D:\WeatherAQI\build\library\readmoreoption\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:41
 MERGED from [com.github.getActivity:TitleBar:9.2] C:\Users\ADMIN\.gradle\caches\transforms-3\8548ace32284c1f4ecac1df259000f61\transformed\jetified-TitleBar-9.2\AndroidManifest.xml:7:5-44
 MERGED from [com.github.getActivity:TitleBar:9.2] C:\Users\ADMIN\.gradle\caches\transforms-3\8548ace32284c1f4ecac1df259000f61\transformed\jetified-TitleBar-9.2\AndroidManifest.xml:7:5-44
 MERGED from [com.github.getActivity:GsonFactory:6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\ac4bb564bc2f06477c89007e4f45c4e2\transformed\jetified-GsonFactory-6.2\AndroidManifest.xml:7:5-44
@@ -1081,65 +1081,65 @@ MERGED from [com.android.volley:volley:1.2.1] C:\Users\ADMIN\.gradle\caches\tran
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\7b2639535cbf31e6c528bf9e9578a0b0\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
 MERGED from [com.github.jinatonic.confetti:confetti:1.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\f9fecec9fa78b0cb8240fa19e379ea51\transformed\jetified-confetti-1.1.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.jinatonic.confetti:confetti:1.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\f9fecec9fa78b0cb8240fa19e379ea51\transformed\jetified-confetti-1.1.2\AndroidManifest.xml:5:5-7:41
-MERGED from [:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
-MERGED from [:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
-MERGED from [:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
-MERGED from [:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
-MERGED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
-MERGED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
+MERGED from [:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
+MERGED from [:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
+MERGED from [:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
+MERGED from [:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
+MERGED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
+MERGED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:9:5-47
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\a07b687f8305829791393c48bbd92a50\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		MERGED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		MERGED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		MERGED from D:\weather\project_example\app\src\main\AndroidManifest.xml
-		INJECTED from D:\weather\project_example\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		MERGED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		MERGED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		MERGED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\app\src\main\AndroidManifest.xml
 intent#action:name:android.media.action.VIDEO_CAPTURE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:54:9-56:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:54:9-56:18
 action#android.media.action.VIDEO_CAPTURE
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:55:13-73
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:55:13-73
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:55:21-70
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:55:21-70
 intent#action:name:com.android.camera.action.CROP
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:59:9-61:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:59:9-61:18
 action#com.android.camera.action.CROP
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:60:13-69
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:60:13-69
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:60:21-66
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:60:21-66
 intent#action:name:android.intent.action.DIAL
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:64:9-66:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:64:9-66:18
 action#android.intent.action.DIAL
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:65:13-65
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:65:13-65
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:65:21-62
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:65:21-62
 intent#action:name:android.intent.action.SEND
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:69:9-71:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:69:9-71:18
 action#android.intent.action.SEND
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:70:13-65
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:70:13-65
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:70:21-62
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:70:21-62
 intent#action:name:android.intent.action.VIEW
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:74:9-76:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:74:9-76:18
 intent#action:name:android.intent.action.GET_CONTENT
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:79:9-81:18
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:79:9-81:18
 action#android.intent.action.GET_CONTENT
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:80:13-72
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:80:13-72
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:80:21-69
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:80:21-69
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:163:13-165:54
+ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:163:13-165:54
 	android:resource
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:165:17-51
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:165:17-51
 	android:name
-		ADDED from D:\weather\project_example\app\src\main\AndroidManifest.xml:164:17-67
+		ADDED from D:\WeatherAQI\app\src\main\AndroidManifest.xml:164:17-67
 activity#com.karumi.dexter.DexterActivity
 ADDED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:27:9-29:72
 	android:theme
@@ -1147,39 +1147,39 @@ ADDED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\
 	android:name
 		ADDED from [com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:28:13-60
 provider#com.luck.picture.lib.basic.PictureFileProvider
-ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
 	android:authorities
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
 	android:exported
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
 	android:name
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 service#com.luck.picture.lib.service.ForegroundService
-ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:56
+ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:56
 	android:enabled
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
 	android:foregroundServiceType
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-53
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-53
 	android:name
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-74
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-74
 activity#com.luck.picture.lib.basic.PictureSelectorSupporterActivity
-ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:20
+ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:20
 	android:configChanges
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-74
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-74
 	android:theme
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-58
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-58
 	android:name
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-87
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-87
 activity#com.luck.picture.lib.basic.PictureSelectorTransparentActivity
-ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-34:20
+ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-34:20
 	android:configChanges
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-74
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-74
 	android:theme
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-61
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-61
 	android:name
-		ADDED from [:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-89
+		ADDED from [:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-89
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\fa08b5a3f2d010956dc82a5e947abc4c\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:9:5-68
 MERGED from [com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\f472e1679bbb03364d69b7ca15f7ccb9\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:28:5-68
@@ -1659,18 +1659,18 @@ ADDED from [com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\t
 	android:name
 		ADDED from [com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\46c0c2fde5a6888e636abcec2b933854\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
 activity#vn.techres.android.weather.home.ui.activity.SearchActivity
-ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
+ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
 	android:exported
-		ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
+		ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
 	android:splitName
-		ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
+		ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-86
+		ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-86
 activity#vn.techres.android.weather.home.ui.activity.ListAddressActivity
-ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
+ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
 	android:exported
-		ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
+		ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
 	android:splitName
-		ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
+		ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-91
+		ADDED from [:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-91

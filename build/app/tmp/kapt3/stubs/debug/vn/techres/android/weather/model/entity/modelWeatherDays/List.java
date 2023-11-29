@@ -38,7 +38,7 @@ public final class List {
     @com.google.gson.annotations.SerializedName(value = "snow")
     private double snow = -1.0;
     @com.google.gson.annotations.SerializedName(value = "pop")
-    private double pop = 0.0;
+    private double pop = -1.0;
     
     public List() {
         super();

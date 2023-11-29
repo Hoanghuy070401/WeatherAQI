@@ -1,6 +1,6 @@
-#Mon Nov 13 17:26:33 ICT 2023
-base.0=D\:\\weather\\project_example\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.1=D\:\\weather\\project_example\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+#Wed Nov 29 10:34:07 ICT 2023
+base.0=D\:\\WeatherAQI\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=D\:\\WeatherAQI\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
 path.0=0/classes.dex
 path.1=13/classes.dex
 renamed.0=classes.dex

@@ -40,11 +40,11 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_location.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_search.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_search.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_new_find_location_layout.xml",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_new_find_location_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_search.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_search.xml"
     }
 ]

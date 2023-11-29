@@ -21,6 +21,7 @@ import vn.techres.android.weather.home.ui.adapter.DynamicViewPagerAdapter
 import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.model.titlesOrdinals
 import vn.techres.android.weather.model.entity.AddressCity
+import vn.techres.android.weather.model.eventbus.AddListSuggestEvenBus
 import vn.techres.android.weather.model.eventbus.UpLoadDataEvenBus
 import vn.techres.android.weather.model.eventbus.UpdateDataEventBus
 import vn.techres.android.weather.ui.activity.HomeActivity
@@ -148,4 +149,15 @@ class WeatherFragment : AppFragment<HomeActivity>() {
         binding.Viewpager2.setCurrentItem(index, false)
     }
 
+    @Subscribe(sticky = true)
+    fun addLocationSuggest(isCheck: AddListSuggestEvenBus) {
+        if (isCheck.isCheck) {
+            titles.forEachIndexed { index, it ->
+                if (it.nameCity== HomeActivity.data.nameCity){
+                    binding.Viewpager2.setCurrentItem(index, false)
+                    return
+                }
+            }
+        }
+    }
 }

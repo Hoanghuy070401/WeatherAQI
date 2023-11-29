@@ -113,7 +113,7 @@ public final class TabAdapter extends vn.techres.android.weather.app.AppAdapter<
         
         public DesignViewHolder(@org.jetbrains.annotations.NotNull
         vn.techres.android.weather.databinding.TabItemDesignBinding binding) {
-            super(0);
+            super(null, 0);
         }
         
         @org.jetbrains.annotations.NotNull
@@ -150,7 +150,7 @@ public final class TabAdapter extends vn.techres.android.weather.app.AppAdapter<
         
         public SlidingViewHolder(@org.jetbrains.annotations.NotNull
         vn.techres.android.weather.databinding.TabItemSlidingBinding binding) {
-            super(0);
+            super(null, 0);
         }
         
         @org.jetbrains.annotations.NotNull

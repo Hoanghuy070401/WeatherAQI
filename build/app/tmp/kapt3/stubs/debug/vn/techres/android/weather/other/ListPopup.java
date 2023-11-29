@@ -121,7 +121,7 @@ public final class ListPopup {
             private final kotlin.Lazy textView$delegate = null;
             
             public ViewHolder() {
-                super(0);
+                super(null, 0);
             }
             
             private final android.widget.TextView getTextView() {

@@ -201,6 +201,7 @@ class SearchActivity : AppActivity(),ItemSuggestClickView, imageClick {
     }
 
     override fun imageClick(position: Int) {//list city
+
         searchDetailPlaces(listCity[position].id)
     }
 

@@ -37,7 +37,7 @@ public final class ListCityAdapter extends vn.techres.android.weather.app.AppAda
         
         public ViewHolder(@org.jetbrains.annotations.NotNull
         vn.techres.android.weather.databinding.ItemCityBinding binding) {
-            super(0);
+            super(null, 0);
         }
         
         @java.lang.Override

@@ -7,82 +7,82 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="23"
-9-->D:\weather\project_example\app\src\main\AndroidManifest.xml
+9-->D:\WeatherAQI\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="34" />
-10-->D:\weather\project_example\app\src\main\AndroidManifest.xml
+10-->D:\WeatherAQI\app\src\main\AndroidManifest.xml
 11
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->D:\weather\project_example\app\src\main\AndroidManifest.xml:7:5-79
-12-->D:\weather\project_example\app\src\main\AndroidManifest.xml:7:22-76
+12-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->D:\weather\project_example\app\src\main\AndroidManifest.xml:8:5-76
-13-->D:\weather\project_example\app\src\main\AndroidManifest.xml:8:22-73
+13-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:8:5-76
+13-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:8:22-73
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\weather\project_example\app\src\main\AndroidManifest.xml:9:5-67
-14-->D:\weather\project_example\app\src\main\AndroidManifest.xml:9:22-64
+14-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:9:5-67
+14-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:9:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->D:\weather\project_example\app\src\main\AndroidManifest.xml:10:5-80
-15-->D:\weather\project_example\app\src\main\AndroidManifest.xml:10:22-77
+15-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:10:5-80
+15-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->D:\weather\project_example\app\src\main\AndroidManifest.xml:11:5-79
-16-->D:\weather\project_example\app\src\main\AndroidManifest.xml:11:22-76
+16-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:11:22-76
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->D:\weather\project_example\app\src\main\AndroidManifest.xml:12:5-81
-17-->D:\weather\project_example\app\src\main\AndroidManifest.xml:12:22-78
+17-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:12:5-81
+17-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:12:22-78
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->D:\weather\project_example\app\src\main\AndroidManifest.xml:13:5-15:40
-18-->D:\weather\project_example\app\src\main\AndroidManifest.xml:14:9-65
+18-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:13:5-15:40
+18-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:14:9-65
 19    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-19-->D:\weather\project_example\app\src\main\AndroidManifest.xml:16:5-72
-19-->D:\weather\project_example\app\src\main\AndroidManifest.xml:16:22-69
+19-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:16:5-72
+19-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:16:22-69
 20    <uses-permission android:name="android.permission.CAMERA" />
-20-->D:\weather\project_example\app\src\main\AndroidManifest.xml:17:5-19:71
-20-->D:\weather\project_example\app\src\main\AndroidManifest.xml:18:9-49
+20-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:17:5-19:71
+20-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:18:9-49
 21    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
-21-->D:\weather\project_example\app\src\main\AndroidManifest.xml:20:5-22:47
-21-->D:\weather\project_example\app\src\main\AndroidManifest.xml:21:9-62
+21-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:20:5-22:47
+21-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:21:9-62
 22    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-22-->D:\weather\project_example\app\src\main\AndroidManifest.xml:23:5-25:47
-22-->D:\weather\project_example\app\src\main\AndroidManifest.xml:24:9-57
+22-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:23:5-25:47
+22-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:24:9-57
 23    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-23-->D:\weather\project_example\app\src\main\AndroidManifest.xml:26:5-80
-23-->D:\weather\project_example\app\src\main\AndroidManifest.xml:26:22-77
+23-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:26:5-80
+23-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:26:22-77
 24    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-24-->D:\weather\project_example\app\src\main\AndroidManifest.xml:27:5-71
-24-->D:\weather\project_example\app\src\main\AndroidManifest.xml:27:22-68
+24-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:27:5-71
+24-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:27:22-68
 25    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-25-->D:\weather\project_example\app\src\main\AndroidManifest.xml:28:5-30:40
-25-->D:\weather\project_example\app\src\main\AndroidManifest.xml:29:9-66
+25-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:28:5-30:40
+25-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:29:9-66
 26    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Android 13 -->
-26-->D:\weather\project_example\app\src\main\AndroidManifest.xml:31:5-66
-26-->D:\weather\project_example\app\src\main\AndroidManifest.xml:31:22-63
+26-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:31:5-66
+26-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:31:22-63
 27    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-27-->D:\weather\project_example\app\src\main\AndroidManifest.xml:32:5-76
-27-->D:\weather\project_example\app\src\main\AndroidManifest.xml:32:22-73
+27-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:32:5-76
+27-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:32:22-73
 28    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-28-->D:\weather\project_example\app\src\main\AndroidManifest.xml:33:5-75
-28-->D:\weather\project_example\app\src\main\AndroidManifest.xml:33:22-72
+28-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:33:5-75
+28-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:33:22-72
 29    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-29-->D:\weather\project_example\app\src\main\AndroidManifest.xml:34:5-75
-29-->D:\weather\project_example\app\src\main\AndroidManifest.xml:34:22-72
+29-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:34:5-75
+29-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:34:22-72
 30
 31    <dist:module dist:instant="true" />
-31-->D:\weather\project_example\app\src\main\AndroidManifest.xml:36:5-40
-31-->D:\weather\project_example\app\src\main\AndroidManifest.xml:36:18-37
+31-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:36:5-40
+31-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:36:18-37
 32
 33    <queries>
-33-->D:\weather\project_example\app\src\main\AndroidManifest.xml:38:5-45:15
+33-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:38:5-45:15
 34        <intent>
-34-->D:\weather\project_example\app\src\main\AndroidManifest.xml:39:9-41:18
+34-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:39:9-41:18
 35            <action android:name="android.media.action.IMAGE_CAPTURE" />
-35-->D:\weather\project_example\app\src\main\AndroidManifest.xml:40:13-73
-35-->D:\weather\project_example\app\src\main\AndroidManifest.xml:40:21-70
+35-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:13-73
+35-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:21-70
 36        </intent>
 37        <intent>
-37-->D:\weather\project_example\app\src\main\AndroidManifest.xml:42:9-44:18
+37-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:42:9-44:18
 38            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
-38-->D:\weather\project_example\app\src\main\AndroidManifest.xml:43:13-80
-38-->D:\weather\project_example\app\src\main\AndroidManifest.xml:43:21-77
+38-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:43:13-80
+38-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:43:21-77
 39        </intent>
 40        <!-- Needs to be explicitly declared on Android R+ -->
 41        <package android:name="com.google.android.apps.maps" />
@@ -90,140 +90,140 @@
 41-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cf626ae41e3ae046c1ca2f975c7d4b68\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
 42    </queries> <!-- Android 11 软件包可见性适配：https://www.jianshu.com/p/d1ccd425c4ce -->
 43    <queries>
-43-->D:\weather\project_example\app\src\main\AndroidManifest.xml:38:5-45:15
+43-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:38:5-45:15
 44
 45        <!-- 拍照意图：MediaStore.ACTION_IMAGE_CAPTURE -->
 46        <intent>
-46-->D:\weather\project_example\app\src\main\AndroidManifest.xml:39:9-41:18
+46-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:39:9-41:18
 47            <action android:name="android.media.action.IMAGE_CAPTURE" />
-47-->D:\weather\project_example\app\src\main\AndroidManifest.xml:40:13-73
-47-->D:\weather\project_example\app\src\main\AndroidManifest.xml:40:21-70
+47-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:13-73
+47-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:21-70
 48        </intent>
 49
 50        <!-- 拍摄意图：MediaStore.ACTION_VIDEO_CAPTURE -->
 51        <intent>
-51-->D:\weather\project_example\app\src\main\AndroidManifest.xml:54:9-56:18
+51-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:54:9-56:18
 52            <action android:name="android.media.action.VIDEO_CAPTURE" />
-52-->D:\weather\project_example\app\src\main\AndroidManifest.xml:55:13-73
-52-->D:\weather\project_example\app\src\main\AndroidManifest.xml:55:21-70
+52-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:55:13-73
+52-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:55:21-70
 53        </intent>
 54
 55        <!-- 图片裁剪意图 -->
 56        <intent>
-56-->D:\weather\project_example\app\src\main\AndroidManifest.xml:59:9-61:18
+56-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:59:9-61:18
 57            <action android:name="com.android.camera.action.CROP" />
-57-->D:\weather\project_example\app\src\main\AndroidManifest.xml:60:13-69
-57-->D:\weather\project_example\app\src\main\AndroidManifest.xml:60:21-66
+57-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:60:13-69
+57-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:60:21-66
 58        </intent>
 59
 60        <!-- 打电话意图：Intent.ACTION_DIAL -->
 61        <intent>
-61-->D:\weather\project_example\app\src\main\AndroidManifest.xml:64:9-66:18
+61-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:64:9-66:18
 62            <action android:name="android.intent.action.DIAL" />
-62-->D:\weather\project_example\app\src\main\AndroidManifest.xml:65:13-65
-62-->D:\weather\project_example\app\src\main\AndroidManifest.xml:65:21-62
+62-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:65:13-65
+62-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:65:21-62
 63        </intent>
 64
 65        <!-- 调起分享意图：Intent.ACTION_SEND -->
 66        <intent>
-66-->D:\weather\project_example\app\src\main\AndroidManifest.xml:69:9-71:18
+66-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:69:9-71:18
 67            <action android:name="android.intent.action.SEND" />
-67-->D:\weather\project_example\app\src\main\AndroidManifest.xml:70:13-65
-67-->D:\weather\project_example\app\src\main\AndroidManifest.xml:70:21-62
+67-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:70:13-65
+67-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:70:21-62
 68        </intent>
 69
 70        <!-- 调起其他页面意图：Intent.ACTION_VIEW -->
 71        <intent>
-71-->D:\weather\project_example\app\src\main\AndroidManifest.xml:74:9-76:18
+71-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:74:9-76:18
 72            <action android:name="android.intent.action.VIEW" />
-72-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:17-69
-72-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:25-66
+72-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:17-69
+72-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:25-66
 73        </intent>
 74
 75        <!-- 调起系统文件选择器：Intent.ACTION_GET_CONTENT -->
 76        <intent>
-76-->D:\weather\project_example\app\src\main\AndroidManifest.xml:79:9-81:18
+76-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:79:9-81:18
 77            <action android:name="android.intent.action.GET_CONTENT" />
-77-->D:\weather\project_example\app\src\main\AndroidManifest.xml:80:13-72
-77-->D:\weather\project_example\app\src\main\AndroidManifest.xml:80:21-69
+77-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:80:13-72
+77-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:80:21-69
 78        </intent>
 79    </queries> <!-- Cấu hình app chỉ được cài trên thiết bị phone -->
 80    <compatible-screens>
-80-->D:\weather\project_example\app\src\main\AndroidManifest.xml:83:5-122:26
+80-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:83:5-122:26
 81
 82        <!-- Phone screens -->
 83        <screen
-83-->D:\weather\project_example\app\src\main\AndroidManifest.xml:86:9-88:42
+83-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:86:9-88:42
 84            android:screenDensity="ldpi"
-84-->D:\weather\project_example\app\src\main\AndroidManifest.xml:87:13-41
+84-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:87:13-41
 85            android:screenSize="small" />
-85-->D:\weather\project_example\app\src\main\AndroidManifest.xml:88:13-39
+85-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:88:13-39
 86        <screen
-86-->D:\weather\project_example\app\src\main\AndroidManifest.xml:89:9-91:42
+86-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:89:9-91:42
 87            android:screenDensity="mdpi"
-87-->D:\weather\project_example\app\src\main\AndroidManifest.xml:90:13-41
+87-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:90:13-41
 88            android:screenSize="small" />
-88-->D:\weather\project_example\app\src\main\AndroidManifest.xml:91:13-39
+88-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:91:13-39
 89        <screen
-89-->D:\weather\project_example\app\src\main\AndroidManifest.xml:92:9-94:42
+89-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:92:9-94:42
 90            android:screenDensity="hdpi"
-90-->D:\weather\project_example\app\src\main\AndroidManifest.xml:93:13-41
+90-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:93:13-41
 91            android:screenSize="small" />
-91-->D:\weather\project_example\app\src\main\AndroidManifest.xml:94:13-39
+91-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:94:13-39
 92        <screen
-92-->D:\weather\project_example\app\src\main\AndroidManifest.xml:95:9-97:42
+92-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:95:9-97:42
 93            android:screenDensity="xhdpi"
-93-->D:\weather\project_example\app\src\main\AndroidManifest.xml:96:13-42
+93-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:96:13-42
 94            android:screenSize="small" />
-94-->D:\weather\project_example\app\src\main\AndroidManifest.xml:97:13-39
+94-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:97:13-39
 95        <screen
-95-->D:\weather\project_example\app\src\main\AndroidManifest.xml:98:9-100:42
+95-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:98:9-100:42
 96            android:screenDensity="xxhdpi"
-96-->D:\weather\project_example\app\src\main\AndroidManifest.xml:99:13-43
+96-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:99:13-43
 97            android:screenSize="small" />
-97-->D:\weather\project_example\app\src\main\AndroidManifest.xml:100:13-39
+97-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:100:13-39
 98        <screen
-98-->D:\weather\project_example\app\src\main\AndroidManifest.xml:101:9-103:42
+98-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:101:9-103:42
 99            android:screenDensity="xxxhdpi"
-99-->D:\weather\project_example\app\src\main\AndroidManifest.xml:102:13-44
+99-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:102:13-44
 100            android:screenSize="small" />
-100-->D:\weather\project_example\app\src\main\AndroidManifest.xml:103:13-39
+100-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:103:13-39
 101        <screen
-101-->D:\weather\project_example\app\src\main\AndroidManifest.xml:104:9-106:43
+101-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:104:9-106:43
 102            android:screenDensity="ldpi"
-102-->D:\weather\project_example\app\src\main\AndroidManifest.xml:105:13-41
+102-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:105:13-41
 103            android:screenSize="normal" />
-103-->D:\weather\project_example\app\src\main\AndroidManifest.xml:106:13-40
+103-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:106:13-40
 104        <screen
-104-->D:\weather\project_example\app\src\main\AndroidManifest.xml:107:9-109:43
+104-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:107:9-109:43
 105            android:screenDensity="mdpi"
-105-->D:\weather\project_example\app\src\main\AndroidManifest.xml:108:13-41
+105-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:108:13-41
 106            android:screenSize="normal" />
-106-->D:\weather\project_example\app\src\main\AndroidManifest.xml:109:13-40
+106-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:109:13-40
 107        <screen
-107-->D:\weather\project_example\app\src\main\AndroidManifest.xml:110:9-112:43
+107-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:110:9-112:43
 108            android:screenDensity="hdpi"
-108-->D:\weather\project_example\app\src\main\AndroidManifest.xml:111:13-41
+108-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:111:13-41
 109            android:screenSize="normal" />
-109-->D:\weather\project_example\app\src\main\AndroidManifest.xml:112:13-40
+109-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:112:13-40
 110        <screen
-110-->D:\weather\project_example\app\src\main\AndroidManifest.xml:113:9-115:43
+110-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:113:9-115:43
 111            android:screenDensity="xhdpi"
-111-->D:\weather\project_example\app\src\main\AndroidManifest.xml:114:13-42
+111-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:114:13-42
 112            android:screenSize="normal" />
-112-->D:\weather\project_example\app\src\main\AndroidManifest.xml:115:13-40
+112-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:115:13-40
 113        <screen
-113-->D:\weather\project_example\app\src\main\AndroidManifest.xml:116:9-118:43
+113-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:116:9-118:43
 114            android:screenDensity="xxhdpi"
-114-->D:\weather\project_example\app\src\main\AndroidManifest.xml:117:13-43
+114-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:117:13-43
 115            android:screenSize="normal" />
-115-->D:\weather\project_example\app\src\main\AndroidManifest.xml:118:13-40
+115-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:118:13-40
 116        <screen
-116-->D:\weather\project_example\app\src\main\AndroidManifest.xml:119:9-121:43
+116-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:119:9-121:43
 117            android:screenDensity="xxxhdpi"
-117-->D:\weather\project_example\app\src\main\AndroidManifest.xml:120:13-44
+117-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:120:13-44
 118            android:screenSize="normal" />
-118-->D:\weather\project_example\app\src\main\AndroidManifest.xml:121:13-40
+118-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:121:13-40
 119    </compatible-screens>
 120
 121    <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -268,35 +268,35 @@
 138-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:26:22-94
 139
 140    <application
-140-->D:\weather\project_example\app\src\main\AndroidManifest.xml:124:5-210:19
+140-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:124:5-210:19
 141        android:name="vn.techres.android.weather.app.AppApplication"
-141-->D:\weather\project_example\app\src\main\AndroidManifest.xml:125:9-69
+141-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:125:9-69
 142        android:allowBackup="true"
-142-->D:\weather\project_example\app\src\main\AndroidManifest.xml:126:9-35
+142-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:126:9-35
 143        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 143-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:28:18-86
 144        android:debuggable="true"
-144-->[:features:map] D:\weather\project_example\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
+144-->[:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
 145        android:extractNativeLibs="false"
-145-->[:features:setting] D:\weather\project_example\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:18-51
+145-->[:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:18-51
 146        android:icon="@mipmap/ic_launcher"
-146-->D:\weather\project_example\app\src\main\AndroidManifest.xml:127:9-43
+146-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:127:9-43
 147        android:label="@string/app_name"
-147-->D:\weather\project_example\app\src\main\AndroidManifest.xml:128:9-41
+147-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:128:9-41
 148        android:networkSecurityConfig="@xml/network_security_config"
-148-->D:\weather\project_example\app\src\main\AndroidManifest.xml:129:9-69
+148-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:129:9-69
 149        android:requestLegacyExternalStorage="true"
-149-->D:\weather\project_example\app\src\main\AndroidManifest.xml:130:9-52
+149-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:130:9-52
 150        android:resizeableActivity="true"
-150-->D:\weather\project_example\app\src\main\AndroidManifest.xml:131:9-42
+150-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:131:9-42
 151        android:roundIcon="@mipmap/ic_launcher"
-151-->D:\weather\project_example\app\src\main\AndroidManifest.xml:132:9-48
+151-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:132:9-48
 152        android:supportsRtl="false"
-152-->D:\weather\project_example\app\src\main\AndroidManifest.xml:133:9-36
+152-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:133:9-36
 153        android:theme="@style/AppTheme"
-153-->D:\weather\project_example\app\src\main\AndroidManifest.xml:134:9-40
+153-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:134:9-40
 154        android:usesCleartextTraffic="true" >
-154-->D:\weather\project_example\app\src\main\AndroidManifest.xml:135:9-44
+154-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:135:9-44
 155
 156        <!--
 157             To get one, follow the directions here:
@@ -308,118 +308,118 @@
 163             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
 164        -->
 165        <meta-data
-165-->D:\weather\project_example\app\src\main\AndroidManifest.xml:151:9-153:55
+165-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:151:9-153:55
 166            android:name="com.google.android.geo.API_KEY"
-166-->D:\weather\project_example\app\src\main\AndroidManifest.xml:152:13-58
+166-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:152:13-58
 167            android:value="@string/google_maps_key" />
-167-->D:\weather\project_example\app\src\main\AndroidManifest.xml:153:13-52
+167-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:153:13-52
 168        <meta-data
-168-->D:\weather\project_example\app\src\main\AndroidManifest.xml:154:9-156:36
+168-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:154:9-156:36
 169            android:name="ScopedStorage"
-169-->D:\weather\project_example\app\src\main\AndroidManifest.xml:155:13-41
+169-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:155:13-41
 170            android:value="true" />
-170-->D:\weather\project_example\app\src\main\AndroidManifest.xml:156:13-33
+170-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:156:13-33
 171
 172        <provider
 173            android:name="androidx.core.content.FileProvider"
-173-->D:\weather\project_example\app\src\main\AndroidManifest.xml:159:13-62
+173-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:159:13-62
 174            android:authorities="vn.techres.android.weather.provider"
-174-->D:\weather\project_example\app\src\main\AndroidManifest.xml:160:13-60
+174-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:160:13-60
 175            android:exported="false"
-175-->D:\weather\project_example\app\src\main\AndroidManifest.xml:161:13-37
+175-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:161:13-37
 176            android:grantUriPermissions="true" >
-176-->D:\weather\project_example\app\src\main\AndroidManifest.xml:162:13-47
+176-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:162:13-47
 177            <meta-data
-177-->D:\weather\project_example\app\src\main\AndroidManifest.xml:163:13-165:54
+177-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:163:13-165:54
 178                android:name="android.support.FILE_PROVIDER_PATHS"
-178-->D:\weather\project_example\app\src\main\AndroidManifest.xml:164:17-67
+178-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:164:17-67
 179                android:resource="@xml/file_paths" />
-179-->D:\weather\project_example\app\src\main\AndroidManifest.xml:165:17-51
+179-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:165:17-51
 180        </provider>
 181
 182        <activity
-182-->D:\weather\project_example\app\src\main\AndroidManifest.xml:168:9-172:53
+182-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:168:9-172:53
 183            android:name="vn.techres.android.weather.ui.activity.CrashActivity"
-183-->D:\weather\project_example\app\src\main\AndroidManifest.xml:169:13-80
+183-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:169:13-80
 184            android:launchMode="singleTop"
-184-->D:\weather\project_example\app\src\main\AndroidManifest.xml:170:13-43
+184-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:170:13-43
 185            android:process=":crash"
-185-->D:\weather\project_example\app\src\main\AndroidManifest.xml:171:13-37
+185-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:171:13-37
 186            android:screenOrientation="landscape" />
-186-->D:\weather\project_example\app\src\main\AndroidManifest.xml:172:13-50
+186-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:172:13-50
 187        <activity
-187-->D:\weather\project_example\app\src\main\AndroidManifest.xml:173:9-177:52
+187-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:173:9-177:52
 188            android:name="vn.techres.android.weather.ui.activity.RestartActivity"
-188-->D:\weather\project_example\app\src\main\AndroidManifest.xml:174:13-82
+188-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:174:13-82
 189            android:exported="true"
-189-->D:\weather\project_example\app\src\main\AndroidManifest.xml:175:13-36
+189-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:175:13-36
 190            android:launchMode="singleTop"
-190-->D:\weather\project_example\app\src\main\AndroidManifest.xml:176:13-43
+190-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:176:13-43
 191            android:screenOrientation="portrait" />
-191-->D:\weather\project_example\app\src\main\AndroidManifest.xml:177:13-49
+191-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:177:13-49
 192        <activity
-192-->D:\weather\project_example\app\src\main\AndroidManifest.xml:178:9-182:52
+192-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:178:9-182:52
 193            android:name="vn.techres.android.weather.ui.activity.BrowserActivity"
-193-->D:\weather\project_example\app\src\main\AndroidManifest.xml:179:13-82
+193-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:179:13-82
 194            android:exported="true"
-194-->D:\weather\project_example\app\src\main\AndroidManifest.xml:180:13-36
+194-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:180:13-36
 195            android:launchMode="singleTop"
-195-->D:\weather\project_example\app\src\main\AndroidManifest.xml:181:13-43
+195-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:181:13-43
 196            android:screenOrientation="portrait" />
-196-->D:\weather\project_example\app\src\main\AndroidManifest.xml:182:13-49
+196-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:182:13-49
 197        <activity
-197-->D:\weather\project_example\app\src\main\AndroidManifest.xml:183:9-187:52
+197-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:183:9-187:52
 198            android:name="vn.techres.android.weather.ui.activity.MediaActivity"
-198-->D:\weather\project_example\app\src\main\AndroidManifest.xml:184:13-80
+198-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:184:13-80
 199            android:exported="true"
-199-->D:\weather\project_example\app\src\main\AndroidManifest.xml:185:13-36
+199-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:185:13-36
 200            android:launchMode="singleTop"
-200-->D:\weather\project_example\app\src\main\AndroidManifest.xml:186:13-43
+200-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:186:13-43
 201            android:screenOrientation="portrait" />
-201-->D:\weather\project_example\app\src\main\AndroidManifest.xml:187:13-49
+201-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:187:13-49
 202        <activity
-202-->D:\weather\project_example\app\src\main\AndroidManifest.xml:188:9-192:52
+202-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:188:9-192:52
 203            android:name="vn.techres.android.weather.ui.activity.HomeActivity"
-203-->D:\weather\project_example\app\src\main\AndroidManifest.xml:189:13-79
+203-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:189:13-79
 204            android:exported="true"
-204-->D:\weather\project_example\app\src\main\AndroidManifest.xml:190:13-36
+204-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:190:13-36
 205            android:launchMode="singleTask"
-205-->D:\weather\project_example\app\src\main\AndroidManifest.xml:191:13-44
+205-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:191:13-44
 206            android:screenOrientation="portrait" />
-206-->D:\weather\project_example\app\src\main\AndroidManifest.xml:192:13-49
+206-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:192:13-49
 207        <activity
-207-->D:\weather\project_example\app\src\main\AndroidManifest.xml:193:9-205:20
+207-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:193:9-205:20
 208            android:name="vn.techres.android.weather.ui.activity.SplashActivity"
-208-->D:\weather\project_example\app\src\main\AndroidManifest.xml:194:13-81
+208-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:194:13-81
 209            android:exported="true"
-209-->D:\weather\project_example\app\src\main\AndroidManifest.xml:195:13-36
+209-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:195:13-36
 210            android:launchMode="singleTop"
-210-->D:\weather\project_example\app\src\main\AndroidManifest.xml:196:13-43
+210-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:196:13-43
 211            android:screenOrientation="portrait"
-211-->D:\weather\project_example\app\src\main\AndroidManifest.xml:197:13-49
+211-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:197:13-49
 212            android:theme="@style/SplashTheme" >
-212-->D:\weather\project_example\app\src\main\AndroidManifest.xml:198:13-47
+212-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:198:13-47
 213            <intent-filter>
-213-->D:\weather\project_example\app\src\main\AndroidManifest.xml:199:13-204:29
+213-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:199:13-204:29
 214                <action android:name="android.intent.action.MAIN" />
-214-->D:\weather\project_example\app\src\main\AndroidManifest.xml:200:17-69
-214-->D:\weather\project_example\app\src\main\AndroidManifest.xml:200:25-66
+214-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:200:17-69
+214-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:200:25-66
 215                <action android:name="android.intent.action.VIEW" />
-215-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:17-69
-215-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:25-66
+215-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:17-69
+215-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:25-66
 216
 217                <category android:name="android.intent.category.LAUNCHER" />
-217-->D:\weather\project_example\app\src\main\AndroidManifest.xml:203:17-77
-217-->D:\weather\project_example\app\src\main\AndroidManifest.xml:203:27-74
+217-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:203:17-77
+217-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:203:27-74
 218            </intent-filter>
 219        </activity>
 220
 221        <meta-data
-221-->D:\weather\project_example\app\src\main\AndroidManifest.xml:207:9-209:69
+221-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:207:9-209:69
 222            android:name="com.google.android.gms.version"
-222-->D:\weather\project_example\app\src\main\AndroidManifest.xml:208:13-58
+222-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:208:13-58
 223            android:value="@integer/google_play_services_version" />
-223-->D:\weather\project_example\app\src\main\AndroidManifest.xml:209:13-66
+223-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:209:13-66
 224
 225        <activity
 225-->[com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:27:9-29:72
@@ -429,49 +429,49 @@
 227-->[com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\f672fb76dfe8524a9d272401231ef715\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:29:13-69
 228
 229        <provider
-229-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+229-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
 230            android:name="com.luck.picture.lib.basic.PictureFileProvider"
-230-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+230-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 231            android:authorities="vn.techres.android.weather.luckProvider"
-231-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
+231-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
 232            android:exported="false"
-232-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+232-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
 233            android:grantUriPermissions="true" >
-233-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+233-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
 234            <meta-data
-234-->D:\weather\project_example\app\src\main\AndroidManifest.xml:163:13-165:54
+234-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:163:13-165:54
 235                android:name="android.support.FILE_PROVIDER_PATHS"
-235-->D:\weather\project_example\app\src\main\AndroidManifest.xml:164:17-67
+235-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:164:17-67
 236                android:resource="@xml/ps_file_paths" />
-236-->D:\weather\project_example\app\src\main\AndroidManifest.xml:165:17-51
+236-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:165:17-51
 237        </provider>
 238
 239        <service
-239-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:56
+239-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:56
 240            android:name="com.luck.picture.lib.service.ForegroundService"
-240-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-74
+240-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-74
 241            android:enabled="true"
-241-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
+241-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
 242            android:foregroundServiceType="location" />
-242-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-53
+242-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-53
 243
 244        <activity
-244-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:20
+244-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:20
 245            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
-245-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-87
+245-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-87
 246            android:configChanges="orientation|keyboardHidden|screenSize"
-246-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-74
+246-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-74
 247            android:theme="@style/Base.Theme.NoActionBar" >
-247-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-58
+247-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-58
 248        </activity>
 249        <activity
-249-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-34:20
+249-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-34:20
 250            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
-250-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-89
+250-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-89
 251            android:configChanges="orientation|keyboardHidden|screenSize"
-251-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-74
+251-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-74
 252            android:theme="@style/Picture.Theme.Translucent" >
-252-->[:library:selector] D:\weather\project_example\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-61
+252-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-61
 253        </activity>
 254
 255        <service
@@ -521,8 +521,8 @@
 278            <intent-filter>
 278-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\a07b687f8305829791393c48bbd92a50\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
 279                <action android:name="android.intent.action.VIEW" />
-279-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:17-69
-279-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:25-66
+279-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:17-69
+279-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:25-66
 280
 281                <category android:name="android.intent.category.DEFAULT" />
 281-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\a07b687f8305829791393c48bbd92a50\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
@@ -556,8 +556,8 @@
 296            <intent-filter>
 296-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\a07b687f8305829791393c48bbd92a50\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
 297                <action android:name="android.intent.action.VIEW" />
-297-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:17-69
-297-->D:\weather\project_example\app\src\main\AndroidManifest.xml:201:25-66
+297-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:17-69
+297-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:201:25-66
 298
 299                <category android:name="android.intent.category.DEFAULT" />
 299-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\a07b687f8305829791393c48bbd92a50\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
@@ -896,21 +896,21 @@
 478-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\46c0c2fde5a6888e636abcec2b933854\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
 479
 480        <activity
-480-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
+480-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
 481            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
-481-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-86
+481-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-86
 482            android:exported="false"
-482-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
+482-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
 483            android:splitName="home" />
-483-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
+483-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
 484        <activity
-484-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
+484-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
 485            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
-485-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-91
+485-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-91
 486            android:exported="false"
-486-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
+486-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
 487            android:splitName="home" />
-487-->[:features:home] D:\weather\project_example\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
+487-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
 488    </application>
 489
 490</manifest>

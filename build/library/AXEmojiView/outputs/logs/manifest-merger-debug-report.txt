@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
+ADDED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
 	package
-		ADDED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml:1:11-43
-		INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-		INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml:1:11-43
+		INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
+		ADDED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml:1:1-2:12
 uses-sdk
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-		INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-		ADDED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
-		INJECTED from D:\weather\project_example\library\AXEmojiView\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+		ADDED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml
+		INJECTED from D:\WeatherAQI\library\AXEmojiView\src\main\AndroidManifest.xml

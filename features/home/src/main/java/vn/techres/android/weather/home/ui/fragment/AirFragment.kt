@@ -8,6 +8,7 @@ import android.view.View
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.google.gson.Gson
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import timber.log.Timber
@@ -19,6 +20,7 @@ import vn.techres.android.weather.cache.ListAddressCache
 import vn.techres.android.weather.home.databinding.FragmentWeatherBinding
 import vn.techres.android.weather.home.ui.adapter.DynamicViewPagerAirAdapter
 import vn.techres.android.weather.model.entity.AddressCity
+import vn.techres.android.weather.model.eventbus.AddListSuggestEvenBus
 import vn.techres.android.weather.model.eventbus.CheckReloadWeatherEventBus
 import vn.techres.android.weather.model.eventbus.UpLoadDataEvenBus
 import vn.techres.android.weather.model.titles
@@ -100,7 +102,6 @@ class AirFragment : AppFragment<HomeActivity>() {
                     val newLocationAddressCity = AddressCity(0, cityName!!, it.longitude, it.latitude)
                     if (titles.isNotEmpty()) {
                         activityViewPagerAdapter!!.updateTab(0,newLocationAddressCity)   // Cập nhật phần tử đầu tiên nếu danh sách không rỗng
-
                     } else {
                         titles.add(newLocationAddressCity) // Nếu danh sách rỗng, thêm vào vị trí đầu tiên
 
@@ -152,12 +153,28 @@ class AirFragment : AppFragment<HomeActivity>() {
             binding.clViewPager2.setViewPager(binding.Viewpager2)
         }
         getLocation()
+
+
+
     }
     @Subscribe(sticky = true)
     fun updateDataLocation(isUpdate: UpLoadDataEvenBus) {
         val index = titles.indexOfFirst { it.id == isUpdate.id }
         binding.Viewpager2.setCurrentItem(index, false)
     }
+
+    @Subscribe(sticky = true)
+    fun addLocationSuggest(isCheck: AddListSuggestEvenBus) {
+        if (isCheck.isCheck) {
+            titles.forEachIndexed { index, it ->
+                if (it.nameCity== HomeActivity.data.nameCity){
+                    binding.Viewpager2.setCurrentItem(index, false)
+                    return
+                }
+            }
+        }
+    }
+
 
 }
 

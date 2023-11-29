@@ -137,7 +137,7 @@ object AppUtils {
 
     @SuppressLint("SimpleDateFormat")
     fun getDayDetailsHours(dt: Long, getHours:Boolean): String {
-        val millis = (dt*1000) + 25200
+        val millis = dt*1000
         val date = Date(millis) // tạo đối tượng Date từ số miliseconds
         val formatter =  SimpleDateFormat(AppConstants.FORMAT_DATE_HOURS)// định dạng ngày tháng năm giờ phút
         return extractTimeFromString(formatter.format(date),getHours)

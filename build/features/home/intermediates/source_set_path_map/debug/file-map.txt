@@ -1,8 +1,8 @@
-vn.techres.android.weather.home-pngs-0 D:\weather\project_example\build\features\home\generated\res\pngs\debug
-vn.techres.android.weather.home-resValues-1 D:\weather\project_example\build\features\home\generated\res\resValues\debug
-vn.techres.android.weather.home-rs-2 D:\weather\project_example\build\features\home\generated\res\rs\debug
-vn.techres.android.weather.home-mergeDebugResources-3 D:\weather\project_example\build\features\home\intermediates\incremental\debug\mergeDebugResources\merged.dir
-vn.techres.android.weather.home-mergeDebugResources-4 D:\weather\project_example\build\features\home\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-vn.techres.android.weather.home-merged_res-5 D:\weather\project_example\build\features\home\intermediates\merged_res\debug
-vn.techres.android.weather.home-debug-6 D:\weather\project_example\features\home\src\debug\res
-vn.techres.android.weather.home-main-7 D:\weather\project_example\features\home\src\main\res
+vn.techres.android.weather.home-pngs-0 D:\WeatherAQI\build\features\home\generated\res\pngs\debug
+vn.techres.android.weather.home-resValues-1 D:\WeatherAQI\build\features\home\generated\res\resValues\debug
+vn.techres.android.weather.home-rs-2 D:\WeatherAQI\build\features\home\generated\res\rs\debug
+vn.techres.android.weather.home-mergeDebugResources-3 D:\WeatherAQI\build\features\home\intermediates\incremental\debug\mergeDebugResources\merged.dir
+vn.techres.android.weather.home-mergeDebugResources-4 D:\WeatherAQI\build\features\home\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+vn.techres.android.weather.home-merged_res-5 D:\WeatherAQI\build\features\home\intermediates\merged_res\debug
+vn.techres.android.weather.home-debug-6 D:\WeatherAQI\features\home\src\debug\res
+vn.techres.android.weather.home-main-7 D:\WeatherAQI\features\home\src\main\res
