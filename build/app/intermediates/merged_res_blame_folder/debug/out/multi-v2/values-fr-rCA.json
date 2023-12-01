@@ -4,23 +4,6 @@
             "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\98ba1bbb9aeefdb544ffb95697fce17b\\transformed\\core-1.13.0-alpha01\\res\\values-fr-rCA\\values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,354,456,560,664,778",
-                        "endColumns": "97,101,98,101,103,103,113,100",
-                        "endOffsets": "148,250,349,451,555,659,773,874"
-                    },
-                    "to": {
-                        "startLines": "53,54,55,56,57,58,59,231",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "4106,4204,4306,4405,4507,4611,4715,20688",
-                        "endColumns": "97,101,98,101,103,103,113,100",
-                        "endOffsets": "4199,4301,4400,4502,4606,4710,4824,20784"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\37cdba8c8817685298084f04c7024452\\transformed\\jetified-exoplayer-ui-2.17.1\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,11,15,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
@@ -158,6 +141,23 @@
                         "startOffsets": "19875,19957,20027,20121,20192,20242,20313,20411",
                         "endColumns": "81,69,93,70,49,70,97,54",
                         "endOffsets": "19952,20022,20116,20187,20237,20308,20406,20461"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8c71e6999b60fac9c862ab168e5aa160\\transformed\\core-1.13.0-alpha02\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,354,456,560,664,778",
+                        "endColumns": "97,101,98,101,103,103,113,100",
+                        "endOffsets": "148,250,349,451,555,659,773,874"
+                    },
+                    "to": {
+                        "startLines": "53,54,55,56,57,58,59,231",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "4106,4204,4306,4405,4507,4611,4715,20688",
+                        "endColumns": "97,101,98,101,103,103,113,100",
+                        "endOffsets": "4199,4301,4400,4502,4606,4710,4824,20784"
                     }
                 },
                 {

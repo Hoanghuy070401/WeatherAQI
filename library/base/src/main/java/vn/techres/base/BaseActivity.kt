@@ -111,7 +111,7 @@ abstract class BaseActivity : AppCompatActivity(), ActivityAction, ToastAction,
         return super<AppCompatActivity>.startActivity(intent)
     }
 
-    override fun dispatchKeyEvent(event: KeyEvent?): Boolean {
+    override fun dispatchKeyEvent(event: KeyEvent): Boolean {
         val fragments: MutableList<Fragment?> = supportFragmentManager.fragments
         for (fragment: Fragment? in fragments) {
             if (fragment !is BaseFragment<*> || fragment.lifecycle.currentState != Lifecycle.State.RESUMED) {

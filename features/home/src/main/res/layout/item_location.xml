@@ -15,24 +15,33 @@
         android:id="@+id/llDelete"
         android:layout_width="@dimen/dp_72"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_border_gray_300_8px"
-        android:backgroundTint="@color/red_200"
-        android:paddingVertical="@dimen/dp_2"
+        android:paddingVertical="@dimen/dp_8"
         android:gravity="center"
         android:orientation="vertical">
-
-        <ImageView
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_circle_orange"
+            android:backgroundTint="@color/red_200"
+            android:paddingHorizontal="@dimen/dp_16"
+            android:paddingVertical="@dimen/dp_8"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/dp_4"
-            android:background="@drawable/ic_trash" />
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@drawable/ic_trash"
+                android:backgroundTint="@color/white"/>
 
-        <vn.techres.android.weather.widget.AppTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/delete"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_12" />
+            <vn.techres.android.weather.widget.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
     </LinearLayout>
     <RelativeLayout
         android:id="@+id/rlBgItem"

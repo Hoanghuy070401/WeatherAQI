@@ -18,6 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.gson.Gson
 import com.hjq.http.EasyHttp
 import com.hjq.http.listener.HttpCallback
+import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import timber.log.Timber
 import vn.techres.base.PagerAdapter
@@ -50,6 +51,7 @@ class HomeActivity : AppActivity() {
     private var currentPage = 2
     private var twice = false
 
+
     companion object {
         var data = AddressCity()
     }
@@ -81,7 +83,6 @@ class HomeActivity : AppActivity() {
             titles.clear()
         }
         titles.addAll(ListAddressCache.getAllLocations())
-        Timber.tag("list000").e("${titles.size}")
         val fragments: List<Fragment>
         fragments = listOf(
             NoSupportFragment(),
@@ -90,6 +91,7 @@ class HomeActivity : AppActivity() {
             NoSupportFragment(),
             Class.forName(ModuleClassConstants.SETTING_FRAGMENT).newInstance() as AppFragment<*>
         )
+
 
 
         val adapter = PagerAdapter(this, fragments)
@@ -157,14 +159,13 @@ class HomeActivity : AppActivity() {
             data = Gson().fromJson(
                 intent.getStringExtra(AppConstants.DATA_LIST), AddressCity::class.java
             )
-            titles.forEach {
-                if (it.id!= data.id){
-                    titles.add(data)
-                }else{
-                    ///
-                }
+            val isDataInList = titles.any { it.nameCity == data.nameCity }
+            if (!isDataInList) {
+                val addData = AddressCity(titles.size.toLong(), data.nameCity, data.lon, data.lat)
+                titles.add(addData)
+            } else {
+                //
             }
-
         }
     }
 

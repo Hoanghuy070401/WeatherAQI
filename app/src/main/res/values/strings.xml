@@ -56,7 +56,7 @@
     <string name="thursday">Thứ 5</string>
     <string name="friday">Thứ 6</string>
     <string name="saturday">Thứ 7</string>
-    <string name="sunday">Chủ nhật</string>
+    <string name="sunday">Chủ Nhật</string>
     <string name="today">Hôm nay</string>
     <string name="yesterday">Hôm qua</string>
     <string name="this_week">Tuần này</string>
@@ -205,11 +205,12 @@
     <string name="title_home">Module Home</string>
     <string name="delete">Xóa</string>
     <string name="oC">\u2103</string>
-    <string name="oF">°F</string>
+    <string name="oF"> °F</string>
     <string name="temperate_max">Cao nhất</string>
     <string name="temperate_min">Thấp nhất</string>
     <string name="mm">mm</string>
     <string name="persent">%</string>
+    <string name="sunset_sunrise_location">Thời gian mặt trời mọc và mặt trời lặn đang được tính theo múi giờ địa phương </string>
 </resources>
 
 

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
@@ -31,6 +32,9 @@ public final class ActivitySearchBinding implements ViewBinding {
   public final AppTextView noData;
 
   @NonNull
+  public final ProgressBar pgbSearch;
+
+  @NonNull
   public final RecyclerView rcvListLocation;
 
   @NonNull
@@ -41,12 +45,13 @@ public final class ActivitySearchBinding implements ViewBinding {
 
   private ActivitySearchBinding(@NonNull LinearLayout rootView, @NonNull SearchView acSearch,
       @NonNull LayoutNewFindLocationLayoutBinding ilLayoutFind, @NonNull AppTextView noData,
-      @NonNull RecyclerView rcvListLocation, @NonNull RecyclerView rcvSuggest,
-      @NonNull AppTextView tvCancel) {
+      @NonNull ProgressBar pgbSearch, @NonNull RecyclerView rcvListLocation,
+      @NonNull RecyclerView rcvSuggest, @NonNull AppTextView tvCancel) {
     this.rootView = rootView;
     this.acSearch = acSearch;
     this.ilLayoutFind = ilLayoutFind;
     this.noData = noData;
+    this.pgbSearch = pgbSearch;
     this.rcvListLocation = rcvListLocation;
     this.rcvSuggest = rcvSuggest;
     this.tvCancel = tvCancel;
@@ -98,6 +103,12 @@ public final class ActivitySearchBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.pgbSearch;
+      ProgressBar pgbSearch = ViewBindings.findChildViewById(rootView, id);
+      if (pgbSearch == null) {
+        break missingId;
+      }
+
       id = R.id.rcvListLocation;
       RecyclerView rcvListLocation = ViewBindings.findChildViewById(rootView, id);
       if (rcvListLocation == null) {
@@ -117,7 +128,7 @@ public final class ActivitySearchBinding implements ViewBinding {
       }
 
       return new ActivitySearchBinding((LinearLayout) rootView, acSearch, binding_ilLayoutFind,
-          noData, rcvListLocation, rcvSuggest, tvCancel);
+          noData, pgbSearch, rcvListLocation, rcvSuggest, tvCancel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

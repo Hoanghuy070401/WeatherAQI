@@ -4,23 +4,6 @@
             "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-fr/values-fr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\98ba1bbb9aeefdb544ffb95697fce17b\\transformed\\core-1.13.0-alpha01\\res\\values-fr\\values-fr.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,354,456,560,664,782",
-                        "endColumns": "97,101,98,101,103,103,117,100",
-                        "endOffsets": "148,250,349,451,555,659,777,878"
-                    },
-                    "to": {
-                        "startLines": "53,54,55,56,57,58,59,231",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "4081,4179,4281,4380,4482,4586,4690,20659",
-                        "endColumns": "97,101,98,101,103,103,117,100",
-                        "endOffsets": "4174,4276,4375,4477,4581,4685,4803,20755"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\3ff8daeb14d597990e59f92185cbecf9\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-fr\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -141,6 +124,23 @@
                         "startOffsets": "7641,12130,12232,12351",
                         "endColumns": "106,101,118,104",
                         "endOffsets": "7743,12227,12346,12451"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8c71e6999b60fac9c862ab168e5aa160\\transformed\\core-1.13.0-alpha02\\res\\values-fr\\values-fr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,354,456,560,664,782",
+                        "endColumns": "97,101,98,101,103,103,117,100",
+                        "endOffsets": "148,250,349,451,555,659,777,878"
+                    },
+                    "to": {
+                        "startLines": "53,54,55,56,57,58,59,231",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "4081,4179,4281,4380,4482,4586,4690,20659",
+                        "endColumns": "97,101,98,101,103,103,117,100",
+                        "endOffsets": "4174,4276,4375,4477,4581,4685,4803,20755"
                     }
                 },
                 {

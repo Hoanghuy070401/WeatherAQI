@@ -30,10 +30,13 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
   public final LinearLayout llAdd;
 
   @NonNull
+  public final LinearLayout llAddress;
+
+  @NonNull
   public final RecyclerView rcvListFiveDays;
 
   @NonNull
-  public final RelativeLayout rlHeader;
+  public final LinearLayout rlHeader;
 
   @NonNull
   public final AppTextView tvAdd;
@@ -44,18 +47,24 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
   @NonNull
   public final AppTextView tvDetailCity;
 
+  @NonNull
+  public final View vLine;
+
   private LayoutNewFindLocationLayoutBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView imvAdd, @NonNull LinearLayout llAdd, @NonNull RecyclerView rcvListFiveDays,
-      @NonNull RelativeLayout rlHeader, @NonNull AppTextView tvAdd,
-      @NonNull AppTextViewBold tvCityName, @NonNull AppTextView tvDetailCity) {
+      @NonNull ImageView imvAdd, @NonNull LinearLayout llAdd, @NonNull LinearLayout llAddress,
+      @NonNull RecyclerView rcvListFiveDays, @NonNull LinearLayout rlHeader,
+      @NonNull AppTextView tvAdd, @NonNull AppTextViewBold tvCityName,
+      @NonNull AppTextView tvDetailCity, @NonNull View vLine) {
     this.rootView = rootView;
     this.imvAdd = imvAdd;
     this.llAdd = llAdd;
+    this.llAddress = llAddress;
     this.rcvListFiveDays = rcvListFiveDays;
     this.rlHeader = rlHeader;
     this.tvAdd = tvAdd;
     this.tvCityName = tvCityName;
     this.tvDetailCity = tvDetailCity;
+    this.vLine = vLine;
   }
 
   @Override
@@ -97,6 +106,12 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.llAddress;
+      LinearLayout llAddress = ViewBindings.findChildViewById(rootView, id);
+      if (llAddress == null) {
+        break missingId;
+      }
+
       id = R.id.rcvListFiveDays;
       RecyclerView rcvListFiveDays = ViewBindings.findChildViewById(rootView, id);
       if (rcvListFiveDays == null) {
@@ -104,7 +119,7 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
       }
 
       id = R.id.rlHeader;
-      RelativeLayout rlHeader = ViewBindings.findChildViewById(rootView, id);
+      LinearLayout rlHeader = ViewBindings.findChildViewById(rootView, id);
       if (rlHeader == null) {
         break missingId;
       }
@@ -127,8 +142,14 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.vLine;
+      View vLine = ViewBindings.findChildViewById(rootView, id);
+      if (vLine == null) {
+        break missingId;
+      }
+
       return new LayoutNewFindLocationLayoutBinding((RelativeLayout) rootView, imvAdd, llAdd,
-          rcvListFiveDays, rlHeader, tvAdd, tvCityName, tvDetailCity);
+          llAddress, rcvListFiveDays, rlHeader, tvAdd, tvCityName, tvDetailCity, vLine);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

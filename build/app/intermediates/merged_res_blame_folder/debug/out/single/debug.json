@@ -164,12 +164,12 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_info_app.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\anim_progress_indeterminate_material.xml.flat",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\anim\\progress_indeterminate_material.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_rank_bronze.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_rank_bronze.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\anim_progress_indeterminate_material.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\anim\\progress_indeterminate_material.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_block_user.xml.flat",
@@ -360,6 +360,10 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_sex.xml"
     },
     {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_rain_snow.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_rain_snow.xml"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_pressure.png.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\pressure.png"
     },
@@ -386,10 +390,6 @@
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_empty.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_empty.xml"
-    },
-    {
-        "merged": "vn.techres.android.weather.app-merged_res-91:/drawable_ic_rain_snow.xml.flat",
-        "source": "vn.techres.android.weather.app-main-83:/drawable/ic_rain_snow.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_bg_radius_select.xml.flat",
@@ -746,6 +746,10 @@
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_gift.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_gift.xml"
+    },
+    {
+        "merged": "vn.techres.android.weather.app-merged_res-91:/layout_fragment_air.xml.flat",
+        "source": "vn.techres.android.weather.app-main-83:/layout/fragment_air.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_splash_background.xml.flat",
@@ -1260,10 +1264,6 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_user_setting.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-merged_res-91:/drawable_ic_cloud_snow.xml.flat",
-        "source": "vn.techres.android.weather.app-main-83:/drawable/ic_cloud_snow.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_piggy_bank.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_piggy_bank.xml"
     },
@@ -1278,6 +1278,10 @@
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_templete.png.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\templete.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_cloud_snow.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\ic_cloud_snow.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_delete_chat.xml.flat",
@@ -1598,6 +1602,10 @@
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_custom_progress_bar.xml.flat",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-83:\\drawable\\custom_progress_bar.xml"
+    },
+    {
+        "merged": "vn.techres.android.weather.app-merged_res-91:/layout_fragment_weather_map.xml.flat",
+        "source": "vn.techres.android.weather.app-main-83:/layout/fragment_weather_map.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-91:\\drawable_ic_setting_location.xml.flat",

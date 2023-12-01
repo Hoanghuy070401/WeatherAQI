@@ -4,23 +4,6 @@
             "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-af/values-af.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\98ba1bbb9aeefdb544ffb95697fce17b\\transformed\\core-1.13.0-alpha01\\res\\values-af\\values-af.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,353,451,558,667,787",
-                        "endColumns": "97,101,97,97,106,108,119,100",
-                        "endOffsets": "148,250,348,446,553,662,782,883"
-                    },
-                    "to": {
-                        "startLines": "53,54,55,56,57,58,59,229",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3987,4085,4187,4285,4383,4490,4599,19437",
-                        "endColumns": "97,101,97,97,106,108,119,100",
-                        "endOffsets": "4080,4182,4280,4378,4485,4594,4714,19533"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\b521659edeb24c2a03fc1a84f86a0ee9\\transformed\\jetified-materialdatetimepicker-4.2.3\\res\\values-af\\values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
@@ -35,6 +18,23 @@
                         "startOffsets": "14530,14591,14657,14764,14877,14957,15063,15180,15291,15383,15468,15558,15643",
                         "endColumns": "60,65,106,112,79,105,116,110,91,84,89,84,94",
                         "endOffsets": "14586,14652,14759,14872,14952,15058,15175,15286,15378,15463,15553,15638,15733"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8c71e6999b60fac9c862ab168e5aa160\\transformed\\core-1.13.0-alpha02\\res\\values-af\\values-af.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,353,451,558,667,787",
+                        "endColumns": "97,101,97,97,106,108,119,100",
+                        "endOffsets": "148,250,348,446,553,662,782,883"
+                    },
+                    "to": {
+                        "startLines": "53,54,55,56,57,58,59,229",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3987,4085,4187,4285,4383,4490,4599,19437",
+                        "endColumns": "97,101,97,97,106,108,119,100",
+                        "endOffsets": "4080,4182,4280,4378,4485,4594,4714,19533"
                     }
                 },
                 {

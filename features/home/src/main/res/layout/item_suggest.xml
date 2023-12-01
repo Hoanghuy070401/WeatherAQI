@@ -9,9 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_8"
-        android:layout_marginStart="@dimen/dp_12"
-        android:background="@drawable/button_blue_selector"
-        android:padding="@dimen/dp_4">
+        android:layout_marginStart="@dimen/dp_16"
+        android:background="@drawable/bg_border_gray_300"
+        android:backgroundTint="@color/gray_300"
+        android:padding="@dimen/dp_8">
 
         <vn.techres.android.weather.widget.AppTextView
             android:id="@+id/tvName"

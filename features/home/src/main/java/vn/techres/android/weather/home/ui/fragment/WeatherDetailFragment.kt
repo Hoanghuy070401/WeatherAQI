@@ -1,6 +1,7 @@
 package vn.techres.android.weather.home.ui.fragment
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.util.Log
 import android.view.View
 import com.hjq.http.EasyHttp
@@ -9,17 +10,16 @@ import org.greenrobot.eventbus.Subscribe
 import timber.log.Timber
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppFragment
-import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.home.databinding.LayoutDataWeatherBinding
-import vn.techres.android.weather.model.MY_LOG
 import vn.techres.android.weather.home.ui.adapter.DynamicViewPagerAdapter
 import vn.techres.android.weather.home.ui.fragment.WeatherFragment.Companion.activityViewPagerAdapter
-import vn.techres.android.weather.model.titles
-import vn.techres.android.weather.model.titlesOrdinals
 import vn.techres.android.weather.http.api.CurrentWeatherApi
+import vn.techres.android.weather.model.MY_LOG
 import vn.techres.android.weather.model.entity.AddressCity
 import vn.techres.android.weather.model.entity.modelAirWeather.WeatherNow
 import vn.techres.android.weather.model.eventbus.UpdateDataEventBus
+import vn.techres.android.weather.model.titles
+import vn.techres.android.weather.model.titlesOrdinals
 import vn.techres.android.weather.ui.activity.HomeActivity
 import vn.techres.android.weather.utils.AppUtils
 
@@ -75,10 +75,13 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
                 @SuppressLint("SetTextI18n")
                 override fun onSucceed(result: WeatherNow) {
                     if (result.cod == 200) {
-                        binding.tvTemperature.text =
-                            AppUtils.roundBigDecimal(result.main.temp.toBigDecimal()).toString()+getString(R.string.oC)
-                        binding.tvTemperatureName.text = name
-                        AppUtils.checkWeather(result.weather[0].id,binding.rlBgStyle,binding.weatherView,requireActivity())
+                        checkIfFragmentAttached{
+                            binding.tvTemperature.text =
+                                AppUtils.roundBigDecimal(result.main.temp.toBigDecimal()).toString()+getString(R.string.oC)
+                            binding.tvTemperatureName.text = name
+                            AppUtils.checkWeather(result.weather[0].id,binding.rlBgStyle,binding.weatherView,this)
+                        }
+
                     } else {
                         toast(getString(R.string.no_connect1))
                     }
@@ -98,6 +101,12 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
         }
     }
 
+
+    fun checkIfFragmentAttached(operation: Context.() -> Unit) {
+        if (isAdded && context != null) {
+            operation(requireContext())
+        }
+    }
 
 
 }

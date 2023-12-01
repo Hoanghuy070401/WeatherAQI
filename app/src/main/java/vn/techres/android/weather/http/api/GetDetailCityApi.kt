@@ -11,6 +11,9 @@ class GetDetailCityApi:BaseApi() {
     @HttpRename("id")
     var idCity = ""
 
+    @HttpRename("lang")
+    var lang = "vi"
+
     @HttpRename("apiKey")
     var keyApi = ApiApplicationRouters.keyApiCity
 

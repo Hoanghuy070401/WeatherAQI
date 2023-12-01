@@ -257,15 +257,15 @@
 132-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
 133
 134    <permission
-134-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:22:5-24:47
+134-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8c71e6999b60fac9c862ab168e5aa160\transformed\core-1.13.0-alpha02\AndroidManifest.xml:22:5-24:47
 135        android:name="vn.techres.android.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-135-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:23:9-81
+135-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8c71e6999b60fac9c862ab168e5aa160\transformed\core-1.13.0-alpha02\AndroidManifest.xml:23:9-81
 136        android:protectionLevel="signature" />
-136-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:24:9-44
+136-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8c71e6999b60fac9c862ab168e5aa160\transformed\core-1.13.0-alpha02\AndroidManifest.xml:24:9-44
 137
 138    <uses-permission android:name="vn.techres.android.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-138-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:26:5-97
-138-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:26:22-94
+138-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8c71e6999b60fac9c862ab168e5aa160\transformed\core-1.13.0-alpha02\AndroidManifest.xml:26:5-97
+138-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8c71e6999b60fac9c862ab168e5aa160\transformed\core-1.13.0-alpha02\AndroidManifest.xml:26:22-94
 139
 140    <application
 140-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:124:5-210:19
@@ -274,7 +274,7 @@
 142        android:allowBackup="true"
 142-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:126:9-35
 143        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-143-->[androidx.core:core:1.13.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-3\98ba1bbb9aeefdb544ffb95697fce17b\transformed\core-1.13.0-alpha01\AndroidManifest.xml:28:18-86
+143-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8c71e6999b60fac9c862ab168e5aa160\transformed\core-1.13.0-alpha02\AndroidManifest.xml:28:18-86
 144        android:debuggable="true"
 144-->[:features:map] D:\WeatherAQI\build\features\map\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
 145        android:extractNativeLibs="false"
@@ -710,75 +710,75 @@
 379            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 379-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\e00f033b206aadf8b63f805ce7ba26ea\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 380
-381        <provider
-381-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-382            android:name="androidx.startup.InitializationProvider"
-382-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-383            android:authorities="vn.techres.android.weather.androidx-startup"
-383-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-384            android:exported="false" >
-384-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-385            <meta-data
-385-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-386                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-386-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-387                android:value="androidx.startup" />
-387-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-388            <meta-data
-388-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ADMIN\.gradle\caches\transforms-3\7648ca90ab5d25e611fa68418a00c82e\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-389                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-389-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ADMIN\.gradle\caches\transforms-3\7648ca90ab5d25e611fa68418a00c82e\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-390                android:value="androidx.startup" />
-390-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ADMIN\.gradle\caches\transforms-3\7648ca90ab5d25e611fa68418a00c82e\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-391            <meta-data
-391-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-392                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-392-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-393                android:value="androidx.startup" />
-393-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-394        </provider>
-395
-396        <receiver
-396-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
-397            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-397-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
-398            android:enabled="true"
-398-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
-399            android:exported="false" >
-399-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
-400        </receiver>
-401
-402        <service
-402-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
-403            android:name="com.google.android.gms.measurement.AppMeasurementService"
-403-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
-404            android:enabled="true"
-404-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
-405            android:exported="false" />
-405-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
-406        <service
-406-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
-407            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-407-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
-408            android:enabled="true"
-408-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
-409            android:exported="false"
-409-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
-410            android:permission="android.permission.BIND_JOB_SERVICE" />
-410-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
-411
-412        <uses-library
-412-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-413            android:name="androidx.window.extensions"
-413-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-414            android:required="false" />
-414-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-415        <uses-library
-415-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-416            android:name="androidx.window.sidecar"
-416-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-417            android:required="false" />
-417-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+381        <uses-library
+381-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+382            android:name="androidx.window.extensions"
+382-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+383            android:required="false" />
+383-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+384        <uses-library
+384-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+385            android:name="androidx.window.sidecar"
+385-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+386            android:required="false" />
+386-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\8b178677c07f9bf84e47e1afa0153ee2\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+387
+388        <provider
+388-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+389            android:name="androidx.startup.InitializationProvider"
+389-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+390            android:authorities="vn.techres.android.weather.androidx-startup"
+390-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+391            android:exported="false" >
+391-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+392            <meta-data
+392-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+393                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+393-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+394                android:value="androidx.startup" />
+394-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\7f406746cbedd1245a557bcf95b4f356\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+395            <meta-data
+395-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\d251c1b200f1a2a55f455e27cbbe8a82\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+396                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+396-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\d251c1b200f1a2a55f455e27cbbe8a82\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+397                android:value="androidx.startup" />
+397-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\d251c1b200f1a2a55f455e27cbbe8a82\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+398            <meta-data
+398-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+399                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+399-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+400                android:value="androidx.startup" />
+400-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+401        </provider>
+402
+403        <receiver
+403-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+404            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+404-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+405            android:enabled="true"
+405-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+406            android:exported="false" >
+406-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+407        </receiver>
+408
+409        <service
+409-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+410            android:name="com.google.android.gms.measurement.AppMeasurementService"
+410-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+411            android:enabled="true"
+411-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+412            android:exported="false" />
+412-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+413        <service
+413-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+414            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+414-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+415            android:enabled="true"
+415-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+416            android:exported="false"
+416-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+417            android:permission="android.permission.BIND_JOB_SERVICE" />
+417-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\e4ddfbfc0050f72161f3330166a15002\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
 418
 419        <receiver
 419-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\41833d68d8f9b588402f974d682fd61c\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20

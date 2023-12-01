@@ -135,6 +135,14 @@ object AppUtils {
         return formatter.format(date)
     }
 
+    fun getDayDetails(dt: Long): String {
+//        val tz = TimeZone.getDefault()
+        val millis =  (dt*1000) + 25200
+        val date = Date(millis) // tạo đối tượng Date từ số miliseconds
+        val formatter= SimpleDateFormat(AppConstants.FORMAT_DATE_NOT_YEAR)
+        return formatter.format(date)
+    }
+
     @SuppressLint("SimpleDateFormat")
     fun getDayDetailsHours(dt: Long, getHours:Boolean): String {
         val millis = dt*1000
@@ -370,7 +378,7 @@ object AppUtils {
 
     fun convertRainPercent(pop:Double):String{
         val popPersent = roundNumber(pop*100.0)
-        return "${popPersent}%"
+        return "${popPersent} %"
     }
     ////////////////////////////////////////////////////
 

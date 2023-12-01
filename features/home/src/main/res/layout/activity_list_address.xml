@@ -16,7 +16,6 @@
     <LinearLayout
         android:id="@+id/llSearch"
         android:layout_marginTop="@dimen/dp_16"
-        android:layout_marginBottom="@dimen/dp_8"
         android:background="@drawable/bg_border_gray_300"
         android:backgroundTint="@color/gray_300"
         android:layout_below="@+id/ttBar"

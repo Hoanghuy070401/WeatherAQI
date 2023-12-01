@@ -43,6 +43,7 @@ class ListAddressActivity : AppActivity(), ItemClickView {
         adapterLocation = ListMyLocationAdapter(this)
         adapterLocation.setData(listAirWeather)
         adapterLocation.itemClickListener = this
+        adapterLocation.itemClickListenerRemove = this
         AppUtils.initRecyclerViewVertical(binding.rcvListLocation, adapterLocation)
 
     }
@@ -65,6 +66,7 @@ class ListAddressActivity : AppActivity(), ItemClickView {
     }
 
     private fun getData(item: AddressCity) {
+        binding.llSearch.isEnabled = false
         EasyHttp.get(this).api(CurrentWeatherApi.param(item.lat, item.lon, AppUtils.returnUnits(2)))
             .request(object : HttpCallback<WeatherNow>(this) {
                 override fun onSucceed(result: WeatherNow) {
@@ -80,6 +82,7 @@ class ListAddressActivity : AppActivity(), ItemClickView {
                                     listAirWeather.add(combinedModel)
                                     listAirWeather.sortBy { it.id }
                                     adapterLocation.notifyDataSetChanged()
+                                    binding.llSearch.isEnabled = true
                                 }
                             })
                     } else {
@@ -119,8 +122,6 @@ class ListAddressActivity : AppActivity(), ItemClickView {
         }
         countOnResume++
         ListAddressCache.saveAllLocations(titles)
-        Timber.tag("list0001").e("${titles.size}")
-        Timber.tag("list0003").e("${ListAddressCache.getAllLocations().size}")
     }
 
 }

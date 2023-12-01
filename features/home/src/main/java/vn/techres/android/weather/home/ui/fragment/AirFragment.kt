@@ -22,6 +22,7 @@ import vn.techres.android.weather.home.ui.adapter.DynamicViewPagerAirAdapter
 import vn.techres.android.weather.model.entity.AddressCity
 import vn.techres.android.weather.model.eventbus.AddListSuggestEvenBus
 import vn.techres.android.weather.model.eventbus.CheckReloadWeatherEventBus
+import vn.techres.android.weather.model.eventbus.EvenBusSetPage
 import vn.techres.android.weather.model.eventbus.UpLoadDataEvenBus
 import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.model.titlesOrdinals
@@ -66,7 +67,7 @@ class AirFragment : AppFragment<HomeActivity>() {
     }
     @SuppressLint("UseCompatLoadingForDrawables")
     private fun setUpTabs() {
-        activityViewPagerAdapter = DynamicViewPagerAirAdapter(requireActivity())
+        activityViewPagerAdapter = DynamicViewPagerAirAdapter(childFragmentManager,lifecycle)
         binding.Viewpager2.adapter = activityViewPagerAdapter
         binding.Viewpager2.setPageTransformer(FadePageTransformerViewPage2())
         binding.clViewPager2.setViewPager(binding.Viewpager2)
@@ -153,7 +154,13 @@ class AirFragment : AppFragment<HomeActivity>() {
             binding.clViewPager2.setViewPager(binding.Viewpager2)
         }
         getLocation()
-
+//            titles.forEachIndexed { index, it ->
+//                if (it.nameCity== HomeActivity.data.nameCity){
+//                    binding.Viewpager2.setCurrentItem(index, true)
+//                }else{
+//                    binding.Viewpager2.setCurrentItem(titles.size-1, false)
+//                }
+//            }
 
 
     }
@@ -167,9 +174,11 @@ class AirFragment : AppFragment<HomeActivity>() {
     fun addLocationSuggest(isCheck: AddListSuggestEvenBus) {
         if (isCheck.isCheck) {
             titles.forEachIndexed { index, it ->
-                if (it.nameCity== HomeActivity.data.nameCity){
+                if (it.nameCity== isCheck.data.nameCity){
                     binding.Viewpager2.setCurrentItem(index, false)
                     return
+                }else{
+                    binding.Viewpager2.setCurrentItem(titles.size, false)
                 }
             }
         }

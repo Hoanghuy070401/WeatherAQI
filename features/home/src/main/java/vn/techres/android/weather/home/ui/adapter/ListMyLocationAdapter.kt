@@ -11,6 +11,7 @@ import vn.techres.android.weather.home.databinding.ItemLocationBinding
 import vn.techres.android.weather.model.entity.modelAirWeather.ListAirWeather
 import vn.techres.android.weather.home.model.interfaces.ItemClickView
 import vn.techres.android.weather.model.titles
+import vn.techres.android.weather.other.handlerPostDelayed
 import vn.techres.android.weather.utils.AppUtils
 import vn.techres.android.weather.utils.AppUtils.hide
 import vn.techres.android.weather.utils.AppUtils.show
@@ -27,6 +28,43 @@ class ListMyLocationAdapter(context:Context):AppAdapter<ListAirWeather>(context)
         return ViewHolder(binding)
     }
     inner class ViewHolder(private val binding: ItemLocationBinding):AppViewHolder(binding.root){
+        private var isSwiping = false
+        init {
+            binding.swParent.addSwipeListener(object : SwipeLayout.SwipeListener{
+                override fun onStartOpen(layout: SwipeLayout?) {
+                    isSwiping = true
+                    binding.root.isClickable = false
+                }
+
+                override fun onOpen(layout: SwipeLayout?) {
+                    isSwiping = true
+                }
+
+                override fun onStartClose(layout: SwipeLayout?) {
+                    isSwiping = false
+                }
+
+                override fun onClose(layout: SwipeLayout?) {
+                    isSwiping = false
+                    handlerPostDelayed(1000) {
+                        binding.root.isClickable = true
+                    }
+                }
+
+                override fun onUpdate(layout: SwipeLayout?, leftOffset: Int, topOffset: Int) {
+                    //
+                }
+
+                override fun onHandRelease(layout: SwipeLayout?, xvel: Float, yvel: Float) {
+                   //
+                }
+
+            })
+            binding.llDelete.clickWithDebounce(500){
+                val position = bindingAdapterPosition
+                itemClickListenerRemove?.onClickButtonRemove(position)
+            }
+        }
         @SuppressLint("SetTextI18n")
         override fun onBindView(position: Int) {
             val data = getItem(position)
@@ -55,9 +93,7 @@ class ListMyLocationAdapter(context:Context):AppAdapter<ListAirWeather>(context)
                 R.string.oC)
             binding.tvFeelLike.text = AppUtils.roundBigDecimal(data.listWeather.main.feelsLike.toBigDecimal()).toString()+getString(
                 R.string.oC)
-            binding.llDelete.clickWithDebounce(500){
-                itemClickListenerRemove?.onClickButtonRemove(position)
-            }
+
             binding.root.clickWithDebounce(500){
                 itemClickListener?.onClickItem(position)
             }

@@ -1,6 +1,7 @@
 package vn.techres.android.weather.home.ui.fragment
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.util.Log
 import android.view.View
 import com.hjq.http.EasyHttp
@@ -82,15 +83,19 @@ class AirDetailFragment : AppFragment<HomeActivity>() {
                 @SuppressLint("SetTextI18n")
                 override fun onSucceed(result: WeatherNow) {
                     if (result.cod == 200) {
-                        binding.tvTemperature.text =
-                            AppUtils.roundBigDecimal(result.main.temp.toBigDecimal()).toString()
-                        binding.tvCityName.text = name
-                        AppUtils.checkWeather(
-                            result.weather[0].id,
-                            binding.rlBgStyle,
-                            binding.weatherView,
-                            requireActivity()
-                        )
+                        checkIfFragmentAttached{
+                            binding.tvTemperature.text =
+                                AppUtils.roundBigDecimal(result.main.temp.toBigDecimal()).toString()
+                            binding.tvCityName.text = name
+
+                            AppUtils.checkWeather(
+                                result.weather[0].id,
+                                binding.rlBgStyle,
+                                binding.weatherView,
+                                this
+                            )
+                        }
+
                     } else {
                         toast(getString(R.string.no_connect1))
                     }
@@ -104,6 +109,11 @@ class AirDetailFragment : AppFragment<HomeActivity>() {
             setData(isUpdate.isLocation)
         }else{
             ///
+        }
+    }
+    fun checkIfFragmentAttached(operation: Context.() -> Unit) {
+        if (isAdded && context != null) {
+            operation(requireContext())
         }
     }
 }

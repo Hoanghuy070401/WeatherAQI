@@ -11,6 +11,7 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
+import timber.log.Timber
 import vn.techres.android.weather.app.AppFragment
 import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.R
@@ -22,6 +23,7 @@ import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.model.titlesOrdinals
 import vn.techres.android.weather.model.entity.AddressCity
 import vn.techres.android.weather.model.eventbus.AddListSuggestEvenBus
+import vn.techres.android.weather.model.eventbus.EvenBusSetPage
 import vn.techres.android.weather.model.eventbus.UpLoadDataEvenBus
 import vn.techres.android.weather.model.eventbus.UpdateDataEventBus
 import vn.techres.android.weather.ui.activity.HomeActivity
@@ -59,7 +61,7 @@ class WeatherFragment : AppFragment<HomeActivity>() {
 
     @SuppressLint("UseCompatLoadingForDrawables")
     private fun setUpTabs() {
-        activityViewPagerAdapter = DynamicViewPagerAdapter(requireActivity())
+        activityViewPagerAdapter = DynamicViewPagerAdapter(childFragmentManager,lifecycle)
         binding.Viewpager2.adapter = activityViewPagerAdapter
         binding.Viewpager2.setPageTransformer(FadePageTransformerViewPage2())
         binding.clViewPager2.setViewPager(binding.Viewpager2)
@@ -141,6 +143,15 @@ class WeatherFragment : AppFragment<HomeActivity>() {
             binding.clViewPager2.setViewPager(binding.Viewpager2)
         }
         getLocation()
+//            titles.forEachIndexed { index, it ->
+//                if (it.nameCity== HomeActivity.data.nameCity){
+//                    binding.Viewpager2.setCurrentItem(index, true)
+//                }else{
+//                    binding.Viewpager2.setCurrentItem(titles.size-1, false)
+//                }
+//                return
+//            }
+
     }
 
     @Subscribe(sticky = true)
@@ -152,12 +163,16 @@ class WeatherFragment : AppFragment<HomeActivity>() {
     @Subscribe(sticky = true)
     fun addLocationSuggest(isCheck: AddListSuggestEvenBus) {
         if (isCheck.isCheck) {
-            titles.forEachIndexed { index, it ->
-                if (it.nameCity== HomeActivity.data.nameCity){
-                    binding.Viewpager2.setCurrentItem(index, false)
-                    return
+                titles.forEachIndexed { index, it ->
+                    if (it.nameCity== isCheck.data.nameCity){
+                        binding.Viewpager2.setCurrentItem(index, false)
+                        return
+                    }else{
+                        binding.Viewpager2.setCurrentItem(titles.size, false)
+                    }
                 }
-            }
+
         }
     }
+
 }

@@ -6,6 +6,7 @@ import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
@@ -31,19 +32,25 @@ class ListDaysWeatherAdapter(context: Context):AppAdapter<List>(context) {
         return ViewHolder(binding)
     }
     inner class ViewHolder(private val binding: ItemFiveDayBinding):AppViewHolder(binding.root){
-        @SuppressLint("SetTextI18n")
+        @SuppressLint("SetTextI18n", "ResourceAsColor")
         @RequiresApi(Build.VERSION_CODES.O)
         override fun onBindView(position: Int) {
             val item = getItem(position)
             val day = AppUtils.getDayDetails(item.dt,false)
             binding.tvDay.text= AppUtils.convertDateToCustomString(day)
+            binding.tvDayNumber.text=AppUtils.getDayDetails(item.dt)
+            if (binding.tvDay.text.toString().trim()==getString(R.string.today)){
+                binding.linearLayout.background= ContextCompat.getDrawable(getContext(),R.drawable.bg_border_gray_300_8px)
+            }else{
+                binding.linearLayout.background= ContextCompat.getDrawable(getContext(),R.drawable.bg_border_button_8dp_gray_200)
+            }
             binding.tvSunRise.text = AppUtils.getDayDetailsHours(item.sunrise,true)
             binding.tvSunSet.text = AppUtils.getDayDetailsHours(item.sunset,true)
             binding.tvTemperatureDay.text= AppUtils.roundBigDecimal(item.temp.day.toBigDecimal()).toString()+getString(R.string.oC)
             binding.tvTemperatureNight.text= AppUtils.roundBigDecimal(item.temp.night.toBigDecimal()).toString()+getString(R.string.oC)
             if (item.snow!=-1.0){
                 binding.llSnow.show()
-                binding.tvSnow.text=item.snow.toString()+"m/m"
+                binding.tvSnow.text=item.snow.toString()+" m/m"
                 binding.tvRain.text = AppUtils.convertRainPercent(item.pop)
                 binding.imvRainAndSnow.setImageResource(R.drawable.ic_cloud_snow)
             }else{
@@ -52,9 +59,8 @@ class ListDaysWeatherAdapter(context: Context):AppAdapter<List>(context) {
                 binding.imvRainAndSnow.setImageResource(R.drawable.ic_rain_forecast)
             }
 
-            binding.tvWind.text = item.speed.toString()+"m/s"
+            binding.tvWind.text = item.speed.toString()+" m/s"
             PhotoShowUtils.loadImage(item.weather[0].icon,binding.imvIconWeather)
-
         }
 
     }

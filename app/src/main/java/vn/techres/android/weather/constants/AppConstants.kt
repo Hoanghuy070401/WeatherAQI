@@ -51,6 +51,7 @@ AppConstants {
     var SOS = false
     var FORMAT_DATE_HOURS = "dd/MM/yyyy HH:mm"
     var FORMAT_DATE = "dd/MM/yyyy"
+    var FORMAT_DATE_NOT_YEAR = "dd/MM"
     var FORMAT_HOURS = "HH:mm"
 
     const val MEDIA_DATA = "MEDIA_DATA"

@@ -51,7 +51,7 @@
             android:background="@drawable/bg_border_gray_300"
             android:backgroundTint="@color/white"
             android:gravity="center_vertical"
-            android:minWidth="@dimen/dp_32"
+            android:minWidth="@dimen/dp_24"
             android:maxWidth="@dimen/dp_296"
             android:theme="@style/SearchView"
             app:closeIcon="@drawable/ic_cross"

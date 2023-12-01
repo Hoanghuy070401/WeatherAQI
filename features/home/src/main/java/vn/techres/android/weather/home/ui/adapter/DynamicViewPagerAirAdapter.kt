@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import timber.log.Timber
 import vn.techres.android.weather.constants.AppConstants
@@ -14,8 +16,8 @@ import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.model.titlesOrdinals
 import vn.techres.android.weather.model.entity.AddressCity
 
-class DynamicViewPagerAirAdapter(fragmentActivity: FragmentActivity) :
-    FragmentStateAdapter(fragmentActivity) {
+class DynamicViewPagerAirAdapter(fragmentActivity: FragmentManager, lifecycle: Lifecycle) :
+    FragmentStateAdapter(fragmentActivity,lifecycle) {
     //    private val theActivity = DynamicViewPagerActivity()
 //    val pageIds = titles.map { it.hashCode().toLong() }.toMutableList()
     override fun createFragment(position: Int): Fragment {

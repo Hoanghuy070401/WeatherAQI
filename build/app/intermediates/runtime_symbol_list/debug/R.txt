@@ -6851,6 +6851,7 @@ int string status_layout_retry 0x7f130234
 int string storage_permission_denied 0x7f130235
 int string suggest_to_do_more 0x7f130236
 int string sunday 0x7f130237
+int string sunset_sunrise_location 0x7f13026d
 int string system_setting 0x7f130238
 int string temperate_max 0x7f130239
 int string temperate_min 0x7f13023a

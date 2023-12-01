@@ -4,6 +4,23 @@
             "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8c71e6999b60fac9c862ab168e5aa160\\transformed\\core-1.13.0-alpha02\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,352,451,555,657,773",
+                        "endColumns": "95,101,98,98,103,101,115,100",
+                        "endOffsets": "146,248,347,446,550,652,768,869"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34,35,36,37,61",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3020,3116,3218,3317,3416,3520,3622,6402",
+                        "endColumns": "95,101,98,98,103,101,115,100",
+                        "endOffsets": "3111,3213,3312,3411,3515,3617,3733,6498"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\f27922d49bb0c35fdcae8ba7643b15d4\\transformed\\biometric-1.2.0-alpha05\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28",
@@ -18,23 +35,6 @@
                         "startOffsets": "2762,2906,3738,3942,4032,4166,4575,4686,4805,4934,5072,5199,5317,5448,5548,5696,5814,5940,6079,6199,6503,6596,6719,6801,6913,7009,7135",
                         "endColumns": "143,113,105,89,133,103,110,118,128,137,126,117,130,99,147,117,125,138,119,119,92,122,81,111,95,125,95",
                         "endOffsets": "2901,3015,3839,4027,4161,4265,4681,4800,4929,5067,5194,5312,5443,5543,5691,5809,5935,6074,6194,6314,6591,6714,6796,6908,7004,7130,7226"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\98ba1bbb9aeefdb544ffb95697fce17b\\transformed\\core-1.13.0-alpha01\\res\\values-en-rCA\\values-en-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,352,451,555,657,773",
-                        "endColumns": "95,101,98,98,103,101,115,100",
-                        "endOffsets": "146,248,347,446,550,652,768,869"
-                    },
-                    "to": {
-                        "startLines": "31,32,33,34,35,36,37,61",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3020,3116,3218,3317,3416,3520,3622,6402",
-                        "endColumns": "95,101,98,98,103,101,115,100",
-                        "endOffsets": "3111,3213,3312,3411,3515,3617,3733,6498"
                     }
                 },
                 {
