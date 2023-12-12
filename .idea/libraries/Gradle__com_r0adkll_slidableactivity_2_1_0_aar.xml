@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.r0adkll:slidableactivity:2.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a665fccf65c1eea1ff1f00fac2169eda/transformed/jetified-slidableactivity-2.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a665fccf65c1eea1ff1f00fac2169eda/transformed/jetified-slidableactivity-2.1.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a665fccf65c1eea1ff1f00fac2169eda/transformed/jetified-slidableactivity-2.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f8ee1f12d957d2d55712cf5e319c1627/transformed/jetified-slidableactivity-2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f8ee1f12d957d2d55712cf5e319c1627/transformed/jetified-slidableactivity-2.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f8ee1f12d957d2d55712cf5e319c1627/transformed/jetified-slidableactivity-2.1.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.r0adkll/slidableactivity/2.1.0/e3a0915a38dd1f2b8b1fea748a5a318abfdf9e3e/slidableactivity-2.1.0-javadoc.jar!/" />

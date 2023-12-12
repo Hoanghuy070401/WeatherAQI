@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-messaging-directboot:23.1.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f472e1679bbb03364d69b7ca15f7ccb9/transformed/jetified-firebase-messaging-directboot-23.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f472e1679bbb03364d69b7ca15f7ccb9/transformed/jetified-firebase-messaging-directboot-23.1.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1f3c4e45e866347ee3766789b3c7a5bd/transformed/jetified-firebase-messaging-directboot-23.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1f3c4e45e866347ee3766789b3c7a5bd/transformed/jetified-firebase-messaging-directboot-23.1.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-messaging-directboot/23.1.2/db1aa315b33009b6b6917eca6b5cb569a0bf9547/firebase-messaging-directboot-23.1.2-javadoc.jar!/" />

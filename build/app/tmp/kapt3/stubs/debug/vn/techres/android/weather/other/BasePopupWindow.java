@@ -1,20 +1,18 @@
 package vn.techres.android.weather.other;
 
+import java.lang.System;
+
 /**
  * author : Android 轮子哥
  * github : https://github.com/getActivity/AndroidProject-Kotlin
  * time   : 2019/09/16
  * desc   : PopupWindow 技术基类
  */
-@kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0010\u0007\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u0018\b\u0016\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u0007:\f9:;<=>?@ABCDB\r\u0012\u0006\u0010\b\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0012\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\rH\u0016J\u0012\u0010\u0015\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0016J\b\u0010\u0016\u001a\u00020\u0013H\u0016J%\u0010\u0017\u001a\u0004\u0018\u0001H\u0018\"\n\b\u0000\u0010\u0018*\u0004\u0018\u00010\u00192\b\b\u0001\u0010\u001a\u001a\u00020\u001bH\u0016\u00a2\u0006\u0002\u0010\u001cJ\b\u0010\u001d\u001a\u00020\tH\u0016J\b\u0010\u001e\u001a\u00020\u001bH\u0016J\b\u0010\u001f\u001a\u00020\u0013H\u0016J\u0012\u0010 \u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\rH\u0016J\u0012\u0010!\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0016J\u0010\u0010\"\u001a\u00020\u00132\u0006\u0010#\u001a\u00020$H\u0002J\u0012\u0010%\u001a\u00020\u00132\b\b\u0001\u0010&\u001a\u00020$H\u0016J\u0012\u0010\'\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0007H\u0017J\u001a\u0010(\u001a\u00020\u00132\u0010\u0010)\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\r\u0018\u00010\fH\u0002J\u001a\u0010*\u001a\u00020\u00132\u0010\u0010)\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0011\u0018\u00010\fH\u0002J\u0010\u0010+\u001a\u00020\u00132\u0006\u0010,\u001a\u00020-H\u0016J\u0010\u0010.\u001a\u00020\u00132\u0006\u0010/\u001a\u00020\u001bH\u0016J*\u00100\u001a\u00020\u00132\b\u00101\u001a\u0004\u0018\u00010\u00192\u0006\u00102\u001a\u00020\u001b2\u0006\u00103\u001a\u00020\u001b2\u0006\u00104\u001a\u00020\u001bH\u0016J*\u00105\u001a\u00020\u00132\b\u00106\u001a\u0004\u0018\u00010\u00192\u0006\u00104\u001a\u00020\u001b2\u0006\u00107\u001a\u00020\u001b2\u0006\u00108\u001a\u00020\u001bH\u0016R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u000b\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\r\u0018\u00010\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0010\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0011\u0018\u00010\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006E"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow;", "Landroid/widget/PopupWindow;", "Lvn/techres/base/action/ActivityAction;", "Lvn/techres/base/action/HandlerAction;", "Lvn/techres/base/action/ClickAction;", "Lvn/techres/base/action/AnimAction;", "Lvn/techres/base/action/KeyboardAction;", "Landroid/widget/PopupWindow$OnDismissListener;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "dismissListeners", "", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "popupBackground", "Lvn/techres/android/weather/other/BasePopupWindow$PopupBackground;", "showListeners", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "addOnDismissListener", "", "listener", "addOnShowListener", "dismiss", "findViewById", "V", "Landroid/view/View;", "id", "", "(I)Landroid/view/View;", "getContext", "getWindowLayoutType", "onDismiss", "removeOnDismissListener", "removeOnShowListener", "setActivityAlpha", "alpha", "", "setBackgroundDimAmount", "dimAmount", "setOnDismissListener", "setOnDismissListeners", "listeners", "setOnShowListeners", "setOverlapAnchor", "overlapAnchor", "", "setWindowLayoutType", "type", "showAsDropDown", "anchor", "xOff", "yOff", "gravity", "showAtLocation", "parent", "x", "y", "Builder", "DismissListenerWrapper", "OnClickListener", "OnCreateListener", "OnDismissListener", "OnShowListener", "PopupBackground", "PopupWindowLifecycle", "ShowPostAtTimeWrapper", "ShowPostDelayedWrapper", "ShowPostWrapper", "ViewClickWrapper", "app_debug"})
+@kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0010\u0007\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u0018\b\u0016\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u0007:\f9:;<=>?@ABCDB\r\u0012\u0006\u0010\b\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0012\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\rH\u0016J\u0012\u0010\u0015\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0016J\b\u0010\u0016\u001a\u00020\u0013H\u0016J%\u0010\u0017\u001a\u0004\u0018\u0001H\u0018\"\n\b\u0000\u0010\u0018*\u0004\u0018\u00010\u00192\b\b\u0001\u0010\u001a\u001a\u00020\u001bH\u0016\u00a2\u0006\u0002\u0010\u001cJ\b\u0010\u001d\u001a\u00020\tH\u0016J\b\u0010\u001e\u001a\u00020\u001bH\u0016J\b\u0010\u001f\u001a\u00020\u0013H\u0016J\u0012\u0010 \u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\rH\u0016J\u0012\u0010!\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0016J\u0010\u0010\"\u001a\u00020\u00132\u0006\u0010#\u001a\u00020$H\u0002J\u0012\u0010%\u001a\u00020\u00132\b\b\u0001\u0010&\u001a\u00020$H\u0016J\u0012\u0010\'\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0007H\u0017J\u001a\u0010(\u001a\u00020\u00132\u0010\u0010)\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\r\u0018\u00010\fH\u0002J\u001a\u0010*\u001a\u00020\u00132\u0010\u0010)\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0011\u0018\u00010\fH\u0002J\u0010\u0010+\u001a\u00020\u00132\u0006\u0010,\u001a\u00020-H\u0016J\u0010\u0010.\u001a\u00020\u00132\u0006\u0010/\u001a\u00020\u001bH\u0016J*\u00100\u001a\u00020\u00132\b\u00101\u001a\u0004\u0018\u00010\u00192\u0006\u00102\u001a\u00020\u001b2\u0006\u00103\u001a\u00020\u001b2\u0006\u00104\u001a\u00020\u001bH\u0016J*\u00105\u001a\u00020\u00132\b\u00106\u001a\u0004\u0018\u00010\u00192\u0006\u00104\u001a\u00020\u001b2\u0006\u00107\u001a\u00020\u001b2\u0006\u00108\u001a\u00020\u001bH\u0016R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u000b\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\r\u0018\u00010\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0010\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0011\u0018\u00010\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006E"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow;", "Landroid/widget/PopupWindow;", "Lvn/techres/base/action/ActivityAction;", "Lvn/techres/base/action/HandlerAction;", "Lvn/techres/base/action/ClickAction;", "Lvn/techres/base/action/AnimAction;", "Lvn/techres/base/action/KeyboardAction;", "Landroid/widget/PopupWindow$OnDismissListener;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "dismissListeners", "", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "popupBackground", "Lvn/techres/android/weather/other/BasePopupWindow$PopupBackground;", "showListeners", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "addOnDismissListener", "", "listener", "addOnShowListener", "dismiss", "findViewById", "V", "Landroid/view/View;", "id", "", "(I)Landroid/view/View;", "getContext", "getWindowLayoutType", "onDismiss", "removeOnDismissListener", "removeOnShowListener", "setActivityAlpha", "alpha", "", "setBackgroundDimAmount", "dimAmount", "setOnDismissListener", "setOnDismissListeners", "listeners", "setOnShowListeners", "setOverlapAnchor", "overlapAnchor", "", "setWindowLayoutType", "type", "showAsDropDown", "anchor", "xOff", "yOff", "gravity", "showAtLocation", "parent", "x", "y", "Builder", "DismissListenerWrapper", "OnClickListener", "OnCreateListener", "OnDismissListener", "OnShowListener", "PopupBackground", "PopupWindowLifecycle", "ShowPostAtTimeWrapper", "ShowPostDelayedWrapper", "ShowPostWrapper", "ViewClickWrapper", "app_debug"})
 public class BasePopupWindow extends android.widget.PopupWindow implements vn.techres.base.action.ActivityAction, vn.techres.base.action.HandlerAction, vn.techres.base.action.ClickAction, vn.techres.base.action.AnimAction, vn.techres.base.action.KeyboardAction, android.widget.PopupWindow.OnDismissListener {
-    @org.jetbrains.annotations.NotNull
     private final android.content.Context context = null;
-    @org.jetbrains.annotations.Nullable
     private vn.techres.android.weather.other.BasePopupWindow.PopupBackground popupBackground;
-    @org.jetbrains.annotations.Nullable
     private java.util.List<vn.techres.android.weather.other.BasePopupWindow.OnShowListener> showListeners;
-    @org.jetbrains.annotations.Nullable
     private java.util.List<vn.techres.android.weather.other.BasePopupWindow.OnDismissListener> dismissListeners;
     
     public BasePopupWindow(@org.jetbrains.annotations.NotNull
@@ -22,8 +20,8 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         super(null);
     }
     
-    @java.lang.Override
     @org.jetbrains.annotations.NotNull
+    @java.lang.Override
     public android.content.Context getContext() {
         return null;
     }
@@ -108,8 +106,8 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
     public void dismiss() {
     }
     
-    @java.lang.Override
     @org.jetbrains.annotations.Nullable
+    @java.lang.Override
     public <V extends android.view.View>V findViewById(@androidx.annotation.IdRes
     int id) {
         return null;
@@ -141,19 +139,16 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
     private final void setActivityAlpha(float alpha) {
     }
     
-    @java.lang.Override
     @org.jetbrains.annotations.Nullable
     public android.app.Activity getActivity() {
         return null;
     }
     
-    @java.lang.Override
     @org.jetbrains.annotations.NotNull
     public android.os.Handler getHandler() {
         return null;
     }
     
-    @java.lang.Override
     public void hideKeyboard(@org.jetbrains.annotations.Nullable
     android.view.View view) {
     }
@@ -163,94 +158,80 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
     android.view.View view) {
     }
     
-    @java.lang.Override
     public boolean post(@org.jetbrains.annotations.NotNull
     java.lang.Runnable runnable) {
         return false;
     }
     
-    @java.lang.Override
     public boolean postAtTime(@org.jetbrains.annotations.NotNull
     java.lang.Runnable runnable, long uptimeMillis) {
         return false;
     }
     
-    @java.lang.Override
     public boolean postDelayed(@org.jetbrains.annotations.NotNull
     java.lang.Runnable runnable, long delayMillis) {
         return false;
     }
     
-    @java.lang.Override
     public void removeCallbacks() {
     }
     
-    @java.lang.Override
     public void removeCallbacks(@org.jetbrains.annotations.NotNull
     java.lang.Runnable runnable) {
     }
     
-    @java.lang.Override
     public void setOnClickListener(@org.jetbrains.annotations.Nullable
-    android.view.View.OnClickListener listener, @androidx.annotation.IdRes
-    @org.jetbrains.annotations.NotNull
+    android.view.View.OnClickListener listener, @org.jetbrains.annotations.NotNull
+    @androidx.annotation.IdRes
     int... ids) {
     }
     
-    @java.lang.Override
     public void setOnClickListener(@org.jetbrains.annotations.Nullable
     android.view.View.OnClickListener listener, @org.jetbrains.annotations.NotNull
     android.view.View... views) {
     }
     
-    @java.lang.Override
-    public void setOnClickListener(@androidx.annotation.IdRes
-    @org.jetbrains.annotations.NotNull
+    public void setOnClickListener(@org.jetbrains.annotations.NotNull
+    @androidx.annotation.IdRes
     int... ids) {
     }
     
-    @java.lang.Override
     public void setOnClickListener(@org.jetbrains.annotations.NotNull
     android.view.View... views) {
     }
     
-    @java.lang.Override
     public void showKeyboard(@org.jetbrains.annotations.Nullable
     android.view.View view) {
     }
     
-    @java.lang.Override
     public void startActivity(@org.jetbrains.annotations.NotNull
     android.content.Intent intent) {
     }
     
-    @java.lang.Override
     public void startActivity(@org.jetbrains.annotations.NotNull
     java.lang.Class<? extends android.app.Activity> clazz) {
     }
     
-    @java.lang.Override
     public void toggleSoftInput(@org.jetbrains.annotations.Nullable
     android.view.View view) {
     }
     
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u008c\u0001\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\r\n\u0002\b\u0018\b\u0016\u0018\u0000 p*\u000e\b\u0000\u0010\u0001*\b\u0012\u0004\u0012\u0002H\u00010\u00002\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u0005:\u0001pB\r\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\u0015\u0010*\u001a\u00028\u00002\u0006\u0010+\u001a\u00020\u0016H\u0016\u00a2\u0006\u0002\u0010,J\u0015\u0010-\u001a\u00028\u00002\u0006\u0010+\u001a\u00020#H\u0016\u00a2\u0006\u0002\u0010.J\b\u0010/\u001a\u00020!H\u0016J\u0010\u00100\u001a\u00020!2\u0006\u0010\u0006\u001a\u00020\u0007H\u0014J\b\u00101\u001a\u000202H\u0016J%\u00103\u001a\u0004\u0018\u0001H4\"\n\b\u0001\u00104*\u0004\u0018\u00010\u00102\b\b\u0001\u00105\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u00106J\n\u00107\u001a\u0004\u0018\u00010\u0010H\u0016J\b\u00108\u001a\u00020\u0007H\u0016J\n\u00109\u001a\u0004\u0018\u00010!H\u0016J\b\u0010:\u001a\u00020\u001cH\u0016J\b\u0010;\u001a\u00020\u001cH\u0016J\u0010\u0010<\u001a\u0002022\u0006\u0010=\u001a\u00020>H\u0016J\u0018\u0010?\u001a\u0002022\u0006\u0010=\u001a\u00020>2\u0006\u0010@\u001a\u00020AH\u0016J\u0018\u0010B\u001a\u0002022\u0006\u0010=\u001a\u00020>2\u0006\u0010C\u001a\u00020AH\u0016J\u0017\u0010D\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ!\u0010F\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010G\u001a\u0004\u0018\u00010HH\u0016\u00a2\u0006\u0002\u0010IJ!\u0010F\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010K\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\u0017\u0010M\u001a\u00028\u00002\b\b\u0001\u0010N\u001a\u00020\fH\u0016\u00a2\u0006\u0002\u0010OJ\u0017\u0010P\u001a\u00028\u00002\b\u0010Q\u001a\u0004\u0018\u00010\u0010H\u0016\u00a2\u0006\u0002\u0010RJ\u0017\u0010P\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010S\u001a\u00028\u00002\u0006\u0010\u001b\u001a\u00020\u001cH\u0016\u00a2\u0006\u0002\u0010TJ\u0015\u0010U\u001a\u00028\u00002\u0006\u0010\u001d\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010V\u001a\u00028\u00002\u0006\u0010\u001e\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ!\u0010W\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010X\u001a\u0004\u0018\u00010YH\u0016\u00a2\u0006\u0002\u0010ZJ!\u0010W\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010[\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ!\u0010\\\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010G\u001a\u0004\u0018\u00010HH\u0016\u00a2\u0006\u0002\u0010IJ!\u0010\\\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010K\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\'\u0010]\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\u000e\u0010+\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00100\u000fH\u0016\u00a2\u0006\u0002\u0010^J\u0015\u0010_\u001a\u00028\u00002\u0006\u0010+\u001a\u00020\u0013H\u0016\u00a2\u0006\u0002\u0010`J\u0015\u0010a\u001a\u00028\u00002\u0006\u0010\u001f\u001a\u00020\u001cH\u0016\u00a2\u0006\u0002\u0010TJ!\u0010b\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010X\u001a\u0004\u0018\u00010YH\u0016\u00a2\u0006\u0002\u0010ZJ!\u0010b\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010[\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ!\u0010c\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\b\u0001\u0010d\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\u0015\u0010e\u001a\u00028\u00002\u0006\u0010&\u001a\u00020\u001cH\u0016\u00a2\u0006\u0002\u0010TJ\u001f\u0010f\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\u0006\u0010g\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\u0015\u0010h\u001a\u00028\u00002\u0006\u0010\'\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010i\u001a\u00028\u00002\u0006\u0010j\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010k\u001a\u00028\u00002\u0006\u0010j\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0012\u0010l\u001a\u0002022\b\u0010m\u001a\u0004\u0018\u00010\u0010H\u0016J\u0012\u0010n\u001a\u0002022\b\u0010o\u001a\u0004\u0018\u00010\u0010H\u0016R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0010\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00100\u000f\u0018\u00010\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R#\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u00158BX\u0082\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0019\u0010\u001a\u001a\u0004\b\u0017\u0010\u0018R\u000e\u0010\u001b\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010 \u001a\u0004\u0018\u00010!X\u0082\u000e\u00a2\u0006\u0002\n\u0000R#\u0010\"\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010#0\u00158BX\u0082\u0084\u0002\u00a2\u0006\f\n\u0004\b%\u0010\u001a\u001a\u0004\b$\u0010\u0018R\u000e\u0010&\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006q"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "B", "Lvn/techres/base/action/ActivityAction;", "Lvn/techres/base/action/ResourcesAction;", "Lvn/techres/base/action/ClickAction;", "Lvn/techres/base/action/KeyboardAction;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "animStyle", "", "backgroundDimAmount", "", "clickArray", "Landroid/util/SparseArray;", "Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;", "Landroid/view/View;", "contentView", "createListener", "Lvn/techres/android/weather/other/BasePopupWindow$OnCreateListener;", "dismissListeners", "", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "getDismissListeners", "()Ljava/util/List;", "dismissListeners$delegate", "Lkotlin/Lazy;", "focusable", "", "gravity", "height", "outsideTouchable", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "showListeners", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "getShowListeners", "showListeners$delegate", "touchable", "width", "xOffset", "yOffset", "addOnDismissListener", "listener", "(Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "addOnShowListener", "(Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "create", "createPopupWindow", "dismiss", "", "findViewById", "V", "id", "(I)Landroid/view/View;", "getContentView", "getContext", "getPopupWindow", "isCreated", "isShowing", "post", "runnable", "Ljava/lang/Runnable;", "postAtTime", "uptimeMillis", "", "postDelayed", "delayMillis", "setAnimStyle", "(I)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setBackground", "drawable", "Landroid/graphics/drawable/Drawable;", "(ILandroid/graphics/drawable/Drawable;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "viewId", "drawableId", "(II)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setBackgroundDimAmount", "dimAmount", "(F)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setContentView", "view", "(Landroid/view/View;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setFocusable", "(Z)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setGravity", "setHeight", "setHint", "text", "", "(ILjava/lang/CharSequence;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "stringId", "setImageDrawable", "setOnClickListener", "(ILvn/techres/android/weather/other/BasePopupWindow$OnClickListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setOnCreateListener", "(Lvn/techres/android/weather/other/BasePopupWindow$OnCreateListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setOutsideTouchable", "setText", "setTextColor", "color", "setTouchable", "setVisibility", "visibility", "setWidth", "setXOffset", "offset", "setYOffset", "showAsDropDown", "anchor", "showAtLocation", "parent", "Companion", "app_debug"})
     @kotlin.Suppress(names = {"UNCHECKED_CAST"})
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u008c\u0001\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\r\n\u0002\b\u0018\b\u0016\u0018\u0000 p*\u000e\b\u0000\u0010\u0001*\b\u0012\u0004\u0012\u0002H\u00010\u00002\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u0005:\u0001pB\r\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\u0015\u0010*\u001a\u00028\u00002\u0006\u0010+\u001a\u00020\u0016H\u0016\u00a2\u0006\u0002\u0010,J\u0015\u0010-\u001a\u00028\u00002\u0006\u0010+\u001a\u00020#H\u0016\u00a2\u0006\u0002\u0010.J\b\u0010/\u001a\u00020!H\u0016J\u0010\u00100\u001a\u00020!2\u0006\u0010\u0006\u001a\u00020\u0007H\u0014J\b\u00101\u001a\u000202H\u0016J%\u00103\u001a\u0004\u0018\u0001H4\"\n\b\u0001\u00104*\u0004\u0018\u00010\u00102\b\b\u0001\u00105\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u00106J\n\u00107\u001a\u0004\u0018\u00010\u0010H\u0016J\b\u00108\u001a\u00020\u0007H\u0016J\n\u00109\u001a\u0004\u0018\u00010!H\u0016J\b\u0010:\u001a\u00020\u001cH\u0016J\b\u0010;\u001a\u00020\u001cH\u0016J\u0010\u0010<\u001a\u0002022\u0006\u0010=\u001a\u00020>H\u0016J\u0018\u0010?\u001a\u0002022\u0006\u0010=\u001a\u00020>2\u0006\u0010@\u001a\u00020AH\u0016J\u0018\u0010B\u001a\u0002022\u0006\u0010=\u001a\u00020>2\u0006\u0010C\u001a\u00020AH\u0016J\u0017\u0010D\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ!\u0010F\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010G\u001a\u0004\u0018\u00010HH\u0016\u00a2\u0006\u0002\u0010IJ!\u0010F\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010K\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\u0017\u0010M\u001a\u00028\u00002\b\b\u0001\u0010N\u001a\u00020\fH\u0016\u00a2\u0006\u0002\u0010OJ\u0017\u0010P\u001a\u00028\u00002\b\u0010Q\u001a\u0004\u0018\u00010\u0010H\u0016\u00a2\u0006\u0002\u0010RJ\u0017\u0010P\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010S\u001a\u00028\u00002\u0006\u0010\u001b\u001a\u00020\u001cH\u0016\u00a2\u0006\u0002\u0010TJ\u0015\u0010U\u001a\u00028\u00002\u0006\u0010\u001d\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010V\u001a\u00028\u00002\u0006\u0010\u001e\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ!\u0010W\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010X\u001a\u0004\u0018\u00010YH\u0016\u00a2\u0006\u0002\u0010ZJ!\u0010W\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010[\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ!\u0010\\\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010G\u001a\u0004\u0018\u00010HH\u0016\u00a2\u0006\u0002\u0010IJ!\u0010\\\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010K\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\'\u0010]\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\u000e\u0010+\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00100\u000fH\u0016\u00a2\u0006\u0002\u0010^J\u0015\u0010_\u001a\u00028\u00002\u0006\u0010+\u001a\u00020\u0013H\u0016\u00a2\u0006\u0002\u0010`J\u0015\u0010a\u001a\u00028\u00002\u0006\u0010\u001f\u001a\u00020\u001cH\u0016\u00a2\u0006\u0002\u0010TJ!\u0010b\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\u0010X\u001a\u0004\u0018\u00010YH\u0016\u00a2\u0006\u0002\u0010ZJ!\u0010b\u001a\u00028\u00002\b\b\u0001\u0010J\u001a\u00020\n2\b\b\u0001\u0010[\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ!\u0010c\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\b\b\u0001\u0010d\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\u0015\u0010e\u001a\u00028\u00002\u0006\u0010&\u001a\u00020\u001cH\u0016\u00a2\u0006\u0002\u0010TJ\u001f\u0010f\u001a\u00028\u00002\b\b\u0001\u00105\u001a\u00020\n2\u0006\u0010g\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010LJ\u0015\u0010h\u001a\u00028\u00002\u0006\u0010\'\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010i\u001a\u00028\u00002\u0006\u0010j\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0015\u0010k\u001a\u00028\u00002\u0006\u0010j\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010EJ\u0012\u0010l\u001a\u0002022\b\u0010m\u001a\u0004\u0018\u00010\u0010H\u0016J\u0012\u0010n\u001a\u0002022\b\u0010o\u001a\u0004\u0018\u00010\u0010H\u0016R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0010\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00100\u000f\u0018\u00010\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R#\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u00158BX\u0082\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0019\u0010\u001a\u001a\u0004\b\u0017\u0010\u0018R\u000e\u0010\u001b\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010 \u001a\u0004\u0018\u00010!X\u0082\u000e\u00a2\u0006\u0002\n\u0000R#\u0010\"\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010#0\u00158BX\u0082\u0084\u0002\u00a2\u0006\f\n\u0004\b%\u0010\u001a\u001a\u0004\b$\u0010\u0018R\u000e\u0010&\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006q"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "B", "Lvn/techres/base/action/ActivityAction;", "Lvn/techres/base/action/ResourcesAction;", "Lvn/techres/base/action/ClickAction;", "Lvn/techres/base/action/KeyboardAction;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "animStyle", "", "backgroundDimAmount", "", "clickArray", "Landroid/util/SparseArray;", "Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;", "Landroid/view/View;", "contentView", "createListener", "Lvn/techres/android/weather/other/BasePopupWindow$OnCreateListener;", "dismissListeners", "", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "getDismissListeners", "()Ljava/util/List;", "dismissListeners$delegate", "Lkotlin/Lazy;", "focusable", "", "gravity", "height", "outsideTouchable", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "showListeners", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "getShowListeners", "showListeners$delegate", "touchable", "width", "xOffset", "yOffset", "addOnDismissListener", "listener", "(Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "addOnShowListener", "(Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "create", "createPopupWindow", "dismiss", "", "findViewById", "V", "id", "(I)Landroid/view/View;", "getContentView", "getContext", "getPopupWindow", "isCreated", "isShowing", "post", "runnable", "Ljava/lang/Runnable;", "postAtTime", "uptimeMillis", "", "postDelayed", "delayMillis", "setAnimStyle", "(I)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setBackground", "drawable", "Landroid/graphics/drawable/Drawable;", "(ILandroid/graphics/drawable/Drawable;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "viewId", "drawableId", "(II)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setBackgroundDimAmount", "dimAmount", "(F)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setContentView", "view", "(Landroid/view/View;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setFocusable", "(Z)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setGravity", "setHeight", "setHint", "text", "", "(ILjava/lang/CharSequence;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "stringId", "setImageDrawable", "setOnClickListener", "(ILvn/techres/android/weather/other/BasePopupWindow$OnClickListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setOnCreateListener", "(Lvn/techres/android/weather/other/BasePopupWindow$OnCreateListener;)Lvn/techres/android/weather/other/BasePopupWindow$Builder;", "setOutsideTouchable", "setText", "setTextColor", "color", "setTouchable", "setVisibility", "visibility", "setWidth", "setXOffset", "offset", "setYOffset", "showAsDropDown", "anchor", "showAtLocation", "parent", "Companion", "app_debug"})
     public static class Builder<B extends vn.techres.android.weather.other.BasePopupWindow.Builder<B>> implements vn.techres.base.action.ActivityAction, vn.techres.base.action.ResourcesAction, vn.techres.base.action.ClickAction, vn.techres.base.action.KeyboardAction {
-        @org.jetbrains.annotations.NotNull
         private final android.content.Context context = null;
+        @org.jetbrains.annotations.NotNull
+        public static final vn.techres.android.weather.other.BasePopupWindow.Builder.Companion Companion = null;
         private static final int DEFAULT_ANCHORED_GRAVITY = 8388659;
         
         /**
          * PopupWindow 对象
          */
-        @org.jetbrains.annotations.Nullable
         private vn.techres.android.weather.other.BasePopupWindow popupWindow;
         
         /**
          * PopupWindow 布局
          */
-        @org.jetbrains.annotations.Nullable
         private android.view.View contentView;
         
         /**
@@ -302,28 +283,22 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         /**
          * PopupWindow 创建监听
          */
-        @org.jetbrains.annotations.Nullable
         private vn.techres.android.weather.other.BasePopupWindow.OnCreateListener createListener;
         
         /**
          * PopupWindow 显示监听
          */
-        @org.jetbrains.annotations.NotNull
         private final kotlin.Lazy showListeners$delegate = null;
         
         /**
          * PopupWindow 销毁监听
          */
-        @org.jetbrains.annotations.NotNull
         private final kotlin.Lazy dismissListeners$delegate = null;
         
         /**
          * 点击事件集合
          */
-        @org.jetbrains.annotations.Nullable
         private android.util.SparseArray<vn.techres.android.weather.other.BasePopupWindow.OnClickListener<android.view.View>> clickArray;
-        @org.jetbrains.annotations.NotNull
-        public static final vn.techres.android.weather.other.BasePopupWindow.Builder.Companion Companion = null;
         
         public Builder(@org.jetbrains.annotations.NotNull
         android.content.Context context) {
@@ -568,8 +543,8 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         /**
          * 创建
          */
-        @kotlin.Suppress(names = {"RtlHardcoded"})
         @org.jetbrains.annotations.NotNull
+        @kotlin.Suppress(names = {"RtlHardcoded"})
         public vn.techres.android.weather.other.BasePopupWindow create() {
             return null;
         }
@@ -588,8 +563,8 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         android.view.View parent) {
         }
         
-        @java.lang.Override
         @org.jetbrains.annotations.NotNull
+        @java.lang.Override
         public android.content.Context getContext() {
             return null;
         }
@@ -634,8 +609,8 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         /**
          * 根据 id 查找 View
          */
-        @java.lang.Override
         @org.jetbrains.annotations.Nullable
+        @java.lang.Override
         public <V extends android.view.View>V findViewById(@androidx.annotation.IdRes
         int id) {
             return null;
@@ -670,40 +645,34 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         java.lang.Runnable runnable, long uptimeMillis) {
         }
         
-        @java.lang.Override
         @org.jetbrains.annotations.Nullable
         public android.app.Activity getActivity() {
             return null;
         }
         
-        @java.lang.Override
         @androidx.annotation.ColorInt
         public int getColor(@androidx.annotation.ColorRes
         int id) {
             return 0;
         }
         
-        @java.lang.Override
         @org.jetbrains.annotations.Nullable
         public android.graphics.drawable.Drawable getDrawable(@androidx.annotation.DrawableRes
         int id) {
             return null;
         }
         
-        @java.lang.Override
         @org.jetbrains.annotations.NotNull
         public android.content.res.Resources getResources() {
             return null;
         }
         
-        @java.lang.Override
         @org.jetbrains.annotations.Nullable
         public java.lang.String getString(@androidx.annotation.StringRes
         int id) {
             return null;
         }
         
-        @java.lang.Override
         @org.jetbrains.annotations.Nullable
         public java.lang.String getString(@androidx.annotation.StringRes
         int id, @org.jetbrains.annotations.NotNull
@@ -711,13 +680,11 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
             return null;
         }
         
-        @java.lang.Override
         public <S extends java.lang.Object>S getSystemService(@org.jetbrains.annotations.NotNull
         java.lang.Class<S> serviceClass) {
             return null;
         }
         
-        @java.lang.Override
         public void hideKeyboard(@org.jetbrains.annotations.Nullable
         android.view.View view) {
         }
@@ -727,51 +694,43 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         android.view.View view) {
         }
         
-        @java.lang.Override
         public void setOnClickListener(@org.jetbrains.annotations.Nullable
-        android.view.View.OnClickListener listener, @androidx.annotation.IdRes
-        @org.jetbrains.annotations.NotNull
+        android.view.View.OnClickListener listener, @org.jetbrains.annotations.NotNull
+        @androidx.annotation.IdRes
         int... ids) {
         }
         
-        @java.lang.Override
         public void setOnClickListener(@org.jetbrains.annotations.Nullable
         android.view.View.OnClickListener listener, @org.jetbrains.annotations.NotNull
         android.view.View... views) {
         }
         
-        @java.lang.Override
-        public void setOnClickListener(@androidx.annotation.IdRes
-        @org.jetbrains.annotations.NotNull
+        public void setOnClickListener(@org.jetbrains.annotations.NotNull
+        @androidx.annotation.IdRes
         int... ids) {
         }
         
-        @java.lang.Override
         public void setOnClickListener(@org.jetbrains.annotations.NotNull
         android.view.View... views) {
         }
         
-        @java.lang.Override
         public void showKeyboard(@org.jetbrains.annotations.Nullable
         android.view.View view) {
         }
         
-        @java.lang.Override
         public void startActivity(@org.jetbrains.annotations.NotNull
         android.content.Intent intent) {
         }
         
-        @java.lang.Override
         public void startActivity(@org.jetbrains.annotations.NotNull
         java.lang.Class<? extends android.app.Activity> clazz) {
         }
         
-        @java.lang.Override
         public void toggleSoftInput(@org.jetbrains.annotations.Nullable
         android.view.View view) {
         }
         
-        @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0005"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$Builder$Companion;", "", "()V", "DEFAULT_ANCHORED_GRAVITY", "", "app_debug"})
+        @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0005"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$Builder$Companion;", "", "()V", "DEFAULT_ANCHORED_GRAVITY", "", "app_debug"})
         public static final class Companion {
             
             private Companion() {
@@ -781,108 +740,11 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
     }
     
     /**
-     * 销毁监听包装类
-     */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u00012\u00020\u0003B\u000f\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0002\u00a2\u0006\u0002\u0010\u0005J\u0012\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016\u00a8\u0006\n"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$DismissListenerWrapper;", "Ljava/lang/ref/SoftReference;", "Landroid/widget/PopupWindow$OnDismissListener;", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "referent", "(Landroid/widget/PopupWindow$OnDismissListener;)V", "onDismiss", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
-    static final class DismissListenerWrapper extends java.lang.ref.SoftReference<android.widget.PopupWindow.OnDismissListener> implements vn.techres.android.weather.other.BasePopupWindow.OnDismissListener {
-        
-        public DismissListenerWrapper(@org.jetbrains.annotations.Nullable
-        android.widget.PopupWindow.OnDismissListener referent) {
-            super(null);
-        }
-        
-        @java.lang.Override
-        public void onDismiss(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
-        }
-    }
-    
-    /**
-     * 点击监听器
-     */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003J\u001f\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00028\u0000H&\u00a2\u0006\u0002\u0010\t\u00a8\u0006\n"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;", "V", "Landroid/view/View;", "", "onClick", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "view", "(Lvn/techres/android/weather/other/BasePopupWindow;Landroid/view/View;)V", "app_debug"})
-    public static abstract interface OnClickListener<V extends android.view.View> {
-        
-        /**
-         * 点击事件触发了
-         */
-        public abstract void onClick(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow, @org.jetbrains.annotations.NotNull
-        V view);
-    }
-    
-    /**
-     * 创建监听器
-     */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&\u00a8\u0006\u0006"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnCreateListener;", "", "onCreate", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
-    public static abstract interface OnCreateListener {
-        
-        /**
-         * PopupWindow 创建了
-         */
-        public abstract void onCreate(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow);
-    }
-    
-    /**
-     * 销毁监听器
-     */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&\u00a8\u0006\u0006"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "", "onDismiss", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
-    public static abstract interface OnDismissListener {
-        
-        /**
-         * PopupWindow 销毁了
-         */
-        public abstract void onDismiss(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow);
-    }
-    
-    /**
-     * 显示监听器
-     */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&\u00a8\u0006\u0006"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
-    public static abstract interface OnShowListener {
-        
-        /**
-         * PopupWindow 显示了
-         */
-        public abstract void onShow(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow);
-    }
-    
-    /**
-     * PopupWindow 背景遮盖层实现类
-     */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0012\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016J\u0012\u0010\n\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016J\u000e\u0010\u000b\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u0005R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\f"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$PopupBackground;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "()V", "alpha", "", "onDismiss", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "onShow", "setAlpha", "app_debug"})
-    static final class PopupBackground implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener, vn.techres.android.weather.other.BasePopupWindow.OnDismissListener {
-        private float alpha = 0.0F;
-        
-        public PopupBackground() {
-            super();
-        }
-        
-        public final void setAlpha(float alpha) {
-        }
-        
-        @java.lang.Override
-        public void onShow(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
-        }
-        
-        @java.lang.Override
-        public void onDismiss(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
-        }
-    }
-    
-    /**
      * PopupWindow 生命周期绑定
      */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\b\u0002\u0018\u0000 \u00182\u00020\u00012\u00020\u00022\u00020\u0003:\u0001\u0018B\u0019\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\bJ\u001a\u0010\t\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\u000b\u001a\u0004\u0018\u00010\fH\u0016J\u0010\u0010\r\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u000e\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u000f\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0018\u0010\u0010\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0011\u001a\u00020\fH\u0016J\u0010\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0012\u0010\u0014\u001a\u00020\n2\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u0016J\u0012\u0010\u0015\u001a\u00020\n2\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u0016J\b\u0010\u0016\u001a\u00020\nH\u0002J\b\u0010\u0017\u001a\u00020\nH\u0002R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0019"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$PopupWindowLifecycle;", "Landroid/app/Application$ActivityLifecycleCallbacks;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "activity", "Landroid/app/Activity;", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "(Landroid/app/Activity;Lvn/techres/android/weather/other/BasePopupWindow;)V", "onActivityCreated", "", "savedInstanceState", "Landroid/os/Bundle;", "onActivityDestroyed", "onActivityPaused", "onActivityResumed", "onActivitySaveInstanceState", "outState", "onActivityStarted", "onActivityStopped", "onDismiss", "onShow", "registerActivityLifecycleCallbacks", "unregisterActivityLifecycleCallbacks", "Companion", "app_debug"})
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\b\u0002\u0018\u0000 \u00182\u00020\u00012\u00020\u00022\u00020\u0003:\u0001\u0018B\u0019\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\bJ\u001a\u0010\t\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\u000b\u001a\u0004\u0018\u00010\fH\u0016J\u0010\u0010\r\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u000e\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u000f\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0018\u0010\u0010\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0011\u001a\u00020\fH\u0016J\u0010\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0012\u0010\u0014\u001a\u00020\n2\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u0016J\u0012\u0010\u0015\u001a\u00020\n2\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u0016J\b\u0010\u0016\u001a\u00020\nH\u0002J\b\u0010\u0017\u001a\u00020\nH\u0002R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0019"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$PopupWindowLifecycle;", "Landroid/app/Application$ActivityLifecycleCallbacks;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "activity", "Landroid/app/Activity;", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "(Landroid/app/Activity;Lvn/techres/android/weather/other/BasePopupWindow;)V", "onActivityCreated", "", "savedInstanceState", "Landroid/os/Bundle;", "onActivityDestroyed", "onActivityPaused", "onActivityResumed", "onActivitySaveInstanceState", "outState", "onActivityStarted", "onActivityStopped", "onDismiss", "onShow", "registerActivityLifecycleCallbacks", "unregisterActivityLifecycleCallbacks", "Companion", "app_debug"})
     static final class PopupWindowLifecycle implements android.app.Application.ActivityLifecycleCallbacks, vn.techres.android.weather.other.BasePopupWindow.OnShowListener, vn.techres.android.weather.other.BasePopupWindow.OnDismissListener {
-        @org.jetbrains.annotations.Nullable
         private android.app.Activity activity;
-        @org.jetbrains.annotations.Nullable
         private vn.techres.android.weather.other.BasePopupWindow popupWindow;
         @org.jetbrains.annotations.NotNull
         public static final vn.techres.android.weather.other.BasePopupWindow.PopupWindowLifecycle.Companion Companion = null;
@@ -952,7 +814,7 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
         private final void unregisterActivityLifecycleCallbacks() {
         }
         
-        @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u00a8\u0006\t"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$PopupWindowLifecycle$Companion;", "", "()V", "with", "", "activity", "Landroid/app/Activity;", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+        @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u00a8\u0006\t"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$PopupWindowLifecycle$Companion;", "", "()V", "with", "", "activity", "Landroid/app/Activity;", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
         public static final class Companion {
             
             private Companion() {
@@ -967,49 +829,71 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
     }
     
     /**
-     * postAtTime 任务包装类
+     * PopupWindow 背景遮盖层实现类
      */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ShowPostAtTimeWrapper;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "runnable", "Ljava/lang/Runnable;", "uptimeMillis", "", "(Ljava/lang/Runnable;J)V", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
-    static final class ShowPostAtTimeWrapper implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener {
-        @org.jetbrains.annotations.NotNull
-        private final java.lang.Runnable runnable = null;
-        private final long uptimeMillis = 0L;
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0012\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016J\u0012\u0010\n\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016J\u000e\u0010\u000b\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u0005R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\f"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$PopupBackground;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "()V", "alpha", "", "onDismiss", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "onShow", "setAlpha", "app_debug"})
+    static final class PopupBackground implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener, vn.techres.android.weather.other.BasePopupWindow.OnDismissListener {
+        private float alpha = 0.0F;
         
-        public ShowPostAtTimeWrapper(@org.jetbrains.annotations.NotNull
-        java.lang.Runnable runnable, long uptimeMillis) {
+        public PopupBackground() {
             super();
+        }
+        
+        public final void setAlpha(float alpha) {
         }
         
         @java.lang.Override
         public void onShow(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
+        }
+        
+        @java.lang.Override
+        public void onDismiss(@org.jetbrains.annotations.Nullable
         vn.techres.android.weather.other.BasePopupWindow popupWindow) {
         }
     }
     
     /**
-     * postDelayed 任务包装类
+     * 销毁监听包装类
      */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ShowPostDelayedWrapper;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "runnable", "Ljava/lang/Runnable;", "delayMillis", "", "(Ljava/lang/Runnable;J)V", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
-    static final class ShowPostDelayedWrapper implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener {
-        @org.jetbrains.annotations.NotNull
-        private final java.lang.Runnable runnable = null;
-        private final long delayMillis = 0L;
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u00012\u00020\u0003B\u000f\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0002\u00a2\u0006\u0002\u0010\u0005J\u0012\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016\u00a8\u0006\n"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$DismissListenerWrapper;", "Ljava/lang/ref/SoftReference;", "Landroid/widget/PopupWindow$OnDismissListener;", "Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "referent", "(Landroid/widget/PopupWindow$OnDismissListener;)V", "onDismiss", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    static final class DismissListenerWrapper extends java.lang.ref.SoftReference<android.widget.PopupWindow.OnDismissListener> implements vn.techres.android.weather.other.BasePopupWindow.OnDismissListener {
         
-        public ShowPostDelayedWrapper(@org.jetbrains.annotations.NotNull
-        java.lang.Runnable runnable, long delayMillis) {
+        public DismissListenerWrapper(@org.jetbrains.annotations.Nullable
+        android.widget.PopupWindow.OnDismissListener referent) {
+            super(null);
+        }
+        
+        @java.lang.Override
+        public void onDismiss(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
+        }
+    }
+    
+    /**
+     * 点击事件包装类
+     */
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0002\u0018\u00002\u00020\u0001B\u001f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005\u00a2\u0006\u0002\u0010\u0007J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0006H\u0016R\u0016\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ViewClickWrapper;", "Landroid/view/View$OnClickListener;", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "listener", "Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;", "Landroid/view/View;", "(Lvn/techres/android/weather/other/BasePopupWindow;Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;)V", "onClick", "", "view", "app_debug"})
+    static final class ViewClickWrapper implements android.view.View.OnClickListener {
+        private final vn.techres.android.weather.other.BasePopupWindow popupWindow = null;
+        private final vn.techres.android.weather.other.BasePopupWindow.OnClickListener<android.view.View> listener = null;
+        
+        public ViewClickWrapper(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow, @org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow.OnClickListener<android.view.View> listener) {
             super();
         }
         
         @java.lang.Override
-        public void onShow(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
+        public void onClick(@org.jetbrains.annotations.NotNull
+        android.view.View view) {
         }
     }
     
     /**
      * post 任务包装类
      */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ShowPostWrapper;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "runnable", "Ljava/lang/Runnable;", "(Ljava/lang/Runnable;)V", "getRunnable", "()Ljava/lang/Runnable;", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ShowPostWrapper;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "runnable", "Ljava/lang/Runnable;", "(Ljava/lang/Runnable;)V", "getRunnable", "()Ljava/lang/Runnable;", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
     static final class ShowPostWrapper implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener {
         @org.jetbrains.annotations.NotNull
         private final java.lang.Runnable runnable = null;
@@ -1031,24 +915,93 @@ public class BasePopupWindow extends android.widget.PopupWindow implements vn.te
     }
     
     /**
-     * 点击事件包装类
+     * postDelayed 任务包装类
      */
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0002\u0018\u00002\u00020\u0001B\u001f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005\u00a2\u0006\u0002\u0010\u0007J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0006H\u0016R\u0016\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ViewClickWrapper;", "Landroid/view/View$OnClickListener;", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "listener", "Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;", "Landroid/view/View;", "(Lvn/techres/android/weather/other/BasePopupWindow;Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;)V", "onClick", "", "view", "app_debug"})
-    static final class ViewClickWrapper implements android.view.View.OnClickListener {
-        @org.jetbrains.annotations.Nullable
-        private final vn.techres.android.weather.other.BasePopupWindow popupWindow = null;
-        @org.jetbrains.annotations.Nullable
-        private final vn.techres.android.weather.other.BasePopupWindow.OnClickListener<android.view.View> listener = null;
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ShowPostDelayedWrapper;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "runnable", "Ljava/lang/Runnable;", "delayMillis", "", "(Ljava/lang/Runnable;J)V", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    static final class ShowPostDelayedWrapper implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener {
+        private final java.lang.Runnable runnable = null;
+        private final long delayMillis = 0L;
         
-        public ViewClickWrapper(@org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow popupWindow, @org.jetbrains.annotations.Nullable
-        vn.techres.android.weather.other.BasePopupWindow.OnClickListener<android.view.View> listener) {
+        public ShowPostDelayedWrapper(@org.jetbrains.annotations.NotNull
+        java.lang.Runnable runnable, long delayMillis) {
             super();
         }
         
         @java.lang.Override
-        public void onClick(@org.jetbrains.annotations.NotNull
-        android.view.View view) {
+        public void onShow(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
         }
+    }
+    
+    /**
+     * postAtTime 任务包装类
+     */
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000b"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$ShowPostAtTimeWrapper;", "Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "runnable", "Ljava/lang/Runnable;", "uptimeMillis", "", "(Ljava/lang/Runnable;J)V", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    static final class ShowPostAtTimeWrapper implements vn.techres.android.weather.other.BasePopupWindow.OnShowListener {
+        private final java.lang.Runnable runnable = null;
+        private final long uptimeMillis = 0L;
+        
+        public ShowPostAtTimeWrapper(@org.jetbrains.annotations.NotNull
+        java.lang.Runnable runnable, long uptimeMillis) {
+            super();
+        }
+        
+        @java.lang.Override
+        public void onShow(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow) {
+        }
+    }
+    
+    /**
+     * 点击监听器
+     */
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003J\u001f\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00028\u0000H&\u00a2\u0006\u0002\u0010\t\u00a8\u0006\n"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnClickListener;", "V", "Landroid/view/View;", "", "onClick", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "view", "(Lvn/techres/android/weather/other/BasePopupWindow;Landroid/view/View;)V", "app_debug"})
+    public static abstract interface OnClickListener<V extends android.view.View> {
+        
+        /**
+         * 点击事件触发了
+         */
+        public abstract void onClick(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow, @org.jetbrains.annotations.NotNull
+        V view);
+    }
+    
+    /**
+     * 创建监听器
+     */
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&\u00a8\u0006\u0006"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnCreateListener;", "", "onCreate", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    public static abstract interface OnCreateListener {
+        
+        /**
+         * PopupWindow 创建了
+         */
+        public abstract void onCreate(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow);
+    }
+    
+    /**
+     * 显示监听器
+     */
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&\u00a8\u0006\u0006"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnShowListener;", "", "onShow", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    public static abstract interface OnShowListener {
+        
+        /**
+         * PopupWindow 显示了
+         */
+        public abstract void onShow(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow);
+    }
+    
+    /**
+     * 销毁监听器
+     */
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H&\u00a8\u0006\u0006"}, d2 = {"Lvn/techres/android/weather/other/BasePopupWindow$OnDismissListener;", "", "onDismiss", "", "popupWindow", "Lvn/techres/android/weather/other/BasePopupWindow;", "app_debug"})
+    public static abstract interface OnDismissListener {
+        
+        /**
+         * PopupWindow 销毁了
+         */
+        public abstract void onDismiss(@org.jetbrains.annotations.Nullable
+        vn.techres.android.weather.other.BasePopupWindow popupWindow);
     }
 }

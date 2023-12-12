@@ -8,5 +8,6 @@ object ModuleClassConstants {
     const val SETTING_FRAGMENT ="vn.techres.android.weather.ui.fragment.setting.SettingFragment"
     const val MAP_FRAGMENT ="vn.techres.android.weather.ui.fragment.map.MapTabFragment"
     const val HOME_FRAGMENT ="vn.techres.android.weather.home.ui.fragment.HomeFragment"
+    const val NEWS ="vn.techres.android.weather.setting.ui.fragment.NewsFragment"
 
 }

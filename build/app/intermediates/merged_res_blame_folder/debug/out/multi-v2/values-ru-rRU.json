@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-ru-rRU/values-ru-rRU.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-ru-rRU/values-ru-rRU.xml",
             "map": [
                 {
                     "source": "D:\\WeatherAQI\\build\\library\\selector\\intermediates\\packaged_res\\debug\\values-ru-rRU\\values-ru-rRU.xml",

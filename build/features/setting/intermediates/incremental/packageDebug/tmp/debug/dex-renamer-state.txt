@@ -1,7 +1,13 @@
-#Wed Nov 29 10:34:07 ICT 2023
+#Mon Dec 11 20:29:35 ICT 2023
 base.0=D\:\\WeatherAQI\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.1=D\:\\WeatherAQI\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.2=D\:\\WeatherAQI\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=D\:\\WeatherAQI\\build\\features\\setting\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 path.0=0/classes.dex
 path.1=13/classes.dex
+path.2=10/classes.dex
+path.3=4/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex

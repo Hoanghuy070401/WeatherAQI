@@ -478,10 +478,19 @@
             android:exported="false" />
 
         <activity
+            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
+            android:exported="false" />
+        <activity
             android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
             android:exported="false" />
         <activity
             android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name="vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity"
             android:exported="false" />
     </application>
 

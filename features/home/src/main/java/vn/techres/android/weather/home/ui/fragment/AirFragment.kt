@@ -164,25 +164,7 @@ class AirFragment : AppFragment<HomeActivity>() {
 
 
     }
-    @Subscribe(sticky = true)
-    fun updateDataLocation(isUpdate: UpLoadDataEvenBus) {
-        val index = titles.indexOfFirst { it.id == isUpdate.id }
-        binding.Viewpager2.setCurrentItem(index, false)
-    }
 
-    @Subscribe(sticky = true)
-    fun addLocationSuggest(isCheck: AddListSuggestEvenBus) {
-        if (isCheck.isCheck) {
-            titles.forEachIndexed { index, it ->
-                if (it.nameCity== isCheck.data.nameCity){
-                    binding.Viewpager2.setCurrentItem(index, false)
-                    return
-                }else{
-                    binding.Viewpager2.setCurrentItem(titles.size, false)
-                }
-            }
-        }
-    }
 
 
 }

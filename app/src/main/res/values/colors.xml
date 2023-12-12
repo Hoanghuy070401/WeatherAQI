@@ -70,6 +70,7 @@
     <color name="transparent_black">#50000000</color>
     <color name="transparent_orange">#51FFA233</color>
     <color name="transparent_gray">#50E8E1E1</color>
+    <color name="gray_200_50">#50F1F2F5</color>
 
     <color name="gray_100">#F5F6FA</color>
     <color name="gray_200">#F1F2F5</color>
@@ -118,4 +119,6 @@
     <color name="expired">#E7E8EB</color>
     <color name="bg_header_scrollView">#F5F6FA</color>
     <color name="orange_chat_view_page">#FFE3C2</color>
+
+
 </resources>

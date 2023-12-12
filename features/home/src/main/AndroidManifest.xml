@@ -14,6 +14,12 @@
 
     <application>
         <activity
+            android:name=".ui.activity.WeatherDayMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DetailsWeatherAirActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.SearchActivity"
             android:exported="false" />
         <activity

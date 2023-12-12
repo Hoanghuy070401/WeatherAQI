@@ -120,7 +120,7 @@ android {
         dataBinding true
     }
 
-    dynamicFeatures = [':features:setting', ':features:map', ':features:home']
+    dynamicFeatures = [':features:home', ':features:setting']
 }
 
 configurations {
@@ -202,7 +202,7 @@ dependencies {
     api 'com.google.android.flexbox:flexbox:3.0.0'
 
     //MPChart
-    api 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    api 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
     api 'me.dm7.barcodescanner:zxing:1.9.13'
     //https://github.com/gotev/android-upload-service
@@ -242,5 +242,7 @@ dependencies {
     api 'me.relex:circleindicator:2.1.6'
     api 'com.github.tslamic.fancybackground:library:1.0'
     api 'androidx.viewpager2:viewpager2:1.0.0-beta03'
+    api 'com.github.tianma8023:SunriseSunsetView:0.0.2'
+    api 'com.github.sundeepk:compact-calendar-view:3.0.0'
 
 }

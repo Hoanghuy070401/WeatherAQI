@@ -46,6 +46,7 @@ import java.security.SecureRandom
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.Normalizer
+import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -54,9 +55,108 @@ import java.util.regex.Pattern
 
 
 object AppUtils {
+    fun formatReportDateTime(
+        context: Context, reportTypeSort: Int, inputDateTime: String, position: Int
+    ): String {
+        var outputDateTime = ""
+        if (inputDateTime == "0000-00-00 00") return "0"
+        try {
+            val format: SimpleDateFormat
+            val time: Date
+            when (reportTypeSort) {
+                1, 9 -> {
+                    format = SimpleDateFormat("yyyy-MM-dd HH", Locale.getDefault())
+                    time = format.parse(inputDateTime)!!
+                    val timeFormat = SimpleDateFormat("HH", Locale.getDefault())
+                    outputDateTime = String.format("%s:00", timeFormat.format(time))
+                    return outputDateTime
+                }
 
+                2 -> when (position) {
 
-    fun calculateAQI_China(co:Double, no2: Double, o3: Double, so2: Double, pm25: Double, pm10: Double): Int {
+                    0 -> {
+                        outputDateTime = context.getString(R.string.monday)
+                        return outputDateTime
+                    }
+
+                    1 -> {
+                        outputDateTime = context.getString(R.string.tuesday)
+                        return outputDateTime
+                    }
+
+                    2 -> {
+                        outputDateTime = context.getString(R.string.wednesday)
+                        return outputDateTime
+                    }
+
+                    3 -> {
+                        outputDateTime = context.getString(R.string.thursday)
+                        return outputDateTime
+                    }
+
+                    4 -> {
+                        outputDateTime = context.getString(R.string.friday)
+                        return outputDateTime
+                    }
+
+                    5 -> {
+                        outputDateTime = context.getString(R.string.saturday)
+                        return outputDateTime
+                    }
+
+                    6 -> {
+                        outputDateTime = context.getString(R.string.sunday)
+                        return outputDateTime
+                    }
+                }
+
+                3, 10, 4 -> {
+                    format = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    time = format.parse(inputDateTime)!!
+                    val dayFormat = SimpleDateFormat("dd/MM", Locale.getDefault())
+                    outputDateTime = dayFormat.format(time)
+                    return outputDateTime
+                }
+
+                5, 11, 6, 15 -> {
+                    format = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    time = format.parse(inputDateTime)!!
+                    val monthCurrentFormat = SimpleDateFormat("MM/yyyy", Locale.getDefault())
+                    outputDateTime = monthCurrentFormat.format(time)
+                    return outputDateTime
+                }
+
+                8, 16 -> {
+
+                    format = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    time = format.parse(inputDateTime)!!
+                    val yearFormat = SimpleDateFormat("yyyy", Locale.getDefault())
+                    outputDateTime = yearFormat.format(time)
+                    return outputDateTime
+                }
+
+                13 -> {
+                    format = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    time = format.parse(inputDateTime)!!
+                    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    outputDateTime = dateFormat.format(time)
+                    return outputDateTime
+                }
+            }
+        } catch (e: ParseException) {
+            e.printStackTrace()
+        }
+        return outputDateTime
+    }
+
+    fun calculateAQI_China(
+        co: Double,
+        no2: Double,
+        o3: Double,
+        so2: Double,
+        pm25: Double,
+        pm10: Double,
+    ): Int {
         val coAQI = calculateIndividualAQINow(convertUgMgCO(co), "CO")
         val no2AQI = calculateIndividualAQINow(no2, "NO2")
         val o3AQI = calculateIndividualAQINow(o3, "O3")
@@ -71,60 +171,101 @@ object AppUtils {
 
     private fun calculateIndividualAQINow(value: Double, pollutant: String): Int {
         val c = when (pollutant) {
-            "CO" -> arrayOf(0,5,10,35,60,90,120,150)
-            "NO2" -> arrayOf(0,100,200,700,1200,2340,3090,3840 )
-            "O3" -> arrayOf(0,160,200,300,400,800,1000,1200)
-            "SO2" -> arrayOf(0, 150,500,650,800,1600,2100,2620)
-            "PM25" -> arrayOf(0, 35,75,115,150,250,350,500)
-            "PM10" -> arrayOf(0,50,150,250,350,420,500,600)
+            "CO" -> arrayOf(0, 5, 10, 35, 60, 90, 120, 150)
+            "NO2" -> arrayOf(0, 100, 200, 700, 1200, 2340, 3090, 3840)
+            "O3" -> arrayOf(0, 160, 200, 300, 400, 800, 1000, 1200)
+            "SO2" -> arrayOf(0, 150, 500, 650, 800, 1600, 2100, 2620)
+            "PM25" -> arrayOf(0, 35, 75, 115, 150, 250, 350, 500)
+            "PM10" -> arrayOf(0, 50, 150, 250, 350, 420, 500, 600)
             else -> arrayOf(0)
         }
 
         val i = when {
-            value <= c[1].toDouble() -> linearInterpolation(value, 0, 50, c[0].toDouble(), c[1].toDouble())
-            value <= c[2].toDouble() -> linearInterpolation(value, 51, 100, c[1].toDouble(), c[2].toDouble())
-            value <= c[3].toDouble() -> linearInterpolation(value, 101, 150, c[2].toDouble(), c[3].toDouble())
-            value <= c[4].toDouble() -> linearInterpolation(value, 151, 200, c[3].toDouble(), c[4].toDouble())
-            value <= c[5].toDouble() -> linearInterpolation(value, 201, 300, c[4].toDouble(), c[5].toDouble())
+            value <= c[1].toDouble() -> linearInterpolation(
+                value,
+                0,
+                50,
+                c[0].toDouble(),
+                c[1].toDouble()
+            )
+
+            value <= c[2].toDouble() -> linearInterpolation(
+                value,
+                51,
+                100,
+                c[1].toDouble(),
+                c[2].toDouble()
+            )
+
+            value <= c[3].toDouble() -> linearInterpolation(
+                value,
+                101,
+                150,
+                c[2].toDouble(),
+                c[3].toDouble()
+            )
+
+            value <= c[4].toDouble() -> linearInterpolation(
+                value,
+                151,
+                200,
+                c[3].toDouble(),
+                c[4].toDouble()
+            )
+
+            value <= c[5].toDouble() -> linearInterpolation(
+                value,
+                201,
+                300,
+                c[4].toDouble(),
+                c[5].toDouble()
+            )
+
             else -> 300
         }
 
         return i.toInt()
     }
 
-    private fun linearInterpolation(value: Double, iLow: Int, iHigh: Int, cLow: Double, cHigh: Double): Double {
+    private fun linearInterpolation(
+        value: Double,
+        iLow: Int,
+        iHigh: Int,
+        cLow: Double,
+        cHigh: Double,
+    ): Double {
         return (((iHigh - iLow) / (cHigh - cLow)) * (value - cLow)) + iLow
     }
 
 
-
-
-
-    private fun convertMicrogramsPerCubicMeterToPpb(concentrationMicrogramsPerCubicMeter: Double, molecularWeight: Double): Double {
+    private fun convertMicrogramsPerCubicMeterToPpb(
+        concentrationMicrogramsPerCubicMeter: Double,
+        molecularWeight: Double,
+    ): Double {
         return (concentrationMicrogramsPerCubicMeter * 1000) / molecularWeight
     }
+
     private fun convertUgMgCO(co: Double): Double {
-        return (co/1000)
+        return (co / 1000)
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    var units =""
-    fun returnUnits(status: Int):String{
-        when(status){
-            1-> units="standard"//Kelvin
-            2-> units="metric"//độ C
-            3-> units="imperial"//độ F
+    var units = ""
+    fun returnUnits(status: Int): String {
+        when (status) {
+            1 -> units = "standard"//Kelvin
+            2 -> units = "metric"//độ C
+            3 -> units = "imperial"//độ F
         }
         return units
     }
 
 
-
     @SuppressLint("SimpleDateFormat")
     fun getDayDetails(dt: Long, hours: Boolean): String {
 //        val tz = TimeZone.getDefault()
-        val millis =  (dt*1000) + 25200
+        val millis = (dt * 1000) + 25200
         val date = Date(millis) // tạo đối tượng Date từ số miliseconds
         val formatter: SimpleDateFormat = if (hours) {
             SimpleDateFormat(AppConstants.FORMAT_DATE_HOURS)// định dạng ngày tháng năm giờ phút
@@ -135,33 +276,71 @@ object AppUtils {
         return formatter.format(date)
     }
 
+    @SuppressLint("SimpleDateFormat")
     fun getDayDetails(dt: Long): String {
 //        val tz = TimeZone.getDefault()
-        val millis =  (dt*1000) + 25200
+        val millis = (dt * 1000) + 25200
         val date = Date(millis) // tạo đối tượng Date từ số miliseconds
-        val formatter= SimpleDateFormat(AppConstants.FORMAT_DATE_NOT_YEAR)
+        val formatter = SimpleDateFormat(AppConstants.FORMAT_DATE_NOT_YEAR)
         return formatter.format(date)
     }
 
     @SuppressLint("SimpleDateFormat")
-    fun getDayDetailsHours(dt: Long, getHours:Boolean): String {
-        val millis = dt*1000
+    fun getDayDetailsHours(dt: Long, getHours: Boolean): String {
+        val millis = dt * 1000
         val date = Date(millis) // tạo đối tượng Date từ số miliseconds
-        val formatter =  SimpleDateFormat(AppConstants.FORMAT_DATE_HOURS)// định dạng ngày tháng năm giờ phút
-        return extractTimeFromString(formatter.format(date),getHours)
+        val formatter =
+            SimpleDateFormat(AppConstants.FORMAT_DATE_HOURS)// định dạng ngày tháng năm giờ phút
+        return extractTimeFromString(formatter.format(date), getHours)
     }
-    private fun extractTimeFromString(dateTimeString: String, getHours:Boolean): String {
+
+    private fun extractTimeFromString(dateTimeString: String, getHours: Boolean): String {
         val formatter = SimpleDateFormat(AppConstants.FORMAT_DATE_HOURS, Locale.getDefault())
         val date = formatter.parse(dateTimeString)
 
-        val timeFormatter =if (getHours) {
+        val timeFormatter = if (getHours) {
             SimpleDateFormat(AppConstants.FORMAT_HOURS, Locale.getDefault())
-        }else{
+        } else {
             SimpleDateFormat(AppConstants.FORMAT_DATE, Locale.getDefault())
         }
 
         return timeFormatter.format(date!!)
     }
+
+    fun timeComponents(hours: Boolean, time: String): Int {
+        val timeComponents = time.split(":")
+        return if (hours) {
+            timeComponents[0].toInt() // Trả về giờ nếu tham số hours là true
+        } else {
+            timeComponents[1].toInt() // Trả về phút nếu tham số hours là false
+        }
+    }
+
+    fun doiHuongGio(huongGio: Int): String {
+        return when (huongGio) {
+            in 338..360, in 0..22 -> "Bắc"
+            in 23..67 -> "Đông Bắc"
+            in 68..112 -> "Đông"
+            in 113..157 -> "Đông Nam"
+            in 158..202 -> "Nam"
+            in 203..247 -> "Tây Nam"
+            in 248..292 -> "Tây"
+            in 293..337 -> "Tây Bắc"
+            else -> "Không hợp lệ"
+        }
+    }
+
+    fun Int.dpToPx(context: Context): Int {
+        val density = context.resources.displayMetrics.density
+        return (this * density).toInt()
+    }
+
+    fun Float.dpToPx(context: Context): Float {
+        val density = context.resources.displayMetrics.density
+        return this * density
+    }
+
+
     fun dateNow(): String {
         val calendar = Calendar.getInstance()
         val day = calendar.get(Calendar.DAY_OF_MONTH)
@@ -170,153 +349,233 @@ object AppUtils {
         return "$day/$month/$year"
     }
 
-    fun checkWeather(idWeather:Long, background: View, backgroundWeather: WeatherView,context: Context){
-        when (idWeather){
-            in 200..232->
-                setBackGround(AppConstants.THUNDERSTORM,background,backgroundWeather,context)//dông
-            in 300..321-> setBackGround(AppConstants.RAIN,background,backgroundWeather,context)//mưa phùn
-            in 500..531-> setBackGround(AppConstants.RAIN,background,backgroundWeather,context)//mưa
-            in 600..622-> setBackGround(AppConstants.SNOW,background,backgroundWeather,context)//tuyết
-            701L,721L,741L->setBackGround(AppConstants.DIZ,background,backgroundWeather,context)//sương mù
-            711L,731L,751L,761L,762L->setBackGround(AppConstants.DUST,background,backgroundWeather,context)//bụi
-            771L->setBackGround(AppConstants.SQUALL,background,backgroundWeather,context)//mưa đá
-            781L->setBackGround(AppConstants.TORNADO,background,backgroundWeather,context)//lốc xoáy
-            800L->setBackGround(AppConstants.SUN,background,backgroundWeather,context)//thông thoáng
-             801L,802L->setBackGround(AppConstants.CLOUD_LITE,background,backgroundWeather,context)//mây ít , rải rác
-           803L->setBackGround(AppConstants.CLOUD,background,backgroundWeather,context)//mây ít , rải rác
-            804L->setBackGround(AppConstants.MURKY,background,backgroundWeather,context)//mây u ám
+    fun checkWeather(
+        idWeather: Long,
+        background: View,
+        backgroundWeather: WeatherView,
+        context: Context,
+    ) {
+        when (idWeather) {
+            in 200..232 ->
+                setBackGround(
+                    AppConstants.THUNDERSTORM,
+                    background,
+                    backgroundWeather,
+                    context
+                )//dông
+            in 300..321 -> setBackGround(
+                AppConstants.RAIN,
+                background,
+                backgroundWeather,
+                context
+            )//mưa phùn
+            in 500..531 -> setBackGround(
+                AppConstants.RAIN,
+                background,
+                backgroundWeather,
+                context
+            )//mưa
+            in 600..622 -> setBackGround(
+                AppConstants.SNOW,
+                background,
+                backgroundWeather,
+                context
+            )//tuyết
+            701L, 721L, 741L -> setBackGround(
+                AppConstants.DIZ,
+                background,
+                backgroundWeather,
+                context
+            )//sương mù
+            711L, 731L, 751L, 761L, 762L -> setBackGround(
+                AppConstants.DUST,
+                background,
+                backgroundWeather,
+                context
+            )//bụi
+            771L -> setBackGround(
+                AppConstants.SQUALL,
+                background,
+                backgroundWeather,
+                context
+            )//mưa đá
+            781L -> setBackGround(
+                AppConstants.TORNADO,
+                background,
+                backgroundWeather,
+                context
+            )//lốc xoáy
+            800L -> setBackGround(
+                AppConstants.SUN,
+                background,
+                backgroundWeather,
+                context
+            )//thông thoáng
+            801L, 802L -> setBackGround(
+                AppConstants.CLOUD_LITE,
+                background,
+                backgroundWeather,
+                context
+            )//mây ít , rải rác
+            803L -> setBackGround(
+                AppConstants.CLOUD,
+                background,
+                backgroundWeather,
+                context
+            )//mây ít , rải rác
+            804L -> setBackGround(
+                AppConstants.MURKY,
+                background,
+                backgroundWeather,
+                context
+            )//mây u ám
 
         }
 
     }
+
     @SuppressLint("UseCompatLoadingForDrawables")
-     private fun setBackGround(status:Int, background: View, backgroundWeather: WeatherView,context: Context) {
-        when(status) {
-            AppConstants.RAIN->
-            {
+    private fun setBackGround(
+        status: Int,
+        background: View,
+        backgroundWeather: WeatherView,
+        context: Context,
+    ) {
+        when (status) {
+            AppConstants.RAIN -> {
                 backgroundWeather.setWeatherData(PrecipType.RAIN)
 
-                background.background= context.getDrawable(R.drawable.rain_weather)
+                background.background = context.getDrawable(R.drawable.rain_weather)
             }
-            AppConstants.SNOW->
-            {
+
+            AppConstants.SNOW -> {
                 backgroundWeather.setWeatherData(PrecipType.SNOW)
-                background.background= context.getDrawable(R.drawable.snow)
+                background.background = context.getDrawable(R.drawable.snow)
             }
-            AppConstants.SUN->
+
+            AppConstants.SUN -> {
+                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+                background.background = context.getDrawable(R.drawable.clear_sky)
+            }
+
+            AppConstants.CLOUD ->//mây nhiều
             {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.clear_sky)
+                background.background = context.getDrawable(R.drawable.cloud_more)
             }
-            AppConstants.CLOUD->//mây nhiều
-            {
+
+            AppConstants.CLOUD_LITE -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.cloud_more)
+                background.background = context.getDrawable(R.drawable.cloud_cum)
             }
-            AppConstants.CLOUD_LITE ->
-            {
+
+            AppConstants.MURKY -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.cloud_cum)
+                background.background = context.getDrawable(R.drawable.murky)
             }
-            AppConstants.MURKY->
-            {
+
+            AppConstants.DIZ -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.murky)
+                background.background = context.getDrawable(R.drawable.suong_mu)
             }
-            AppConstants.DIZ->
-            {
+
+            AppConstants.TORNADO -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.suong_mu)
+                background.background = context.getDrawable(R.drawable.loc_xoay)
             }
-            AppConstants.TORNADO->
-            {
+
+            AppConstants.SQUALL -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.loc_xoay)
+                background.background = context.getDrawable(R.drawable.mua_da)
             }
-            AppConstants.SQUALL->
-            {
+
+            AppConstants.DUST -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.mua_da)
+                background.background = context.getDrawable(R.drawable.bui)
             }
-            AppConstants.DUST->
-            {
+
+            AppConstants.THUNDERSTORM -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.bui)
-            }
-            AppConstants.THUNDERSTORM->
-            {
-                backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background= context.getDrawable(R.drawable.dong)
+                background.background = context.getDrawable(R.drawable.dong)
             }
         }
 
     }
 
-    fun checkWeatherItem(idWeather:Long, background: View,context: Context){
-        when (idWeather){
-            in 200..232->
-                setBackGroundItem(AppConstants.THUNDERSTORM,background,context)//dông
-            in 300..321-> setBackGroundItem(AppConstants.RAIN,background,context)//mưa phùn
-            in 500..531-> setBackGroundItem(AppConstants.RAIN,background,context)//mưa
-            in 600..622-> setBackGroundItem(AppConstants.SNOW,background,context)//tuyết
-            701L, 721L, 741L ->setBackGroundItem(AppConstants.DIZ,background,context)//sương mù
-            711L,731L,751L,761L,762L->setBackGroundItem(AppConstants.DUST,background,context)//bụi
-            771L->setBackGroundItem(AppConstants.SQUALL,background,context)//mưa đá
-            781L->setBackGroundItem(AppConstants.TORNADO,background,context)//lốc xoáy
-            800L->setBackGroundItem(AppConstants.SUN,background,context)//thông thoáng
-             801L,802L->setBackGroundItem(AppConstants.CLOUD_LITE,background,context)//mây ít , rải rác
-           803L->setBackGroundItem(AppConstants.CLOUD,background,context)//mây ít , rải rác
-            804L->setBackGroundItem(AppConstants.MURKY,background,context)//mây u ám
+    fun checkWeatherItem(idWeather: Long, background: View, context: Context) {
+        when (idWeather) {
+            in 200..232 ->
+                setBackGroundItem(AppConstants.THUNDERSTORM, background, context)//dông
+            in 300..321 -> setBackGroundItem(AppConstants.RAIN, background, context)//mưa phùn
+            in 500..531 -> setBackGroundItem(AppConstants.RAIN, background, context)//mưa
+            in 600..622 -> setBackGroundItem(AppConstants.SNOW, background, context)//tuyết
+            701L, 721L, 741L -> setBackGroundItem(AppConstants.DIZ, background, context)//sương mù
+            711L, 731L, 751L, 761L, 762L -> setBackGroundItem(
+                AppConstants.DUST,
+                background,
+                context
+            )//bụi
+            771L -> setBackGroundItem(AppConstants.SQUALL, background, context)//mưa đá
+            781L -> setBackGroundItem(AppConstants.TORNADO, background, context)//lốc xoáy
+            800L -> setBackGroundItem(AppConstants.SUN, background, context)//thông thoáng
+            801L, 802L -> setBackGroundItem(
+                AppConstants.CLOUD_LITE,
+                background,
+                context
+            )//mây ít , rải rác
+            803L -> setBackGroundItem(AppConstants.CLOUD, background, context)//mây ít , rải rác
+            804L -> setBackGroundItem(AppConstants.MURKY, background, context)//mây u ám
 
         }
 
     }
+
     @SuppressLint("UseCompatLoadingForDrawables")
-     fun setBackGroundItem(status:Int, background: View,context: Context) {
-        when(status) {
-            AppConstants.RAIN->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+    private fun setBackGroundItem(status: Int, background: View, context: Context) {
+        when (status) {
+            AppConstants.RAIN -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
-            AppConstants.SNOW->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_white_transparent)
+
+            AppConstants.SNOW -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_white_transparent)
             }
-            AppConstants.SUN->
-            {
-                background.background=context.getDrawable(R.drawable.bg_orange_transparent)
+
+            AppConstants.SUN -> {
+                background.background = context.getDrawable(R.drawable.bg_orange_transparent)
             }
-            AppConstants.CLOUD->//mây nhiều
+
+            AppConstants.CLOUD ->//mây nhiều
             {
-                background.background=context.getDrawable(R.drawable.bg_gray_white_transparent)
+                background.background = context.getDrawable(R.drawable.bg_gray_white_transparent)
             }
-            AppConstants.CLOUD_LITE ->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_white_transparent)
+
+            AppConstants.CLOUD_LITE -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_white_transparent)
             }
-            AppConstants.MURKY->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+
+            AppConstants.MURKY -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
-            AppConstants.DIZ->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+
+            AppConstants.DIZ -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
-            AppConstants.TORNADO->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+
+            AppConstants.TORNADO -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
-            AppConstants.SQUALL->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+
+            AppConstants.SQUALL -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
-            AppConstants.DUST->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+
+            AppConstants.DUST -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
-            AppConstants.THUNDERSTORM->
-            {
-                background.background=context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+
+            AppConstants.THUNDERSTORM -> {
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
             }
         }
 
@@ -342,6 +601,7 @@ object AppUtils {
         val millis = dateDetails?.time
         return millis!!.toLong()
     }
+
     fun coordinatesToLatLng(latitude: Double, longitude: Double): LatLng {
         return LatLng(latitude, longitude)
     }
@@ -366,6 +626,7 @@ object AppUtils {
             else -> date.format(DateTimeFormatter.ofPattern("EEEE")) // Chuyển đổi ngày thành thứ trong tuần
         }
     }
+
     fun convertMillisToHoursMinutes(milliseconds: Long): String {
         val hours = (milliseconds / (1000 * 60 * 60)).toInt()
         val minutes = ((milliseconds % (1000 * 60 * 60)) / (1000 * 60)).toInt()
@@ -376,8 +637,8 @@ object AppUtils {
         return "$hoursStr:$minutesStr"
     }
 
-    fun convertRainPercent(pop:Double):String{
-        val popPersent = roundNumber(pop*100.0)
+    fun convertRainPercent(pop: Double): String {
+        val popPersent = roundNumber(pop * 100.0)
         return "${popPersent} %"
     }
     ////////////////////////////////////////////////////
@@ -547,6 +808,7 @@ object AppUtils {
         )
         view.adapter = adapter
     }
+
     fun initRecyclerViewVerticalWithFlexBoxLayout(
         view: RecyclerView, adapter: RecyclerView.Adapter<*>?,
     ) {
@@ -816,13 +1078,14 @@ object AppUtils {
     }
 
     fun roundBigDecimal(number: BigDecimal): BigDecimal {
-        val roundedNumber = if (number.subtract(number.toBigInteger().toBigDecimal()) >= BigDecimal("0.5")) {
-            // Nếu phần thập phân lớn hơn hoặc bằng 0.5, làm tròn lên 1
-            number.toBigInteger().toBigDecimal().add(BigDecimal.ONE)
-        } else {
-            // Ngược lại, giữ nguyên phần nguyên
-            number.toBigInteger().toBigDecimal()
-        }
+        val roundedNumber =
+            if (number.subtract(number.toBigInteger().toBigDecimal()) >= BigDecimal("0.5")) {
+                // Nếu phần thập phân lớn hơn hoặc bằng 0.5, làm tròn lên 1
+                number.toBigInteger().toBigDecimal().add(BigDecimal.ONE)
+            } else {
+                // Ngược lại, giữ nguyên phần nguyên
+                number.toBigInteger().toBigDecimal()
+            }
         return roundedNumber
     }
 
@@ -835,10 +1098,6 @@ object AppUtils {
         )
     }
 
-    fun dpToPx(context: Context, valueInDp: Float): Float {
-        val metrics = context.resources.displayMetrics
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, valueInDp, metrics)
-    }
 
     fun getVideo(url: String, context: Context): String? {
         var link: String? = ""
@@ -912,4 +1171,6 @@ object AppUtils {
         return result
     }
 
+
 }
+

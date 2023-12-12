@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: im.ene.kohii:kohii-exoplayer:1.4.0.2017001@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e3c200e6512e7e8d2b2d4b847106b20d/transformed/jetified-kohii-exoplayer-1.4.0.2017001/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e3c200e6512e7e8d2b2d4b847106b20d/transformed/jetified-kohii-exoplayer-1.4.0.2017001/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e3c200e6512e7e8d2b2d4b847106b20d/transformed/jetified-kohii-exoplayer-1.4.0.2017001/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cd5365a87ad255e49136a57a3a4dc45e/transformed/jetified-kohii-exoplayer-1.4.0.2017001/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cd5365a87ad255e49136a57a3a4dc45e/transformed/jetified-kohii-exoplayer-1.4.0.2017001/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cd5365a87ad255e49136a57a3a4dc45e/transformed/jetified-kohii-exoplayer-1.4.0.2017001/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/im.ene.kohii/kohii-exoplayer/1.4.0.2017001/b8fb2f7632471b7979a4ed5719329904453c8bca/kohii-exoplayer-1.4.0.2017001-javadoc.jar!/" />

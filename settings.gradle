@@ -11,6 +11,5 @@ include ':library:readmoreoption'
 
 //DynamicFeatures module
 include ':features'
-include ':features:setting'
-include ':features:map'
 include ':features:home'
+include ':features:setting'

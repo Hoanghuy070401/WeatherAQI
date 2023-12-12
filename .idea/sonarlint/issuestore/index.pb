@@ -51,8 +51,6 @@ Oapp/src/main/java/vn/techres/android/weather/app/helper/MyAxisValueFormatter.kt
 Kapp/src/main/java/vn/techres/android/weather/app/helper/MyValueFormatter.kt,3\a\3ae271303863a7d0a531ace2f5b052b16779e8eb
 M
 features/setting/build.gradle,f\9\f92d97f66cd1d22a3fa49cc77c4ccf3e02e0447b
-I
-features/map/build.gradle,2\c\2cee3482bb189908d46cbae7255cbc7e2b9948f7
 =
 common.gradle,6\0\60ef164eb3729b19238f7edc3d462c0ab3ae2e0d
 A
@@ -79,8 +77,6 @@ j
 :library/base/src/main/java/vn/techres/base/BaseActivity.kt,8\f\8f0f3603268039ececd1037ba5bf7b406e750cd6
 @
 local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
-Y
-)features/map/src/main/AndroidManifest.xml,2\5\257e39f7ffc635032c299648e763ebe45b251918
 {
 Kapp/src/main/java/vn/techres/android/weather/ui/activity/BrowserActivity.kt,4\9\49c8de219381a171698f81fa17be90ed1b1d0d9b
 u

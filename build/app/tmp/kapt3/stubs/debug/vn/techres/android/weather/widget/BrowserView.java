@@ -1,14 +1,36 @@
 package vn.techres.android.weather.widget;
 
+import java.lang.System;
+
 /**
  * @Author: Bùi Hửu Thắng
  * @Date: 28/09/2022
  */
-@kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 \"2\u00020\u00012\u00020\u00022\u00020\u0003:\u0003 !\"B/\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u0012\b\b\u0002\u0010\n\u001a\u00020\t\u00a2\u0006\u0002\u0010\u000bJ\n\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0018\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016J\u0010\u0010\u0015\u001a\u00020\u000f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017J\u0010\u0010\u0018\u001a\u00020\u000f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0019J\u000e\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u001b\u001a\u00020\u0012J\u0012\u0010\u001c\u001a\u00020\u000f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u001dH\u0017J\u0010\u0010\u001e\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u001fH\u0017\u00a8\u0006#"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView;", "Lvn/techres/widget/layout/NestedScrollWebView;", "Landroidx/lifecycle/LifecycleEventObserver;", "Lvn/techres/base/action/ActivityAction;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "defStyleRes", "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", "getUrl", "", "onDestroy", "", "onStateChanged", "source", "Landroidx/lifecycle/LifecycleOwner;", "event", "Landroidx/lifecycle/Lifecycle$Event;", "setBrowserChromeClient", "client", "Lvn/techres/android/weather/widget/BrowserView$BrowserChromeClient;", "setBrowserViewClient", "Lvn/techres/android/weather/widget/BrowserView$BrowserViewClient;", "setLifecycleOwner", "owner", "setWebChromeClient", "Landroid/webkit/WebChromeClient;", "setWebViewClient", "Landroid/webkit/WebViewClient;", "BrowserChromeClient", "BrowserViewClient", "Companion", "app_debug"})
 @kotlin.Suppress(names = {"SetJavaScriptEnabled"})
+@kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 \"2\u00020\u00012\u00020\u00022\u00020\u0003:\u0003 !\"B/\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u0012\b\b\u0002\u0010\n\u001a\u00020\t\u00a2\u0006\u0002\u0010\u000bJ\n\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0018\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016J\u0010\u0010\u0015\u001a\u00020\u000f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017J\u0010\u0010\u0018\u001a\u00020\u000f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0019J\u000e\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u001b\u001a\u00020\u0012J\u0012\u0010\u001c\u001a\u00020\u000f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u001dH\u0017J\u0010\u0010\u001e\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u001fH\u0017\u00a8\u0006#"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView;", "Lvn/techres/widget/layout/NestedScrollWebView;", "Landroidx/lifecycle/LifecycleEventObserver;", "Lvn/techres/base/action/ActivityAction;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "defStyleRes", "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", "getUrl", "", "onDestroy", "", "onStateChanged", "source", "Landroidx/lifecycle/LifecycleOwner;", "event", "Landroidx/lifecycle/Lifecycle$Event;", "setBrowserChromeClient", "client", "Lvn/techres/android/weather/widget/BrowserView$BrowserChromeClient;", "setBrowserViewClient", "Lvn/techres/android/weather/widget/BrowserView$BrowserViewClient;", "setLifecycleOwner", "owner", "setWebChromeClient", "Landroid/webkit/WebChromeClient;", "setWebViewClient", "Landroid/webkit/WebViewClient;", "BrowserChromeClient", "BrowserViewClient", "Companion", "app_debug"})
 public final class BrowserView extends vn.techres.widget.layout.NestedScrollWebView implements androidx.lifecycle.LifecycleEventObserver, vn.techres.base.action.ActivityAction {
     @org.jetbrains.annotations.NotNull
     public static final vn.techres.android.weather.widget.BrowserView.Companion Companion = null;
+    
+    @kotlin.jvm.JvmOverloads
+    public BrowserView(@org.jetbrains.annotations.NotNull
+    android.content.Context context) {
+        super(null, null, 0, 0);
+    }
+    
+    @kotlin.jvm.JvmOverloads
+    public BrowserView(@org.jetbrains.annotations.NotNull
+    android.content.Context context, @org.jetbrains.annotations.Nullable
+    android.util.AttributeSet attrs) {
+        super(null, null, 0, 0);
+    }
+    
+    @kotlin.jvm.JvmOverloads
+    public BrowserView(@org.jetbrains.annotations.NotNull
+    android.content.Context context, @org.jetbrains.annotations.Nullable
+    android.util.AttributeSet attrs, int defStyleAttr) {
+        super(null, null, 0, 0);
+    }
     
     @kotlin.jvm.JvmOverloads
     public BrowserView(@org.jetbrains.annotations.NotNull
@@ -22,8 +44,8 @@ public final class BrowserView extends vn.techres.widget.layout.NestedScrollWebV
      *
      * @return      返回原始的 url，因为有些url是被WebView解码过的
      */
-    @java.lang.Override
     @org.jetbrains.annotations.Nullable
+    @java.lang.Override
     public java.lang.String getUrl() {
         return null;
     }
@@ -76,45 +98,87 @@ public final class BrowserView extends vn.techres.widget.layout.NestedScrollWebV
     vn.techres.android.weather.widget.BrowserView.BrowserChromeClient client) {
     }
     
-    @kotlin.jvm.JvmOverloads
-    public BrowserView(@org.jetbrains.annotations.NotNull
-    android.content.Context context) {
-        super(null, null, 0, 0);
-    }
-    
-    @kotlin.jvm.JvmOverloads
-    public BrowserView(@org.jetbrains.annotations.NotNull
-    android.content.Context context, @org.jetbrains.annotations.Nullable
-    android.util.AttributeSet attrs) {
-        super(null, null, 0, 0);
-    }
-    
-    @kotlin.jvm.JvmOverloads
-    public BrowserView(@org.jetbrains.annotations.NotNull
-    android.content.Context context, @org.jetbrains.annotations.Nullable
-    android.util.AttributeSet attrs, int defStyleAttr) {
-        super(null, null, 0, 0);
-    }
-    
-    @java.lang.Override
     @org.jetbrains.annotations.Nullable
     public android.app.Activity getActivity() {
         return null;
     }
     
-    @java.lang.Override
     public void startActivity(@org.jetbrains.annotations.NotNull
     android.content.Intent intent) {
     }
     
-    @java.lang.Override
     public void startActivity(@org.jetbrains.annotations.NotNull
     java.lang.Class<? extends android.app.Activity> clazz) {
     }
     
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0000\b\u0016\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J(\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\rH\u0016J(\u0010\u000e\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\rH\u0016J0\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0011H\u0016J,\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0012\u0010\u0018\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001b0\u001a0\u0019H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001c"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView$BrowserChromeClient;", "Landroid/webkit/WebChromeClient;", "webView", "Lvn/techres/android/weather/widget/BrowserView;", "(Lvn/techres/android/weather/widget/BrowserView;)V", "onJsAlert", "", "view", "Landroid/webkit/WebView;", "url", "", "message", "result", "Landroid/webkit/JsResult;", "onJsConfirm", "onJsPrompt", "defaultValue", "Landroid/webkit/JsPromptResult;", "openSystemFileChooser", "", "activity", "Lvn/techres/base/BaseActivity;", "params", "Landroid/webkit/WebChromeClient$FileChooserParams;", "callback", "Landroid/webkit/ValueCallback;", "", "Landroid/net/Uri;", "app_debug"})
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\b\u0016\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0002J \u0010\t\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\rH\u0017J(\u0010\t\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0011\u001a\u00020\bH\u0016J \u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\f\u001a\u00020\u0015H\u0016J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000bH\u0017J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016\u00a8\u0006\u0018"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView$BrowserViewClient;", "Landroid/webkit/WebViewClient;", "()V", "dialing", "", "view", "Landroid/webkit/WebView;", "url", "", "onReceivedError", "request", "Landroid/webkit/WebResourceRequest;", "error", "Landroid/webkit/WebResourceError;", "errorCode", "", "description", "failingUrl", "onReceivedSslError", "handler", "Landroid/webkit/SslErrorHandler;", "Landroid/net/http/SslError;", "shouldOverrideUrlLoading", "", "app_debug"})
+    public static class BrowserViewClient extends android.webkit.WebViewClient {
+        
+        public BrowserViewClient() {
+            super();
+        }
+        
+        /**
+         * 网站证书校验错误
+         */
+        @java.lang.Override
+        public void onReceivedSslError(@org.jetbrains.annotations.NotNull
+        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
+        android.webkit.SslErrorHandler handler, @org.jetbrains.annotations.NotNull
+        android.net.http.SslError error) {
+        }
+        
+        /**
+         * 同名 API 兼容
+         */
+        @android.annotation.TargetApi(value = android.os.Build.VERSION_CODES.M)
+        @java.lang.Override
+        public void onReceivedError(@org.jetbrains.annotations.NotNull
+        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
+        android.webkit.WebResourceRequest request, @org.jetbrains.annotations.NotNull
+        android.webkit.WebResourceError error) {
+        }
+        
+        /**
+         * 加载错误
+         */
+        @java.lang.Override
+        public void onReceivedError(@org.jetbrains.annotations.NotNull
+        android.webkit.WebView view, int errorCode, @org.jetbrains.annotations.NotNull
+        java.lang.String description, @org.jetbrains.annotations.NotNull
+        java.lang.String failingUrl) {
+        }
+        
+        /**
+         * 同名 API 兼容
+         */
+        @android.annotation.TargetApi(value = android.os.Build.VERSION_CODES.N)
+        @java.lang.Override
+        public boolean shouldOverrideUrlLoading(@org.jetbrains.annotations.NotNull
+        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
+        android.webkit.WebResourceRequest request) {
+            return false;
+        }
+        
+        /**
+         * 跳转到其他链接
+         */
+        @java.lang.Override
+        public boolean shouldOverrideUrlLoading(@org.jetbrains.annotations.NotNull
+        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
+        java.lang.String url) {
+            return false;
+        }
+        
+        /**
+         * 跳转到拨号界面
+         */
+        private final void dialing(android.webkit.WebView view, java.lang.String url) {
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0000\b\u0016\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J(\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\rH\u0016J(\u0010\u000e\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\rH\u0016J0\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0011H\u0016J,\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0012\u0010\u0018\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001b0\u001a0\u0019H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001c"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView$BrowserChromeClient;", "Landroid/webkit/WebChromeClient;", "webView", "Lvn/techres/android/weather/widget/BrowserView;", "(Lvn/techres/android/weather/widget/BrowserView;)V", "onJsAlert", "", "view", "Landroid/webkit/WebView;", "url", "", "message", "result", "Landroid/webkit/JsResult;", "onJsConfirm", "onJsPrompt", "defaultValue", "Landroid/webkit/JsPromptResult;", "openSystemFileChooser", "", "activity", "Lvn/techres/base/BaseActivity;", "params", "Landroid/webkit/WebChromeClient$FileChooserParams;", "callback", "Landroid/webkit/ValueCallback;", "", "Landroid/net/Uri;", "app_debug"})
     public static class BrowserChromeClient extends android.webkit.WebChromeClient {
-        @org.jetbrains.annotations.NotNull
         private final vn.techres.android.weather.widget.BrowserView webView = null;
         
         public BrowserChromeClient(@org.jetbrains.annotations.NotNull
@@ -166,73 +230,7 @@ public final class BrowserView extends vn.techres.widget.layout.NestedScrollWebV
         }
     }
     
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\b\u0016\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0002J \u0010\t\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\rH\u0017J(\u0010\t\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0011\u001a\u00020\bH\u0016J \u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\f\u001a\u00020\u0015H\u0016J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000bH\u0017J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016\u00a8\u0006\u0018"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView$BrowserViewClient;", "Landroid/webkit/WebViewClient;", "()V", "dialing", "", "view", "Landroid/webkit/WebView;", "url", "", "onReceivedError", "request", "Landroid/webkit/WebResourceRequest;", "error", "Landroid/webkit/WebResourceError;", "errorCode", "", "description", "failingUrl", "onReceivedSslError", "handler", "Landroid/webkit/SslErrorHandler;", "Landroid/net/http/SslError;", "shouldOverrideUrlLoading", "", "app_debug"})
-    public static class BrowserViewClient extends android.webkit.WebViewClient {
-        
-        public BrowserViewClient() {
-            super();
-        }
-        
-        /**
-         * 网站证书校验错误
-         */
-        @java.lang.Override
-        public void onReceivedSslError(@org.jetbrains.annotations.NotNull
-        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
-        android.webkit.SslErrorHandler handler, @org.jetbrains.annotations.NotNull
-        android.net.http.SslError error) {
-        }
-        
-        /**
-         * 同名 API 兼容
-         */
-        @java.lang.Override
-        @android.annotation.TargetApi(value = android.os.Build.VERSION_CODES.M)
-        public void onReceivedError(@org.jetbrains.annotations.NotNull
-        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
-        android.webkit.WebResourceRequest request, @org.jetbrains.annotations.NotNull
-        android.webkit.WebResourceError error) {
-        }
-        
-        /**
-         * 加载错误
-         */
-        @java.lang.Override
-        public void onReceivedError(@org.jetbrains.annotations.NotNull
-        android.webkit.WebView view, int errorCode, @org.jetbrains.annotations.NotNull
-        java.lang.String description, @org.jetbrains.annotations.NotNull
-        java.lang.String failingUrl) {
-        }
-        
-        /**
-         * 同名 API 兼容
-         */
-        @java.lang.Override
-        @android.annotation.TargetApi(value = android.os.Build.VERSION_CODES.N)
-        public boolean shouldOverrideUrlLoading(@org.jetbrains.annotations.NotNull
-        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
-        android.webkit.WebResourceRequest request) {
-            return false;
-        }
-        
-        /**
-         * 跳转到其他链接
-         */
-        @java.lang.Override
-        public boolean shouldOverrideUrlLoading(@org.jetbrains.annotations.NotNull
-        android.webkit.WebView view, @org.jetbrains.annotations.NotNull
-        java.lang.String url) {
-            return false;
-        }
-        
-        /**
-         * 跳转到拨号界面
-         */
-        private final void dialing(android.webkit.WebView view, java.lang.String url) {
-        }
-    }
-    
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, xi = 48, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView$Companion;", "", "()V", "app_debug"})
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lvn/techres/android/weather/widget/BrowserView$Companion;", "", "()V", "app_debug"})
     public static final class Companion {
         
         private Companion() {

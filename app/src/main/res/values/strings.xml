@@ -205,12 +205,40 @@
     <string name="title_home">Module Home</string>
     <string name="delete">Xóa</string>
     <string name="oC">\u2103</string>
+    <string name="hPa">hPa</string>
+    <string name="ms">m/s</string>
     <string name="oF"> °F</string>
     <string name="temperate_max">Cao nhất</string>
     <string name="temperate_min">Thấp nhất</string>
     <string name="mm">mm</string>
     <string name="persent">%</string>
     <string name="sunset_sunrise_location">Thời gian mặt trời mọc và mặt trời lặn đang được tính theo múi giờ địa phương </string>
+    <string name="detail_watch">Xem chi tiết </string>
+    <string name="four_day_hourly_forecast">Dự báo hàng giờ 4 ngày</string>
+    <string name="three_day_forecast">Dự báo 3 ngày</string>
+    <string name="seven_day_forecast">Xem thêm dự báo các ngày kế tiếp</string>
+    <string name="one_day_hour_forecast">Dự báo hàng giờ</string>
+    <string name="forecast_one_month">Dự báo 30 ngày</string>
+    <string name="more_details">Thêm chi tiết</string>
+    <string name="sunrise">Bình minh</string>
+    <string name="sunset">Hoàng hôn</string>
+    <string name="humidity">Độ ẩm</string>
+    <string name="feel_like">Cảm giác như</string>
+    <string name="pressure">Áp suất</string>
+    <string name="there_may_be_rain">Có thể có mưa</string>
+    <string name="cloud_all">Mây che phủ</string>
+    <string name="rain_1h">Lượng mưa trong 1 giờ</string>
+    <string name="rain_3h">Lượng mưa trong 3 giờ</string>
+    <string name="snow_1h">Lượng tuyết trong 1 giờ</string>
+    <string name="snow_3h">Lượng tuyết trong 3 giờ</string>
+    <string name="gust">Cơn gió mạnh</string>
+    <string name="fail_data">Tải dữ liệu thất bại , vui lòng thử lại sau</string>
+    <string name="supplier_data">Dữ liệu được cung cấp bởi</string>
+    <string name="map_chart">Biểu đồ biến động nhiệt độ và AQI</string>
+    <string name="map_chart_temperature">Biểu đồ biến động nhiệt độ</string>
+    <string name="map_chart_AQI">Biểu đồ biến động chỉ số AQI</string>
+    <string name="title_abc">ABC</string>
+
 </resources>
 
 

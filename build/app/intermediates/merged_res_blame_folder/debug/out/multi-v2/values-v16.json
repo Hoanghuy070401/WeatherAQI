@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-v16/values-v16.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8c71e6999b60fac9c862ab168e5aa160\\transformed\\core-1.13.0-alpha02\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\b521659edeb24c2a03fc1a84f86a0ee9\\transformed\\jetified-materialdatetimepicker-4.2.3\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\ff72698507c356a007db909aa9d284a1\\transformed\\jetified-materialdatetimepicker-4.2.3\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2,3,6,9",
                         "startColumns": "4,4,4,4",
@@ -33,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\a8188ba2e2f3473d437eb32a2f6f8bc7\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8b5de782ef35572dc6dfc1c1fbe4711d\\transformed\\core-1.13.0-alpha02\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\2d9bad9aa43a86198fdb820b600ca176\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

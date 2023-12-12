@@ -79,16 +79,24 @@
 
     <View
         android:id="@+id/vLine"
-        android:layout_below="@+id/rcvListFiveDays"
+        android:layout_below="@+id/btnDetails"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_1"
         android:background="@color/gray_300"/>
     <vn.techres.android.weather.widget.AppTextView
-        android:layout_below="@+id/vLine"
         android:text="@string/sunset_sunrise_location"
+        android:layout_below="@+id/btnDetails"
         android:layout_marginTop="@dimen/dp_4"
         android:padding="@dimen/dp_4"
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/btnDetails"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:background="@drawable/ic_more"
+        android:layout_below="@+id/rcvListFiveDays"/>
 </RelativeLayout>

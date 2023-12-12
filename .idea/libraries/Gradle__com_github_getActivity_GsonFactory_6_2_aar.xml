@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.getActivity:GsonFactory:6.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ac4bb564bc2f06477c89007e4f45c4e2/transformed/jetified-GsonFactory-6.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ac4bb564bc2f06477c89007e4f45c4e2/transformed/jetified-GsonFactory-6.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/303bc8b29894ece7c3df0ec92edb1126/transformed/jetified-GsonFactory-6.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/303bc8b29894ece7c3df0ec92edb1126/transformed/jetified-GsonFactory-6.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -25,6 +25,7 @@ import vn.techres.android.weather.databinding.FragmentNoSupportBindingImpl;
 import vn.techres.android.weather.databinding.FragmentSettingBindingImpl;
 import vn.techres.android.weather.databinding.HomeActivityBindingImpl;
 import vn.techres.android.weather.databinding.ItemAddressBindingImpl;
+import vn.techres.android.weather.databinding.LayoutLineMarkerBindingImpl;
 import vn.techres.android.weather.databinding.PickerItemBindingImpl;
 import vn.techres.android.weather.databinding.QuantityInputDialogBindingImpl;
 import vn.techres.android.weather.databinding.SplashActivityBindingImpl;
@@ -54,21 +55,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ITEMADDRESS = 10;
 
-  private static final int LAYOUT_PICKERITEM = 11;
+  private static final int LAYOUT_LAYOUTLINEMARKER = 11;
 
-  private static final int LAYOUT_QUANTITYINPUTDIALOG = 12;
+  private static final int LAYOUT_PICKERITEM = 12;
 
-  private static final int LAYOUT_SPLASHACTIVITY = 13;
+  private static final int LAYOUT_QUANTITYINPUTDIALOG = 13;
 
-  private static final int LAYOUT_TABITEMDESIGN = 14;
+  private static final int LAYOUT_SPLASHACTIVITY = 14;
 
-  private static final int LAYOUT_TABITEMSLIDING = 15;
+  private static final int LAYOUT_TABITEMDESIGN = 15;
 
-  private static final int LAYOUT_UPDATEDIALOG = 16;
+  private static final int LAYOUT_TABITEMSLIDING = 16;
 
-  private static final int LAYOUT_WAITDIALOG = 17;
+  private static final int LAYOUT_UPDATEDIALOG = 17;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(17);
+  private static final int LAYOUT_WAITDIALOG = 18;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(18);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.activity_image_preview, LAYOUT_ACTIVITYIMAGEPREVIEW);
@@ -81,6 +84,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.fragment_setting, LAYOUT_FRAGMENTSETTING);
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.home_activity, LAYOUT_HOMEACTIVITY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.item_address, LAYOUT_ITEMADDRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.layout_line_marker, LAYOUT_LAYOUTLINEMARKER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.picker_item, LAYOUT_PICKERITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.quantity_input_dialog, LAYOUT_QUANTITYINPUTDIALOG);
     INTERNAL_LAYOUT_ID_LOOKUP.put(vn.techres.android.weather.R.layout.splash_activity, LAYOUT_SPLASHACTIVITY);
@@ -158,6 +162,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ItemAddressBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for item_address is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LAYOUTLINEMARKER: {
+          if ("layout/layout_line_marker_0".equals(tag)) {
+            return new LayoutLineMarkerBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for layout_line_marker is invalid. Received: " + tag);
         }
         case  LAYOUT_PICKERITEM: {
           if ("layout/picker_item_0".equals(tag)) {
@@ -254,7 +264,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(17);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(18);
 
     static {
       sKeys.put("layout/activity_image_preview_0", vn.techres.android.weather.R.layout.activity_image_preview);
@@ -267,6 +277,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_setting_0", vn.techres.android.weather.R.layout.fragment_setting);
       sKeys.put("layout/home_activity_0", vn.techres.android.weather.R.layout.home_activity);
       sKeys.put("layout/item_address_0", vn.techres.android.weather.R.layout.item_address);
+      sKeys.put("layout/layout_line_marker_0", vn.techres.android.weather.R.layout.layout_line_marker);
       sKeys.put("layout/picker_item_0", vn.techres.android.weather.R.layout.picker_item);
       sKeys.put("layout/quantity_input_dialog_0", vn.techres.android.weather.R.layout.quantity_input_dialog);
       sKeys.put("layout/splash_activity_0", vn.techres.android.weather.R.layout.splash_activity);

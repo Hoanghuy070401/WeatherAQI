@@ -115,6 +115,8 @@ com.github.getActivity:ToastUtils
 com.github.jinatonic.confetti:confetti
 com.github.markomilos:paginate
 com.github.plattysoft:Leonids
+com.github.sundeepk:compact-calendar-view
+com.github.tianma8023:SunriseSunsetView
 com.github.tslamic.fancybackground:library
 com.google.android.datatransport:transport-api
 com.google.android.datatransport:transport-backend-cct

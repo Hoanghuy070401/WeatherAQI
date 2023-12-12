@@ -4,6 +4,7 @@ package vn.techres.android.weather.home.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -22,6 +23,9 @@ import vn.techres.android.weather.widget.AppTextViewBold;
 public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
+
+  @NonNull
+  public final ImageButton btnDetails;
 
   @NonNull
   public final ImageView imvAdd;
@@ -51,11 +55,12 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
   public final View vLine;
 
   private LayoutNewFindLocationLayoutBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView imvAdd, @NonNull LinearLayout llAdd, @NonNull LinearLayout llAddress,
-      @NonNull RecyclerView rcvListFiveDays, @NonNull LinearLayout rlHeader,
-      @NonNull AppTextView tvAdd, @NonNull AppTextViewBold tvCityName,
-      @NonNull AppTextView tvDetailCity, @NonNull View vLine) {
+      @NonNull ImageButton btnDetails, @NonNull ImageView imvAdd, @NonNull LinearLayout llAdd,
+      @NonNull LinearLayout llAddress, @NonNull RecyclerView rcvListFiveDays,
+      @NonNull LinearLayout rlHeader, @NonNull AppTextView tvAdd,
+      @NonNull AppTextViewBold tvCityName, @NonNull AppTextView tvDetailCity, @NonNull View vLine) {
     this.rootView = rootView;
+    this.btnDetails = btnDetails;
     this.imvAdd = imvAdd;
     this.llAdd = llAdd;
     this.llAddress = llAddress;
@@ -94,6 +99,12 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnDetails;
+      ImageButton btnDetails = ViewBindings.findChildViewById(rootView, id);
+      if (btnDetails == null) {
+        break missingId;
+      }
+
       id = R.id.imvAdd;
       ImageView imvAdd = ViewBindings.findChildViewById(rootView, id);
       if (imvAdd == null) {
@@ -148,8 +159,8 @@ public final class LayoutNewFindLocationLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LayoutNewFindLocationLayoutBinding((RelativeLayout) rootView, imvAdd, llAdd,
-          llAddress, rcvListFiveDays, rlHeader, tvAdd, tvCityName, tvDetailCity, vLine);
+      return new LayoutNewFindLocationLayoutBinding((RelativeLayout) rootView, btnDetails, imvAdd,
+          llAdd, llAddress, rcvListFiveDays, rlHeader, tvAdd, tvCityName, tvDetailCity, vLine);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

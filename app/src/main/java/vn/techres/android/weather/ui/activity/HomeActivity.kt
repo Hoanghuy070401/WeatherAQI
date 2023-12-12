@@ -1,44 +1,28 @@
 package vn.techres.android.weather.ui.activity
 
-import android.Manifest
-import android.annotation.SuppressLint
-import android.content.Intent
-import android.content.pm.PackageManager
-import android.location.Location
 import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.annotation.RequiresApi
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.model.LatLng
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.gson.Gson
-import com.hjq.http.EasyHttp
-import com.hjq.http.listener.HttpCallback
-import org.greenrobot.eventbus.EventBus
+import com.google.gson.GsonBuilder
+import kotlinx.coroutines.runBlocking
 import org.greenrobot.eventbus.Subscribe
 import timber.log.Timber
 import vn.techres.base.PagerAdapter
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppActivity
 import vn.techres.android.weather.app.AppFragment
-import vn.techres.android.weather.cache.ConfigCache
 import vn.techres.android.weather.cache.ListAddressCache
 import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.constants.ModuleClassConstants
 import vn.techres.android.weather.databinding.HomeActivityBinding
-import vn.techres.android.weather.http.api.CurrentAirApi
-import vn.techres.android.weather.http.model.HttpData
 import vn.techres.android.weather.model.entity.AddressCity
-import vn.techres.android.weather.model.entity.LocationDevice
 import vn.techres.android.weather.model.eventbus.AddListSuggestEvenBus
+import vn.techres.android.weather.model.listNews
 import vn.techres.android.weather.model.titles
-import vn.techres.android.weather.ui.fragment.NoSupportFragment
-import vn.techres.android.weather.ui.fragment.map.WeatherMapFragment
-import java.util.TimeZone
+import vn.techres.android.weather.router.DownLoadNews
 import kotlin.system.exitProcess
 
 /**
@@ -85,10 +69,9 @@ class HomeActivity : AppActivity() {
         titles.addAll(ListAddressCache.getAllLocations())
         val fragments: List<Fragment>
         fragments = listOf(
-            NoSupportFragment(),
+            Class.forName(ModuleClassConstants.NEWS).newInstance() as AppFragment<*>,
             Class.forName(ModuleClassConstants.MAP_FRAGMENT).newInstance() as AppFragment<*>,
             Class.forName(ModuleClassConstants.HOME_FRAGMENT).newInstance() as AppFragment<*>,
-            NoSupportFragment(),
             Class.forName(ModuleClassConstants.SETTING_FRAGMENT).newInstance() as AppFragment<*>
         )
 
@@ -132,15 +115,15 @@ class HomeActivity : AppActivity() {
                     return@setOnItemSelectedListener true
                 }
 
-                R.id.menu_notification -> {
-                    currentPage = 3
-                    binding.contentView.setCurrentItem(currentPage, false)
-
-                    return@setOnItemSelectedListener true
-                }
+//                R.id.menu_notification -> {
+//                    currentPage = 3
+//                    binding.contentView.setCurrentItem(currentPage, false)
+//
+//                    return@setOnItemSelectedListener true
+//                }
 
                 R.id.menu_utility -> {
-                    currentPage = 4
+                    currentPage = 3
                     binding.contentView.setCurrentItem(currentPage, false)
 
                     return@setOnItemSelectedListener true
@@ -149,7 +132,11 @@ class HomeActivity : AppActivity() {
                 else -> return@setOnItemSelectedListener false
             }
         }
-
+        runBlocking {
+            listNews = DownLoadNews.downloadArticles()
+            Timber.tag("listFragment").e(GsonBuilder().setPrettyPrinting().create().toJson(listNews))
+            Timber.tag("listFragment").i("${listNews.size}")
+        }
 
     }
 

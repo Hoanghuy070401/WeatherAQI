@@ -12,10 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/WeatherAQI.features.home.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/WeatherAQI.features.home.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/WeatherAQI.features.home.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/WeatherAQI.features.home.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/WeatherAQI.features.home.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/WeatherAQI.features.home.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/map/WeatherAQI.features.map.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/WeatherAQI.features.setting.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/WeatherAQI.features.setting.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/WeatherAQI.features.setting.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/WeatherAQI.features.setting.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/setting/WeatherAQI.features.setting.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/setting/WeatherAQI.features.setting.main.iml" />

@@ -41,7 +41,7 @@ import vn.techres.android.weather.model.entity.modelAirWeather.WeatherNow
 import vn.techres.android.weather.model.entity.modelCity.Item
 import vn.techres.android.weather.model.entity.modelCity.ItemSearch
 import vn.techres.android.weather.model.entity.modelCity.ListCity
-import vn.techres.android.weather.model.interfaces.imageClick
+import vn.techres.android.weather.model.interfaces.ImageClick
 import vn.techres.android.weather.other.doOnQueryTextListener
 import vn.techres.android.weather.router.ApiApplicationRouters
 import vn.techres.android.weather.ui.activity.HomeActivity
@@ -55,7 +55,7 @@ import java.util.TimeZone
 import java.util.Timer
 
 
-class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, imageClick {
+class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageClick {
     companion object {
         private val TAG = AirMapsFragment::class.java.simpleName
         private const val DEFAULT_ZOOM = 15

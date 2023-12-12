@@ -5,18 +5,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager2.widget.ViewPager2;
-import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+import me.relex.circleindicator.CircleIndicator3;
 import vn.techres.android.weather.home.R;
 
 public final class ActivityHomeBinding implements ViewBinding {
@@ -24,29 +22,29 @@ public final class ActivityHomeBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ViewPager2 Viewpager2;
+
+  @NonNull
+  public final ImageView btnLocation;
+
+  @NonNull
+  public final CircleIndicator3 clViewPager2;
+
+  @NonNull
   public final ImageView imvSettingLocation;
 
   @NonNull
-  public final LinearLayout llTab;
+  public final RelativeLayout rlHeader;
 
-  @NonNull
-  public final Toolbar tbTT;
-
-  @NonNull
-  public final TabLayout tbTab;
-
-  @NonNull
-  public final ViewPager2 vp2Content;
-
-  private ActivityHomeBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView imvSettingLocation, @NonNull LinearLayout llTab, @NonNull Toolbar tbTT,
-      @NonNull TabLayout tbTab, @NonNull ViewPager2 vp2Content) {
+  private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull ViewPager2 Viewpager2,
+      @NonNull ImageView btnLocation, @NonNull CircleIndicator3 clViewPager2,
+      @NonNull ImageView imvSettingLocation, @NonNull RelativeLayout rlHeader) {
     this.rootView = rootView;
+    this.Viewpager2 = Viewpager2;
+    this.btnLocation = btnLocation;
+    this.clViewPager2 = clViewPager2;
     this.imvSettingLocation = imvSettingLocation;
-    this.llTab = llTab;
-    this.tbTT = tbTT;
-    this.tbTab = tbTab;
-    this.vp2Content = vp2Content;
+    this.rlHeader = rlHeader;
   }
 
   @Override
@@ -76,38 +74,38 @@ public final class ActivityHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Viewpager2;
+      ViewPager2 Viewpager2 = ViewBindings.findChildViewById(rootView, id);
+      if (Viewpager2 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnLocation;
+      ImageView btnLocation = ViewBindings.findChildViewById(rootView, id);
+      if (btnLocation == null) {
+        break missingId;
+      }
+
+      id = R.id.clViewPager2;
+      CircleIndicator3 clViewPager2 = ViewBindings.findChildViewById(rootView, id);
+      if (clViewPager2 == null) {
+        break missingId;
+      }
+
       id = R.id.imvSettingLocation;
       ImageView imvSettingLocation = ViewBindings.findChildViewById(rootView, id);
       if (imvSettingLocation == null) {
         break missingId;
       }
 
-      id = R.id.llTab;
-      LinearLayout llTab = ViewBindings.findChildViewById(rootView, id);
-      if (llTab == null) {
+      id = R.id.rlHeader;
+      RelativeLayout rlHeader = ViewBindings.findChildViewById(rootView, id);
+      if (rlHeader == null) {
         break missingId;
       }
 
-      id = R.id.tbTT;
-      Toolbar tbTT = ViewBindings.findChildViewById(rootView, id);
-      if (tbTT == null) {
-        break missingId;
-      }
-
-      id = R.id.tbTab;
-      TabLayout tbTab = ViewBindings.findChildViewById(rootView, id);
-      if (tbTab == null) {
-        break missingId;
-      }
-
-      id = R.id.vp2Content;
-      ViewPager2 vp2Content = ViewBindings.findChildViewById(rootView, id);
-      if (vp2Content == null) {
-        break missingId;
-      }
-
-      return new ActivityHomeBinding((RelativeLayout) rootView, imvSettingLocation, llTab, tbTT,
-          tbTab, vp2Content);
+      return new ActivityHomeBinding((RelativeLayout) rootView, Viewpager2, btnLocation,
+          clViewPager2, imvSettingLocation, rlHeader);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

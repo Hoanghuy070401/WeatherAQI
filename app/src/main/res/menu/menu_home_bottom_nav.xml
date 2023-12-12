@@ -4,7 +4,7 @@
     <item
         android:id="@+id/menu_kaizen"
         android:icon="@drawable/item_tab_1_selector"
-        android:title="Xếp hạng và Tin tức"/>
+        android:title="Tin tức"/>
 
     <item
         android:id="@+id/menu_work"
@@ -16,10 +16,10 @@
         android:icon="@drawable/item_tab_3_selector"
         android:title="@string/home"/>
 
-    <item
-        android:id="@+id/menu_notification"
-        android:icon="@drawable/item_tab_4_selector"
-        android:title="@string/notification"/>
+<!--    <item-->
+<!--        android:id="@+id/menu_notification"-->
+<!--        android:icon="@drawable/item_tab_4_selector"-->
+<!--        android:title="@string/notification"/>-->
 
     <item
         android:id="@+id/menu_utility"

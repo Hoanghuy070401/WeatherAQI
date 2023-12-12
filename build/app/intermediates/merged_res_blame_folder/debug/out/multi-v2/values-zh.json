@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-zh/values-zh.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\64d65c8234fdc1b5e022d27a04a52911\\transformed\\jetified-jiaozivideoplayer-6.2.10\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\efbd0929e23dd49807639b31f3c016d5\\transformed\\jetified-jiaozivideoplayer-6.2.10\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\fa3b14ff7391021a6c8a81155b1b1d09\\transformed\\jetified-refresh-layout-kernel-2.0.3\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\246fb81d46f181e4deb3aa5515a4bdef\\transformed\\jetified-refresh-layout-kernel-2.0.3\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

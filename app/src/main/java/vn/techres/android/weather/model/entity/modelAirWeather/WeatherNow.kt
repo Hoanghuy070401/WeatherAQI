@@ -46,4 +46,10 @@ class WeatherNow {
 
     @SerializedName("id")
     var id =0L
+
+    @SerializedName("snow")
+    var snow =Snow()
+
+    @SerializedName("rain")
+    var rain =Rain()
 }

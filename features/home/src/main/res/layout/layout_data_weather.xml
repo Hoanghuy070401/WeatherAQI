@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rlBgStyle"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,50 +9,53 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-<!--    <androidx.core.widget.NestedScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-
-<!--        <com.scwang.smart.refresh.layout.SmartRefreshLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
-            <RelativeLayout
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints">
-                <RelativeLayout
-                    android:layout_marginTop="@dimen/dp_25"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/ilWeatherNow"
+                    layout="@layout/weather_air_now" />
+
+                <include
+                    android:id="@+id/ilWeatherSevenDay"
+                    layout="@layout/layout_weather_day" />
+                <include
+                    android:id="@+id/ilLineChartTemperature"
+                    layout="@layout/layout_chart_temperature"/>
+
+                <include
+                    android:id="@+id/ilWeatherAirHours"
+                    layout="@layout/layout_forecast_hours" />
+
+                <include
+                    android:id="@+id/ilWeatherOther"
+                    layout="@layout/layout_item_other" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_236">
-                    <vn.techres.android.weather.widget.AppTextViewBold
-                        android:id="@+id/tvTemperatureName"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="@dimen/dp_25"
+                    android:layout_height="wrap_content">
+                    <vn.techres.android.weather.widget.AppTextView
+                        android:text="@string/supplier_data"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/sp_28"
-                        tools:text="38" />
+                        android:textSize="@dimen/sp_12"/>
+                    <ImageView
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:src="@drawable/logo_open_weather"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:importantForAccessibility="no" />
+                </LinearLayout>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        tools:ignore="UselessParent">
-                        <vn.techres.android.weather.widget.AppTextViewBold
-                            android:id="@+id/tvTemperature"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/sp_48"
-                            tools:text="36" />
-                    </RelativeLayout>
 
-                </RelativeLayout>
-            </RelativeLayout>
-<!--        </com.scwang.smart.refresh.layout.SmartRefreshLayout>-->
-<!--    </androidx.core.widget.NestedScrollView>-->
+            </LinearLayout>
+    </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

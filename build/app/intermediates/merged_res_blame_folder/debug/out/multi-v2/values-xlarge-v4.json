@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\a8188ba2e2f3473d437eb32a2f6f8bc7\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\2d9bad9aa43a86198fdb820b600ca176\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

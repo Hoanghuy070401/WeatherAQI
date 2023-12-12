@@ -18,6 +18,13 @@
         <dist:fusing dist:include="true" />
     </dist:module>
 
-    <application android:extractNativeLibs="false" />
+    <application
+        android:debuggable="true"
+        android:extractNativeLibs="false" >
+        <activity
+            android:name="vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity"
+            android:exported="false"
+            android:splitName="setting" />
+    </application>
 
 </manifest>

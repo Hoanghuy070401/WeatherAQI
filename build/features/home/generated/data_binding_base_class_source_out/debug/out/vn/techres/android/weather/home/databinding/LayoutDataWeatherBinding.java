@@ -4,9 +4,9 @@ package vn.techres.android.weather.home.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.github.matteobattilana.weather.WeatherView;
@@ -14,37 +14,51 @@ import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 import vn.techres.android.weather.home.R;
-import vn.techres.android.weather.widget.AppTextViewBold;
 
 public final class LayoutDataWeatherBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final ConstraintLayout rlBgStyle;
+  public final LayoutChartTemperatureBinding ilLineChartTemperature;
 
   @NonNull
-  public final AppTextViewBold tvTemperature;
+  public final LayoutForecastHoursBinding ilWeatherAirHours;
 
   @NonNull
-  public final AppTextViewBold tvTemperatureName;
+  public final WeatherAirNowBinding ilWeatherNow;
+
+  @NonNull
+  public final LayoutItemOtherBinding ilWeatherOther;
+
+  @NonNull
+  public final LayoutWeatherDayBinding ilWeatherSevenDay;
+
+  @NonNull
+  public final RelativeLayout rlBgStyle;
 
   @NonNull
   public final WeatherView weatherView;
 
-  private LayoutDataWeatherBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout rlBgStyle, @NonNull AppTextViewBold tvTemperature,
-      @NonNull AppTextViewBold tvTemperatureName, @NonNull WeatherView weatherView) {
+  private LayoutDataWeatherBinding(@NonNull RelativeLayout rootView,
+      @NonNull LayoutChartTemperatureBinding ilLineChartTemperature,
+      @NonNull LayoutForecastHoursBinding ilWeatherAirHours,
+      @NonNull WeatherAirNowBinding ilWeatherNow, @NonNull LayoutItemOtherBinding ilWeatherOther,
+      @NonNull LayoutWeatherDayBinding ilWeatherSevenDay, @NonNull RelativeLayout rlBgStyle,
+      @NonNull WeatherView weatherView) {
     this.rootView = rootView;
+    this.ilLineChartTemperature = ilLineChartTemperature;
+    this.ilWeatherAirHours = ilWeatherAirHours;
+    this.ilWeatherNow = ilWeatherNow;
+    this.ilWeatherOther = ilWeatherOther;
+    this.ilWeatherSevenDay = ilWeatherSevenDay;
     this.rlBgStyle = rlBgStyle;
-    this.tvTemperature = tvTemperature;
-    this.tvTemperatureName = tvTemperatureName;
     this.weatherView = weatherView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -69,19 +83,42 @@ public final class LayoutDataWeatherBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      ConstraintLayout rlBgStyle = (ConstraintLayout) rootView;
-
-      id = R.id.tvTemperature;
-      AppTextViewBold tvTemperature = ViewBindings.findChildViewById(rootView, id);
-      if (tvTemperature == null) {
+      id = R.id.ilLineChartTemperature;
+      View ilLineChartTemperature = ViewBindings.findChildViewById(rootView, id);
+      if (ilLineChartTemperature == null) {
         break missingId;
       }
+      LayoutChartTemperatureBinding binding_ilLineChartTemperature = LayoutChartTemperatureBinding.bind(ilLineChartTemperature);
 
-      id = R.id.tvTemperatureName;
-      AppTextViewBold tvTemperatureName = ViewBindings.findChildViewById(rootView, id);
-      if (tvTemperatureName == null) {
+      id = R.id.ilWeatherAirHours;
+      View ilWeatherAirHours = ViewBindings.findChildViewById(rootView, id);
+      if (ilWeatherAirHours == null) {
         break missingId;
       }
+      LayoutForecastHoursBinding binding_ilWeatherAirHours = LayoutForecastHoursBinding.bind(ilWeatherAirHours);
+
+      id = R.id.ilWeatherNow;
+      View ilWeatherNow = ViewBindings.findChildViewById(rootView, id);
+      if (ilWeatherNow == null) {
+        break missingId;
+      }
+      WeatherAirNowBinding binding_ilWeatherNow = WeatherAirNowBinding.bind(ilWeatherNow);
+
+      id = R.id.ilWeatherOther;
+      View ilWeatherOther = ViewBindings.findChildViewById(rootView, id);
+      if (ilWeatherOther == null) {
+        break missingId;
+      }
+      LayoutItemOtherBinding binding_ilWeatherOther = LayoutItemOtherBinding.bind(ilWeatherOther);
+
+      id = R.id.ilWeatherSevenDay;
+      View ilWeatherSevenDay = ViewBindings.findChildViewById(rootView, id);
+      if (ilWeatherSevenDay == null) {
+        break missingId;
+      }
+      LayoutWeatherDayBinding binding_ilWeatherSevenDay = LayoutWeatherDayBinding.bind(ilWeatherSevenDay);
+
+      RelativeLayout rlBgStyle = (RelativeLayout) rootView;
 
       id = R.id.weatherView;
       WeatherView weatherView = ViewBindings.findChildViewById(rootView, id);
@@ -89,8 +126,9 @@ public final class LayoutDataWeatherBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LayoutDataWeatherBinding((ConstraintLayout) rootView, rlBgStyle, tvTemperature,
-          tvTemperatureName, weatherView);
+      return new LayoutDataWeatherBinding((RelativeLayout) rootView, binding_ilLineChartTemperature,
+          binding_ilWeatherAirHours, binding_ilWeatherNow, binding_ilWeatherOther,
+          binding_ilWeatherSevenDay, rlBgStyle, weatherView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

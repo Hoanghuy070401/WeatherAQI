@@ -28,7 +28,7 @@ import vn.techres.android.weather.model.entity.modelCity.ListCity
 import vn.techres.android.weather.model.entity.modelWeatherDays.List
 import vn.techres.android.weather.model.entity.modelWeatherDays.WeatherDays
 import vn.techres.android.weather.model.eventbus.AddListSuggestEvenBus
-import vn.techres.android.weather.model.interfaces.imageClick
+import vn.techres.android.weather.model.interfaces.ImageClick
 import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.other.doAfterTextChanged
 import vn.techres.android.weather.other.doOnQueryTextListener
@@ -37,7 +37,7 @@ import vn.techres.android.weather.ui.activity.HomeActivity
 import vn.techres.android.weather.ui.adapter.ListCityAdapter
 import vn.techres.android.weather.utils.AppUtils
 
-class SearchActivity : AppActivity(), ItemSuggestClickView, imageClick {
+class SearchActivity : AppActivity(), ItemSuggestClickView, ImageClick {
     private lateinit var binding: ActivitySearchBinding
     private lateinit var adapterListSuggest: ListSuggestAdapter
     private lateinit var adapterListLocation: ListCityAdapter
@@ -49,6 +49,9 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, imageClick {
     private var listDaysWeather = ArrayList<List>()
     private var searchText = false
     private var textSearch = ""
+    var locationAddressName = ""
+    var locationAddressLat = 0.0
+    var locationAddressLon = 0.0
     override fun getLayoutView(): View {
         binding = ActivitySearchBinding.inflate(layoutInflater)
         return binding.root
@@ -108,6 +111,7 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, imageClick {
             }
 
         }
+
         binding.ilLayoutFind.tvAdd.clickWithDebounce(500) {
             val namePlace = when {
                 listLocationFind.address.county.isNotEmpty() -> listLocationFind.address.county
@@ -158,8 +162,17 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, imageClick {
                 EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,city))
             }
         }
+        binding.ilLayoutFind.btnDetails.clickWithDebounce (500){
+            val intent = Intent(this, DetailsWeatherAirActivity::class.java)//xử lý đóng activity gốc
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_NAME, locationAddressName)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_LAT, locationAddressLat)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_LON, locationAddressLon)
+            startActivity(intent)
+
+        }
         listSuggest.addAll(titles)
         adapterListSuggest.notifyDataSetChanged()
+
     }
 
 
@@ -238,6 +251,9 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, imageClick {
                     binding.ilLayoutFind.tvCityName.text = namePlace
                     binding.ilLayoutFind.tvDetailCity.text = result.address.label
                     binding.acSearch.setQuery(namePlace,false)
+                    locationAddressName =namePlace
+                    locationAddressLat =result.position.lat
+                    locationAddressLon =result.position.lng
                     val isExist = titles.any { it.nameCity == namePlace }
                     if (isExist) {
                         binding.ilLayoutFind.tvAdd.show()

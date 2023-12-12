@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-xxhdpi-v4/values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\4c3c8af912f8b9ba961dc1e974efe021\\transformed\\jetified-core-1.9.13\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\88578110dd11d9947637d615741e1a19\\transformed\\jetified-core-1.9.13\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

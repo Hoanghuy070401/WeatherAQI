@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-89:/values-de-rDE/values-de-rDE.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-de-rDE/values-de-rDE.xml",
             "map": [
                 {
                     "source": "D:\\WeatherAQI\\build\\library\\selector\\intermediates\\packaged_res\\debug\\values-de-rDE\\values-de-rDE.xml",

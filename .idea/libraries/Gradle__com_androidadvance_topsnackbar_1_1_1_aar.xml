@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.androidadvance:topsnackbar:1.1.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3698f6353419b8aede8551fba53ae884/transformed/jetified-topsnackbar-1.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/33f285b9b00149c34fec1debad0ff984/transformed/jetified-topsnackbar-1.1.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3698f6353419b8aede8551fba53ae884/transformed/jetified-topsnackbar-1.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3698f6353419b8aede8551fba53ae884/transformed/jetified-topsnackbar-1.1.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3698f6353419b8aede8551fba53ae884/transformed/jetified-topsnackbar-1.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/33f285b9b00149c34fec1debad0ff984/transformed/jetified-topsnackbar-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/33f285b9b00149c34fec1debad0ff984/transformed/jetified-topsnackbar-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/33f285b9b00149c34fec1debad0ff984/transformed/jetified-topsnackbar-1.1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidadvance/topsnackbar/1.1.1/ec707f9718616f1fa0b0a83e2a25ffe30f97de4/topsnackbar-1.1.1-javadoc.jar!/" />

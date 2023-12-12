@@ -70,6 +70,7 @@ object PhotoShowUtils {
                     .error(R.drawable.ic_default)
 //                    .override(R.dimen.dp_32, R.dimen.dp_32)
             )
+            .error(R.drawable.images)
             .centerCrop()
             .into(view)
     }
@@ -81,9 +82,10 @@ object PhotoShowUtils {
                 .load(url)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .apply(
-                    RequestOptions().placeholder(R.drawable.food_default)
-                        .error(R.drawable.food_default)
+                    RequestOptions().placeholder(R.drawable.images)
+                        .error(R.drawable.images)
                 )
+                .error(R.drawable.images)
                 .centerCrop()
                 .into(view)
         } else {
@@ -92,7 +94,6 @@ object PhotoShowUtils {
                 .load(
                     java.lang.String.format(
                         "%s%s",
-
                         url
                     )
                 )

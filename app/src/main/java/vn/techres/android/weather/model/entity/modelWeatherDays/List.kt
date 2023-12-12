@@ -1,6 +1,7 @@
 package vn.techres.android.weather.model.entity.modelWeatherDays
 
 import com.google.gson.annotations.SerializedName
+import vn.techres.android.weather.model.entity.modelAirWeather.MainWeather
 import vn.techres.android.weather.model.entity.modelAirWeather.Weather
 
 /**
@@ -19,6 +20,9 @@ class List {
 
     @SerializedName("temp")
     var temp = Temp()
+
+    @SerializedName("main")
+    var main = MainWeather()
 
     @SerializedName("feels_like")
     var feelsLike = FeelsLike()
@@ -52,4 +56,7 @@ class List {
 
     @SerializedName("pop")
     var pop = -1.0//xác xuất mưa
+
+     @SerializedName("dt_txt")
+    var dtTxt = ""//thời gian dự đoán
 }

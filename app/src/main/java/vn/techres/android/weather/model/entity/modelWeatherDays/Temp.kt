@@ -8,19 +8,25 @@ import com.google.gson.annotations.SerializedName
  */
 class Temp {
     @SerializedName("day")
-    var day =0.0//Nhiệt độ ngày
+    var day = 0.0//Nhiệt độ ngày
 
     @SerializedName("min")
     var min = 0.0
 
+    @SerializedName("temp")
+    var temp = 0.0
+
+    @SerializedName("feels_like")
+    var feelsLike = 0.0
+
     @SerializedName("max")
-    var max =0.0
+    var max = 0.0
 
     @SerializedName("night")
     var night = 0.0//Nhiệt độ đêm
 
     @SerializedName("eve")
-    var eve =0.0//Nhiệt độ mặt trời lặn
+    var eve = 0.0//Nhiệt độ mặt trời lặn
 
     @SerializedName("morn")
     var morn = 0.0//Nhiệt độ mặt trời mọc

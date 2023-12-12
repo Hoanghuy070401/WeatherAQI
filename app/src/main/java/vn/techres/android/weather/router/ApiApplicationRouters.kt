@@ -31,6 +31,10 @@ object ApiApplicationRouters {
         return "https://lookup.search.hereapi.com/v1/lookup"
     }
 
+    fun API_GET_WEATHER_HOURS():String{  //lấy URL địa chỉ
+        return "https://pro.openweathermap.org/data/2.5/forecast/hourly"
+    }
+
 
 
     fun API_GET_DATA_WEATHER_DAYS():String{  //lấy dữ liệu thời tiết 30 ngày không có dự đoán khả năng mưa
@@ -47,6 +51,10 @@ object ApiApplicationRouters {
 
     fun GET_HOST_API_AIR():String{  //get data air My Location Now
         return "data/2.5/air_pollution"
+    }
+
+    fun GET_API_AIR_HOURS():String{  //get data air My Location Now
+        return "data/2.5/air_pollution/forecast"
     }
 
 

@@ -11,7 +11,7 @@ import vn.techres.android.weather.databinding.ItemCityBinding
 import vn.techres.android.weather.model.entity.modelCity.Item
 import vn.techres.android.weather.model.entity.modelCity.ItemSearch
 import vn.techres.android.weather.model.entity.modelCity.ListCity
-import vn.techres.android.weather.model.interfaces.imageClick
+import vn.techres.android.weather.model.interfaces.ImageClick
 
 
 /**
@@ -19,7 +19,7 @@ import vn.techres.android.weather.model.interfaces.imageClick
  * @date: 9/21/2023.
  */
 class ListCityAdapter(context: Context):AppAdapter<ItemSearch>(context) {
-     var imageClickListener: imageClick?= null
+     var imageClickListener: ImageClick?= null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AppViewHolder {
         val binding =ItemCityBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(binding)
