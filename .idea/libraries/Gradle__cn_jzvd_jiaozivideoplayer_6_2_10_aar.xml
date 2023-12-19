@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: cn.jzvd:jiaozivideoplayer:6.2.10@aar">
+  <library name="Gradle: cn.jzvd:jiaozivideoplayer:6.2.10@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/efbd0929e23dd49807639b31f3c016d5/transformed/jetified-jiaozivideoplayer-6.2.10/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/efbd0929e23dd49807639b31f3c016d5/transformed/jetified-jiaozivideoplayer-6.2.10/jars/classes.jar!/" />

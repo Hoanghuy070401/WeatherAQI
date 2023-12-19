@@ -10,9 +10,9 @@ int id ilWeatherAirHours 0x7e010008
 int id ilWeatherNow 0x7e010009
 int id ilWeatherOther 0x7e01000a
 int id ilWeatherSevenDay 0x7e01000b
+int id imvAQI 0x7e01006a
 int id imvAdd 0x7e01000c
 int id imvHome 0x7e01000d
-int id imvIcon 0x7e01000e
 int id imvIconWeather 0x7e01000f
 int id imvLocation 0x7e010010
 int id imvMyLocation 0x7e010011
@@ -25,13 +25,14 @@ int id llAQI 0x7e010017
 int id llAdd 0x7e010018
 int id llAddress 0x7e010019
 int id llBgStyleItem 0x7e01001a
+int id llDeception 0x7e010069
 int id llDelete 0x7e01001b
 int id llGust 0x7e01001c
 int id llHeader 0x7e01001d
-int id llItemWeatherHours 0x7e01001e
 int id llNameLocation 0x7e01001f
 int id llRain1h 0x7e010020
 int id llRain3h 0x7e010021
+int id llRainAndSnow 0x7e010068
 int id llSearch 0x7e010022
 int id llSnow 0x7e010023
 int id llSnow1h 0x7e010024
@@ -39,6 +40,8 @@ int id llSnow3h 0x7e010025
 int id llSunrise 0x7e010026
 int id llTempleteNow 0x7e010027
 int id llWin 0x7e010028
+int id ltWeather 0x7e010066
+int id ltWeather1 0x7e010067
 int id noData 0x7e010029
 int id pgbSearch 0x7e01002a
 int id rcvListFiveDays 0x7e01002b
@@ -55,11 +58,9 @@ int id swParent 0x7e010035
 int id ttBar 0x7e010036
 int id tvAQI 0x7e010037
 int id tvAdd 0x7e010038
-int id tvAddLocation 0x7e010039
 int id tvCancel 0x7e01003a
 int id tvCityName 0x7e01003b
 int id tvCloudAll 0x7e01003c
-int id tvDate 0x7e01003d
 int id tvDay 0x7e01003e
 int id tvDayMore 0x7e01003f
 int id tvDayNumber 0x7e010040
@@ -67,7 +68,6 @@ int id tvDeceptionWeather 0x7e010041
 int id tvDetailCity 0x7e010042
 int id tvFeelLike 0x7e010043
 int id tvGust 0x7e010044
-int id tvHours 0x7e010045
 int id tvHoursSunrise 0x7e010046
 int id tvHoursSunset 0x7e010047
 int id tvHumidity 0x7e010048
@@ -107,7 +107,6 @@ int layout activity_search 0x7e020003
 int layout activity_weather_day_more 0x7e020004
 int layout fragment_weather 0x7e020005
 int layout item_five_day 0x7e020006
-int layout item_forecast_hours 0x7e020007
 int layout item_location 0x7e020008
 int layout item_suggest 0x7e020009
 int layout item_weather_days 0x7e02000a

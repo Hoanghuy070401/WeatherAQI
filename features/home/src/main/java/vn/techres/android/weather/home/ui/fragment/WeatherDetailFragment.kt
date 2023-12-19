@@ -3,9 +3,7 @@ package vn.techres.android.weather.home.ui.fragment
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.view.View
-import androidx.core.content.ContentProviderCompat.requireContext
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.XAxis
@@ -18,6 +16,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import com.github.mikephil.charting.utils.ColorTemplate
 import com.github.tianma8023.formatter.SunriseSunsetLabelFormatter
 import com.github.tianma8023.model.Time
+import com.google.gson.GsonBuilder
 import com.hjq.http.EasyHttp
 import com.hjq.http.listener.HttpCallback
 import org.greenrobot.eventbus.Subscribe
@@ -26,11 +25,12 @@ import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppFragment
 import vn.techres.android.weather.app.helper.MyAxisValueFormatter
 import vn.techres.android.weather.app.helper.MyValueFormatter
+import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.home.databinding.LayoutDataWeatherBinding
 import vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity
 import vn.techres.android.weather.home.ui.adapter.DynamicViewPagerAdapter
 import vn.techres.android.weather.home.ui.adapter.ListDaysSevenAdapter
-import vn.techres.android.weather.home.ui.adapter.ListHoursWeatherAirAdapter
+import vn.techres.android.weather.ui.adapter.ListHoursWeatherAirAdapter
 import vn.techres.android.weather.home.ui.fragment.WeatherFragment.Companion.activityViewPagerAdapter
 import vn.techres.android.weather.http.api.CurrentAirApi
 import vn.techres.android.weather.http.api.CurrentWeatherApi
@@ -49,6 +49,7 @@ import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.other.CustomLineMarkerView
 import vn.techres.android.weather.ui.activity.HomeActivity
 import vn.techres.android.weather.utils.AppUtils
+import vn.techres.android.weather.utils.AppUtils.checkWeather
 import vn.techres.android.weather.utils.AppUtils.hide
 import vn.techres.android.weather.utils.AppUtils.show
 import vn.techres.android.weather.utils.TypeFaceUtils
@@ -63,6 +64,9 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
     private var listHoursAirWeather = ArrayList<ListAirWeatherHours>()
     private lateinit var adapterWeatherDays: ListDaysSevenAdapter
     private lateinit var adapterWeatherAirHours: ListHoursWeatherAirAdapter
+    private var listAir=ArrayList<ListAir>()
+    private var weatherNow= ArrayList<WeatherNow>()
+    private var isListAir=0
 
     companion object {
         fun getInstance(titleId: Int): WeatherDetailFragment {
@@ -92,6 +96,7 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
         } else {
             setData(titleToDisplay)
         }
+
     }
 
     private fun setData(address: AddressCity) {
@@ -100,22 +105,19 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
 
     private fun setupView() {
         adapterWeatherAirHours =
-            ListHoursWeatherAirAdapter(requireContext())
+            ListHoursWeatherAirAdapter(requireActivity())
         adapterWeatherAirHours.setData(listHoursAirWeather)
         AppUtils.initRecyclerViewHorizontal(
             binding.ilWeatherAirHours.rcvListWeatherHours,
             adapterWeatherAirHours
         )
-        adapterWeatherDays = ListDaysSevenAdapter(requireContext())
+        adapterWeatherDays = ListDaysSevenAdapter(requireActivity())
         adapterWeatherDays.setData(listDaysWeather)
         AppUtils.initRecyclerViewVertical(
             binding.ilWeatherSevenDay.rcvListWeatherFiveDay,
             adapterWeatherDays
         )
-        binding.ilWeatherSevenDay.tvDayMore.clickWithDebounce(500) {
-            val intent = Intent(requireContext(), WeatherDayMoreActivity::class.java)
-            startActivity(intent)
-        }
+
         binding.ilWeatherOther.ssvSunrise.labelFormatter = object :
             SunriseSunsetLabelFormatter {
             override fun formatSunriseLabel(sunrise: Time): String {
@@ -135,9 +137,35 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
             lon,
             AppUtils.returnUnits(2)
         )
-        getDataAir(lat, lon)
+        getDataAir(name,lat, lon)
         getDaysWeather(lat, lon, 3, AppUtils.returnUnits(2))
         getAirDataHours(lat, lon)
+        binding.ilWeatherSevenDay.tvDayMore.clickWithDebounce(500) {
+            val intent = Intent(requireContext(), WeatherDayMoreActivity::class.java)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_LAT,lat)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_LON,lon)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_NAME,name)
+            startActivity(intent)
+        }
+
+
+
+
+    }
+    fun checkAnimation(){
+            if (listAir.isNotEmpty()&& weatherNow.isNotEmpty()){
+                if (weatherNow[0].weather[0].id in 200..800 || listAir[0].main.AQI>3 || AppUtils.roundNumber(weatherNow[0].main.temp) !in 0..37 || AppUtils.roundNumber(weatherNow[0].wind.speed)>30 ){
+                    if (isListAir==0){
+                        checkWeatherAQI(weatherNow[0],listAir[0])
+                        Timber.tag("listNotifine").e("${
+                            GsonBuilder().setPrettyPrinting().create().toJson(weatherNow)
+                        },${GsonBuilder().setPrettyPrinting().create().toJson(listAir)}")
+                        isListAir++
+                    }else{
+                        //
+                    }
+                }
+            }
     }
 
     private fun getDaysWeather(lat: Double, lon: Double, cnt: Int, units: String) {
@@ -171,11 +199,11 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
                                 .toString()
                         binding.ilWeatherNow.tvUnitTemperatureDayNow.text = getString(R.string.oC)
                         binding.ilWeatherNow.tvNameLocation.text = name
-                        AppUtils.checkWeather(
+                        checkWeather(
                             result.weather[0].id,
                             binding.rlBgStyle,
                             binding.weatherView,
-                            requireContext()
+                            requireContext(),binding.ilWeatherNow.ltWeather
                         )
                         val sunrise = AppUtils.getDayDetailsHours(result.sys.sunrise.toLong(), true)
                         val sunset = AppUtils.getDayDetailsHours(result.sys.sunset.toLong(), true)
@@ -216,14 +244,30 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
                             AppUtils.roundBigDecimal(result.clouds.all.toBigDecimal())
                                 .toString() + getString(R.string.persent)
                         checkRainSnow(result)
+                        weatherNow.add(result)
                     } else {
                         toast(getString(R.string.no_connect1))
                     }
                 }
             })
     }
+    private fun checkWeatherAQI(weatherNow: WeatherNow,aQI:ListAir){
+        val confirmDialog = DialogAlertWeatherAQI.Builder(
+            requireContext(),
+            weatherNow,aQI
+        )
+        confirmDialog.onActionDone(object : DialogAlertWeatherAQI.Builder.OnActionDone {
+            override fun onActionDone() {
+                postDelayed({
+                    confirmDialog.dismiss()
+                },1000)
+            }
 
-    private fun getDataAir(lat: Double, lon: Double) {
+        })
+        confirmDialog.create().show()
+    }
+
+    private fun getDataAir(name:String,lat: Double, lon: Double) {
         EasyHttp.get(this).api(CurrentAirApi.param(lat, lon))
             .request(object : HttpCallback<AirNow>(this) {
                 @SuppressLint("SuspiciousIndentation")
@@ -232,7 +276,13 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
                     binding.ilWeatherNow.tvAQI.text =
                         AppUtils.calculateAQI_China(it.co, it.no2, it.o3, it.so2, it.pm25, it.pm10)
                             .toString()
+                    AppUtils.checkImageAQi(binding.ilWeatherNow.imvAQI,result.list[0].main.AQI)
+                    listAir.add(result.list[0])
+                    if (name== titles[0].nameCity) {
+                        checkAnimation()
+                    }
                 }
+
             })
     }
 
@@ -248,6 +298,7 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
                             override fun onSucceed(result: WeatherDays) {
                                 listHoursWeather.clear()
                                 listHoursAir.clear()
+                                listHoursAirWeather.clear()
                                 if (result.cod == 200) {
                                     listHoursWeather.addAll(result.list)
                                     listHoursAir.addAll(resultAir)
@@ -506,6 +557,8 @@ class WeatherDetailFragment : AppFragment<HomeActivity>() {
             operation(requireContext())
         }
     }
+
+
 
 
 }

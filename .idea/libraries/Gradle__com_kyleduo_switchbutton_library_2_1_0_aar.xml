@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.kyleduo.switchbutton:library:2.1.0@aar">
+  <library name="Gradle: com.kyleduo.switchbutton:library:2.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03f959b04b72e003780997d9747f423f/transformed/jetified-library-2.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03f959b04b72e003780997d9747f423f/transformed/jetified-library-2.1.0/AndroidManifest.xml" />

@@ -13,6 +13,7 @@ import com.hjq.http.listener.HttpCallback
 import org.greenrobot.eventbus.EventBus
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppActivity
+import vn.techres.android.weather.cache.ListAddressCache
 import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.home.databinding.ActivitySearchBinding
 import vn.techres.android.weather.home.model.interfaces.ItemSuggestClickView
@@ -81,6 +82,7 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, ImageClick {
         AppUtils.initRecyclerViewVerticalWithFlexBoxLayout(binding.rcvSuggest, adapterListSuggest)
 
         adapterListFindLocation = ListDaysWeatherAdapter(this)
+        adapterListFindLocation.checkApi=true
         adapterListFindLocation.setData(listDaysWeather)
         AppUtils.initRecyclerViewHorizontal(
             binding.ilLayoutFind.rcvListFiveDays,
@@ -113,23 +115,28 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, ImageClick {
         }
 
         binding.ilLayoutFind.tvAdd.clickWithDebounce(500) {
-            val namePlace = when {
-                listLocationFind.address.county.isNotEmpty() -> listLocationFind.address.county
-                listLocationFind.address.city.isNotEmpty() -> listLocationFind.address.city
-                listLocationFind.address.state.isNotEmpty() -> listLocationFind.address.state
-                else -> listLocationFind.address.label
+            if (titles.size>10){
+                toast(getString(R.string.max_location))
+            }else{
+                val namePlace = when {
+                    listLocationFind.address.county.isNotEmpty() -> listLocationFind.address.county
+                    listLocationFind.address.city.isNotEmpty() -> listLocationFind.address.city
+                    listLocationFind.address.state.isNotEmpty() -> listLocationFind.address.state
+                    else -> listLocationFind.address.label
+                }
+                val idCity = titles.size.toLong()
+                val city = AddressCity(
+                    idCity,
+                    namePlace,
+                    listLocationFind.position.lng,
+                    listLocationFind.position.lat
+                )
+                val intent = Intent(this, HomeActivity::class.java)//xử lý đóng activity gốc
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                startActivity(intent)
+                EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,city))
+
             }
-            val idCity = titles.size.toLong()
-            val city = AddressCity(
-                idCity,
-                namePlace,
-                listLocationFind.position.lng,
-                listLocationFind.position.lat
-            )
-            val intent = Intent(this, HomeActivity::class.java)//xử lý đóng activity gốc
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-            startActivity(intent)
-            EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,city))
         }
         binding.tvCancel.clickWithDebounce(100) {
             finish()
@@ -160,6 +167,7 @@ class SearchActivity : AppActivity(), ItemSuggestClickView, ImageClick {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
                 EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,city))
+                ListAddressCache.saveAllLocations(titles)
             }
         }
         binding.ilLayoutFind.btnDetails.clickWithDebounce (500){

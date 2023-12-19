@@ -17,9 +17,13 @@ import android.util.Base64
 import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.*
+import com.airbnb.lottie.Lottie
+import com.airbnb.lottie.LottieAnimationView
 import com.github.matteobattilana.weather.PrecipType
 import com.github.matteobattilana.weather.WeatherView
 import com.google.android.flexbox.FlexboxLayoutManager
@@ -34,6 +38,7 @@ import timber.log.Timber
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppApplication
 import vn.techres.android.weather.constants.AppConstants
+import vn.techres.android.weather.model.entity.modelAirWeather.WeatherNow
 import vn.techres.android.weather.other.CenterLayoutManager
 import vn.techres.android.weather.other.PreCachingLayoutManager
 import vn.techres.android.weather.widget.AppEditText
@@ -49,6 +54,8 @@ import java.text.Normalizer
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
 import java.util.regex.Pattern
@@ -56,7 +63,7 @@ import java.util.regex.Pattern
 
 object AppUtils {
     fun formatReportDateTime(
-        context: Context, reportTypeSort: Int, inputDateTime: String, position: Int
+        context: Context, reportTypeSort: Int, inputDateTime: String, position: Int,
     ): String {
         var outputDateTime = ""
         if (inputDateTime == "0000-00-00 00") return "0"
@@ -349,11 +356,19 @@ object AppUtils {
         return "$day/$month/$year"
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun layThoiGianHienTai(): String {
+        val thoiGianHienTai =
+            LocalDateTime.now().withHour(0).withMinute(0).withSecond(0).withNano(0)
+        val dinhDang = DateTimeFormatter.ofPattern(AppConstants.FORMAT_DATE_HOURS)
+        return thoiGianHienTai.format(dinhDang)
+    }
+
     fun checkWeather(
         idWeather: Long,
         background: View,
         backgroundWeather: WeatherView,
-        context: Context,
+        context: Context, lottie: LottieAnimationView,
     ) {
         when (idWeather) {
             in 200..232 ->
@@ -361,73 +376,73 @@ object AppUtils {
                     AppConstants.THUNDERSTORM,
                     background,
                     backgroundWeather,
-                    context
+                    context, lottie
                 )//dông
             in 300..321 -> setBackGround(
                 AppConstants.RAIN,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//mưa phùn
             in 500..531 -> setBackGround(
                 AppConstants.RAIN,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//mưa
             in 600..622 -> setBackGround(
                 AppConstants.SNOW,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//tuyết
             701L, 721L, 741L -> setBackGround(
                 AppConstants.DIZ,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//sương mù
             711L, 731L, 751L, 761L, 762L -> setBackGround(
                 AppConstants.DUST,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//bụi
             771L -> setBackGround(
                 AppConstants.SQUALL,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//mưa đá
             781L -> setBackGround(
                 AppConstants.TORNADO,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//lốc xoáy
             800L -> setBackGround(
                 AppConstants.SUN,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//thông thoáng
             801L, 802L -> setBackGround(
                 AppConstants.CLOUD_LITE,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//mây ít , rải rác
             803L -> setBackGround(
                 AppConstants.CLOUD,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//mây ít , rải rác
             804L -> setBackGround(
                 AppConstants.MURKY,
                 background,
                 backgroundWeather,
-                context
+                context, lottie
             )//mây u ám
 
         }
@@ -439,64 +454,130 @@ object AppUtils {
         status: Int,
         background: View,
         backgroundWeather: WeatherView,
-        context: Context,
+        context: Context, lottie: LottieAnimationView,
     ) {
         when (status) {
+//            AppConstants.RAIN -> {
+//                backgroundWeather.setWeatherData(PrecipType.RAIN)
+//
+////                background.background = context.getDrawable(R.drawable.rain_weather)
+//            }
+//
+//            AppConstants.SNOW -> {
+//                backgroundWeather.setWeatherData(PrecipType.SNOW)
+//                background.background = context.getDrawable(R.drawable.snow)
+//            }
+//
+//            AppConstants.SUN -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.clear_sky)
+//            }
+//
+//            AppConstants.CLOUD ->//mây nhiều
+//            {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.cloud_more)
+//            }
+//
+//            AppConstants.CLOUD_LITE -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.cloud_cum)
+//            }
+//
+//            AppConstants.MURKY -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.murky)
+//            }
+//
+//            AppConstants.DIZ -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.suong_mu)
+//            }
+//
+//            AppConstants.TORNADO -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.loc_xoay)
+//            }
+//
+//            AppConstants.SQUALL -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.mua_da)
+//            }
+//
+//            AppConstants.DUST -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.bui)
+//            }
+//
+//            AppConstants.THUNDERSTORM -> {
+//                backgroundWeather.setWeatherData(PrecipType.CLEAR)
+//                background.background = context.getDrawable(R.drawable.dong)
+//            }
             AppConstants.RAIN -> {
                 backgroundWeather.setWeatherData(PrecipType.RAIN)
-
-                background.background = context.getDrawable(R.drawable.rain_weather)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.rain)
             }
 
             AppConstants.SNOW -> {
                 backgroundWeather.setWeatherData(PrecipType.SNOW)
-                background.background = context.getDrawable(R.drawable.snow)
+                background.background = context.getDrawable(R.drawable.bg_gray_white_transparent)
+                lottie.setAnimation(R.raw.snow)
             }
 
             AppConstants.SUN -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.clear_sky)
+                background.background = context.getDrawable(R.drawable.bg_orange_transparent)
+                lottie.setAnimation(R.raw.sunclound)
             }
 
             AppConstants.CLOUD ->//mây nhiều
             {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.cloud_more)
+                background.background = context.getDrawable(R.drawable.bg_gray_white_transparent)
+                lottie.setAnimation(R.raw.cloudmore)
             }
 
             AppConstants.CLOUD_LITE -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.cloud_cum)
+                background.background = context.getDrawable(R.drawable.bg_gray_white_transparent)
+                lottie.setAnimation(R.raw.sunclound)
             }
 
             AppConstants.MURKY -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.murky)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.cloudmore)
             }
 
             AppConstants.DIZ -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.suong_mu)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.cloudmore)
             }
 
             AppConstants.TORNADO -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.loc_xoay)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.tormato)
             }
 
             AppConstants.SQUALL -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.mua_da)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.rainice)
             }
 
             AppConstants.DUST -> {
                 backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.bui)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.cloudmore)
             }
 
             AppConstants.THUNDERSTORM -> {
-                backgroundWeather.setWeatherData(PrecipType.CLEAR)
-                background.background = context.getDrawable(R.drawable.dong)
+                backgroundWeather.setWeatherData(PrecipType.RAIN)
+                background.background = context.getDrawable(R.drawable.bg_gray_dark_transsarent)
+                lottie.setAnimation(R.raw.thunderstorm)
             }
         }
 
@@ -581,11 +662,134 @@ object AppUtils {
 
     }
 
+    fun checkImageAQi(imageView: ImageView, AQI: Int) {
+        when (AQI) {
+            1 -> imageView.setImageResource(R.drawable.face_good)
+            2 -> imageView.setImageResource(R.drawable.face_v_good)
+            3 -> imageView.setImageResource(R.drawable.face_normal)
+            4 -> imageView.setImageResource(R.drawable.face_bad)
+            5 -> imageView.setImageResource(R.drawable.face_very_bad)
+            else -> {
+                imageView.setImageResource(R.drawable.face_die)
+            }
+        }
+    }
+
+    fun chatGayOnhiem(chiSo: Map<String, Double>): String {
+        var chatOnhiem = ""
+        var maxAQI = 0.0
+        var textNotifine = ""
+        for ((chat, chiSo) in chiSo) {
+            val AQI = when (chat) {
+                "PM2.5" -> when {
+                    chiSo <= 35 -> chiSo / 35 * 50
+                    chiSo <= 75 -> 50 + (chiSo - 35) / (75 - 35) * (100 - 50)
+                    chiSo <= 115 -> 100 + (chiSo - 75) / (115 - 75) * (150 - 100)
+                    chiSo <= 150 -> 150 + (chiSo - 115) / (150 - 115) * (200 - 150)
+                    chiSo <= 250 -> 200 + (chiSo - 150) / (250 - 150) * (300 - 200)
+                    else -> 300 + (chiSo - 250) / (350 - 250) * (500 - 300)
+                }
+
+                "PM10" -> when {
+                    chiSo <= 50 -> chiSo / 50 * 50
+                    chiSo <= 150 -> 50 + (chiSo - 50) / (150 - 50) * (100 - 50)
+                    chiSo <= 250 -> 100 + (chiSo - 150) / (250 - 150) * (150 - 100)
+                    chiSo <= 350 -> 150 + (chiSo - 250) / (350 - 250) * (200 - 150)
+                    chiSo <= 420 -> 200 + (chiSo - 350) / (420 - 350) * (300 - 200)
+                    else -> 300 + (chiSo - 420) / (500 - 420) * (500 - 300)
+                }
+
+                "O3" -> when {
+                    chiSo <= 160 -> chiSo / 160 * 50
+                    chiSo <= 200 -> 50 + (chiSo - 160) / (200 - 160) * (100 - 50)
+                    chiSo <= 300 -> 100 + (chiSo - 200) / (300 - 200) * (150 - 100)
+                    chiSo <= 400 -> 150 + (chiSo - 300) / (400 - 300) * (200 - 150)
+                    chiSo <= 800 -> 200 + (chiSo - 400) / (800 - 400) * (300 - 200)
+                    else -> 300 + (chiSo - 800) / (1000 - 800) * (500 - 300)
+                }
+
+                "CO" -> when {
+                    chiSo <= 5000 -> chiSo / 5000 * 50
+                    chiSo <= 10000 -> 50 + (chiSo - 5000) / (10000 - 5000) * (100 - 50)
+                    chiSo <= 30000 -> 100 + (chiSo - 10000) / (30000 - 10000) * (150 - 100)
+                    chiSo <= 50000 -> 150 + (chiSo - 30000) / (50000 - 30000) * (200 - 150)
+                    chiSo <= 100000 -> 200 + (chiSo - 50000) / (100000 - 50000) * (300 - 200)
+                    else -> 300 + (chiSo - 100000) / (150000 - 100000) * (500 - 300)
+                }
+
+                "SO2" -> when {
+                    chiSo <= 50 -> chiSo / 50 * 50
+                    chiSo <= 150 -> 50 + (chiSo - 50) / (150 - 50) * (100 - 50)
+                    chiSo <= 475 -> 100 + (chiSo - 150) / (475 - 150) * (150 - 100)
+                    chiSo <= 800 -> 150 + (chiSo - 475) / (800 - 475) * (200 - 150)
+                    chiSo <= 1600 -> 200 + (chiSo - 800) / (1600 - 800) * (300 - 200)
+                    else -> 300 + (chiSo - 1600) / (2100 - 1600) * (500 - 300)
+                }
+
+                "NO2" -> when {
+                    chiSo <= 40 -> chiSo / 40 * 50
+                    chiSo <= 100 -> 50 + (chiSo - 40) / (100 - 40) * (100 - 50)
+                    chiSo <= 200 -> 100 + (chiSo - 100) / (200 - 100) * (150 - 100)
+                    chiSo <= 700 -> 150 + (chiSo - 200) / (700 - 200) * (200 - 150)
+                    chiSo <= 1200 -> 200 + (chiSo - 700) / (1200 - 700) * (300 - 200)
+                    else -> 300 + (chiSo - 1200) / (2340 - 1200) * (500 - 300)
+                }
+
+                else -> 0.0
+            }
+
+            if (AQI > maxAQI) {
+                maxAQI = AQI
+                chatOnhiem = chat
+
+                textNotifine = when {
+                    AQI.toInt() in 151..200 ->
+                        "Mọi người, những người mắc bệnh đường hô hấp nên hạn chế hoạt động ngoài trời.\nChất gây ô nhiễm nhất là $chatOnhiem với chỉ số ô nhiễm là $maxAQI"
+                    AQI.toInt() in 201..300 ->
+                        "Mọi người nên hạn chế hoạt động ngoài trời.\nChất gây ô nhiễm nhất là $chatOnhiem với chỉ số ô nhiễm là $maxAQI"
+                    else ->
+                        "Mọi người nên tránh mọi hoạt động gắng sức ngoài trời.\nChất gây ô nhiễm nhất là $chatOnhiem với chỉ số ô nhiễm là $maxAQI"
+                }
+            } else {
+                textNotifine = when (AQI.toInt()) {
+                    in 0..50 -> "Chất lượng không khí đạt yêu cầu và ô nhiễm không khí gây ra ít hoặc không có rủi ro"
+                    in 51..100 -> "Chất lượng không khí ở mức chấp nhận được, tuy nhiên, có thể có mối lo ngại về sức khỏe"
+                    in 101..150 -> "Thành viên của các nhóm nhạy cảm có thể bị ảnh hưởng sức khỏe"
+                    else -> ""
+                }
+            }
+        }
+        return textNotifine
+    }
+
+    fun checkWeather(weather: WeatherNow): String {
+        if (weather.main.temp < 0) {
+            return "Thời tiết rất lạnh!"
+        } else if (weather.main.temp > 37) {
+            return "Thời tiết rất nóng!"
+        } else if (weather.wind.speed > 30) {
+            return "Có gió mạnh!"
+        } else if (weather.weather[0].id in 200..531) {
+            return "Trời có thể có mưa hãy mang theo dù!"
+        } else if (weather.weather[0].id in 600..622) {
+            return "Có tuyết rơi!"
+        } else {
+            return weather.weather[0].description
+        }
+    }
+
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun getCurrentDate(days: Int): String {
         val currentDate = LocalDate.now().plusDays(days.toLong())
         return currentDate.format(DateTimeFormatter.ofPattern(AppConstants.FORMAT_DATE))
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun formatDateTime(inputDateTime: String): String {
+        val offsetDateTime = OffsetDateTime.parse(inputDateTime)
+        val formatter = DateTimeFormatter.ofPattern("HH:mm dd/MM/yyyy")
+        return offsetDateTime.format(formatter)
     }
 
     @SuppressLint("SimpleDateFormat")

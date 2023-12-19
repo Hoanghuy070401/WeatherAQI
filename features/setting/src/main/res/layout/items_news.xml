@@ -1,64 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
     android:padding="@dimen/dp_8"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg_border_button_8dp_gray_200"
     android:layout_marginHorizontal="@dimen/dp_16"
     android:layout_marginTop="@dimen/dp_8"
-    android:orientation="horizontal"
     android:baselineAligned="false">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="@dimen/dp_80"
-        android:layout_weight="0.5">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_80"
+            android:layout_weight="0.5">
 
-        <ImageView
-            android:id="@+id/imvPhotoNews"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/images"/>
+            <ImageView
+                android:id="@+id/imvPhotoNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_4"
+            android:layout_weight="1.5">
+
+            <vn.techres.android.weather.widget.AppTextViewBold
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/gray_900"
+                tools:text="Thời tiết ngày 28/11: Bắc Bộ nắng hanh, Nam Bộ khả năng ngập do triều cường" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <vn.techres.android.weather.widget.AppTextView
+                    android:id="@+id/tvDate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginVertical="@dimen/dp_4"
+                    android:textSize="@dimen/sp_10"
+                    android:textColor="@color/gray_500"
+                    android:textAllCaps="true"
+                    tools:text="12-12-2023 | 12:00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingStart="@dimen/dp_4"
-        android:layout_weight="1.5">
 
-        <vn.techres.android.weather.widget.AppTextViewBold
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/sp_14"
-            android:textColor="@color/gray_900"
-            tools:text="Thời tiết ngày 28/11: Bắc Bộ nắng hanh, Nam Bộ khả năng ngập do triều cường" />
-       <LinearLayout
-           android:orientation="horizontal"
-           android:gravity="center"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content">
-           <vn.techres.android.weather.widget.AppTextView
-               android:id="@+id/tvDate"
-               android:layout_weight="1"
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-               android:gravity="start"
-               android:layout_marginVertical="@dimen/dp_4"
-               android:textSize="@dimen/sp_10"
-               android:textColor="@color/gray_500"
-               android:textAllCaps="true"
-               tools:text="12-12-2023 | 12:00"/>
-           <ImageView
-               android:id="@id/imvPhotoNewsLogo"
-               android:layout_width="0dp"
-               android:layout_weight="1"
-               android:layout_height="match_parent"/>
-       </LinearLayout>
-
-     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>

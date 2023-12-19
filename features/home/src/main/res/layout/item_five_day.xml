@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"
         tools:text="Hom nay" />
     <vn.techres.android.weather.widget.AppTextView
         android:id="@+id/tvDayNumber"
@@ -25,6 +26,7 @@
         android:layout_marginVertical="@dimen/dp_4"
         android:layout_gravity="center_horizontal"
         android:textSize="@dimen/sp_14"
+        android:textColor="@color/white"
         tools:text="12/2" />
 
     <ImageView
@@ -34,6 +36,24 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/dp_14"
         android:src="@drawable/ic_style_map" />
+    <LinearLayout
+        android:id="@+id/llDeception"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_18"
+        android:orientation="horizontal">
+
+        <vn.techres.android.weather.widget.AppTextView
+            android:id="@+id/tvDeceptionWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="dfsvhnjvghdhjgfhjgcxdhgkjvcfhkjhjkghkjcfhjkg" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -55,6 +75,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dp_8"
             android:gravity="start"
+            android:textColor="@color/white"
             tools:text="27\u2103" />
     </LinearLayout>
 
@@ -78,6 +99,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dp_8"
             android:gravity="start"
+            android:textColor="@color/white"
             tools:text="23\u2103" />
     </LinearLayout>
 
@@ -101,6 +123,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dp_8"
             android:gravity="start"
+            android:textColor="@color/white"
             tools:text="17h45" />
     </LinearLayout>
 
@@ -124,6 +147,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dp_8"
             android:gravity="start"
+            android:textColor="@color/white"
             tools:text="05h30" />
     </LinearLayout>
 
@@ -147,6 +171,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dp_8"
             android:gravity="start"
+            android:textColor="@color/white"
             tools:text="50%" />
     </LinearLayout>
 
@@ -176,6 +201,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/llRainAndSnow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -196,6 +222,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/dp_8"
             android:gravity="start"
+            android:textColor="@color/white"
             tools:text="50%" />
     </LinearLayout>
 </LinearLayout>

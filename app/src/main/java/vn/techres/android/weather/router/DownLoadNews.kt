@@ -26,28 +26,38 @@ object DownLoadNews{
                 Timber.tag("listNewsDocument").e("$document")
                 Timber.tag("listNewsPage").e(page)
                 document.let {
-                    val sub = document.select("div.bm_e>div.bm_B")
+                    val sub = document.select("div.bm_c>div.bm_B")
                     for (element: Element in sub) {
                         val article = NewsModel()
-                        val titleSubject: Element? = element.select("div.bm_g>h3>a").first()
+                        val titleSubject: Element? = element.select("div.bm_h>div.bm_g>h3>a").first()
                         Timber.tag("listNews11").i("$titleSubject")
-                        val imgSubject: Element? = element.select("div.bm_g>h3>a>figure>img").first()
 
-                        val imgSubjectLogo: Element? = element.select("div.bm_c>a>figure>img").first()
+                        val linkSubject: Element? = element.select("div.bm_h>div.bm_g>h3>a").first()
+                        Timber.tag("listNews11").i("$linkSubject")
+
+                        ///////
+                        val imgSubject: Element? = element.select("div.bm_f>h3>a>figure>img").first()
+
+                        val imgSubjectLogo: Element? = element.select("div.bm_h>div.bm_b>a>figure>img").first()
                         Timber.tag("listNews11").i("$imgSubject")
-                        val linkSubject: Element? = element.select("div.bm_g>h3>a").first()
+
+                        val dateSubject: Element? = element.select("div.bm_h>div.bm_b>time").first()
                         Timber.tag("listNews11").i("$linkSubject")
-                        val dateSubject: Element? = element.select("div.bm_c>time").first()
-                        Timber.tag("listNews11").i("$linkSubject")
-                        if (dateSubject != null) {
-                            val date: String = dateSubject.attr("datetime").toString()
-                            article.date = date
-                            Timber.tag("GetDate").i(Gson().toJson(article))
-                        }
+
                         if (titleSubject != null) {
                             val title: String = titleSubject.attr("title")
                             Timber.tag("listNews22").i(title)
                             article.title = title
+                        }
+                        if (linkSubject != null) {
+                            val link: String = linkSubject.attr("href")
+                            article.link = link
+                            Timber.tag("listNews22").i(link)
+                        }
+                        if (dateSubject != null) {
+                            val date: String = dateSubject.attr("datetime").toString()
+                            article.date = date
+                            Timber.tag("GetDate").i(Gson().toJson(article))
                         }
                         if (imgSubject != null) {
                             val src: String = imgSubject.attr("src")
@@ -58,11 +68,6 @@ object DownLoadNews{
                             val src: String = imgSubjectLogo.attr("src")
                             article.linkPhotoLogo = src
                             Timber.tag("listNews22").i(src)
-                        }
-                        if (linkSubject != null) {
-                            val link: String = linkSubject.attr("href")
-                            article.link = link
-                            Timber.tag("listNews22").i(link)
                         }
                         listArticle.add(article)
                     }

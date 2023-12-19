@@ -11,6 +11,14 @@
         android:id="@+id/weatherView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltWeather1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/cloudmore"
+        />
 
     <ScrollView
         android:id="@+id/scvData"
@@ -22,7 +30,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <include
                 android:id="@+id/ilWeatherNow"
                 layout="@layout/weather_air_now" />
@@ -57,14 +64,6 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_add_circle" />
 
-                <vn.techres.android.weather.widget.AppTextView
-                    android:id="@+id/tvAddLocation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_4"
-                    android:text="@string/city_added"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/sp_16" />
             </LinearLayout>
 
             <LinearLayout
@@ -92,13 +91,12 @@
 
     <ImageView
         android:id="@+id/imvHome"
-        android:layout_width="@dimen/dp_24"
-        android:layout_height="@dimen/dp_24"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="@dimen/dp_40"
-        android:layout_marginEnd="@dimen/dp_8"
-        android:src="@drawable/ic_home_selected"
-        app:tint="@color/white" />
+        android:layout_marginEnd="@dimen/dp_16"
+        android:src="@drawable/ic_location_home" />
 
 
 

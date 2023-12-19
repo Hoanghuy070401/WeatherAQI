@@ -24,12 +24,12 @@
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\weather_air_now.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\fragment_weather.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\fragment_weather.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/weather_air_now.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/weather_air_now.xml"
     },
     {
-        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/activity_weather_day_more.xml",
-        "source": "vn.techres.android.weather.home-main-7:/layout/activity_weather_day_more.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\fragment_weather.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\fragment_weather.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_weather_day_more.xml",

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.facebook.shimmer:shimmer:0.5.0@aar">
+  <library name="Gradle: com.facebook.shimmer:shimmer:0.5.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bda216a7369614132dce2bf95c64f4f2/transformed/jetified-shimmer-0.5.0/annotations.zip!/" />
     </ANNOTATIONS>

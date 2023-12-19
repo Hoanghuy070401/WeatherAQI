@@ -33,7 +33,7 @@ class CommonDialog {
         init {
             setContentView(R.layout.ui_dialog)
             setAnimStyle(AnimAction.ANIM_IOS)
-            setGravity(Gravity.CENTER)
+            setGravity(Gravity.BOTTOM)
             setOnClickListener(cancelView, confirmView)
             setActionView(true)
             setTitleView(true)

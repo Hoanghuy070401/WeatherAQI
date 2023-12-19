@@ -71,6 +71,7 @@
     <color name="transparent_orange">#51FFA233</color>
     <color name="transparent_gray">#50E8E1E1</color>
     <color name="gray_200_50">#50F1F2F5</color>
+    <color name="white_000_70">#70FAFAFB</color>
 
     <color name="gray_100">#F5F6FA</color>
     <color name="gray_200">#F1F2F5</color>
@@ -119,6 +120,10 @@
     <color name="expired">#E7E8EB</color>
     <color name="bg_header_scrollView">#F5F6FA</color>
     <color name="orange_chat_view_page">#FFE3C2</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
 
 
 </resources>

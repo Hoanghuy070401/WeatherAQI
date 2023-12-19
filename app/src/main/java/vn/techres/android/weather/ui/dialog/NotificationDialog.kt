@@ -36,17 +36,7 @@ class NotificationDialog {
             setGravity(Gravity.CENTER)
             setContentView(binding.root)
             setWidth(Resources.getSystem().displayMetrics.widthPixels* 5 / 6)
-            binding.tvContent.text = messageText
-            binding.tvHeader.text = headerText
-            if (isCancelable)
-                binding.btnConfirm.text = getString(vn.techres.android.weather.R.string.close)
-            else
-                binding.btnConfirm.text = getString(vn.techres.android.weather.R.string.confirm)
-            binding.btnConfirm.setOnClickListener {
-                binding.btnConfirm.isEnabled = false
-                Handler(Looper.getMainLooper()).postDelayed({
-                    binding.btnConfirm.isEnabled = true
-                }, 1000)
+
                 dismiss()
                 onActionDone.onActionDone()
             }
@@ -56,4 +46,3 @@ class NotificationDialog {
             fun onActionDone()
         }
     }
-}

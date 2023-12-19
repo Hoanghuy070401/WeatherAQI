@@ -7,15 +7,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.request.RequestOptions
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppAdapter
 import vn.techres.android.weather.home.databinding.ItemFiveDayBinding
-import vn.techres.android.weather.home.databinding.ItemWeatherDaysBinding
 import vn.techres.android.weather.model.entity.modelWeatherDays.List
-import vn.techres.android.weather.other.AppConfig
 import vn.techres.android.weather.utils.AppUtils
 import vn.techres.android.weather.utils.AppUtils.hide
 import vn.techres.android.weather.utils.AppUtils.show
@@ -25,42 +20,58 @@ import vn.techres.android.weather.utils.PhotoShowUtils
  * @author:Nguyễn Hoàng Huy
  * @date: 11/24/2023.
  */
-class ListDaysWeatherAdapter(context: Context):AppAdapter<List>(context) {
-
+class ListDaysWeatherAdapter(context: Context) : AppAdapter<List>(context) {
+    var checkApi = false
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AppViewHolder {
-        val binding = ItemFiveDayBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding = ItemFiveDayBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
-    inner class ViewHolder(private val binding: ItemFiveDayBinding):AppViewHolder(binding.root){
+
+    inner class ViewHolder(private val binding: ItemFiveDayBinding) : AppViewHolder(binding.root) {
         @SuppressLint("SetTextI18n", "ResourceAsColor")
         @RequiresApi(Build.VERSION_CODES.O)
         override fun onBindView(position: Int) {
             val item = getItem(position)
-            val day = AppUtils.getDayDetails(item.dt,false)
-            binding.tvDay.text= AppUtils.convertDateToCustomString(day)
-            binding.tvDayNumber.text=AppUtils.getDayDetails(item.dt)
-            if (binding.tvDay.text.toString().trim()==getString(R.string.today)){
-                binding.linearLayout.background= ContextCompat.getDrawable(getContext(),R.drawable.bg_border_gray_300_8px)
-            }else{
-                binding.linearLayout.background= ContextCompat.getDrawable(getContext(),R.drawable.bg_border_button_8dp_gray_200)
+            val day = AppUtils.getDayDetails(item.dt, false)
+            binding.tvDay.text = AppUtils.convertDateToCustomString(day)
+            binding.tvDayNumber.text = AppUtils.getDayDetails(item.dt)
+            if (binding.tvDay.text.toString().trim() == getString(R.string.today)) {
+                binding.linearLayout.background =
+                    ContextCompat.getDrawable(getContext(), R.drawable.bg_border_gray_300_8px)
+            } else {
+                binding.linearLayout.background = ContextCompat.getDrawable(
+                    getContext(),
+                    R.drawable.bg_border_button_8dp_gray_200
+                )
             }
-            binding.tvSunRise.text = AppUtils.getDayDetailsHours(item.sunrise,true)
-            binding.tvSunSet.text = AppUtils.getDayDetailsHours(item.sunset,true)
-            binding.tvTemperatureDay.text= AppUtils.roundBigDecimal(item.temp.day.toBigDecimal()).toString()+getString(R.string.oC)
-            binding.tvTemperatureNight.text= AppUtils.roundBigDecimal(item.temp.night.toBigDecimal()).toString()+getString(R.string.oC)
-            if (item.snow!=-1.0){
-                binding.llSnow.show()
-                binding.tvSnow.text=item.snow.toString()+" m/m"
-                binding.tvRain.text = AppUtils.convertRainPercent(item.pop)
-                binding.imvRainAndSnow.setImageResource(R.drawable.ic_cloud_snow)
+            binding.tvSunRise.text = AppUtils.getDayDetailsHours(item.sunrise, true)
+            binding.tvSunSet.text = AppUtils.getDayDetailsHours(item.sunset, true)
+            binding.tvTemperatureDay.text = AppUtils.roundBigDecimal(item.temp.day.toBigDecimal())
+                .toString() + getString(R.string.oC)
+            binding.tvTemperatureNight.text =
+                AppUtils.roundBigDecimal(item.temp.night.toBigDecimal())
+                    .toString() + getString(R.string.oC)
+            if (checkApi){
+                if (item.snow != -1.0) {
+                    binding.llSnow.show()
+                    binding.tvSnow.text = item.snow.toString() + " m/m"
+                    binding.tvRain.text = AppUtils.convertRainPercent(item.pop)
+                    binding.imvRainAndSnow.setImageResource(R.drawable.ic_cloud_snow)
+                } else {
+                    binding.llSnow.hide()
+                    binding.tvRain.text = AppUtils.convertRainPercent(item.pop)
+                    binding.imvRainAndSnow.setImageResource(R.drawable.ic_rain_forecast)
+                }
+                binding.llDeception.hide()
             }else{
-                binding.llSnow.hide()
-                binding.tvRain.text = AppUtils.convertRainPercent(item.pop)
-                binding.imvRainAndSnow.setImageResource(R.drawable.ic_rain_forecast)
+                binding.llRainAndSnow.hide()
+                binding.llDeception.show()
+                binding.tvDeceptionWeather.text = item.weather[0].description
             }
 
-            binding.tvWind.text = item.speed.toString()+" m/s"
-            PhotoShowUtils.loadImage(item.weather[0].icon,binding.imvIconWeather)
+            binding.tvWind.text = item.speed.toString() + " m/s"
+            PhotoShowUtils.loadImage(item.weather[0].icon, binding.imvIconWeather)
+            AppUtils.checkWeatherItem(item.weather[0].id,binding.linearLayout,getContext())
         }
 
     }

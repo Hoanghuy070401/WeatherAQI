@@ -4,10 +4,12 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="LightTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="LightTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/orange_1</item>
         <item name="colorPrimaryDark">@color/orange_1</item>
@@ -44,16 +46,33 @@
         <item name="windowFixedWidthMinor">0dp</item>
         <item name="windowFixedHeightMajor">0dp</item>
         <item name="windowFixedHeightMinor">0dp</item>
-        
+
     </style>
+
     <style name="LightTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="LightTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="CircularProgress">
         <item name="colorAccent">@color/main_bg</item>
+    </style>
+
+    <style name="AppTheme.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="AppTheme.AppWidgetContainer" parent="AppTheme.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
     </style>
 </resources>

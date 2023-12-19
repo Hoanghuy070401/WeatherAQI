@@ -2,6 +2,7 @@ package vn.techres.android.weather.home.ui.fragment
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.view.View
@@ -27,6 +28,7 @@ import vn.techres.android.weather.model.eventbus.EvenBusSetPage
 import vn.techres.android.weather.model.eventbus.UpLoadDataEvenBus
 import vn.techres.android.weather.model.eventbus.UpdateDataEventBus
 import vn.techres.android.weather.ui.activity.HomeActivity
+import vn.techres.android.weather.ui.widget.WeatherFetchService
 import java.util.Locale
 
 class WeatherFragment : AppFragment<HomeActivity>() {
@@ -104,6 +106,7 @@ class WeatherFragment : AppFragment<HomeActivity>() {
                     titlesOrdinals.remove(firstLocation)
                     AppConstants.ISLOCATION=true
                     EventBus.getDefault().postSticky(UpdateDataEventBus(newLocationAddressCity, true))
+
                 } else {
                     toast(getString(R.string.no_search_invalid_address))
                 }
@@ -138,20 +141,7 @@ class WeatherFragment : AppFragment<HomeActivity>() {
     @SuppressLint("NotifyDataSetChanged")
     override fun onResume() {
         super.onResume()
-        view?.post {
-            activityViewPagerAdapter?.notifyDataSetChanged()
-            binding.clViewPager2.setViewPager(binding.Viewpager2)
-        }
         getLocation()
-//            titles.forEachIndexed { index, it ->
-//                if (it.nameCity== HomeActivity.data.nameCity){
-//                    binding.Viewpager2.setCurrentItem(index, true)
-//                }else{
-//                    binding.Viewpager2.setCurrentItem(titles.size-1, false)
-//                }
-//                return
-//            }
-
     }
 
     @Subscribe(sticky = true)

@@ -121,7 +121,7 @@ class ListAddressActivity : AppActivity(), ItemClickView {
             setUpData()
         }
         countOnResume++
-        ListAddressCache.saveAllLocations(titles)
+
     }
 
 }

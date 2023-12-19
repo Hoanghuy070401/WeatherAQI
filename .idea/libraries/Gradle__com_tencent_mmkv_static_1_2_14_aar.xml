@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.tencent:mmkv-static:1.2.14@aar">
+  <library name="Gradle: com.tencent:mmkv-static:1.2.14@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6af1895140f9e4ff78cd66f1405b8f73/transformed/jetified-mmkv-static-1.2.14/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6af1895140f9e4ff78cd66f1405b8f73/transformed/jetified-mmkv-static-1.2.14/jars/classes.jar!/" />

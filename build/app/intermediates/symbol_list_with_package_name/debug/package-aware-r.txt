@@ -189,6 +189,9 @@ attr animateRelativeTo
 attr animationMode
 attr animation_enabled
 attr appBarLayoutStyle
+attr appWidgetInnerRadius
+attr appWidgetPadding
+attr appWidgetRadius
 attr applyMotionScene
 attr arcMode
 attr argType
@@ -2016,6 +2019,10 @@ color ksw_md_solid_checked_disable
 color ksw_md_solid_disable
 color ksw_md_solid_normal
 color ksw_md_solid_shadow
+color light_blue_200
+color light_blue_50
+color light_blue_600
+color light_blue_900
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3053,6 +3060,7 @@ color white80
 color white85
 color white90
 color white95
+color white_000_70
 color white_background
 color yellow
 dimen abc_action_bar_content_inset_material
@@ -4230,6 +4238,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen widget_margin
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -4310,6 +4319,8 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable activated_background
+drawable app_widget_background
+drawable app_widget_inner_view_background
 drawable arrow_back
 drawable avd_hide_password
 drawable avd_show_password
@@ -4322,6 +4333,7 @@ drawable bg_avatar_online
 drawable bg_avatar_rank_bronze
 drawable bg_avatar_rank_gold
 drawable bg_avatar_rank_silver
+drawable bg_blue_000_top_right_left_8dp
 drawable bg_blue_transparent
 drawable bg_boder_gray
 drawable bg_border_30px_line_orange
@@ -4447,6 +4459,7 @@ drawable emoji_ios_category_people
 drawable emoji_ios_category_symbols
 drawable emoji_ios_category_travel
 drawable emoji_recent
+drawable example_appwidget_preview
 drawable exo_controls_fastforward
 drawable exo_controls_fullscreen_enter
 drawable exo_controls_fullscreen_exit
@@ -4526,6 +4539,12 @@ drawable exo_styled_controls_speed
 drawable exo_styled_controls_subtitle_off
 drawable exo_styled_controls_subtitle_on
 drawable exo_styled_controls_vr
+drawable face_bad
+drawable face_die
+drawable face_good
+drawable face_normal
+drawable face_v_good
+drawable face_very_bad
 drawable fingerprint_dialog_error
 drawable fingerprint_dialog_fp_icon
 drawable food_default
@@ -4655,6 +4674,7 @@ drawable ic_leaf
 drawable ic_like_news
 drawable ic_like_news_active
 drawable ic_location
+drawable ic_location_home
 drawable ic_location_map
 drawable ic_location_map_weather
 drawable ic_lock
@@ -4726,6 +4746,7 @@ drawable ic_rate_fill_small
 drawable ic_reboot
 drawable ic_receive
 drawable ic_remove
+drawable ic_remove_location
 drawable ic_restaurant
 drawable ic_ring
 drawable ic_role
@@ -4833,6 +4854,8 @@ drawable ksw_md_thumb
 drawable loc_xoay
 drawable logo
 drawable logo_app
+drawable logo_baomoi
+drawable logo_baomoi_full
 drawable logo_open_weather
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -5002,6 +5025,7 @@ drawable rain_weather
 drawable rating_star_fill_ic
 drawable rating_star_half_ic
 drawable rating_star_off_ic
+drawable remove
 drawable retry_bg
 drawable ripple_animation_button_back_header
 drawable ripple_animation_linear
@@ -5140,6 +5164,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appwidget_text
 id arc
 id asConfigured
 id async
@@ -5179,6 +5204,7 @@ id btnAccept
 id btnCancel
 id btnCheck
 id btnConfirm
+id btnHome
 id btnKey0
 id btnKey000
 id btnKey1
@@ -5415,6 +5441,7 @@ id immediateStop
 id immersion_fits_layout_overlap
 id immersion_navigation_bar_view
 id immersion_status_bar_view
+id imvAQI
 id imvBtnNext
 id imvBtnPausePlay
 id imvBtnPrevent
@@ -5422,7 +5449,11 @@ id imvChecked
 id imvControlMap
 id imvControlWeather
 id imvControlWeatherFuture
+id imvIcon
+id imvIconAppTv
 id imvNote
+id imvRemoveMarker
+id imvWeather
 id included
 id indeterminate
 id info
@@ -5474,18 +5505,20 @@ id llControlMap
 id llControlStyleWeather
 id llControlWeather
 id llDate
-id llDisplay
 id llEmpty
 id llEnvironmentManager
 id llFeedback
+id llHeader
 id llInfo
-id llLanguage
+id llItemWeatherHours
 id llLegend
+id llList
 id llLocationManager
 id llNoSupport
-id llNotification
-id llSystemUnit
+id llRemoveMarker
+id llStyleWeather
 id llTab
+id llWidget
 id ll_crash_bar
 id ll_crash_info
 id ll_play_menu
@@ -5495,6 +5528,7 @@ id loading
 id locale
 id lottie_layer_name
 id ltr
+id lvWeather
 id mBigImage
 id mBottomNavigationView
 id mProgressBar
@@ -5697,6 +5731,7 @@ id pull_out
 id radial
 id radio
 id ratio
+id rcvListHourse
 id rectangle
 id rectangles
 id recycler
@@ -5714,6 +5749,7 @@ id right_side
 id right_to_left
 id ring
 id ripple
+id rlBgStyle
 id rlHeader
 id rlSearch
 id rlTemperatureF
@@ -5879,6 +5915,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id transparent
 id triangle
+id tvAQI
 id tvAddress
 id tvAddressLocation
 id tvBgTag
@@ -5886,17 +5923,33 @@ id tvCamera
 id tvCancelReason
 id tvCheck
 id tvContent
+id tvDate
+id tvDeceptionTemperature
+id tvDeceptionTv
+id tvDeceptionWeather
 id tvDetailInformation
 id tvEmpty
 id tvEndDate
 id tvF
 id tvHeader
+id tvHours
 id tvInput
 id tvName
+id tvNameLocation
 id tvNowDate
 id tvO
+id tvRain
 id tvStartDate
+id tvTemperature
+id tvTemperatureDay
+id tvTemperatureDayNow
+id tvTemperatureNight
+id tvTemperatureTv
 id tvTitle
+id tvUnitTemperatureDay
+id tvUnitTemperatureDayNow
+id tvUnitTemperatureNight
+id tvWeather
 id tv_audio_name
 id tv_brightness
 id tv_content
@@ -6104,6 +6157,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_browser
 layout activity_image_preview
+layout app_widget
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout crash_activity
@@ -6152,10 +6206,13 @@ layout home_activity
 layout image_item
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout information_dialog
 layout input_dialog
 layout item_address
 layout item_city
 layout item_empty
+layout item_forecast_hours
+layout item_list_widget
 layout item_spinner
 layout item_temperature
 layout jz_dialog_brightness
@@ -6237,6 +6294,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout new_app_widget
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -6309,6 +6367,7 @@ plurals exo_controls_fastforward_by_amount_description
 plurals exo_controls_rewind_by_amount_description
 plurals mtrl_badge_content_description
 raw ayp_youtube_player
+raw cloudmore
 raw firebase_common_keep
 raw loading
 raw notification_other
@@ -6316,6 +6375,12 @@ raw notification_work_and_employee
 raw places_keep
 raw progress
 raw ps_click_music
+raw rain
+raw rainice
+raw snow
+raw sunclound
+raw thunderstorm
+raw tormato
 string AQI
 string AQI_made
 string AQI_number
@@ -6347,14 +6412,17 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string account
+string add_widget
 string address
 string air
 string all_years
 string androidx_startup
 string app_description
 string app_name
+string app_widget_description
 string appbar_scrolling_view_behavior
 string application_name
+string appwidget_text
 string back_confirm
 string bar_string_placeholder
 string biometric_or_screen_lock_prompt_message
@@ -6424,6 +6492,7 @@ string common_web_ssl_error_allow
 string common_web_ssl_error_reject
 string common_web_ssl_error_title
 string common_year
+string configure
 string confirm
 string confirm_device_credential_password
 string control_city
@@ -6628,6 +6697,7 @@ string map_chart
 string map_chart_AQI
 string map_chart_temperature
 string map_weather
+string marker_location
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -6648,6 +6718,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string max_location
 string max_phone
 string mdtp_am
 string mdtp_ampm_circle_radius_multiplier
@@ -6755,6 +6826,7 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string multipart_upload
 string my_location
+string news_other
 string no_connect1
 string no_connect2
 string no_data
@@ -6974,6 +7046,8 @@ style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
 style AppTheme_AppBarOverlay
+style AppTheme_AppWidgetContainer
+style AppTheme_AppWidgetContainerParent
 style AppTheme_NoActionBar
 style AppTheme_PopupOverlay
 style AppThemeCustom
@@ -8123,6 +8197,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style Widget_WeatherAQI_AppWidget_Container
+style Widget_WeatherAQI_AppWidget_InnerView
 style chat_style
 style jz_popup_toast_anim
 style jz_style_dialog_progress
@@ -8165,6 +8241,7 @@ styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat emojiCompatEnabled firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseContentDescription actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeTheme actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
+styleable AppWidgetAttrs appWidgetInnerRadius appWidgetPadding appWidgetRadius
 styleable AspectRatioFrameLayout resize_mode
 styleable Badge backgroundColor badgeGravity badgeRadius badgeTextColor badgeWidePadding badgeWithTextRadius horizontalOffset horizontalOffsetWithText maxCharacterCount number verticalOffset verticalOffsetWithText
 styleable BarcodeScannerView borderAlpha borderColor borderLength borderWidth cornerRadius finderOffset laserColor laserEnabled maskColor roundedCorner shouldScaleToFill squaredFinder
@@ -8365,7 +8442,9 @@ styleable WeatherView angle fadeOutTime fps lifeTime numParticles orientationMod
 styleable YouTubePlayerView autoPlay enableAutomaticInitialization handleNetworkEvents videoId
 styleable include constraintSet
 styleable monthPickerDialog dialogActionButtonColor headerBgColor headerFontColorNormal headerFontColorSelected headerTitleColor monthBgColor monthBgSelectedColor monthFontColorDisabled monthFontColorNormal monthFontColorSelected
+xml app_widget_info
 xml file_paths
 xml image_share_filepaths
 xml network_security_config
+xml new_app_widget_info
 xml ps_file_paths

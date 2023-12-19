@@ -6,7 +6,6 @@ import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
-import com.luck.picture.lib.adapter.PictureAlbumAdapter.ViewHolder
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppAdapter
 import vn.techres.android.weather.home.databinding.ItemWeatherSevenDayBinding

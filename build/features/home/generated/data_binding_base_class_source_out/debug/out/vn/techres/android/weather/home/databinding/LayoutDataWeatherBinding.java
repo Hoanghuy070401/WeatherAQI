@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.airbnb.lottie.LottieAnimationView;
 import com.github.matteobattilana.weather.WeatherView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -35,6 +36,9 @@ public final class LayoutDataWeatherBinding implements ViewBinding {
   public final LayoutWeatherDayBinding ilWeatherSevenDay;
 
   @NonNull
+  public final LottieAnimationView ltWeather1;
+
+  @NonNull
   public final RelativeLayout rlBgStyle;
 
   @NonNull
@@ -44,14 +48,15 @@ public final class LayoutDataWeatherBinding implements ViewBinding {
       @NonNull LayoutChartTemperatureBinding ilLineChartTemperature,
       @NonNull LayoutForecastHoursBinding ilWeatherAirHours,
       @NonNull WeatherAirNowBinding ilWeatherNow, @NonNull LayoutItemOtherBinding ilWeatherOther,
-      @NonNull LayoutWeatherDayBinding ilWeatherSevenDay, @NonNull RelativeLayout rlBgStyle,
-      @NonNull WeatherView weatherView) {
+      @NonNull LayoutWeatherDayBinding ilWeatherSevenDay, @NonNull LottieAnimationView ltWeather1,
+      @NonNull RelativeLayout rlBgStyle, @NonNull WeatherView weatherView) {
     this.rootView = rootView;
     this.ilLineChartTemperature = ilLineChartTemperature;
     this.ilWeatherAirHours = ilWeatherAirHours;
     this.ilWeatherNow = ilWeatherNow;
     this.ilWeatherOther = ilWeatherOther;
     this.ilWeatherSevenDay = ilWeatherSevenDay;
+    this.ltWeather1 = ltWeather1;
     this.rlBgStyle = rlBgStyle;
     this.weatherView = weatherView;
   }
@@ -118,6 +123,12 @@ public final class LayoutDataWeatherBinding implements ViewBinding {
       }
       LayoutWeatherDayBinding binding_ilWeatherSevenDay = LayoutWeatherDayBinding.bind(ilWeatherSevenDay);
 
+      id = R.id.ltWeather1;
+      LottieAnimationView ltWeather1 = ViewBindings.findChildViewById(rootView, id);
+      if (ltWeather1 == null) {
+        break missingId;
+      }
+
       RelativeLayout rlBgStyle = (RelativeLayout) rootView;
 
       id = R.id.weatherView;
@@ -128,7 +139,7 @@ public final class LayoutDataWeatherBinding implements ViewBinding {
 
       return new LayoutDataWeatherBinding((RelativeLayout) rootView, binding_ilLineChartTemperature,
           binding_ilWeatherAirHours, binding_ilWeatherNow, binding_ilWeatherOther,
-          binding_ilWeatherSevenDay, rlBgStyle, weatherView);
+          binding_ilWeatherSevenDay, ltWeather1, rlBgStyle, weatherView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

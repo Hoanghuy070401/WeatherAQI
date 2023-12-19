@@ -1,135 +1,171 @@
 [
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/splash_activity.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/splash_activity.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\activity_browser.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\activity_browser.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/item_empty.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/item_empty.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\fragment_air.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\fragment_air.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/fragment_map_tab.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/fragment_map_tab.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\app_widget.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\app_widget.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/tab_item_sliding.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/tab_item_sliding.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\crash_activity.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\crash_activity.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/update_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/update_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\data_weather_app_widget.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\data_weather_app_widget.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/fragment_no_support.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/fragment_no_support.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\dialog_notification.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\dialog_notification.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/wait_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/wait_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\home_activity.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\home_activity.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/date_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/date_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\dialog_confirm.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\dialog_confirm.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/item_temperature.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/item_temperature.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_forecast_hours.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_forecast_hours.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/message_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/message_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\fragment_no_support.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\fragment_no_support.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/item_address.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/item_address.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\activity_image_preview.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\activity_image_preview.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/custom_loading.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/custom_loading.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\new_app_widget_configure.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\new_app_widget_configure.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/picker_item.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/picker_item.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\layout_line_marker.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\layout_line_marker.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/tab_item_design.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/tab_item_design.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_city.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_city.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/layout_line_marker.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/layout_line_marker.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\tab_item_design.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\tab_item_design.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/crash_activity.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/crash_activity.xml"
-    },
-    {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/dialog_confirm.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/dialog_confirm.xml"
-    },
-    {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/tips_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/tips_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\message_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\message_dialog.xml"
     },
     {
         "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/fragment_air.xml",
         "source": "vn.techres.android.weather.app-main-85:/layout/fragment_air.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/dialog_cancel.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/dialog_cancel.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\update_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\update_dialog.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/widget_status_layout.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/widget_status_layout.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\input_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\input_dialog.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/ui_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/ui_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\spinner_item.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/spinner_item.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/spinner_item.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_list_widget.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_list_widget.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/activity_image_preview.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/activity_image_preview.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\fragment_map_tab.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\fragment_map_tab.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/item_spinner.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/item_spinner.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_address.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_address.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/dialog_notification.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/dialog_notification.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\information_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\information_dialog.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/activity_browser.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/activity_browser.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_temperature.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_temperature.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/fragment_air_maps.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/fragment_air_maps.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\dialog_cancel.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\dialog_cancel.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/quantity_input_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/quantity_input_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\fragment_air_maps.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\fragment_air_maps.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/input_dialog.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/input_dialog.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\tips_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\tips_dialog.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/fragment_setting.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/fragment_setting.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\tab_item_sliding.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\tab_item_sliding.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/home_activity.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/home_activity.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\picker_item.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\picker_item.xml"
     },
     {
-        "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/item_city.xml",
-        "source": "vn.techres.android.weather.app-main-85:/layout/item_city.xml"
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\widget_status_layout.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\widget_status_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\fragment_setting.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\new_app_widget.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\new_app_widget.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\custom_loading.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\custom_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\fragment_weather_map.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\fragment_weather_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\splash_activity.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\splash_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\date_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\date_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_spinner.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\quantity_input_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\quantity_input_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\wait_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\wait_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\ui_dialog.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\ui_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-mergeDebugResources-92:\\layout\\item_empty.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-85:\\layout\\item_empty.xml"
     },
     {
         "merged": "vn.techres.android.weather.app-mergeDebugResources-92:/layout/fragment_weather_map.xml",

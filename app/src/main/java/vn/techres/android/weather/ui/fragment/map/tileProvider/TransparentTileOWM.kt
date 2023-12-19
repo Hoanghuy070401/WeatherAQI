@@ -27,8 +27,6 @@ class TransparentTileOWM(tileType: String, date: Long) : TileProvider {
     private val opacityPaint = Paint()
     private var tileType: String = String()
     private var dated = 0L
-    private var tileLoadManager: TileLoadManager
-    private var totalTileCount = 0
 
 
     @SuppressLint("SimpleDateFormat")
@@ -52,7 +50,6 @@ class TransparentTileOWM(tileType: String, date: Long) : TileProvider {
         } else {
             setOpacity(100)
         }
-        tileLoadManager = TileLoadManager(totalTileCount)
     }
 
     private var OWM_TILE_URL_DATE =
@@ -79,7 +76,6 @@ class TransparentTileOWM(tileType: String, date: Long) : TileProvider {
 
             val byteArray = stream.toByteArray()
             tile = Tile(256, 256, byteArray)
-            tileLoadManager.tileLoaded()
         } catch (e: IOException) {
             e.printStackTrace()
         } finally {
@@ -115,7 +111,6 @@ class TransparentTileOWM(tileType: String, date: Long) : TileProvider {
         } else {
             String.format(AQI_TILE_URL, tileType, zoom, x, y)
         }
-
         return try {
             URL(tileUrl)
         } catch (e: MalformedURLException) {

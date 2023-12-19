@@ -37,7 +37,10 @@ AppConstants {
     const val CACHE_SETTING = "CACHES_SETTING"
     const val CACHE_BRANCH = "CACHES_BRANCH"
     const val CACHE_LOCATION = "CACHE_LOCATION"
+    const val CACHE_DATA_WEATHER_WIDGET = "CACHE_DATA_WEATHER_WIDGET"
     const val DATA_LIST = "DATA_LIST"
+    const val API_URL = "API_URL"
+    const val EXTRA_ITEM = "EXTRA_ITEM"
 
     const val FIST_LOCATION = "Đang lấy vị trí "
 

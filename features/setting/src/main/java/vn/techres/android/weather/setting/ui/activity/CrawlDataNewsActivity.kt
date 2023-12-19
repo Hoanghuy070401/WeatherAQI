@@ -18,8 +18,6 @@ class CrawlDataNewsActivity : AppActivity() {
     }
 
     override fun initData() {
-        runBlocking {
-            DownLoadNews.downloadArticles()
-        }
+
     }
 }

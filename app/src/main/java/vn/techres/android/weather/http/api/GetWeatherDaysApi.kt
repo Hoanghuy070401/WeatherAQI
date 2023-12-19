@@ -20,7 +20,7 @@ class GetWeatherDaysApi:BaseApi() {
     var lang = "vi"
 
     @HttpRename("cnt")
-    var cnt = 0///so ngay tra ve tu 1 - 30
+    var cnt = 0///so ngay tra ve tu 1 - 16
 
     @HttpRename("units")
     var units = ""

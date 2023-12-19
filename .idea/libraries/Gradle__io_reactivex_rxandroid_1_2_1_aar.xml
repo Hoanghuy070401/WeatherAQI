@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: io.reactivex:rxandroid:1.2.1@aar">
+  <library name="Gradle: io.reactivex:rxandroid:1.2.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cc7268a912c5adb91c7f1ded6f599c8d/transformed/jetified-rxandroid-1.2.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cc7268a912c5adb91c7f1ded6f599c8d/transformed/jetified-rxandroid-1.2.1/jars/classes.jar!/" />

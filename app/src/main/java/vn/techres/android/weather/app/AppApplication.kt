@@ -20,6 +20,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import com.aghajari.emojiview.AXEmojiManager
 import com.aghajari.emojiview.facebookprovider.AXFacebookEmojiProvider
+import com.google.gson.GsonBuilder
 import com.hjq.bar.TitleBar
 import com.hjq.http.EasyConfig
 import com.hjq.http.config.IRequestInterceptor
@@ -31,6 +32,10 @@ import com.scwang.smart.refresh.header.MaterialHeader
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
 import com.scwang.smart.refresh.layout.api.RefreshLayout
 import com.tencent.mmkv.MMKV
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+
 import net.gotev.uploadservice.UploadServiceConfig
 import net.gotev.uploadservice.data.UploadNotificationAction
 import net.gotev.uploadservice.data.UploadNotificationConfig
@@ -48,6 +53,8 @@ import vn.techres.android.weather.http.model.RequestServer
 import vn.techres.android.weather.other.*
 import vn.techres.android.weather.ui.activity.HomeActivity
 import vn.techres.android.weather.manager.ActivityManager
+import vn.techres.android.weather.model.listNews
+import vn.techres.android.weather.router.DownLoadNews
 
 
 /**
@@ -63,6 +70,14 @@ class AppApplication : Application() {
 
         widthView = Resources.getSystem().displayMetrics.widthPixels
         heightView = Resources.getSystem().displayMetrics.heightPixels
+        CoroutineScope(Dispatchers.IO).launch {
+            listNews = DownLoadNews.downloadArticles()
+            Timber.tag("listFragment")
+                .e(GsonBuilder().setPrettyPrinting().create().toJson(listNews))
+            Timber.tag("listFragment").i("${listNews.size}")
+
+        }
+
     }
 
     companion object {
@@ -143,7 +158,7 @@ class AppApplication : Application() {
                     override fun interceptArguments(
                         httpRequest: HttpRequest<*>,
                         params: HttpParams,
-                        headers: HttpHeaders
+                        headers: HttpHeaders,
                     ) {
                         headers.put("time", System.currentTimeMillis().toString())
                         headers.put("Content-Type", "application/json")
@@ -237,7 +252,7 @@ class AppApplication : Application() {
         fun getNotificationConfig(
             context: Context,
             uploadId: String,
-            @StringRes title: Int
+            @StringRes title: Int,
         ): UploadNotificationConfig {
             val clickIntent = PendingIntent.getActivity(
                 context,

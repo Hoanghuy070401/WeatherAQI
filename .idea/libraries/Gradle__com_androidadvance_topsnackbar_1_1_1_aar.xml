@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.androidadvance:topsnackbar:1.1.1@aar">
+  <library name="Gradle: com.androidadvance:topsnackbar:1.1.1@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/33f285b9b00149c34fec1debad0ff984/transformed/jetified-topsnackbar-1.1.1/annotations.zip!/" />
     </ANNOTATIONS>

@@ -34,6 +34,9 @@ object ApiApplicationRouters {
     fun API_GET_WEATHER_HOURS():String{  //lấy URL địa chỉ
         return "https://pro.openweathermap.org/data/2.5/forecast/hourly"
     }
+    fun API_GET_DATA_WEATHER_DAYS_30():String{  //lấy URL địa chỉ
+        return "https://pro.openweathermap.org/data/2.5/forecast/climate"
+    }
 
 
 

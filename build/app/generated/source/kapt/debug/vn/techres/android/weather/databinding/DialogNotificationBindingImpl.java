@@ -14,9 +14,11 @@ public class DialogNotificationBindingImpl extends DialogNotificationBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.tvHeader, 1);
-        sViewsWithIds.put(R.id.tvContent, 2);
-        sViewsWithIds.put(R.id.btnConfirm, 3);
+        sViewsWithIds.put(R.id.llStyleWeather, 1);
+        sViewsWithIds.put(R.id.imvWeather, 2);
+        sViewsWithIds.put(R.id.tvWeather, 3);
+        sViewsWithIds.put(R.id.imvAQI, 4);
+        sViewsWithIds.put(R.id.tvAQI, 5);
     }
     // views
     @NonNull
@@ -27,13 +29,15 @@ public class DialogNotificationBindingImpl extends DialogNotificationBinding  {
     // Inverse Binding Event Handlers
 
     public DialogNotificationBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private DialogNotificationBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (vn.techres.android.weather.widget.AppButtonBold) bindings[3]
-            , (vn.techres.android.weather.widget.AppTextView) bindings[2]
-            , (vn.techres.android.weather.widget.AppTextViewBold) bindings[1]
+            , (android.widget.ImageView) bindings[4]
+            , (android.widget.ImageView) bindings[2]
+            , (android.widget.LinearLayout) bindings[1]
+            , (vn.techres.android.weather.widget.AppTextView) bindings[5]
+            , (vn.techres.android.weather.widget.AppTextView) bindings[3]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

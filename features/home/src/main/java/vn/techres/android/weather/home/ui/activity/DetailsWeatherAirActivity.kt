@@ -23,10 +23,11 @@ import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppActivity
 import vn.techres.android.weather.app.helper.MyAxisValueFormatter
 import vn.techres.android.weather.app.helper.MyValueFormatter
+import vn.techres.android.weather.cache.ListAddressCache
 import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.home.databinding.ActivityDetailsWeatherAirBinding
 import vn.techres.android.weather.home.ui.adapter.ListDaysSevenAdapter
-import vn.techres.android.weather.home.ui.adapter.ListHoursWeatherAirAdapter
+import vn.techres.android.weather.ui.adapter.ListHoursWeatherAirAdapter
 import vn.techres.android.weather.http.api.CurrentAirApi
 import vn.techres.android.weather.http.api.CurrentWeatherApi
 import vn.techres.android.weather.http.api.GetListAirHours
@@ -76,9 +77,7 @@ class DetailsWeatherAirActivity : AppActivity() {
             val locationAdd= titles.any { it.nameCity==locationName }
             if (locationAdd){
                 binding.imvAdd.hide()
-                binding.tvAddLocation.show()
             }else{
-                binding.tvAddLocation.hide()
                 binding.imvAdd.show()
             }
         } else {
@@ -105,14 +104,27 @@ class DetailsWeatherAirActivity : AppActivity() {
             startActivity(intent)
             EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,location))
         }
+        binding.ilWeatherSevenDay.tvDayMore.clickWithDebounce(500) {
+            val intent = Intent(this, WeatherDayMoreActivity::class.java)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_LAT,locationLat)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_LON,locationLon)
+            intent.putExtra(AppConstants.DETAILS_LOCATION_FIND_NAME,locationName)
+            startActivity(intent)
+        }
 
         binding.imvAdd.clickWithDebounce(500){
-            val location =AddressCity(titles.size.toLong(), locationName, locationLon,locationLat)
-            titles.add(location)
-            val intent = Intent(this, HomeActivity::class.java)//xử lý đóng activity gốc
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-            startActivity(intent)
-            EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,location))
+            if (titles.size>10){
+                toast(getString(R.string.max_location))
+            }else{
+                val location =AddressCity(titles.size.toLong(), locationName, locationLon,locationLat)
+                titles.add(location)
+                val intent = Intent(this, HomeActivity::class.java)//xử lý đóng activity gốc
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                startActivity(intent)
+                EventBus.getDefault().postSticky(AddListSuggestEvenBus(true,location))
+                ListAddressCache.saveAllLocations(titles)
+            }
+
         }
 
         binding.ilWeatherOther.ssvSunrise.labelFormatter = object : SunriseSunsetLabelFormatter {
@@ -165,7 +177,7 @@ class DetailsWeatherAirActivity : AppActivity() {
                             result.weather[0].id,
                             binding.rlBgStyle,
                             binding.weatherView,
-                            getContext()
+                            getContext(),binding.ilWeatherNow.ltWeather
                         )
                         val sunrise = AppUtils.getDayDetailsHours(result.sys.sunrise.toLong(), true)
                         val sunset = AppUtils.getDayDetailsHours(result.sys.sunset.toLong(), true)

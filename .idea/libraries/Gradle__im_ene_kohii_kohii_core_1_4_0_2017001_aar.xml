@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: im.ene.kohii:kohii-core:1.4.0.2017001@aar">
+  <library name="Gradle: im.ene.kohii:kohii-core:1.4.0.2017001@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/282cbcc9b51fea3692d9b0eb3a283764/transformed/jetified-kohii-core-1.4.0.2017001/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/282cbcc9b51fea3692d9b0eb3a283764/transformed/jetified-kohii-core-1.4.0.2017001/jars/classes.jar!/" />

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.markomilos:paginate:1.0.0@aar">
+  <library name="Gradle: com.github.markomilos:paginate:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/844f287b56cbd2f48c52c1caa3d9c1d7/transformed/jetified-paginate-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/844f287b56cbd2f48c52c1caa3d9c1d7/transformed/jetified-paginate-1.0.0/res" />

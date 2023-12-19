@@ -4,6 +4,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
 import android.content.pm.PackageManager
+import android.content.res.Resources
 import android.location.Location
 import android.os.Bundle
 import android.view.View
@@ -228,9 +229,27 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
 
     override fun onMapReady(p0: GoogleMap) {
         this.mMap = p0
-        mMap.uiSettings.isZoomControlsEnabled = true
+        mMap.uiSettings.isZoomControlsEnabled = false
         AppConstants.WEATHER_DATA = false
+        mMap.setOnMarkerClickListener { marker ->
+            // Xử lý sự kiện click cho marker tại đây
+            zoomCamera(marker.position)
+            openDialog(
+                marker.position.latitude,
+                marker.position.longitude,marker.title!!)
 
+            // Trả về true để cho biết sự kiện click đã được xử lý
+            true
+        }
+        mMap.setOnMapClickListener { p0 ->
+            zoomCamera(p0)
+            val addMap = mMap.addMarker(
+                MarkerOptions().position(p0)
+            )
+            addMap?.showInfoWindow()
+            openDialog(p0.latitude,p0.longitude,"")
+            markerList.add(addMap!!)
+        }
         controlSpinnerAQI()
         controlSpinnerStyleMap()
         // Prompt the user for permission.
@@ -242,6 +261,12 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
         // Get the current location of the device and set the position of the map.
         getDeviceLocation()
 
+    }
+    private fun zoomCamera(latLng: LatLng) {
+        val topPadding = Resources.getSystem().displayMetrics.heightPixels / 4
+        mMap.setPadding(0, 0, 0, topPadding)
+        val newLatLng = CameraUpdateFactory.newLatLngZoom(latLng, 12f)
+        mMap.animateCamera(newLatLng)
     }
 
     @Deprecated("Deprecated in Java")
@@ -371,6 +396,14 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
                 }
             }
         }
+        binding.llRemoveMarker.clickWithDebounce(500){
+            if (markerList.isNotEmpty()){
+                markerList.clear()
+                mMap.clear()
+            }else{
+                toast(getString(R.string.marker_location))
+            }
+        }
         binding.acSearchAIR.setOnSearchClickListener {
             // SearchView expanded
             isCloseSearchView = false
@@ -404,28 +437,7 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
         searchDetailPlaces(listCity[position].id)
     }
 
-    private fun getDataAir(name: String, latLng: LatLng) {
-        EasyHttp.get(this).api(CurrentAirApi.param(latLng.latitude, latLng.longitude))
-            .request(object : HttpCallback<AirNow>(this) {
-                override fun onSucceed(result: AirNow) {
-                    val data = result.list[0].components
-                    val addMap = mMap.addMarker(
-                        MarkerOptions().position(latLng).title(name).snippet(
-                            calculateAQI_China(
-                                data.co,
-                                data.no2,
-                                data.o3,
-                                data.so2,
-                                data.pm25,
-                                data.pm10
-                            ).toString()
-                        )
-                    )
-                    addMap?.showInfoWindow()
-                    markerList.add(addMap!!)
-                }
-            })
-    }
+
     @SuppressLint("NotifyDataSetChanged")
     private fun searchPlaces(process: ProgressBar, query:String, listCity:ArrayList<ItemSearch>, adapter: ListCityAdapter) {
         process.show()
@@ -450,12 +462,35 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
                 val latLng = AppUtils.coordinatesToLatLng(result.position.lat,result.position.lng)
                 val namePlace = result.address.label
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12f))
-                getDataAir(namePlace, latLng)
+                openDialog(result.position.lat,result.position.lng,namePlace)
+                val addMap = mMap.addMarker(
+                    MarkerOptions().position(latLng).title(namePlace)
+                )
+                addMap?.showInfoWindow()
+                markerList.add(addMap!!)
                 binding.rvDataCity.hide()
                 binding.acSearchAIR.setQuery("", false)
                 binding.mProgressBar.hide()
             }
         })
+    }
+    private fun openDialog(lat:Double,long:Double,name:String){
+        val dialog = DialogInfromationWeatherAQI.Builder(
+            requireContext(),
+            this@AirMapsFragment,
+            name,
+            lat,
+            long
+        )
+        dialog.onActionDone(object : DialogInfromationWeatherAQI.Builder.OnActionDone {
+            override fun onActionDone() {
+                postDelayed({
+                    dialog.dismiss()
+                }, 1000)
+
+            }
+        })
+        dialog.show()
     }
 
 

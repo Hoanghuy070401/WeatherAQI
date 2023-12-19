@@ -9,5 +9,6 @@ object ModuleClassConstants {
     const val MAP_FRAGMENT ="vn.techres.android.weather.ui.fragment.map.MapTabFragment"
     const val HOME_FRAGMENT ="vn.techres.android.weather.home.ui.fragment.HomeFragment"
     const val NEWS ="vn.techres.android.weather.setting.ui.fragment.NewsFragment"
+    const val CONTROL_LIST_LOCATION ="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
 
 }

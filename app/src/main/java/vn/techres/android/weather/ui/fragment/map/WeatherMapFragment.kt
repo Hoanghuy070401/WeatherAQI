@@ -1,10 +1,11 @@
 package vn.techres.android.weather.ui.fragment.map
 
 
+import DialogInfromationWeatherAQI
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import android.location.Geocoder
+import android.content.res.Resources
 import android.location.Location
 import android.os.Build
 import android.os.Bundle
@@ -34,10 +35,8 @@ import vn.techres.android.weather.app.AppFragment
 import vn.techres.android.weather.constants.AppConstants
 import vn.techres.android.weather.constants.AppConstants.PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION
 import vn.techres.android.weather.databinding.FragmentWeatherMapBinding
-import vn.techres.android.weather.http.api.CurrentWeatherApi
 import vn.techres.android.weather.http.api.GetDetailCityApi
 import vn.techres.android.weather.http.api.GetListCityApi
-import vn.techres.android.weather.model.entity.modelAirWeather.WeatherNow
 import vn.techres.android.weather.model.entity.modelCity.Item
 import vn.techres.android.weather.model.entity.modelCity.ItemSearch
 import vn.techres.android.weather.model.entity.modelCity.ListCity
@@ -50,9 +49,6 @@ import vn.techres.android.weather.ui.fragment.map.tileProvider.TransparentTileOW
 import vn.techres.android.weather.utils.AppUtils
 import vn.techres.android.weather.utils.AppUtils.hide
 import vn.techres.android.weather.utils.AppUtils.show
-import java.util.Locale
-import java.util.TimeZone
-import java.util.Timer
 
 
 class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageClick {
@@ -74,20 +70,15 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
     private var listControl = ArrayList<String>()
     private var listStyle = ArrayList<String>()
     private var tileType: String = String()
-    private var time=0L
     private var listCity = ArrayList<ItemSearch>()
     var date = 0L
     private var tileOverOld: TileOverlay? = null
-    private var tileOverNew: TileOverlay? = null
     private lateinit var adapterCity: ListCityAdapter
     private var isHidden = true
     val markerList: MutableList<Marker> = mutableListOf()
     private var textSearch: String = String()
     var play = true
-    var process = 10800000 // 3h/
-//    private var listCity = ArrayList<City>()
-//    private var textSearch: String = String()
-//    private lateinit var adapterCity: ListCityAdapter
+    var process = 10800 // 3h/
 
 
     override fun getLayoutView(): View {
@@ -105,12 +96,11 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
 
 
     private fun zoomCamera(latLng: LatLng) {
+        val topPadding = Resources.getSystem().displayMetrics.heightPixels / 4
+        mMap.setPadding(0, 0, 0, topPadding)
         val newLatLng = CameraUpdateFactory.newLatLngZoom(latLng, 12f)
         mMap.animateCamera(newLatLng)
-
     }
-
-
 
 
     @SuppressLint("NotifyDataSetChanged")
@@ -130,7 +120,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         binding.acSearch.doOnQueryTextListener(500) {
             if (!isCloseSearchView) {
                 if (it.isNotEmpty()) {
-                    searchPlaces(binding.acSearch.query.toString(),listCity,adapterCity)
+                    searchPlaces(binding.acSearch.query.toString(), listCity, adapterCity)
                 }
             }
         }
@@ -145,17 +135,24 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
             }
 
         }
+        binding.llRemoveMarker.clickWithDebounce(500){
+            if (markerList.isNotEmpty()){
+                markerList.clear()
+                mMap.clear()
+            }else{
+                toast(getString(R.string.marker_location))
+            }
+        }
         getLocationPermission()
         val valueTo = AppUtils.getDateFormat(
             binding.tvEndDate.text.toString(),
             false
-        ) - AppUtils.getDateFormat(binding.tvStartDate.text.toString(), false)
+        ) / 1000 - AppUtils.getDateFormat(binding.tvStartDate.text.toString(), false) / 1000
         binding.sbDate.valueFrom = 0.toFloat()
         binding.sbDate.valueTo = valueTo.toFloat()
 
         binding.sbDate.stepSize = process.toFloat()
-        binding.tvNowDate.text =
-            AppUtils.getDayDetails(AppUtils.getDateFormat(AppUtils.dateNow(), false), true)
+        binding.tvNowDate.text = AppUtils.layThoiGianHienTai()
         listControl = arrayListOf(
             "Lượng mưa đối lưu",
             "Cường độ mưa",
@@ -179,7 +176,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
                 AppUtils.getDateFormat(
                     binding.tvStartDate.text.toString(),
                     false
-                ) + value.toLong(), true
+                ) / 1000 + value.toLong(), true
             )
         })
         binding.sbDate.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
@@ -192,7 +189,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
                     AppUtils.getDateFormat(
                         binding.tvStartDate.text.toString(),
                         false
-                    ) + binding.sbDate.value.toLong(), true
+                    ) / 1000 + binding.sbDate.value.toLong(), true
                 )
                 AppConstants.DATE = true
                 date = AppUtils.getDateFormat(binding.tvNowDate.text.toString(), true)
@@ -203,7 +200,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         binding.imvBtnPausePlay.setOnClickListener {
             play = if (play) {
                 binding.imvBtnPausePlay.setImageResource(R.drawable.ic_pause)
-                   startTimer()
+                startTimer()
                 false
             } else {
                 binding.imvBtnPausePlay.setImageResource(R.drawable.ic_play)
@@ -226,7 +223,6 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         adapterCity.imageClickListener = this
         adapterCity.setData(listCity)
         AppUtils.initRecyclerViewVertical(binding.rvDataCity, adapterCity)
-
 
 
     }
@@ -262,37 +258,50 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
             false
         }
     }
+
     @SuppressLint("NotifyDataSetChanged")
-    private fun searchPlaces( query:String, listCity:ArrayList<ItemSearch>, adapter: ListCityAdapter) {
+    private fun searchPlaces(
+        query: String,
+        listCity: ArrayList<ItemSearch>,
+        adapter: ListCityAdapter,
+    ) {
 //        process.show()
-        EasyHttp.get(this).api(GetListCityApi.params(query.trim())).request(object :HttpCallback<ListCity>(this){
-            override fun onSucceed(result: ListCity) {
+        EasyHttp.get(this).api(GetListCityApi.params(query.trim()))
+            .request(object : HttpCallback<ListCity>(this) {
+                override fun onSucceed(result: ListCity) {
 //                process.hide()
-                listCity.clear()
-                if (result.item.isNotEmpty()){
-                    listCity.addAll(result.item)
-                    adapter.notifyDataSetChanged()
-                }else{
-                    toast(getString(R.string.no_search_invalid_address))
+                    listCity.clear()
+                    if (result.item.isNotEmpty()) {
+                        listCity.addAll(result.item)
+                        adapter.notifyDataSetChanged()
+                    } else {
+                        toast(getString(R.string.no_search_invalid_address))
+                    }
+                    checkEmpty()
                 }
-                checkEmpty()
-            }
-        })
+            })
     }
 
     private fun searchDetailPlaces(id: String) {
-        EasyHttp.get(this).api(GetDetailCityApi.params(id)).request(object :HttpCallback<Item>(this){
-            override fun onSucceed(result: Item) {
-                val latLng = AppUtils.coordinatesToLatLng(result.position.lat,result.position.lng)
-                val namePlace = result.address.label
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12f))
-                getDataWeather(namePlace, latLng,AppUtils.returnUnits(2))
-                binding.rvDataCity.hide()
-                binding.acSearch.setQuery("", false)
-//                binding.mProgressBar.hide()
-            }
-        })
+        EasyHttp.get(this).api(GetDetailCityApi.params(id))
+            .request(object : HttpCallback<Item>(this) {
+                override fun onSucceed(result: Item) {
+                    val latLng =
+                        AppUtils.coordinatesToLatLng(result.position.lat, result.position.lng)
+                    val namePlace = result.address.label
+                    zoomCamera(latLng)
+                    openDialog(result.position.lat,result.position.lng,namePlace)
+                    val addMap = mMap.addMarker(
+                        MarkerOptions().position(latLng).title(namePlace)
+                    )
+                    addMap?.showInfoWindow()
+                    markerList.add(addMap!!)
+                    binding.rvDataCity.hide()
+                    binding.acSearch.setQuery("", false)
+                }
+            })
     }
+
     private fun startTimer() {
         runnable = object : Runnable {
             override fun run() {
@@ -325,19 +334,21 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
 
     private fun nextProgress() {
         val progress = binding.sbDate.value
+        var nextProcess = 0L
         if (progress + process > binding.sbDate.valueTo) {
             binding.sbDate.value = 0.toFloat()
         } else {
             binding.sbDate.value = progress + process
+            nextProcess = binding.sbDate.value.toLong()
         }
-        binding.tvNowDate.text = AppUtils.getDayDetails(
-            AppUtils.getDateFormat(
-                binding.tvStartDate.text.toString(),
-                false
-            ) + binding.sbDate.value.toLong(), true
-        )
+        val nowDate =
+            AppUtils.getDateFormat(binding.tvStartDate.text.toString(), false) / 1000 + nextProcess
+        binding.tvNowDate.text = AppUtils.getDayDetails(nowDate, true)
+
+        Timber.tag("NowDate").i(binding.tvNowDate.text.toString())
         AppConstants.DATE = true
         date = AppUtils.getDateFormat(binding.tvNowDate.text.toString(), true)
+        Timber.tag("NowDate").i(date.toString())
         updateTileOverLay()
     }
 
@@ -355,7 +366,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
-                id: Long
+                id: Long,
             ) {
                 when (position) {
                     0 -> mMap.mapType = GoogleMap.MAP_TYPE_NORMAL
@@ -385,9 +396,9 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
-                id: Long
+                id: Long,
             ) {
-                AppConstants.DATE=false
+                AppConstants.DATE = false
                 when (position) {
                     0 -> {
                         AppConstants.SOS = false
@@ -508,7 +519,27 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
     override fun onMapReady(p0: GoogleMap) {
         this.mMap = p0
         AppConstants.WEATHER_DATA = true
-        mMap.uiSettings.isZoomControlsEnabled = true
+        mMap.uiSettings.isZoomControlsEnabled = false
+        mMap.setOnMarkerClickListener { marker ->
+                // Xử lý sự kiện click cho marker tại đây
+               openDialog(
+                   marker.position.latitude,
+                   marker.position.longitude,marker.title!!)
+
+                // Trả về true để cho biết sự kiện click đã được xử lý
+                true
+            }
+        mMap.setOnMapClickListener { p0 ->
+            zoomCamera(p0)
+            val addMap = mMap.addMarker(
+                MarkerOptions().position(p0)
+            )
+            addMap?.showInfoWindow()
+            openDialog(p0.latitude,p0.longitude,"")
+            markerList.add(addMap!!)
+        }
+
+
         // Prompt the user for permission.
         controlSpinnerStyleMap()
         controlSpinnerWeather()
@@ -521,7 +552,24 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         getDeviceLocation()
 
 
+    }
+    private fun openDialog(lat:Double,long:Double,name:String){
+        val dialog = DialogInfromationWeatherAQI.Builder(
+            requireContext(),
+            this@WeatherMapFragment,
+            name,
+            lat,
+            long
+        )
+        dialog.onActionDone(object : DialogInfromationWeatherAQI.Builder.OnActionDone {
+            override fun onActionDone() {
+                postDelayed({
+                    dialog.dismiss()
+                }, 1000)
 
+            }
+        })
+        dialog.show()
     }
 
 
@@ -529,7 +577,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
-        grantResults: IntArray
+        grantResults: IntArray,
     ) {
         AppConstants.LOCATION_PERMISSION_GRANTED = false
         when (requestCode) {
@@ -630,17 +678,19 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
     private fun setUpMap() {
         AppConstants.WEATHER_DATA = true
         mMap.clear()
-        tileOverOld =  mMap.addTileOverlay(TileOverlayOptions().tileProvider(createTransparentTileProvider()))
+        tileOverOld =
+            mMap.addTileOverlay(TileOverlayOptions().tileProvider(createTransparentTileProvider()))
     }
-    private fun updateTileOverLay(){
-        tileOverNew=mMap.addTileOverlay(TileOverlayOptions().tileProvider(createTransparentTileProvider()))
 
-        if (AppConstants.FINISH){
-            tileOverOld?.transparency=0f
+    @SuppressLint("SuspiciousIndentation")
+    private fun updateTileOverLay() {
+        val tileOverNew =
+            mMap.addTileOverlay(TileOverlayOptions().tileProvider(createTransparentTileProvider()))
+        postDelayed({
+            tileOverOld?.transparency = 0f
             tileOverOld?.remove()
-            tileOverOld=tileOverNew
-            tileOverNew?.clearTileCache()
-        }
+            tileOverOld = tileOverNew // Gán lớp mới làm lớp cũ
+        }, 4000)
     }
 
     private fun createTransparentTileProvider(): TileProvider {
@@ -655,22 +705,8 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
     override fun imageClick(position: Int) {
         searchDetailPlaces(listCity[position].id)
     }
-    private fun getDataWeather(name:String,latLng: LatLng, units: String) {
-        EasyHttp.get(this).api(CurrentWeatherApi.param(latLng.latitude, latLng.longitude, units))
-            .request(object : HttpCallback<WeatherNow>(this) {
-                override fun onSucceed(result: WeatherNow) {
-                    if (result.cod == 200) {
-                        val data = result.weather[0]
-                        val addMap= mMap.addMarker(MarkerOptions().position(latLng).title(name).snippet(
-                        data.description))
-                        addMap?.showInfoWindow()
-                        markerList.add(addMap!!)
-                    } else {
-                        toast(getString(R.string.no_connect1))
-                    }
-                }
-            })
-    }
+
+
     private var isCloseSearchView = false
     private fun checkEmpty() {
         if (listCity.isEmpty()) {

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.tslamic.fancybackground:library:1.0@aar">
+  <library name="Gradle: com.github.tslamic.fancybackground:library:1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca4108982dbaffe7e13292ef28c9e0ff/transformed/jetified-library-1.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca4108982dbaffe7e13292ef28c9e0ff/transformed/jetified-library-1.0/res" />

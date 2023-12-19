@@ -238,6 +238,13 @@
     <string name="map_chart_temperature">Biểu đồ biến động nhiệt độ</string>
     <string name="map_chart_AQI">Biểu đồ biến động chỉ số AQI</string>
     <string name="title_abc">ABC</string>
+    <string name="news_other">Tin tức mới</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="configure">Configure</string>
+    <string name="max_location">Danh sách địa điểm theo dõi không quá 10 điểm</string>
+    <string name="marker_location">Không có địa điểm nào đang được ghim</string>
 
 </resources>
 

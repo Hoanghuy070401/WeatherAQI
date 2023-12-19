@@ -4,6 +4,8 @@ package vn.techres.android.weather.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -11,26 +13,33 @@ import androidx.databinding.ViewDataBinding;
 import java.lang.Deprecated;
 import java.lang.Object;
 import vn.techres.android.weather.R;
-import vn.techres.android.weather.widget.AppButtonBold;
 import vn.techres.android.weather.widget.AppTextView;
-import vn.techres.android.weather.widget.AppTextViewBold;
 
 public abstract class DialogNotificationBinding extends ViewDataBinding {
   @NonNull
-  public final AppButtonBold btnConfirm;
+  public final ImageView imvAQI;
 
   @NonNull
-  public final AppTextView tvContent;
+  public final ImageView imvWeather;
 
   @NonNull
-  public final AppTextViewBold tvHeader;
+  public final LinearLayout llStyleWeather;
+
+  @NonNull
+  public final AppTextView tvAQI;
+
+  @NonNull
+  public final AppTextView tvWeather;
 
   protected DialogNotificationBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppButtonBold btnConfirm, AppTextView tvContent, AppTextViewBold tvHeader) {
+      ImageView imvAQI, ImageView imvWeather, LinearLayout llStyleWeather, AppTextView tvAQI,
+      AppTextView tvWeather) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.btnConfirm = btnConfirm;
-    this.tvContent = tvContent;
-    this.tvHeader = tvHeader;
+    this.imvAQI = imvAQI;
+    this.imvWeather = imvWeather;
+    this.llStyleWeather = llStyleWeather;
+    this.tvAQI = tvAQI;
+    this.tvWeather = tvWeather;
   }
 
   @NonNull

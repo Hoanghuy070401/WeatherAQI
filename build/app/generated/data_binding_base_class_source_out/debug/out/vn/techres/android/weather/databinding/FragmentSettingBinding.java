@@ -19,9 +19,6 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
   public final LinearLayout llAQI;
 
   @NonNull
-  public final LinearLayout llDisplay;
-
-  @NonNull
   public final LinearLayout llEnvironmentManager;
 
   @NonNull
@@ -31,35 +28,20 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
   public final LinearLayout llInfo;
 
   @NonNull
-  public final LinearLayout llLanguage;
-
-  @NonNull
   public final LinearLayout llLocationManager;
-
-  @NonNull
-  public final LinearLayout llNotification;
-
-  @NonNull
-  public final LinearLayout llSystemUnit;
 
   @NonNull
   public final AppTextView tvAddressLocation;
 
   protected FragmentSettingBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      LinearLayout llAQI, LinearLayout llDisplay, LinearLayout llEnvironmentManager,
-      LinearLayout llFeedback, LinearLayout llInfo, LinearLayout llLanguage,
-      LinearLayout llLocationManager, LinearLayout llNotification, LinearLayout llSystemUnit,
-      AppTextView tvAddressLocation) {
+      LinearLayout llAQI, LinearLayout llEnvironmentManager, LinearLayout llFeedback,
+      LinearLayout llInfo, LinearLayout llLocationManager, AppTextView tvAddressLocation) {
     super(_bindingComponent, _root, _localFieldCount);
     this.llAQI = llAQI;
-    this.llDisplay = llDisplay;
     this.llEnvironmentManager = llEnvironmentManager;
     this.llFeedback = llFeedback;
     this.llInfo = llInfo;
-    this.llLanguage = llLanguage;
     this.llLocationManager = llLocationManager;
-    this.llNotification = llNotification;
-    this.llSystemUnit = llSystemUnit;
     this.tvAddressLocation = tvAddressLocation;
   }
 

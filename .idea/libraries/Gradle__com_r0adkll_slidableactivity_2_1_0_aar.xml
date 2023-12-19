@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.r0adkll:slidableactivity:2.1.0@aar">
+  <library name="Gradle: com.r0adkll:slidableactivity:2.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f8ee1f12d957d2d55712cf5e319c1627/transformed/jetified-slidableactivity-2.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f8ee1f12d957d2d55712cf5e319c1627/transformed/jetified-slidableactivity-2.1.0/AndroidManifest.xml" />

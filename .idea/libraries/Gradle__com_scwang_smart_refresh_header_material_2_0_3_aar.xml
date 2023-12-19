@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.scwang.smart:refresh-header-material:2.0.3@aar">
+  <library name="Gradle: com.scwang.smart:refresh-header-material:2.0.3@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7d8f644e0abefb5804da2390cea6392c/transformed/jetified-refresh-header-material-2.0.3/annotations.zip!/" />
     </ANNOTATIONS>

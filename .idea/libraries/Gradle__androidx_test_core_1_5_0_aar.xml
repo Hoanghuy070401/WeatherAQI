@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.test:core:1.5.0@aar">
+  <library name="Gradle: androidx.test:core:1.5.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8d8a726fd06b7ff25a1ce90d783c5008/transformed/jetified-core-1.5.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8d8a726fd06b7ff25a1ce90d783c5008/transformed/jetified-core-1.5.0/AndroidManifest.xml" />

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.firebase:firebase-appcheck:17.0.0@aar">
+  <library name="Gradle: com.google.firebase:firebase-appcheck:17.0.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/35c2e6890c46bf9fd4fab539fa6ddedb/transformed/jetified-firebase-appcheck-17.0.0/annotations.zip!/" />
     </ANNOTATIONS>

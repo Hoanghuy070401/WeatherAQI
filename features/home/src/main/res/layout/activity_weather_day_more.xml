@@ -6,17 +6,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.activity.WeatherDayMoreActivity">
     <com.hjq.bar.TitleBar
         android:id="@+id/ttBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/forecast_one_month"/>
+        app:title="@string/forecast_one_month"
+        app:titleStyle="bold"/>
+    <vn.techres.android.weather.widget.AppTextViewBold
+        android:id="@+id/tvCityName"
+        android:textSize="@dimen/sp_20"
+        android:layout_gravity="center"
+        android:paddingVertical="@dimen/dp_4"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_city"
+        android:drawablePadding="@dimen/dp_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ajsdfjfghjshjdg"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvListWeatherFiveDay"
+        android:background="@color/gray_200"
         android:layout_marginTop="@dimen/dp_8"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray_300"/>
+    <vn.techres.android.weather.widget.AppTextView
+        android:text="@string/sunset_sunrise_location"
+        android:layout_marginTop="@dimen/dp_4"
+        android:padding="@dimen/dp_4"
+        android:gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

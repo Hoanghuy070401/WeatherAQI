@@ -76,7 +76,6 @@ object PhotoShowUtils {
     }
 
     fun loadFoodImage(url: String, view: ImageView) {
-        if (url.contains("/")) {
             Glide.with(view)
                 .asBitmap()
                 .load(url)
@@ -85,23 +84,9 @@ object PhotoShowUtils {
                     RequestOptions().placeholder(R.drawable.images)
                         .error(R.drawable.images)
                 )
-                .error(R.drawable.images)
                 .centerCrop()
                 .into(view)
-        } else {
-            Glide.with(view)
-                .asBitmap()
-                .load(
-                    java.lang.String.format(
-                        "%s%s",
-                        url
-                    )
-                )
-                .diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().apply(
-                    RequestOptions().placeholder(R.drawable.food_default)
-                        .error(R.drawable.food_default)
-                ).into(view)
-        }
+
     }
 
 

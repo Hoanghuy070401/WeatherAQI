@@ -31,6 +31,12 @@ public final class ItemFiveDayBinding implements ViewBinding {
   public final LinearLayout linearLayout;
 
   @NonNull
+  public final LinearLayout llDeception;
+
+  @NonNull
+  public final LinearLayout llRainAndSnow;
+
+  @NonNull
   public final LinearLayout llSnow;
 
   @NonNull
@@ -38,6 +44,9 @@ public final class ItemFiveDayBinding implements ViewBinding {
 
   @NonNull
   public final AppTextView tvDayNumber;
+
+  @NonNull
+  public final AppTextView tvDeceptionWeather;
 
   @NonNull
   public final AppTextView tvRain;
@@ -62,18 +71,22 @@ public final class ItemFiveDayBinding implements ViewBinding {
 
   private ItemFiveDayBinding(@NonNull LinearLayout rootView, @NonNull ImageView imvIconWeather,
       @NonNull ImageView imvRainAndSnow, @NonNull LinearLayout linearLayout,
+      @NonNull LinearLayout llDeception, @NonNull LinearLayout llRainAndSnow,
       @NonNull LinearLayout llSnow, @NonNull AppTextViewBold tvDay,
-      @NonNull AppTextView tvDayNumber, @NonNull AppTextView tvRain, @NonNull AppTextView tvSnow,
-      @NonNull AppTextView tvSunRise, @NonNull AppTextView tvSunSet,
-      @NonNull AppTextView tvTemperatureDay, @NonNull AppTextView tvTemperatureNight,
-      @NonNull AppTextView tvWind) {
+      @NonNull AppTextView tvDayNumber, @NonNull AppTextView tvDeceptionWeather,
+      @NonNull AppTextView tvRain, @NonNull AppTextView tvSnow, @NonNull AppTextView tvSunRise,
+      @NonNull AppTextView tvSunSet, @NonNull AppTextView tvTemperatureDay,
+      @NonNull AppTextView tvTemperatureNight, @NonNull AppTextView tvWind) {
     this.rootView = rootView;
     this.imvIconWeather = imvIconWeather;
     this.imvRainAndSnow = imvRainAndSnow;
     this.linearLayout = linearLayout;
+    this.llDeception = llDeception;
+    this.llRainAndSnow = llRainAndSnow;
     this.llSnow = llSnow;
     this.tvDay = tvDay;
     this.tvDayNumber = tvDayNumber;
+    this.tvDeceptionWeather = tvDeceptionWeather;
     this.tvRain = tvRain;
     this.tvSnow = tvSnow;
     this.tvSunRise = tvSunRise;
@@ -124,6 +137,18 @@ public final class ItemFiveDayBinding implements ViewBinding {
 
       LinearLayout linearLayout = (LinearLayout) rootView;
 
+      id = R.id.llDeception;
+      LinearLayout llDeception = ViewBindings.findChildViewById(rootView, id);
+      if (llDeception == null) {
+        break missingId;
+      }
+
+      id = R.id.llRainAndSnow;
+      LinearLayout llRainAndSnow = ViewBindings.findChildViewById(rootView, id);
+      if (llRainAndSnow == null) {
+        break missingId;
+      }
+
       id = R.id.llSnow;
       LinearLayout llSnow = ViewBindings.findChildViewById(rootView, id);
       if (llSnow == null) {
@@ -139,6 +164,12 @@ public final class ItemFiveDayBinding implements ViewBinding {
       id = R.id.tvDayNumber;
       AppTextView tvDayNumber = ViewBindings.findChildViewById(rootView, id);
       if (tvDayNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDeceptionWeather;
+      AppTextView tvDeceptionWeather = ViewBindings.findChildViewById(rootView, id);
+      if (tvDeceptionWeather == null) {
         break missingId;
       }
 
@@ -185,8 +216,8 @@ public final class ItemFiveDayBinding implements ViewBinding {
       }
 
       return new ItemFiveDayBinding((LinearLayout) rootView, imvIconWeather, imvRainAndSnow,
-          linearLayout, llSnow, tvDay, tvDayNumber, tvRain, tvSnow, tvSunRise, tvSunSet,
-          tvTemperatureDay, tvTemperatureNight, tvWind);
+          linearLayout, llDeception, llRainAndSnow, llSnow, tvDay, tvDayNumber, tvDeceptionWeather,
+          tvRain, tvSnow, tvSunRise, tvSunSet, tvTemperatureDay, tvTemperatureNight, tvWind);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

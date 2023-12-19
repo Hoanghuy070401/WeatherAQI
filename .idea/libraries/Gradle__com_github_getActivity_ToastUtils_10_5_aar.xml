@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.getActivity:ToastUtils:10.5@aar">
+  <library name="Gradle: com.github.getActivity:ToastUtils:10.5@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aa671e0e0ddcfbc1f1f30007dbe0243c/transformed/jetified-ToastUtils-10.5/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aa671e0e0ddcfbc1f1f30007dbe0243c/transformed/jetified-ToastUtils-10.5/jars/classes.jar!/" />

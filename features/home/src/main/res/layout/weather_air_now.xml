@@ -3,8 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingTop="@dimen/dp_70"
     android:paddingBottom="@dimen/dp_50">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltWeather"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_70"
+        android:layout_alignParentEnd="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_marginEnd="@dimen/dp_60"
+        />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -111,6 +123,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/dp_8"
@@ -120,8 +133,17 @@
             android:paddingVertical="@dimen/dp_4">
 
             <ImageView
+                android:id="@+id/imvAQI"
                 android:layout_width="@dimen/dp_16"
                 android:layout_height="@dimen/dp_16"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_gravity="center"
                 android:background="@drawable/ic_leaf"
                 android:backgroundTint="@color/white" />
 
@@ -141,6 +163,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/sp_16"
                 tools:text="20" />
+
         </LinearLayout>
 
 

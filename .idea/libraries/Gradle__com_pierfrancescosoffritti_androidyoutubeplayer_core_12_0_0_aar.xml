@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.pierfrancescosoffritti.androidyoutubeplayer:core:12.0.0@aar">
+  <library name="Gradle: com.pierfrancescosoffritti.androidyoutubeplayer:core:12.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/772cbd7c3a2be8745fdf62f9e4b0e18b/transformed/jetified-core-12.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/772cbd7c3a2be8745fdf62f9e4b0e18b/transformed/jetified-core-12.0.0/res" />
