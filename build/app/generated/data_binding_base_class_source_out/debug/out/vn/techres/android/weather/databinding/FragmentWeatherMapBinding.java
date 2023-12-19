@@ -53,6 +53,9 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
   public final ImageView imvNote;
 
   @NonNull
+  public final ImageView imvRemoveMarker;
+
+  @NonNull
   public final LinearLayout llControlFutureWeather;
 
   @NonNull
@@ -63,6 +66,9 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout llDate;
+
+  @NonNull
+  public final LinearLayout llRemoveMarker;
 
   @NonNull
   public final FragmentContainerView map;
@@ -98,9 +104,10 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
       @NonNull ImageButton imvBtnNext, @NonNull ImageButton imvBtnPausePlay,
       @NonNull ImageButton imvBtnPrevent, @NonNull ImageView imvControlMap,
       @NonNull ImageView imvControlWeather, @NonNull ImageView imvControlWeatherFuture,
-      @NonNull ImageView imvNote, @NonNull LinearLayout llControlFutureWeather,
-      @NonNull LinearLayout llControlMap, @NonNull LinearLayout llControlStyleWeather,
-      @NonNull LinearLayout llDate, @NonNull FragmentContainerView map,
+      @NonNull ImageView imvNote, @NonNull ImageView imvRemoveMarker,
+      @NonNull LinearLayout llControlFutureWeather, @NonNull LinearLayout llControlMap,
+      @NonNull LinearLayout llControlStyleWeather, @NonNull LinearLayout llDate,
+      @NonNull LinearLayout llRemoveMarker, @NonNull FragmentContainerView map,
       @NonNull RecyclerView rvDataCity, @NonNull Slider sbDate, @NonNull TextView snippet,
       @NonNull Spinner spnMode, @NonNull Spinner spnStyleMap, @NonNull TextView title,
       @NonNull AppTextView tvEndDate, @NonNull AppTextView tvNowDate,
@@ -114,10 +121,12 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
     this.imvControlWeather = imvControlWeather;
     this.imvControlWeatherFuture = imvControlWeatherFuture;
     this.imvNote = imvNote;
+    this.imvRemoveMarker = imvRemoveMarker;
     this.llControlFutureWeather = llControlFutureWeather;
     this.llControlMap = llControlMap;
     this.llControlStyleWeather = llControlStyleWeather;
     this.llDate = llDate;
+    this.llRemoveMarker = llRemoveMarker;
     this.map = map;
     this.rvDataCity = rvDataCity;
     this.sbDate = sbDate;
@@ -205,6 +214,12 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imvRemoveMarker;
+      ImageView imvRemoveMarker = ViewBindings.findChildViewById(rootView, id);
+      if (imvRemoveMarker == null) {
+        break missingId;
+      }
+
       id = R.id.llControlFutureWeather;
       LinearLayout llControlFutureWeather = ViewBindings.findChildViewById(rootView, id);
       if (llControlFutureWeather == null) {
@@ -226,6 +241,12 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
       id = R.id.llDate;
       LinearLayout llDate = ViewBindings.findChildViewById(rootView, id);
       if (llDate == null) {
+        break missingId;
+      }
+
+      id = R.id.llRemoveMarker;
+      LinearLayout llRemoveMarker = ViewBindings.findChildViewById(rootView, id);
+      if (llRemoveMarker == null) {
         break missingId;
       }
 
@@ -291,9 +312,9 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
 
       return new FragmentWeatherMapBinding((FrameLayout) rootView, acSearch, imvBtnNext,
           imvBtnPausePlay, imvBtnPrevent, imvControlMap, imvControlWeather, imvControlWeatherFuture,
-          imvNote, llControlFutureWeather, llControlMap, llControlStyleWeather, llDate, map,
-          rvDataCity, sbDate, snippet, spnMode, spnStyleMap, title, tvEndDate, tvNowDate,
-          tvStartDate);
+          imvNote, imvRemoveMarker, llControlFutureWeather, llControlMap, llControlStyleWeather,
+          llDate, llRemoveMarker, map, rvDataCity, sbDate, snippet, spnMode, spnStyleMap, title,
+          tvEndDate, tvNowDate, tvStartDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
