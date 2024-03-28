@@ -94,8 +94,12 @@ class WeatherFragment : AppFragment<HomeActivity>() {
                 if (it != null) {
                     val firstLocation = AppConstants.FIST_LOCATION
                     val geocoder = Geocoder(requireContext(), Locale.getDefault())
-                    val addresses = geocoder.getFromLocation(it.latitude,it.longitude, 1)
-                    val cityName = addresses?.firstOrNull()?.adminArea
+                    val addresses = geocoder.getFromLocation(it.latitude,it.longitude, 1)!!
+                    val cityName = if (addresses.firstOrNull()!!.subAdminArea==null){
+                        addresses.firstOrNull()!!.adminArea
+                    }else{
+                        addresses.firstOrNull()!!.subAdminArea
+                    }
                     val newLocationAddressCity = AddressCity(0, cityName!!, it.longitude, it.latitude)
                     if (titles.isNotEmpty()) {
                         titles[0] = newLocationAddressCity // Cập nhật phần tử đầu tiên nếu danh sách không rỗng

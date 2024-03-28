@@ -69,11 +69,11 @@ class SettingFragment : AppFragment<HomeActivity>() {
         super.onResume()
         val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
-            binding.llSign.hide()
+            binding.tvSign.text=getString(R.string.sign_out)
             binding.tvAccount.show()
             binding.tvAccount.text=user.displayName
         }else{
-            binding.llSign.show()
+            binding.tvSign.text=getString(R.string.sign)
             binding.tvAccount.hide()
         }
     }

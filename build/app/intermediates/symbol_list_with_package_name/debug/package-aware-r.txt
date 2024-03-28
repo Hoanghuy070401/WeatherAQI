@@ -6367,6 +6367,7 @@ id tvNameLocation
 id tvNowDate
 id tvO
 id tvRain
+id tvSign
 id tvStartDate
 id tvTemperature
 id tvTemperatureDay
@@ -7407,6 +7408,7 @@ string sex
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sign
+string sign_out
 string sign_to_google
 string snow_1h
 string snow_3h

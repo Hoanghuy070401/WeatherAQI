@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\face_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_splash_background_right.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_splash_background_right.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_emoji_recent.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\emoji_recent.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_splash_background_right.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_splash_background_right.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_emoji_o.xml.flat",
@@ -52,12 +52,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_border_blue_white_selected_8dp.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_minus.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_minus.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_camera.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_minus.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_minus.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_border_status.xml.flat",
@@ -76,12 +76,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\anim\\left_in_activity.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_dialog_input_bg.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\dialog_input_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\color_color_item_green_selector.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\color\\color_item_green_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_dialog_input_bg.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\dialog_input_bg.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_piggy_bank.xml.flat",
@@ -116,20 +116,20 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_splash_background_left.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_minus_glassic.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_minus_glassic.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_check_in.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_check_in.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_border_white_300_8px.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_border_white_300_8px.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_minus_glassic.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_minus_glassic.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_border_blue.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_border_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_border_white_300_8px.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_border_white_300_8px.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\anim_right_in_activity.xml.flat",
@@ -164,12 +164,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\anim\\progress_indeterminate_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\raw_sunclound.json.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\raw\\sunclound.json"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_border_button_16dp_gray_200.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_border_button_16dp_gray_200.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\raw_sunclound.json.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\raw\\sunclound.json"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_block_scan.xml.flat",
@@ -188,12 +188,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_ban_notification.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_block_hand_holding_heart.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_block_hand_holding_heart.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\xml_network_security_config.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_block_hand_holding_heart.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_block_hand_holding_heart.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -204,12 +204,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_vector_14dp.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_customer.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_customer.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_clound_right_bottom.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\clound_right_bottom.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_customer.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_customer.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_total_report.xml.flat",
@@ -292,12 +292,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\layout\\home_activity.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ripple_animation_linear_orange_100.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ripple_animation_linear_orange_100.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_radio_button_unchecked.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\radio_button_unchecked.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ripple_animation_linear_orange_100.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ripple_animation_linear_orange_100.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_dialog_border.xml.flat",
@@ -332,12 +332,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\ic_send.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_blue_transparent.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_blue_transparent.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_ripple_animation_button_back.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_ripple_animation_button_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_bg_blue_transparent.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\bg_blue_transparent.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_diamond.xml.flat",
@@ -404,16 +404,16 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\snow.jpg"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_face_good.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\face_good.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\layout_item_spinner.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\layout\\item_spinner.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable-xxhdpi_bg_border_button_green.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable-xxhdpi\\bg_border_button_green.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\layout_item_spinner.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\layout\\item_spinner.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_face_good.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-main-87:\\drawable\\face_good.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.app-merged_res-95:\\drawable_ic_start.xml.flat",

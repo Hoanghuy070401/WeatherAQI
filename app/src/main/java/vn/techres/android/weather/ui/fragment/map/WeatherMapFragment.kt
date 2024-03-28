@@ -567,7 +567,11 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
     private fun openDialog(lat: Double, long: Double) {
         val geocoder = Geocoder(requireContext(), Locale.getDefault())
         val addresses = geocoder.getFromLocation(lat, long, 1)!!
-        val cityName = addresses.firstOrNull()!!.subAdminArea
+        val cityName = if (addresses.firstOrNull()!!.subAdminArea==null){
+            addresses.firstOrNull()!!.adminArea
+        }else{
+            addresses.firstOrNull()!!.subAdminArea
+        }
         val dialog = DialogInfromationWeatherAQI.Builder(
             requireContext(),
             this@WeatherMapFragment,

@@ -22,6 +22,7 @@ public class FragmentSettingBindingImpl extends FragmentSettingBinding  {
         sViewsWithIds.put(R.id.llFeedback, 6);
         sViewsWithIds.put(R.id.llInfo, 7);
         sViewsWithIds.put(R.id.llSign, 8);
+        sViewsWithIds.put(R.id.tvSign, 9);
     }
     // views
     @NonNull
@@ -32,7 +33,7 @@ public class FragmentSettingBindingImpl extends FragmentSettingBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentSettingBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentSettingBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -44,6 +45,7 @@ public class FragmentSettingBindingImpl extends FragmentSettingBinding  {
             , (android.widget.LinearLayout) bindings[8]
             , (vn.techres.android.weather.widget.AppTextViewBold) bindings[1]
             , (vn.techres.android.weather.widget.AppTextView) bindings[2]
+            , (vn.techres.android.weather.widget.AppTextView) bindings[9]
             );
         this.mboundView0 = (android.widget.FrameLayout) bindings[0];
         this.mboundView0.setTag(null);

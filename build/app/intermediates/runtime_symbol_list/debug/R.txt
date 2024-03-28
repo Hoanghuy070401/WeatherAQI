@@ -6366,6 +6366,7 @@ int id tvNameLocation 0x7f0a0377
 int id tvNowDate 0x7f0a0378
 int id tvO 0x7f0a0379
 int id tvRain 0x7f0a037a
+int id tvSign 0x7f0a03d4
 int id tvStartDate 0x7f0a037b
 int id tvTemperature 0x7f0a037c
 int id tvTemperatureDay 0x7f0a037d
@@ -7406,6 +7407,7 @@ int string sex 0x7f130256
 int string side_sheet_accessibility_pane_title 0x7f130257
 int string side_sheet_behavior 0x7f130258
 int string sign 0x7f1302a3
+int string sign_out 0x7f1302a5
 int string sign_to_google 0x7f1302a4
 int string snow_1h 0x7f130259
 int string snow_3h 0x7f13025a

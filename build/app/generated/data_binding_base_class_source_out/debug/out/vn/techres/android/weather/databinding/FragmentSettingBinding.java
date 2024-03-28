@@ -40,10 +40,13 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
   @NonNull
   public final AppTextView tvAddressLocation;
 
+  @NonNull
+  public final AppTextView tvSign;
+
   protected FragmentSettingBinding(Object _bindingComponent, View _root, int _localFieldCount,
       LinearLayout llAQI, LinearLayout llEnvironmentManager, LinearLayout llFeedback,
       LinearLayout llInfo, LinearLayout llLocationManager, LinearLayout llSign,
-      AppTextViewBold tvAccount, AppTextView tvAddressLocation) {
+      AppTextViewBold tvAccount, AppTextView tvAddressLocation, AppTextView tvSign) {
     super(_bindingComponent, _root, _localFieldCount);
     this.llAQI = llAQI;
     this.llEnvironmentManager = llEnvironmentManager;
@@ -53,6 +56,7 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
     this.llSign = llSign;
     this.tvAccount = tvAccount;
     this.tvAddressLocation = tvAddressLocation;
+    this.tvSign = tvSign;
   }
 
   @NonNull

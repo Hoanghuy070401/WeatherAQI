@@ -380,6 +380,7 @@
                                     app:tint="@color/blue_500" />
 
                                 <vn.techres.android.weather.widget.AppTextView
+                                    android:id="@+id/tvSign"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
