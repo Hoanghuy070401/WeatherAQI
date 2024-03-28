@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/rlHeader"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llAddress"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <vn.techres.android.weather.widget.AppTextViewBold
+                android:id="@+id/tvCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_900"
+                tools:text="Hà Nội"/>
+
+            <vn.techres.android.weather.widget.AppTextView
+                android:id="@+id/tvDetailCity"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Hà Nộihjvfhdjhjfdghjkhjgcfkfdkkghdfgfdjhjhfgdj , Việt Nam"/>
+        </LinearLayout>
+
+            <vn.techres.android.weather.widget.AppTextView
+                android:id="@+id/tvAdd"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="@string/city_added"
+                android:drawableEnd="@drawable/ic_action_right"
+                android:drawableTint="@color/gray_400"
+                android:gravity="end"
+                android:layout_marginEnd="@dimen/dp_4"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/llAdd"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:gravity="end"
+                android:padding="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/imvAdd"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/ic_add_circle"/>
+            </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_below="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray_300"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvListFiveDays"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_below="@+id/rlHeader"
+        android:background="@color/gray_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_below="@+id/btnDetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray_300"/>
+    <vn.techres.android.weather.widget.AppTextView
+        android:text="@string/sunset_sunrise_location"
+        android:layout_below="@+id/btnDetails"
+        android:layout_marginTop="@dimen/dp_4"
+        android:padding="@dimen/dp_4"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/btnDetails"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:background="@drawable/ic_more"
+        android:layout_below="@+id/rcvListFiveDays"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+#Wed Mar 27 17:30:19 ICT 2024
+base.0=D\:\\Source\\AQI\\build\\app\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\4\\classes.dex
+base.1=D\:\\Source\\AQI\\build\\app\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=4/classes.dex
+path.1=0/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_16"
+        android:background="@drawable/bg_border_gray_300"
+        android:backgroundTint="@color/gray_300"
+        android:padding="@dimen/dp_8">
+
+        <vn.techres.android.weather.widget.AppTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_4"
+            android:textSize="@dimen/sp_16"
+            tools:text="dinhj vifdkjgiojdfkjgkjfdkjwefkjsjhfkghj" />
+
+        <ImageView
+            android:id="@+id/imvLocation"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:src="@drawable/ic_location" />
+    </LinearLayout>
+</RelativeLayout>

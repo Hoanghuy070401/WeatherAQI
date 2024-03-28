@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.tianma8023:SunriseSunsetView:0.0.2@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e485aa46b37a86f73b2d783a08a1660/transformed/jetified-SunriseSunsetView-0.0.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3e485aa46b37a86f73b2d783a08a1660/transformed/jetified-SunriseSunsetView-0.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e485aa46b37a86f73b2d783a08a1660/transformed/jetified-SunriseSunsetView-0.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7e587313cbe4d089e3d95186671b847/transformed/jetified-SunriseSunsetView-0.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b7e587313cbe4d089e3d95186671b847/transformed/jetified-SunriseSunsetView-0.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7e587313cbe4d089e3d95186671b847/transformed/jetified-SunriseSunsetView-0.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tianma8023/SunriseSunsetView/0.0.2/e417e018ef5bad485c7e1bc0ac592b88e65ea6e9/SunriseSunsetView-0.0.2-javadoc.jar!/" />

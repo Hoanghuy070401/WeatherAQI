@@ -1,0 +1,16 @@
+#Wed Mar 27 17:21:20 ICT 2024
+base.0=D\:\\Source\\AQI\\build\\library\\AXEmojiView\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=D\:\\Source\\AQI\\build\\library\\AXEmojiView\\intermediates\\dex\\debugAndroidTest\\mergeLibDexDebugAndroidTest\\0\\classes.dex
+base.2=D\:\\Source\\AQI\\build\\library\\AXEmojiView\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.3=D\:\\Source\\AQI\\build\\library\\AXEmojiView\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\11\\classes.dex
+base.4=D\:\\Source\\AQI\\build\\library\\AXEmojiView\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\1\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=0/classes.dex
+path.3=11/classes.dex
+path.4=1/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
+renamed.4=classes5.dex

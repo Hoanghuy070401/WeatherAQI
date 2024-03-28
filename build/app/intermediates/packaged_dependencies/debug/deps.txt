@@ -86,6 +86,14 @@ androidx.slidingpanelayout:slidingpanelayout
 androidx.slidingpanelayout:slidingpanelayout
 androidx.startup:startup-runtime
 androidx.swiperefreshlayout:swiperefreshlayout
+androidx.test.espresso:espresso-core
+androidx.test.espresso:espresso-idling-resource
+androidx.test.ext:junit
+androidx.test.services:storage
+androidx.test:annotation
+androidx.test:core
+androidx.test:monitor
+androidx.test:runner
 androidx.tracing:tracing
 androidx.transition:transition
 androidx.vectordrawable:vectordrawable
@@ -160,6 +168,7 @@ com.google.android.play:core
 com.google.android.play:integrity
 com.google.android.recaptcha:recaptcha
 com.google.auto.value:auto-value-annotations
+com.google.code.findbugs:jsr305
 com.google.code.gson:gson
 com.google.errorprone:error_prone_annotations
 com.google.firebase:firebase-analytics
@@ -196,6 +205,7 @@ com.scwang.smart:refresh-header-material
 com.scwang.smart:refresh-layout-kernel
 com.squareup.okhttp3:okhttp
 com.squareup.okio:okio-jvm
+com.squareup:javawriter
 com.tencent:mmkv-static
 com.wdullaer:materialdatetimepicker
 com.whiteelephant:monthandyearpicker
@@ -212,11 +222,15 @@ io.reactivex:rxjava
 io.socket:engine.io-client
 io.socket:socket.io-client
 javax.inject:javax.inject
+junit:junit
 me.dm7.barcodescanner:core
 me.dm7.barcodescanner:zxing
 me.relex:circleindicator
 net.gotev:uploadservice
 org.greenrobot:eventbus
+org.hamcrest:hamcrest-core
+org.hamcrest:hamcrest-integration
+org.hamcrest:hamcrest-library
 org.jetbrains.kotlin:kotlin-android-extensions-runtime
 org.jetbrains.kotlin:kotlin-parcelize-runtime
 org.jetbrains.kotlin:kotlin-stdlib

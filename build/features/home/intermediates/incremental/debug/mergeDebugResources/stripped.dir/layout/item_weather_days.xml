@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imvIconWeather"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:src="@drawable/ic_style_map"/>
+    <vn.techres.android.weather.widget.AppTextView
+        android:id="@+id/tvTemperatureDay"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="25\u2103"/>
+
+
+</RelativeLayout>

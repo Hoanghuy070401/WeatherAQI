@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-92:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\d3f4fef64f555bdab95ddbc993e25254\\transformed\\material-1.7.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\d520bab809e57066c6522425e28253b2\\transformed\\material-1.10.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

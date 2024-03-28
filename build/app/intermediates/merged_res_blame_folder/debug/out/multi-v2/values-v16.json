@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-v16/values-v16.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-92:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\ff72698507c356a007db909aa9d284a1\\transformed\\jetified-materialdatetimepicker-4.2.3\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\ff72698507c356a007db909aa9d284a1\\transformed\\jetified-materialdatetimepicker-4.2.3\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2,3,6,9",
                         "startColumns": "4,4,4,4",
@@ -14,26 +14,16 @@
                         "endOffsets": "148,281,400,517"
                     },
                     "to": {
-                        "startLines": "3,8,11,14",
+                        "startLines": "2,7,10,13",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "121,392,525,644",
-                        "endLines": "3,10,13,16",
+                        "startOffsets": "55,326,459,578",
+                        "endLines": "2,9,12,15",
                         "endColumns": "97,12,12,12",
-                        "endOffsets": "214,520,639,756"
+                        "endOffsets": "148,454,573,690"
                     }
                 },
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\8b5de782ef35572dc6dfc1c1fbe4711d\\transformed\\core-1.13.0-alpha02\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\2d9bad9aa43a86198fdb820b600ca176\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\2d9bad9aa43a86198fdb820b600ca176\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -43,12 +33,12 @@
                         "endOffsets": "223"
                     },
                     "to": {
-                        "startLines": "4",
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "219",
-                        "endLines": "7",
+                        "startOffsets": "153",
+                        "endLines": "6",
                         "endColumns": "12",
-                        "endOffsets": "387"
+                        "endOffsets": "321"
                     }
                 }
             ]

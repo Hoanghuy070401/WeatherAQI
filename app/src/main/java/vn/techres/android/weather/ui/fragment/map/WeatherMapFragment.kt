@@ -6,6 +6,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.content.res.Resources
+import android.location.Geocoder
 import android.location.Location
 import android.os.Build
 import android.os.Bundle
@@ -49,6 +50,7 @@ import vn.techres.android.weather.ui.fragment.map.tileProvider.TransparentTileOW
 import vn.techres.android.weather.utils.AppUtils
 import vn.techres.android.weather.utils.AppUtils.hide
 import vn.techres.android.weather.utils.AppUtils.show
+import java.util.Locale
 
 
 class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageClick {
@@ -111,6 +113,9 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         binding.tvStartDate.text = AppUtils.dateNow()
         binding.tvEndDate.text = AppUtils.getCurrentDate(10)
         AppConstants.WEATHER_DATA = true
+        binding.llMyLocation.setOnClickListener {
+            getDeviceLocation()
+        }
         binding.imvControlMap.clickWithDebounce(100) {
             binding.spnStyleMap.performClick()
         }
@@ -135,11 +140,11 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
             }
 
         }
-        binding.llRemoveMarker.clickWithDebounce(500){
-            if (markerList.isNotEmpty()){
+        binding.llRemoveMarker.clickWithDebounce(500) {
+            if (markerList.isNotEmpty()) {
                 markerList.clear()
                 mMap.clear()
-            }else{
+            } else {
                 toast(getString(R.string.marker_location))
             }
         }
@@ -290,7 +295,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
                         AppUtils.coordinatesToLatLng(result.position.lat, result.position.lng)
                     val namePlace = result.address.label
                     zoomCamera(latLng)
-                    openDialog(result.position.lat,result.position.lng,namePlace)
+                    openDialog(result.position.lat, result.position.lng)
                     val addMap = mMap.addMarker(
                         MarkerOptions().position(latLng).title(namePlace)
                     )
@@ -520,22 +525,27 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         this.mMap = p0
         AppConstants.WEATHER_DATA = true
         mMap.uiSettings.isZoomControlsEnabled = false
+        mMap.uiSettings.isMyLocationButtonEnabled = false
         mMap.setOnMarkerClickListener { marker ->
-                // Xử lý sự kiện click cho marker tại đây
-               openDialog(
-                   marker.position.latitude,
-                   marker.position.longitude,marker.title!!)
+            // Xử lý sự kiện click cho marker tại đây
+            openDialog(
+                marker.position.latitude,
+                marker.position.longitude
+            )
 
-                // Trả về true để cho biết sự kiện click đã được xử lý
-                true
-            }
+            // Trả về true để cho biết sự kiện click đã được xử lý
+            true
+        }
         mMap.setOnMapClickListener { p0 ->
+            for (marker in markerList) {
+                marker.remove()
+            }
             zoomCamera(p0)
             val addMap = mMap.addMarker(
                 MarkerOptions().position(p0)
             )
             addMap?.showInfoWindow()
-            openDialog(p0.latitude,p0.longitude,"")
+            openDialog(p0.latitude, p0.longitude)
             markerList.add(addMap!!)
         }
 
@@ -553,11 +563,15 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
 
 
     }
-    private fun openDialog(lat:Double,long:Double,name:String){
+
+    private fun openDialog(lat: Double, long: Double) {
+        val geocoder = Geocoder(requireContext(), Locale.getDefault())
+        val addresses = geocoder.getFromLocation(lat, long, 1)!!
+        val cityName = addresses.firstOrNull()!!.subAdminArea
         val dialog = DialogInfromationWeatherAQI.Builder(
             requireContext(),
             this@WeatherMapFragment,
-            name,
+            cityName,
             lat,
             long
         )
@@ -570,6 +584,7 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
             }
         })
         dialog.show()
+
     }
 
 
@@ -607,10 +622,8 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
         try {
             if (AppConstants.LOCATION_PERMISSION_GRANTED) {
                 mMap.isMyLocationEnabled = true
-                mMap.uiSettings.isMyLocationButtonEnabled = true
             } else {
                 mMap.isMyLocationEnabled = false
-                mMap.uiSettings.isMyLocationButtonEnabled = false
                 lastKnownLocation = null
                 getLocationPermission()
             }
@@ -665,7 +678,6 @@ class WeatherMapFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, Imag
                             CameraUpdateFactory
                                 .newLatLngZoom(defaultLocation, DEFAULT_ZOOM.toFloat())
                         )
-                        mMap.uiSettings.isMyLocationButtonEnabled = false
                     }
                 }
             }

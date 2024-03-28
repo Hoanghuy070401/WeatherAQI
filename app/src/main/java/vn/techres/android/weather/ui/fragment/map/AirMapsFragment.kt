@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.app.ProgressDialog
 import android.content.pm.PackageManager
 import android.content.res.Resources
+import android.location.Geocoder
 import android.location.Location
 import android.os.Bundle
 import android.view.View
@@ -32,6 +33,7 @@ import com.google.android.libraries.places.api.net.FindAutocompletePredictionsRe
 import com.google.android.libraries.places.api.net.PlacesClient
 import com.hjq.http.EasyHttp
 import com.hjq.http.listener.HttpCallback
+import org.greenrobot.eventbus.EventBus
 import timber.log.Timber
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppFragment
@@ -41,11 +43,15 @@ import vn.techres.android.weather.databinding.FragmentAirBinding
 import vn.techres.android.weather.http.api.CurrentAirApi
 import vn.techres.android.weather.http.api.GetDetailCityApi
 import vn.techres.android.weather.http.api.GetListCityApi
+import vn.techres.android.weather.model.entity.AddressCity
 import vn.techres.android.weather.model.entity.modelAirWeather.AirNow
 import vn.techres.android.weather.model.entity.modelCity.Item
 import vn.techres.android.weather.model.entity.modelCity.ItemSearch
 import vn.techres.android.weather.model.entity.modelCity.ListCity
+import vn.techres.android.weather.model.eventbus.UpdateDataEventBus
 import vn.techres.android.weather.model.interfaces.ImageClick
+import vn.techres.android.weather.model.titles
+import vn.techres.android.weather.model.titlesOrdinals
 import vn.techres.android.weather.other.doOnQueryTextListener
 import vn.techres.android.weather.router.ApiApplicationRouters
 import vn.techres.android.weather.ui.activity.HomeActivity
@@ -55,6 +61,7 @@ import vn.techres.android.weather.utils.AppUtils
 import vn.techres.android.weather.utils.AppUtils.calculateAQI_China
 import vn.techres.android.weather.utils.AppUtils.hide
 import vn.techres.android.weather.utils.AppUtils.show
+import java.util.Locale
 
 
 class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageClick {
@@ -108,7 +115,12 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
         binding.acSearchAIR.doOnQueryTextListener(500) {
             if (!isCloseSearchView) {
                 if (it.isNotEmpty()) {
-                    searchPlaces(binding.mProgressBar,binding.acSearchAIR.query.toString(),listCity,adapterCity)
+                    searchPlaces(
+                        binding.mProgressBar,
+                        binding.acSearchAIR.query.toString(),
+                        listCity,
+                        adapterCity
+                    )
                 }
             }
         }
@@ -156,6 +168,9 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
     }
 
     private fun controlSpinnerAQI() {
+        binding.llMyLocation.setOnClickListener{
+            getDeviceLocation()
+        }
         val adapterCategoryAir = ArrayAdapter(
             requireContext(),
             android.R.layout.simple_spinner_item,
@@ -230,24 +245,29 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
     override fun onMapReady(p0: GoogleMap) {
         this.mMap = p0
         mMap.uiSettings.isZoomControlsEnabled = false
+        mMap.uiSettings.isMyLocationButtonEnabled = false
         AppConstants.WEATHER_DATA = false
         mMap.setOnMarkerClickListener { marker ->
             // Xử lý sự kiện click cho marker tại đây
             zoomCamera(marker.position)
             openDialog(
                 marker.position.latitude,
-                marker.position.longitude,marker.title!!)
+                marker.position.longitude
+            )
 
             // Trả về true để cho biết sự kiện click đã được xử lý
             true
         }
         mMap.setOnMapClickListener { p0 ->
+            for (marker in markerList) {
+                marker.remove()
+            }
             zoomCamera(p0)
             val addMap = mMap.addMarker(
                 MarkerOptions().position(p0)
             )
             addMap?.showInfoWindow()
-            openDialog(p0.latitude,p0.longitude,"")
+            openDialog(p0.latitude, p0.longitude)
             markerList.add(addMap!!)
         }
         controlSpinnerAQI()
@@ -262,6 +282,7 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
         getDeviceLocation()
 
     }
+
     private fun zoomCamera(latLng: LatLng) {
         val topPadding = Resources.getSystem().displayMetrics.heightPixels / 4
         mMap.setPadding(0, 0, 0, topPadding)
@@ -305,10 +326,8 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
         try {
             if (AppConstants.LOCATION_PERMISSION_GRANTED) {
                 mMap.isMyLocationEnabled = true
-                mMap.uiSettings.isMyLocationButtonEnabled = true
             } else {
                 mMap.isMyLocationEnabled = false
-                mMap.uiSettings.isMyLocationButtonEnabled = false
                 lastKnownLocation = null
                 getLocationPermission()
             }
@@ -360,7 +379,6 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
                             CameraUpdateFactory
                                 .newLatLngZoom(defaultLocation, DEFAULT_ZOOM.toFloat())
                         )
-                        mMap.uiSettings.isMyLocationButtonEnabled = false
                     }
                 }
             }
@@ -396,11 +414,11 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
                 }
             }
         }
-        binding.llRemoveMarker.clickWithDebounce(500){
-            if (markerList.isNotEmpty()){
+        binding.llRemoveMarker.clickWithDebounce(500) {
+            if (markerList.isNotEmpty()) {
                 markerList.clear()
                 mMap.clear()
-            }else{
+            } else {
                 toast(getString(R.string.marker_location))
             }
         }
@@ -439,46 +457,58 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
 
 
     @SuppressLint("NotifyDataSetChanged")
-    private fun searchPlaces(process: ProgressBar, query:String, listCity:ArrayList<ItemSearch>, adapter: ListCityAdapter) {
+    private fun searchPlaces(
+        process: ProgressBar,
+        query: String,
+        listCity: ArrayList<ItemSearch>,
+        adapter: ListCityAdapter
+    ) {
         process.show()
-        EasyHttp.get(this).api(GetListCityApi.params(query.trim())).request(object :HttpCallback<ListCity>(this){
-            override fun onSucceed(result: ListCity) {
-                process.hide()
-                listCity.clear()
-                if (result.item.isNotEmpty()){
-                    listCity.addAll(result.item)
-                    adapter.notifyDataSetChanged()
-                }else{
-                    toast(getString(R.string.no_search_invalid_address))
+        EasyHttp.get(this).api(GetListCityApi.params(query.trim()))
+            .request(object : HttpCallback<ListCity>(this) {
+                override fun onSucceed(result: ListCity) {
+                    process.hide()
+                    listCity.clear()
+                    if (result.item.isNotEmpty()) {
+                        listCity.addAll(result.item)
+                        adapter.notifyDataSetChanged()
+                    } else {
+                        toast(getString(R.string.no_search_invalid_address))
+                    }
+                    checkEmpty()
                 }
-                checkEmpty()
-            }
-        })
+            })
     }
 
     private fun searchDetailPlaces(id: String) {
-        EasyHttp.get(this).api(GetDetailCityApi.params(id)).request(object :HttpCallback<Item>(this){
-            override fun onSucceed(result: Item) {
-                val latLng = AppUtils.coordinatesToLatLng(result.position.lat,result.position.lng)
-                val namePlace = result.address.label
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12f))
-                openDialog(result.position.lat,result.position.lng,namePlace)
-                val addMap = mMap.addMarker(
-                    MarkerOptions().position(latLng).title(namePlace)
-                )
-                addMap?.showInfoWindow()
-                markerList.add(addMap!!)
-                binding.rvDataCity.hide()
-                binding.acSearchAIR.setQuery("", false)
-                binding.mProgressBar.hide()
-            }
-        })
+        EasyHttp.get(this).api(GetDetailCityApi.params(id))
+            .request(object : HttpCallback<Item>(this) {
+                override fun onSucceed(result: Item) {
+                    val latLng =
+                        AppUtils.coordinatesToLatLng(result.position.lat, result.position.lng)
+                    val namePlace = result.address.label
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12f))
+                    openDialog(result.position.lat, result.position.lng)
+                    val addMap = mMap.addMarker(
+                        MarkerOptions().position(latLng).title(namePlace)
+                    )
+                    addMap?.showInfoWindow()
+                    markerList.add(addMap!!)
+                    binding.rvDataCity.hide()
+                    binding.acSearchAIR.setQuery("", false)
+                    binding.mProgressBar.hide()
+                }
+            })
     }
-    private fun openDialog(lat:Double,long:Double,name:String){
+
+    private fun openDialog(lat: Double, long: Double) {
+        val geocoder = Geocoder(requireContext(), Locale.getDefault())
+        val addresses = geocoder.getFromLocation(lat, long, 1)!!
+        val cityName = addresses.firstOrNull()!!.subAdminArea
         val dialog = DialogInfromationWeatherAQI.Builder(
             requireContext(),
             this@AirMapsFragment,
-            name,
+            cityName,
             lat,
             long
         )
@@ -491,7 +521,11 @@ class AirMapsFragment : AppFragment<HomeActivity>(), OnMapReadyCallback, ImageCl
             }
         })
         dialog.show()
+
+
     }
 
 
 }
+
+

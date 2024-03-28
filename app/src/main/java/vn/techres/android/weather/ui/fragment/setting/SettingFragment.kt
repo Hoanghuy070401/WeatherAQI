@@ -47,6 +47,19 @@ class SettingFragment : AppFragment<HomeActivity>() {
 
 
         }
+        binding.llSign.setOnClickListener {
+            try {
+                startActivity(
+                    Intent(
+                        context, Class.forName(ModuleClassConstants.CONTROL_LIST_LOCATION)
+                    )
+                )
+            } catch (e: ClassNotFoundException) {
+                //code
+            }
+
+
+        }
     }
 
 }

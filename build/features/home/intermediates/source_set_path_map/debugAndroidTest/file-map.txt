@@ -1,0 +1,7 @@
+vn.techres.android.weather.home.test.home-androidTest-0 D:\Source\AQI\build\features\home\generated\res\resValues\androidTest\debug
+vn.techres.android.weather.home.test.home-androidTest-1 D:\Source\AQI\build\features\home\generated\res\rs\androidTest\debug
+vn.techres.android.weather.home.test.home-mergeDebugAndroidTestResources-2 D:\Source\AQI\build\features\home\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+vn.techres.android.weather.home.test.home-mergeDebugAndroidTestResources-3 D:\Source\AQI\build\features\home\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+vn.techres.android.weather.home.test.home-merged_res-4 D:\Source\AQI\build\features\home\intermediates\merged_res\debugAndroidTest
+vn.techres.android.weather.home.test.home-androidTest-5 D:\Source\AQI\features\home\src\androidTest\res
+vn.techres.android.weather.home.test.home-androidTestDebug-6 D:\Source\AQI\features\home\src\androidTestDebug\res

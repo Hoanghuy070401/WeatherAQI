@@ -50,6 +50,9 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
   public final ImageView imvControlWeatherFuture;
 
   @NonNull
+  public final ImageView imvMyLocation;
+
+  @NonNull
   public final ImageView imvNote;
 
   @NonNull
@@ -66,6 +69,9 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout llDate;
+
+  @NonNull
+  public final LinearLayout llMyLocation;
 
   @NonNull
   public final LinearLayout llRemoveMarker;
@@ -104,9 +110,10 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
       @NonNull ImageButton imvBtnNext, @NonNull ImageButton imvBtnPausePlay,
       @NonNull ImageButton imvBtnPrevent, @NonNull ImageView imvControlMap,
       @NonNull ImageView imvControlWeather, @NonNull ImageView imvControlWeatherFuture,
-      @NonNull ImageView imvNote, @NonNull ImageView imvRemoveMarker,
-      @NonNull LinearLayout llControlFutureWeather, @NonNull LinearLayout llControlMap,
-      @NonNull LinearLayout llControlStyleWeather, @NonNull LinearLayout llDate,
+      @NonNull ImageView imvMyLocation, @NonNull ImageView imvNote,
+      @NonNull ImageView imvRemoveMarker, @NonNull LinearLayout llControlFutureWeather,
+      @NonNull LinearLayout llControlMap, @NonNull LinearLayout llControlStyleWeather,
+      @NonNull LinearLayout llDate, @NonNull LinearLayout llMyLocation,
       @NonNull LinearLayout llRemoveMarker, @NonNull FragmentContainerView map,
       @NonNull RecyclerView rvDataCity, @NonNull Slider sbDate, @NonNull TextView snippet,
       @NonNull Spinner spnMode, @NonNull Spinner spnStyleMap, @NonNull TextView title,
@@ -120,12 +127,14 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
     this.imvControlMap = imvControlMap;
     this.imvControlWeather = imvControlWeather;
     this.imvControlWeatherFuture = imvControlWeatherFuture;
+    this.imvMyLocation = imvMyLocation;
     this.imvNote = imvNote;
     this.imvRemoveMarker = imvRemoveMarker;
     this.llControlFutureWeather = llControlFutureWeather;
     this.llControlMap = llControlMap;
     this.llControlStyleWeather = llControlStyleWeather;
     this.llDate = llDate;
+    this.llMyLocation = llMyLocation;
     this.llRemoveMarker = llRemoveMarker;
     this.map = map;
     this.rvDataCity = rvDataCity;
@@ -208,6 +217,12 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imvMyLocation;
+      ImageView imvMyLocation = ViewBindings.findChildViewById(rootView, id);
+      if (imvMyLocation == null) {
+        break missingId;
+      }
+
       id = R.id.imvNote;
       ImageView imvNote = ViewBindings.findChildViewById(rootView, id);
       if (imvNote == null) {
@@ -241,6 +256,12 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
       id = R.id.llDate;
       LinearLayout llDate = ViewBindings.findChildViewById(rootView, id);
       if (llDate == null) {
+        break missingId;
+      }
+
+      id = R.id.llMyLocation;
+      LinearLayout llMyLocation = ViewBindings.findChildViewById(rootView, id);
+      if (llMyLocation == null) {
         break missingId;
       }
 
@@ -312,9 +333,9 @@ public final class FragmentWeatherMapBinding implements ViewBinding {
 
       return new FragmentWeatherMapBinding((FrameLayout) rootView, acSearch, imvBtnNext,
           imvBtnPausePlay, imvBtnPrevent, imvControlMap, imvControlWeather, imvControlWeatherFuture,
-          imvNote, imvRemoveMarker, llControlFutureWeather, llControlMap, llControlStyleWeather,
-          llDate, llRemoveMarker, map, rvDataCity, sbDate, snippet, spnMode, spnStyleMap, title,
-          tvEndDate, tvNowDate, tvStartDate);
+          imvMyLocation, imvNote, imvRemoveMarker, llControlFutureWeather, llControlMap,
+          llControlStyleWeather, llDate, llMyLocation, llRemoveMarker, map, rvDataCity, sbDate,
+          snippet, spnMode, spnStyleMap, title, tvEndDate, tvNowDate, tvStartDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

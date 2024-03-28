@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ListAddressActivity">
+    <com.hjq.bar.TitleBar
+        android:id="@+id/ttBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:title="@string/control_city"
+        app:titleStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/bg_border_gray_300"
+        android:backgroundTint="@color/gray_300"
+        android:layout_below="@+id/ttBar"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/dp_8"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <vn.techres.android.weather.widget.AppTextView
+            android:text="@string/fill_location"
+            android:drawableStart="@drawable/ic_search"
+            android:layout_marginStart="@dimen/dp_8"
+            android:drawablePadding="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvListLocation"
+        android:layout_below="@+id/llSearch"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -37,6 +37,9 @@ public final class FragmentAirBinding implements ViewBinding {
   public final ImageView imvControlWeather;
 
   @NonNull
+  public final ImageView imvMyLocation;
+
+  @NonNull
   public final ImageView imvRemoveMarker;
 
   @NonNull
@@ -47,6 +50,9 @@ public final class FragmentAirBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout llLegend;
+
+  @NonNull
+  public final LinearLayout llMyLocation;
 
   @NonNull
   public final LinearLayout llRemoveMarker;
@@ -77,8 +83,9 @@ public final class FragmentAirBinding implements ViewBinding {
 
   private FragmentAirBinding(@NonNull FrameLayout rootView, @NonNull SearchView acSearchAIR,
       @NonNull ImageView imvControlMap, @NonNull ImageView imvControlWeather,
-      @NonNull ImageView imvRemoveMarker, @NonNull LinearLayout llControlMap,
-      @NonNull LinearLayout llControlWeather, @NonNull LinearLayout llLegend,
+      @NonNull ImageView imvMyLocation, @NonNull ImageView imvRemoveMarker,
+      @NonNull LinearLayout llControlMap, @NonNull LinearLayout llControlWeather,
+      @NonNull LinearLayout llLegend, @NonNull LinearLayout llMyLocation,
       @NonNull LinearLayout llRemoveMarker, @NonNull ProgressBar mProgressBar,
       @NonNull FragmentContainerView map, @NonNull RelativeLayout rlSearch,
       @NonNull RecyclerView rvDataCity, @NonNull TextView snippet, @NonNull Spinner spnModeAir,
@@ -87,10 +94,12 @@ public final class FragmentAirBinding implements ViewBinding {
     this.acSearchAIR = acSearchAIR;
     this.imvControlMap = imvControlMap;
     this.imvControlWeather = imvControlWeather;
+    this.imvMyLocation = imvMyLocation;
     this.imvRemoveMarker = imvRemoveMarker;
     this.llControlMap = llControlMap;
     this.llControlWeather = llControlWeather;
     this.llLegend = llLegend;
+    this.llMyLocation = llMyLocation;
     this.llRemoveMarker = llRemoveMarker;
     this.mProgressBar = mProgressBar;
     this.map = map;
@@ -147,6 +156,12 @@ public final class FragmentAirBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imvMyLocation;
+      ImageView imvMyLocation = ViewBindings.findChildViewById(rootView, id);
+      if (imvMyLocation == null) {
+        break missingId;
+      }
+
       id = R.id.imvRemoveMarker;
       ImageView imvRemoveMarker = ViewBindings.findChildViewById(rootView, id);
       if (imvRemoveMarker == null) {
@@ -168,6 +183,12 @@ public final class FragmentAirBinding implements ViewBinding {
       id = R.id.llLegend;
       LinearLayout llLegend = ViewBindings.findChildViewById(rootView, id);
       if (llLegend == null) {
+        break missingId;
+      }
+
+      id = R.id.llMyLocation;
+      LinearLayout llMyLocation = ViewBindings.findChildViewById(rootView, id);
+      if (llMyLocation == null) {
         break missingId;
       }
 
@@ -226,9 +247,9 @@ public final class FragmentAirBinding implements ViewBinding {
       }
 
       return new FragmentAirBinding((FrameLayout) rootView, acSearchAIR, imvControlMap,
-          imvControlWeather, imvRemoveMarker, llControlMap, llControlWeather, llLegend,
-          llRemoveMarker, mProgressBar, map, rlSearch, rvDataCity, snippet, spnModeAir,
-          spnStyleMapAir, title);
+          imvControlWeather, imvMyLocation, imvRemoveMarker, llControlMap, llControlWeather,
+          llLegend, llMyLocation, llRemoveMarker, mProgressBar, map, rlSearch, rvDataCity, snippet,
+          spnModeAir, spnStyleMapAir, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,1023 +7,1084 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="23"
-9-->D:\WeatherAQI\app\src\main\AndroidManifest.xml
+9-->D:\Source\AQI\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="34" />
-10-->D:\WeatherAQI\app\src\main\AndroidManifest.xml
+10-->D:\Source\AQI\app\src\main\AndroidManifest.xml
 11
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:7:5-79
-12-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:7:22-76
+12-->D:\Source\AQI\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\Source\AQI\app\src\main\AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:8:5-76
-13-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:8:22-73
+13-->D:\Source\AQI\app\src\main\AndroidManifest.xml:8:5-76
+13-->D:\Source\AQI\app\src\main\AndroidManifest.xml:8:22-73
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:9:5-67
-14-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:9:22-64
+14-->D:\Source\AQI\app\src\main\AndroidManifest.xml:9:5-67
+14-->D:\Source\AQI\app\src\main\AndroidManifest.xml:9:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:10:5-80
-15-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:10:22-77
+15-->D:\Source\AQI\app\src\main\AndroidManifest.xml:10:5-80
+15-->D:\Source\AQI\app\src\main\AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:11:5-79
-16-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:11:22-76
+16-->D:\Source\AQI\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\Source\AQI\app\src\main\AndroidManifest.xml:11:22-76
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:12:5-81
-17-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:12:22-78
+17-->D:\Source\AQI\app\src\main\AndroidManifest.xml:12:5-81
+17-->D:\Source\AQI\app\src\main\AndroidManifest.xml:12:22-78
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:13:5-15:40
-18-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:14:9-65
+18-->D:\Source\AQI\app\src\main\AndroidManifest.xml:13:5-15:40
+18-->D:\Source\AQI\app\src\main\AndroidManifest.xml:14:9-65
 19    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-19-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:16:5-72
-19-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:16:22-69
+19-->D:\Source\AQI\app\src\main\AndroidManifest.xml:16:5-72
+19-->D:\Source\AQI\app\src\main\AndroidManifest.xml:16:22-69
 20    <uses-permission android:name="android.permission.CAMERA" />
-20-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:17:5-19:71
-20-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:18:9-49
+20-->D:\Source\AQI\app\src\main\AndroidManifest.xml:17:5-19:71
+20-->D:\Source\AQI\app\src\main\AndroidManifest.xml:18:9-49
 21    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
-21-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:20:5-22:47
-21-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:21:9-62
+21-->D:\Source\AQI\app\src\main\AndroidManifest.xml:20:5-22:47
+21-->D:\Source\AQI\app\src\main\AndroidManifest.xml:21:9-62
 22    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-22-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:23:5-25:47
-22-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:24:9-57
+22-->D:\Source\AQI\app\src\main\AndroidManifest.xml:23:5-25:47
+22-->D:\Source\AQI\app\src\main\AndroidManifest.xml:24:9-57
 23    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-23-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:26:5-80
-23-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:26:22-77
+23-->D:\Source\AQI\app\src\main\AndroidManifest.xml:26:5-80
+23-->D:\Source\AQI\app\src\main\AndroidManifest.xml:26:22-77
 24    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-24-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:27:5-71
-24-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:27:22-68
+24-->D:\Source\AQI\app\src\main\AndroidManifest.xml:27:5-71
+24-->D:\Source\AQI\app\src\main\AndroidManifest.xml:27:22-68
 25    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-25-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:28:5-30:40
-25-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:29:9-66
+25-->D:\Source\AQI\app\src\main\AndroidManifest.xml:28:5-30:40
+25-->D:\Source\AQI\app\src\main\AndroidManifest.xml:29:9-66
 26    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Android 13 -->
-26-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:31:5-66
-26-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:31:22-63
+26-->D:\Source\AQI\app\src\main\AndroidManifest.xml:31:5-66
+26-->D:\Source\AQI\app\src\main\AndroidManifest.xml:31:22-63
 27    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-27-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:32:5-76
-27-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:32:22-73
+27-->D:\Source\AQI\app\src\main\AndroidManifest.xml:32:5-76
+27-->D:\Source\AQI\app\src\main\AndroidManifest.xml:32:22-73
 28    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-28-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:33:5-75
-28-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:33:22-72
+28-->D:\Source\AQI\app\src\main\AndroidManifest.xml:33:5-75
+28-->D:\Source\AQI\app\src\main\AndroidManifest.xml:33:22-72
 29    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-29-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:34:5-75
-29-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:34:22-72
+29-->D:\Source\AQI\app\src\main\AndroidManifest.xml:34:5-75
+29-->D:\Source\AQI\app\src\main\AndroidManifest.xml:34:22-72
 30
 31    <dist:module dist:instant="true" />
-31-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:36:5-40
-31-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:36:18-37
+31-->D:\Source\AQI\app\src\main\AndroidManifest.xml:36:5-40
+31-->D:\Source\AQI\app\src\main\AndroidManifest.xml:36:18-37
 32
 33    <queries>
-33-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:38:5-45:15
+33-->D:\Source\AQI\app\src\main\AndroidManifest.xml:38:5-45:15
 34        <intent>
-34-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:39:9-41:18
+34-->D:\Source\AQI\app\src\main\AndroidManifest.xml:39:9-41:18
 35            <action android:name="android.media.action.IMAGE_CAPTURE" />
-35-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:13-73
-35-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:21-70
+35-->D:\Source\AQI\app\src\main\AndroidManifest.xml:40:13-73
+35-->D:\Source\AQI\app\src\main\AndroidManifest.xml:40:21-70
 36        </intent>
 37        <intent>
-37-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:42:9-44:18
+37-->D:\Source\AQI\app\src\main\AndroidManifest.xml:42:9-44:18
 38            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
-38-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:43:13-80
-38-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:43:21-77
+38-->D:\Source\AQI\app\src\main\AndroidManifest.xml:43:13-80
+38-->D:\Source\AQI\app\src\main\AndroidManifest.xml:43:21-77
 39        </intent>
 40        <!-- Needs to be explicitly declared on Android R+ -->
 41        <package android:name="com.google.android.apps.maps" />
-41-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
-41-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
-42    </queries> <!-- Android 11 软件包可见性适配：https://www.jianshu.com/p/d1ccd425c4ce -->
-43    <queries>
-43-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:38:5-45:15
-44
-45        <!-- 拍照意图：MediaStore.ACTION_IMAGE_CAPTURE -->
-46        <intent>
-46-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:39:9-41:18
-47            <action android:name="android.media.action.IMAGE_CAPTURE" />
-47-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:13-73
-47-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:40:21-70
-48        </intent>
-49
-50        <!-- 拍摄意图：MediaStore.ACTION_VIDEO_CAPTURE -->
-51        <intent>
-51-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:54:9-56:18
-52            <action android:name="android.media.action.VIDEO_CAPTURE" />
-52-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:55:13-73
-52-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:55:21-70
-53        </intent>
-54
-55        <!-- 图片裁剪意图 -->
-56        <intent>
-56-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:59:9-61:18
-57            <action android:name="com.android.camera.action.CROP" />
-57-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:60:13-69
-57-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:60:21-66
-58        </intent>
-59
-60        <!-- 打电话意图：Intent.ACTION_DIAL -->
-61        <intent>
-61-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:64:9-66:18
-62            <action android:name="android.intent.action.DIAL" />
-62-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:65:13-65
-62-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:65:21-62
-63        </intent>
-64
-65        <!-- 调起分享意图：Intent.ACTION_SEND -->
-66        <intent>
-66-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:69:9-71:18
-67            <action android:name="android.intent.action.SEND" />
-67-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:70:13-65
-67-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:70:21-62
-68        </intent>
-69
-70        <!-- 调起其他页面意图：Intent.ACTION_VIEW -->
-71        <intent>
-71-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:74:9-76:18
-72            <action android:name="android.intent.action.VIEW" />
-72-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:17-69
-72-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:25-66
-73        </intent>
-74
-75        <!-- 调起系统文件选择器：Intent.ACTION_GET_CONTENT -->
-76        <intent>
-76-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:79:9-81:18
-77            <action android:name="android.intent.action.GET_CONTENT" />
-77-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:80:13-72
-77-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:80:21-69
-78        </intent>
-79    </queries> <!-- Cấu hình app chỉ được cài trên thiết bị phone -->
-80    <compatible-screens>
-80-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:83:5-122:26
-81
-82        <!-- Phone screens -->
-83        <screen
-83-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:86:9-88:42
-84            android:screenDensity="ldpi"
-84-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:87:13-41
-85            android:screenSize="small" />
-85-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:88:13-39
+41-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+41-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+42        <package android:name="androidx.test.orchestrator" />
+42-->[androidx.test:runner:1.5.2] C:\Users\Dell\.gradle\caches\transforms-3\6536c5f30f08fc7c1cde2ba7083c4b6d\transformed\runner-1.5.2\AndroidManifest.xml:25:9-62
+42-->[androidx.test:runner:1.5.2] C:\Users\Dell\.gradle\caches\transforms-3\6536c5f30f08fc7c1cde2ba7083c4b6d\transformed\runner-1.5.2\AndroidManifest.xml:25:18-59
+43        <package android:name="androidx.test.services" />
+43-->[androidx.test:runner:1.5.2] C:\Users\Dell\.gradle\caches\transforms-3\6536c5f30f08fc7c1cde2ba7083c4b6d\transformed\runner-1.5.2\AndroidManifest.xml:26:9-58
+43-->[androidx.test:runner:1.5.2] C:\Users\Dell\.gradle\caches\transforms-3\6536c5f30f08fc7c1cde2ba7083c4b6d\transformed\runner-1.5.2\AndroidManifest.xml:26:18-55
+44        <package android:name="com.google.android.apps.common.testing.services" />
+44-->[androidx.test:runner:1.5.2] C:\Users\Dell\.gradle\caches\transforms-3\6536c5f30f08fc7c1cde2ba7083c4b6d\transformed\runner-1.5.2\AndroidManifest.xml:27:9-83
+44-->[androidx.test:runner:1.5.2] C:\Users\Dell\.gradle\caches\transforms-3\6536c5f30f08fc7c1cde2ba7083c4b6d\transformed\runner-1.5.2\AndroidManifest.xml:27:18-80
+45    </queries> <!-- Android 11 软件包可见性适配：https://www.jianshu.com/p/d1ccd425c4ce -->
+46    <queries>
+46-->D:\Source\AQI\app\src\main\AndroidManifest.xml:38:5-45:15
+47
+48        <!-- 拍照意图：MediaStore.ACTION_IMAGE_CAPTURE -->
+49        <intent>
+49-->D:\Source\AQI\app\src\main\AndroidManifest.xml:39:9-41:18
+50            <action android:name="android.media.action.IMAGE_CAPTURE" />
+50-->D:\Source\AQI\app\src\main\AndroidManifest.xml:40:13-73
+50-->D:\Source\AQI\app\src\main\AndroidManifest.xml:40:21-70
+51        </intent>
+52
+53        <!-- 拍摄意图：MediaStore.ACTION_VIDEO_CAPTURE -->
+54        <intent>
+54-->D:\Source\AQI\app\src\main\AndroidManifest.xml:54:9-56:18
+55            <action android:name="android.media.action.VIDEO_CAPTURE" />
+55-->D:\Source\AQI\app\src\main\AndroidManifest.xml:55:13-73
+55-->D:\Source\AQI\app\src\main\AndroidManifest.xml:55:21-70
+56        </intent>
+57
+58        <!-- 图片裁剪意图 -->
+59        <intent>
+59-->D:\Source\AQI\app\src\main\AndroidManifest.xml:59:9-61:18
+60            <action android:name="com.android.camera.action.CROP" />
+60-->D:\Source\AQI\app\src\main\AndroidManifest.xml:60:13-69
+60-->D:\Source\AQI\app\src\main\AndroidManifest.xml:60:21-66
+61        </intent>
+62
+63        <!-- 打电话意图：Intent.ACTION_DIAL -->
+64        <intent>
+64-->D:\Source\AQI\app\src\main\AndroidManifest.xml:64:9-66:18
+65            <action android:name="android.intent.action.DIAL" />
+65-->D:\Source\AQI\app\src\main\AndroidManifest.xml:65:13-65
+65-->D:\Source\AQI\app\src\main\AndroidManifest.xml:65:21-62
+66        </intent>
+67
+68        <!-- 调起分享意图：Intent.ACTION_SEND -->
+69        <intent>
+69-->D:\Source\AQI\app\src\main\AndroidManifest.xml:69:9-71:18
+70            <action android:name="android.intent.action.SEND" />
+70-->D:\Source\AQI\app\src\main\AndroidManifest.xml:70:13-65
+70-->D:\Source\AQI\app\src\main\AndroidManifest.xml:70:21-62
+71        </intent>
+72
+73        <!-- 调起其他页面意图：Intent.ACTION_VIEW -->
+74        <intent>
+74-->D:\Source\AQI\app\src\main\AndroidManifest.xml:74:9-76:18
+75            <action android:name="android.intent.action.VIEW" />
+75-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:17-69
+75-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:25-66
+76        </intent>
+77
+78        <!-- 调起系统文件选择器：Intent.ACTION_GET_CONTENT -->
+79        <intent>
+79-->D:\Source\AQI\app\src\main\AndroidManifest.xml:79:9-81:18
+80            <action android:name="android.intent.action.GET_CONTENT" />
+80-->D:\Source\AQI\app\src\main\AndroidManifest.xml:80:13-72
+80-->D:\Source\AQI\app\src\main\AndroidManifest.xml:80:21-69
+81        </intent>
+82    </queries> <!-- Cấu hình app chỉ được cài trên thiết bị phone -->
+83    <compatible-screens>
+83-->D:\Source\AQI\app\src\main\AndroidManifest.xml:83:5-122:26
+84
+85        <!-- Phone screens -->
 86        <screen
-86-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:89:9-91:42
-87            android:screenDensity="mdpi"
-87-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:90:13-41
+86-->D:\Source\AQI\app\src\main\AndroidManifest.xml:86:9-88:42
+87            android:screenDensity="ldpi"
+87-->D:\Source\AQI\app\src\main\AndroidManifest.xml:87:13-41
 88            android:screenSize="small" />
-88-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:91:13-39
+88-->D:\Source\AQI\app\src\main\AndroidManifest.xml:88:13-39
 89        <screen
-89-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:92:9-94:42
-90            android:screenDensity="hdpi"
-90-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:93:13-41
+89-->D:\Source\AQI\app\src\main\AndroidManifest.xml:89:9-91:42
+90            android:screenDensity="mdpi"
+90-->D:\Source\AQI\app\src\main\AndroidManifest.xml:90:13-41
 91            android:screenSize="small" />
-91-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:94:13-39
+91-->D:\Source\AQI\app\src\main\AndroidManifest.xml:91:13-39
 92        <screen
-92-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:95:9-97:42
-93            android:screenDensity="xhdpi"
-93-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:96:13-42
+92-->D:\Source\AQI\app\src\main\AndroidManifest.xml:92:9-94:42
+93            android:screenDensity="hdpi"
+93-->D:\Source\AQI\app\src\main\AndroidManifest.xml:93:13-41
 94            android:screenSize="small" />
-94-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:97:13-39
+94-->D:\Source\AQI\app\src\main\AndroidManifest.xml:94:13-39
 95        <screen
-95-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:98:9-100:42
-96            android:screenDensity="xxhdpi"
-96-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:99:13-43
+95-->D:\Source\AQI\app\src\main\AndroidManifest.xml:95:9-97:42
+96            android:screenDensity="xhdpi"
+96-->D:\Source\AQI\app\src\main\AndroidManifest.xml:96:13-42
 97            android:screenSize="small" />
-97-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:100:13-39
+97-->D:\Source\AQI\app\src\main\AndroidManifest.xml:97:13-39
 98        <screen
-98-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:101:9-103:42
-99            android:screenDensity="xxxhdpi"
-99-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:102:13-44
+98-->D:\Source\AQI\app\src\main\AndroidManifest.xml:98:9-100:42
+99            android:screenDensity="xxhdpi"
+99-->D:\Source\AQI\app\src\main\AndroidManifest.xml:99:13-43
 100            android:screenSize="small" />
-100-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:103:13-39
+100-->D:\Source\AQI\app\src\main\AndroidManifest.xml:100:13-39
 101        <screen
-101-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:104:9-106:43
-102            android:screenDensity="ldpi"
-102-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:105:13-41
-103            android:screenSize="normal" />
-103-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:106:13-40
+101-->D:\Source\AQI\app\src\main\AndroidManifest.xml:101:9-103:42
+102            android:screenDensity="xxxhdpi"
+102-->D:\Source\AQI\app\src\main\AndroidManifest.xml:102:13-44
+103            android:screenSize="small" />
+103-->D:\Source\AQI\app\src\main\AndroidManifest.xml:103:13-39
 104        <screen
-104-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:107:9-109:43
-105            android:screenDensity="mdpi"
-105-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:108:13-41
+104-->D:\Source\AQI\app\src\main\AndroidManifest.xml:104:9-106:43
+105            android:screenDensity="ldpi"
+105-->D:\Source\AQI\app\src\main\AndroidManifest.xml:105:13-41
 106            android:screenSize="normal" />
-106-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:109:13-40
+106-->D:\Source\AQI\app\src\main\AndroidManifest.xml:106:13-40
 107        <screen
-107-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:110:9-112:43
-108            android:screenDensity="hdpi"
-108-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:111:13-41
+107-->D:\Source\AQI\app\src\main\AndroidManifest.xml:107:9-109:43
+108            android:screenDensity="mdpi"
+108-->D:\Source\AQI\app\src\main\AndroidManifest.xml:108:13-41
 109            android:screenSize="normal" />
-109-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:112:13-40
+109-->D:\Source\AQI\app\src\main\AndroidManifest.xml:109:13-40
 110        <screen
-110-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:113:9-115:43
-111            android:screenDensity="xhdpi"
-111-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:114:13-42
+110-->D:\Source\AQI\app\src\main\AndroidManifest.xml:110:9-112:43
+111            android:screenDensity="hdpi"
+111-->D:\Source\AQI\app\src\main\AndroidManifest.xml:111:13-41
 112            android:screenSize="normal" />
-112-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:115:13-40
+112-->D:\Source\AQI\app\src\main\AndroidManifest.xml:112:13-40
 113        <screen
-113-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:116:9-118:43
-114            android:screenDensity="xxhdpi"
-114-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:117:13-43
+113-->D:\Source\AQI\app\src\main\AndroidManifest.xml:113:9-115:43
+114            android:screenDensity="xhdpi"
+114-->D:\Source\AQI\app\src\main\AndroidManifest.xml:114:13-42
 115            android:screenSize="normal" />
-115-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:118:13-40
+115-->D:\Source\AQI\app\src\main\AndroidManifest.xml:115:13-40
 116        <screen
-116-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:119:9-121:43
-117            android:screenDensity="xxxhdpi"
-117-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:120:13-44
+116-->D:\Source\AQI\app\src\main\AndroidManifest.xml:116:9-118:43
+117            android:screenDensity="xxhdpi"
+117-->D:\Source\AQI\app\src\main\AndroidManifest.xml:117:13-43
 118            android:screenSize="normal" />
-118-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:121:13-40
-119    </compatible-screens>
-120
-121    <uses-permission android:name="android.permission.WAKE_LOCK" />
-121-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:9:5-68
-121-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:9:22-65
-122    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- suppress DeprecatedClassUsageInspection -->
-122-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:10:5-77
-122-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:10:22-74
-123    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-123-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ADMIN\.gradle\caches\transforms-3\b82d109fe836d51d4e488c44f6bd6df5\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:5-74
-123-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\ADMIN\.gradle\caches\transforms-3\b82d109fe836d51d4e488c44f6bd6df5\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:22-71
-124
-125    <uses-feature
-125-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
-126        android:glEsVersion="0x00020000"
-126-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
-127        android:required="true" />
-127-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
-128
-129    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-129-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:25:5-77
-129-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:25:22-74
-130    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-130-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
-130-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
-131    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-131-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
-131-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
-132    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-132-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
-132-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
-133
-134    <permission
-134-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8b5de782ef35572dc6dfc1c1fbe4711d\transformed\core-1.13.0-alpha02\AndroidManifest.xml:22:5-24:47
-135        android:name="vn.techres.android.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-135-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8b5de782ef35572dc6dfc1c1fbe4711d\transformed\core-1.13.0-alpha02\AndroidManifest.xml:23:9-81
-136        android:protectionLevel="signature" />
-136-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8b5de782ef35572dc6dfc1c1fbe4711d\transformed\core-1.13.0-alpha02\AndroidManifest.xml:24:9-44
+118-->D:\Source\AQI\app\src\main\AndroidManifest.xml:118:13-40
+119        <screen
+119-->D:\Source\AQI\app\src\main\AndroidManifest.xml:119:9-121:43
+120            android:screenDensity="xxxhdpi"
+120-->D:\Source\AQI\app\src\main\AndroidManifest.xml:120:13-44
+121            android:screenSize="normal" />
+121-->D:\Source\AQI\app\src\main\AndroidManifest.xml:121:13-40
+122    </compatible-screens>
+123
+124    <uses-permission android:name="android.permission.WAKE_LOCK" />
+124-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:9:5-68
+124-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:9:22-65
+125    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- suppress DeprecatedClassUsageInspection -->
+125-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:10:5-77
+125-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:10:22-74
+126    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+126-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Dell\.gradle\caches\transforms-3\b82d109fe836d51d4e488c44f6bd6df5\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:5-74
+126-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Dell\.gradle\caches\transforms-3\b82d109fe836d51d4e488c44f6bd6df5\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:22-71
+127
+128    <uses-feature
+128-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+129        android:glEsVersion="0x00020000"
+129-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+130        android:required="true" />
+130-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+131
+132    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+132-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:25:5-77
+132-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:25:22-74
+133    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+133-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
+133-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
+134    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+134-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+134-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+135    <uses-permission android:name="android.permission.REORDER_TASKS" />
+135-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:24:5-72
+135-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:24:22-69
+136    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+136-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+136-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
 137
-138    <uses-permission android:name="vn.techres.android.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-138-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8b5de782ef35572dc6dfc1c1fbe4711d\transformed\core-1.13.0-alpha02\AndroidManifest.xml:26:5-97
-138-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8b5de782ef35572dc6dfc1c1fbe4711d\transformed\core-1.13.0-alpha02\AndroidManifest.xml:26:22-94
-139
-140    <application
-140-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:124:5-262:19
-141        android:name="vn.techres.android.weather.app.AppApplication"
-141-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:125:9-43
-142        android:allowBackup="true"
-142-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:126:9-35
-143        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-143-->[androidx.core:core:1.13.0-alpha02] C:\Users\ADMIN\.gradle\caches\transforms-3\8b5de782ef35572dc6dfc1c1fbe4711d\transformed\core-1.13.0-alpha02\AndroidManifest.xml:28:18-86
-144        android:debuggable="true"
-144-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
-145        android:extractNativeLibs="false"
-145-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:23:9-42
-146        android:icon="@mipmap/ic_launcher"
-146-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:127:9-43
-147        android:label="@string/app_name"
-147-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:128:9-41
-148        android:networkSecurityConfig="@xml/network_security_config"
-148-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:129:9-69
-149        android:requestLegacyExternalStorage="true"
-149-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:130:9-52
-150        android:resizeableActivity="true"
-150-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:131:9-42
-151        android:roundIcon="@mipmap/ic_launcher"
-151-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:132:9-48
-152        android:supportsRtl="false"
-152-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:133:9-36
-153        android:theme="@style/AppTheme"
-153-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:134:9-40
-154        android:usesCleartextTraffic="true" >
-154-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:135:9-44
-155        <receiver
-155-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:139:9-149:20
-156            android:name="vn.techres.android.weather.ui.widget.NewAppWidget"
-156-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:140:13-51
-157            android:exported="false" >
-157-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:141:13-37
-158            <intent-filter>
-158-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:142:13-144:29
-159                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-159-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:143:17-84
-159-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:143:25-81
-160            </intent-filter>
-161
-162            <meta-data
-162-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:146:13-148:63
-163                android:name="android.appwidget.provider"
-163-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:147:17-58
-164                android:resource="@xml/new_app_widget_info" />
-164-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:148:17-60
-165        </receiver>
-166
-167        <service
-167-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:152:9-154:39
-168            android:name="vn.techres.android.weather.ui.widget.WeatherFetchService"
-168-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:152:18-63
-169            android:exported="false"
-169-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:154:13-37
-170            android:permission="android.permission.BIND_REMOTEVIEWS" />
-170-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:153:13-69
-171
-172        <receiver
-172-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:156:9-166:20
-173            android:name="vn.techres.android.weather.ui.widget.AppWidget"
-173-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:157:13-48
-174            android:exported="false" >
-174-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:158:13-37
-175            <intent-filter>
-175-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:142:13-144:29
-176                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-176-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:143:17-84
-176-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:143:25-81
-177            </intent-filter>
-178
-179            <meta-data
-179-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:146:13-148:63
-180                android:name="android.appwidget.provider"
-180-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:147:17-58
-181                android:resource="@xml/app_widget_info" />
-181-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:148:17-60
-182        </receiver>
-183
-184        <service
-184-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:168:9-170:72
-185            android:name="vn.techres.android.weather.ui.widget.AppWidget"
-185-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:169:13-48
-186            android:permission="android.permission.BIND_REMOTEVIEWS" />
-186-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:170:13-69
-187        <!--
-188             To get one, follow the directions here:
-189
-190                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-191
-192             Once you have your API key (it starts with "AIza"), define a new property in your
-193             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-194             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-195        -->
-196        <!--
-197 Set custom default icon. This is used when no icon is set for incoming notification messages.
-198     See README(https://goo.gl/l4GJaQ) for more.
+138    <permission
+138-->[androidx.core:core:1.13.0-beta01] C:\Users\Dell\.gradle\caches\transforms-3\6239f12ae3936e843bfd5a673f1d36ec\transformed\core-1.13.0-beta01\AndroidManifest.xml:22:5-24:47
+139        android:name="vn.techres.android.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+139-->[androidx.core:core:1.13.0-beta01] C:\Users\Dell\.gradle\caches\transforms-3\6239f12ae3936e843bfd5a673f1d36ec\transformed\core-1.13.0-beta01\AndroidManifest.xml:23:9-81
+140        android:protectionLevel="signature" />
+140-->[androidx.core:core:1.13.0-beta01] C:\Users\Dell\.gradle\caches\transforms-3\6239f12ae3936e843bfd5a673f1d36ec\transformed\core-1.13.0-beta01\AndroidManifest.xml:24:9-44
+141
+142    <uses-permission android:name="vn.techres.android.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+142-->[androidx.core:core:1.13.0-beta01] C:\Users\Dell\.gradle\caches\transforms-3\6239f12ae3936e843bfd5a673f1d36ec\transformed\core-1.13.0-beta01\AndroidManifest.xml:26:5-97
+142-->[androidx.core:core:1.13.0-beta01] C:\Users\Dell\.gradle\caches\transforms-3\6239f12ae3936e843bfd5a673f1d36ec\transformed\core-1.13.0-beta01\AndroidManifest.xml:26:22-94
+143
+144    <application
+144-->D:\Source\AQI\app\src\main\AndroidManifest.xml:124:5-262:19
+145        android:name="vn.techres.android.weather.app.AppApplication"
+145-->D:\Source\AQI\app\src\main\AndroidManifest.xml:125:9-43
+146        android:allowBackup="true"
+146-->D:\Source\AQI\app\src\main\AndroidManifest.xml:126:9-35
+147        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+147-->[androidx.core:core:1.13.0-beta01] C:\Users\Dell\.gradle\caches\transforms-3\6239f12ae3936e843bfd5a673f1d36ec\transformed\core-1.13.0-beta01\AndroidManifest.xml:28:18-86
+148        android:debuggable="true"
+148-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:22:9-34
+149        android:extractNativeLibs="false"
+149-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:23:9-42
+150        android:icon="@mipmap/ic_launcher"
+150-->D:\Source\AQI\app\src\main\AndroidManifest.xml:127:9-43
+151        android:label="@string/app_name"
+151-->D:\Source\AQI\app\src\main\AndroidManifest.xml:128:9-41
+152        android:networkSecurityConfig="@xml/network_security_config"
+152-->D:\Source\AQI\app\src\main\AndroidManifest.xml:129:9-69
+153        android:requestLegacyExternalStorage="true"
+153-->D:\Source\AQI\app\src\main\AndroidManifest.xml:130:9-52
+154        android:resizeableActivity="true"
+154-->D:\Source\AQI\app\src\main\AndroidManifest.xml:131:9-42
+155        android:roundIcon="@mipmap/ic_launcher"
+155-->D:\Source\AQI\app\src\main\AndroidManifest.xml:132:9-48
+156        android:supportsRtl="false"
+156-->D:\Source\AQI\app\src\main\AndroidManifest.xml:133:9-36
+157        android:theme="@style/AppTheme"
+157-->D:\Source\AQI\app\src\main\AndroidManifest.xml:134:9-40
+158        android:usesCleartextTraffic="true" >
+158-->D:\Source\AQI\app\src\main\AndroidManifest.xml:135:9-44
+159        <receiver
+159-->D:\Source\AQI\app\src\main\AndroidManifest.xml:139:9-149:20
+160            android:name="vn.techres.android.weather.ui.widget.NewAppWidget"
+160-->D:\Source\AQI\app\src\main\AndroidManifest.xml:140:13-51
+161            android:exported="false" >
+161-->D:\Source\AQI\app\src\main\AndroidManifest.xml:141:13-37
+162            <intent-filter>
+162-->D:\Source\AQI\app\src\main\AndroidManifest.xml:142:13-144:29
+163                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+163-->D:\Source\AQI\app\src\main\AndroidManifest.xml:143:17-84
+163-->D:\Source\AQI\app\src\main\AndroidManifest.xml:143:25-81
+164            </intent-filter>
+165
+166            <meta-data
+166-->D:\Source\AQI\app\src\main\AndroidManifest.xml:146:13-148:63
+167                android:name="android.appwidget.provider"
+167-->D:\Source\AQI\app\src\main\AndroidManifest.xml:147:17-58
+168                android:resource="@xml/new_app_widget_info" />
+168-->D:\Source\AQI\app\src\main\AndroidManifest.xml:148:17-60
+169        </receiver>
+170
+171        <service
+171-->D:\Source\AQI\app\src\main\AndroidManifest.xml:152:9-154:39
+172            android:name="vn.techres.android.weather.ui.widget.WeatherFetchService"
+172-->D:\Source\AQI\app\src\main\AndroidManifest.xml:152:18-63
+173            android:exported="false"
+173-->D:\Source\AQI\app\src\main\AndroidManifest.xml:154:13-37
+174            android:permission="android.permission.BIND_REMOTEVIEWS" />
+174-->D:\Source\AQI\app\src\main\AndroidManifest.xml:153:13-69
+175
+176        <receiver
+176-->D:\Source\AQI\app\src\main\AndroidManifest.xml:156:9-166:20
+177            android:name="vn.techres.android.weather.ui.widget.AppWidget"
+177-->D:\Source\AQI\app\src\main\AndroidManifest.xml:157:13-48
+178            android:exported="false" >
+178-->D:\Source\AQI\app\src\main\AndroidManifest.xml:158:13-37
+179            <intent-filter>
+179-->D:\Source\AQI\app\src\main\AndroidManifest.xml:142:13-144:29
+180                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+180-->D:\Source\AQI\app\src\main\AndroidManifest.xml:143:17-84
+180-->D:\Source\AQI\app\src\main\AndroidManifest.xml:143:25-81
+181            </intent-filter>
+182
+183            <meta-data
+183-->D:\Source\AQI\app\src\main\AndroidManifest.xml:146:13-148:63
+184                android:name="android.appwidget.provider"
+184-->D:\Source\AQI\app\src\main\AndroidManifest.xml:147:17-58
+185                android:resource="@xml/app_widget_info" />
+185-->D:\Source\AQI\app\src\main\AndroidManifest.xml:148:17-60
+186        </receiver>
+187
+188        <service
+188-->D:\Source\AQI\app\src\main\AndroidManifest.xml:168:9-170:72
+189            android:name="vn.techres.android.weather.ui.widget.AppWidget"
+189-->D:\Source\AQI\app\src\main\AndroidManifest.xml:169:13-48
+190            android:permission="android.permission.BIND_REMOTEVIEWS" />
+190-->D:\Source\AQI\app\src\main\AndroidManifest.xml:170:13-69
+191        <!--
+192             To get one, follow the directions here:
+193
+194                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+195
+196             Once you have your API key (it starts with "AIza"), define a new property in your
+197             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+198             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
 199        -->
-200        <meta-data
-200-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:184:9-186:60
-201            android:name="com.google.firebase.messaging.default_notification_icon"
-201-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:185:13-83
-202            android:resource="@drawable/ic_notification" />
-202-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:186:13-57
-203        <!--
-204 Set color used with incoming notification messages. This is used when no color is set for the incoming
-205             notification message. See README(https://goo.gl/6BKBk7) for more.
-206        -->
-207        <meta-data
-207-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:191:9-193:53
-208            android:name="com.google.firebase.messaging.default_notification_color"
-208-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:192:13-84
-209            android:resource="@color/colorAccent" />
-209-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:193:13-50
-210        <meta-data
-210-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:194:9-196:55
-211            android:name="com.google.android.geo.API_KEY"
-211-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:195:13-58
-212            android:value="@string/google_maps_key" />
-212-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:196:13-52
-213        <meta-data
-213-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:197:9-199:36
-214            android:name="ScopedStorage"
-214-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:198:13-41
-215            android:value="true" />
-215-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:199:13-33
-216
-217        <provider
-218            android:name="androidx.core.content.FileProvider"
-218-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:202:13-62
-219            android:authorities="vn.techres.android.weather.provider"
-219-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:203:13-60
-220            android:exported="false"
-220-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:204:13-37
-221            android:grantUriPermissions="true" >
-221-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:205:13-47
-222            <meta-data
-222-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:206:13-208:54
-223                android:name="android.support.FILE_PROVIDER_PATHS"
-223-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:207:17-67
-224                android:resource="@xml/file_paths" />
-224-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:208:17-51
-225        </provider>
-226
-227        <activity
-227-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:211:9-215:53
-228            android:name="vn.techres.android.weather.ui.activity.CrashActivity"
-228-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:212:13-54
-229            android:launchMode="singleTop"
-229-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:213:13-43
-230            android:process=":crash"
-230-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:214:13-37
-231            android:screenOrientation="landscape" />
-231-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:215:13-50
-232        <activity
-232-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:216:9-220:52
-233            android:name="vn.techres.android.weather.ui.activity.RestartActivity"
-233-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:217:13-56
-234            android:exported="true"
-234-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:218:13-36
-235            android:launchMode="singleTop"
-235-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:219:13-43
-236            android:screenOrientation="portrait" />
-236-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:220:13-49
-237        <activity
-237-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:221:9-225:52
-238            android:name="vn.techres.android.weather.ui.activity.BrowserActivity"
-238-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:222:13-56
-239            android:exported="true"
-239-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:223:13-36
-240            android:launchMode="singleTop"
-240-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:224:13-43
-241            android:screenOrientation="portrait" />
-241-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:225:13-49
-242        <activity
-242-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:226:9-230:52
-243            android:name="vn.techres.android.weather.ui.activity.MediaActivity"
-243-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:227:13-54
-244            android:exported="true"
-244-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:228:13-36
-245            android:launchMode="singleTop"
-245-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:229:13-43
-246            android:screenOrientation="portrait" />
-246-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:230:13-49
-247        <activity
-247-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:231:9-235:52
-248            android:name="vn.techres.android.weather.ui.activity.HomeActivity"
-248-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:232:13-53
-249            android:exported="true"
-249-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:233:13-36
-250            android:launchMode="singleTask"
-250-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:234:13-44
-251            android:screenOrientation="portrait" />
-251-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:235:13-49
-252        <activity
-252-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:236:9-248:20
-253            android:name="vn.techres.android.weather.ui.activity.SplashActivity"
-253-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:237:13-55
-254            android:exported="true"
-254-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:238:13-36
-255            android:launchMode="singleTop"
-255-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:239:13-43
-256            android:screenOrientation="portrait"
-256-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:240:13-49
-257            android:theme="@style/SplashTheme" >
-257-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:241:13-47
-258            <intent-filter>
-258-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:242:13-247:29
-259                <action android:name="android.intent.action.MAIN" />
-259-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:243:17-69
-259-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:243:25-66
-260                <action android:name="android.intent.action.VIEW" />
-260-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:17-69
-260-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:25-66
-261
-262                <category android:name="android.intent.category.LAUNCHER" />
-262-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:246:17-77
-262-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:246:27-74
-263            </intent-filter>
-264        </activity>
+200        <!--
+201 Set custom default icon. This is used when no icon is set for incoming notification messages.
+202     See README(https://goo.gl/l4GJaQ) for more.
+203        -->
+204        <meta-data
+204-->D:\Source\AQI\app\src\main\AndroidManifest.xml:184:9-186:60
+205            android:name="com.google.firebase.messaging.default_notification_icon"
+205-->D:\Source\AQI\app\src\main\AndroidManifest.xml:185:13-83
+206            android:resource="@drawable/ic_notification" />
+206-->D:\Source\AQI\app\src\main\AndroidManifest.xml:186:13-57
+207        <!--
+208 Set color used with incoming notification messages. This is used when no color is set for the incoming
+209             notification message. See README(https://goo.gl/6BKBk7) for more.
+210        -->
+211        <meta-data
+211-->D:\Source\AQI\app\src\main\AndroidManifest.xml:191:9-193:53
+212            android:name="com.google.firebase.messaging.default_notification_color"
+212-->D:\Source\AQI\app\src\main\AndroidManifest.xml:192:13-84
+213            android:resource="@color/colorAccent" />
+213-->D:\Source\AQI\app\src\main\AndroidManifest.xml:193:13-50
+214        <meta-data
+214-->D:\Source\AQI\app\src\main\AndroidManifest.xml:194:9-196:55
+215            android:name="com.google.android.geo.API_KEY"
+215-->D:\Source\AQI\app\src\main\AndroidManifest.xml:195:13-58
+216            android:value="@string/google_maps_key" />
+216-->D:\Source\AQI\app\src\main\AndroidManifest.xml:196:13-52
+217        <meta-data
+217-->D:\Source\AQI\app\src\main\AndroidManifest.xml:197:9-199:36
+218            android:name="ScopedStorage"
+218-->D:\Source\AQI\app\src\main\AndroidManifest.xml:198:13-41
+219            android:value="true" />
+219-->D:\Source\AQI\app\src\main\AndroidManifest.xml:199:13-33
+220
+221        <provider
+222            android:name="androidx.core.content.FileProvider"
+222-->D:\Source\AQI\app\src\main\AndroidManifest.xml:202:13-62
+223            android:authorities="vn.techres.android.weather.provider"
+223-->D:\Source\AQI\app\src\main\AndroidManifest.xml:203:13-60
+224            android:exported="false"
+224-->D:\Source\AQI\app\src\main\AndroidManifest.xml:204:13-37
+225            android:grantUriPermissions="true" >
+225-->D:\Source\AQI\app\src\main\AndroidManifest.xml:205:13-47
+226            <meta-data
+226-->D:\Source\AQI\app\src\main\AndroidManifest.xml:206:13-208:54
+227                android:name="android.support.FILE_PROVIDER_PATHS"
+227-->D:\Source\AQI\app\src\main\AndroidManifest.xml:207:17-67
+228                android:resource="@xml/file_paths" />
+228-->D:\Source\AQI\app\src\main\AndroidManifest.xml:208:17-51
+229        </provider>
+230
+231        <activity
+231-->D:\Source\AQI\app\src\main\AndroidManifest.xml:211:9-215:53
+232            android:name="vn.techres.android.weather.ui.activity.CrashActivity"
+232-->D:\Source\AQI\app\src\main\AndroidManifest.xml:212:13-54
+233            android:launchMode="singleTop"
+233-->D:\Source\AQI\app\src\main\AndroidManifest.xml:213:13-43
+234            android:process=":crash"
+234-->D:\Source\AQI\app\src\main\AndroidManifest.xml:214:13-37
+235            android:screenOrientation="landscape" />
+235-->D:\Source\AQI\app\src\main\AndroidManifest.xml:215:13-50
+236        <activity
+236-->D:\Source\AQI\app\src\main\AndroidManifest.xml:216:9-220:52
+237            android:name="vn.techres.android.weather.ui.activity.RestartActivity"
+237-->D:\Source\AQI\app\src\main\AndroidManifest.xml:217:13-56
+238            android:exported="true"
+238-->D:\Source\AQI\app\src\main\AndroidManifest.xml:218:13-36
+239            android:launchMode="singleTop"
+239-->D:\Source\AQI\app\src\main\AndroidManifest.xml:219:13-43
+240            android:screenOrientation="portrait" />
+240-->D:\Source\AQI\app\src\main\AndroidManifest.xml:220:13-49
+241        <activity
+241-->D:\Source\AQI\app\src\main\AndroidManifest.xml:221:9-225:52
+242            android:name="vn.techres.android.weather.ui.activity.BrowserActivity"
+242-->D:\Source\AQI\app\src\main\AndroidManifest.xml:222:13-56
+243            android:exported="true"
+243-->D:\Source\AQI\app\src\main\AndroidManifest.xml:223:13-36
+244            android:launchMode="singleTop"
+244-->D:\Source\AQI\app\src\main\AndroidManifest.xml:224:13-43
+245            android:screenOrientation="portrait" />
+245-->D:\Source\AQI\app\src\main\AndroidManifest.xml:225:13-49
+246        <activity
+246-->D:\Source\AQI\app\src\main\AndroidManifest.xml:226:9-230:52
+247            android:name="vn.techres.android.weather.ui.activity.MediaActivity"
+247-->D:\Source\AQI\app\src\main\AndroidManifest.xml:227:13-54
+248            android:exported="true"
+248-->D:\Source\AQI\app\src\main\AndroidManifest.xml:228:13-36
+249            android:launchMode="singleTop"
+249-->D:\Source\AQI\app\src\main\AndroidManifest.xml:229:13-43
+250            android:screenOrientation="portrait" />
+250-->D:\Source\AQI\app\src\main\AndroidManifest.xml:230:13-49
+251        <activity
+251-->D:\Source\AQI\app\src\main\AndroidManifest.xml:231:9-235:52
+252            android:name="vn.techres.android.weather.ui.activity.HomeActivity"
+252-->D:\Source\AQI\app\src\main\AndroidManifest.xml:232:13-53
+253            android:exported="true"
+253-->D:\Source\AQI\app\src\main\AndroidManifest.xml:233:13-36
+254            android:launchMode="singleTask"
+254-->D:\Source\AQI\app\src\main\AndroidManifest.xml:234:13-44
+255            android:screenOrientation="portrait" />
+255-->D:\Source\AQI\app\src\main\AndroidManifest.xml:235:13-49
+256        <activity
+256-->D:\Source\AQI\app\src\main\AndroidManifest.xml:236:9-248:20
+257            android:name="vn.techres.android.weather.ui.activity.SplashActivity"
+257-->D:\Source\AQI\app\src\main\AndroidManifest.xml:237:13-55
+258            android:exported="true"
+258-->D:\Source\AQI\app\src\main\AndroidManifest.xml:238:13-36
+259            android:launchMode="singleTop"
+259-->D:\Source\AQI\app\src\main\AndroidManifest.xml:239:13-43
+260            android:screenOrientation="portrait"
+260-->D:\Source\AQI\app\src\main\AndroidManifest.xml:240:13-49
+261            android:theme="@style/SplashTheme" >
+261-->D:\Source\AQI\app\src\main\AndroidManifest.xml:241:13-47
+262            <intent-filter>
+262-->D:\Source\AQI\app\src\main\AndroidManifest.xml:242:13-247:29
+263                <action android:name="android.intent.action.MAIN" />
+263-->D:\Source\AQI\app\src\main\AndroidManifest.xml:243:17-69
+263-->D:\Source\AQI\app\src\main\AndroidManifest.xml:243:25-66
+264                <action android:name="android.intent.action.VIEW" />
+264-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:17-69
+264-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:25-66
 265
-266        <meta-data
-266-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:250:9-252:69
-267            android:name="com.google.android.gms.version"
-267-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:251:13-58
-268            android:value="@integer/google_play_services_version" />
-268-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:252:13-66
+266                <category android:name="android.intent.category.LAUNCHER" />
+266-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:17-77
+266-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:27-74
+267            </intent-filter>
+268        </activity>
 269
-270        <service
-270-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:254:9-261:19
-271            android:name="vn.techres.android.weather.ui.notification.MyFirebaseMessagingService"
-271-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:255:13-71
-272            android:exported="false" >
-272-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:256:13-37
-273            <intent-filter>
-273-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:258:13-260:29
-274                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-274-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:259:17-78
-274-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:259:25-75
-275            </intent-filter>
-276        </service>
-277
-278        <activity
-278-->[com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\2ba7b7e35c1614a6a87c4193437967a2\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:27:9-29:72
-279            android:name="com.karumi.dexter.DexterActivity"
-279-->[com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\2ba7b7e35c1614a6a87c4193437967a2\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:28:13-60
-280            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-280-->[com.karumi:dexter:6.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\2ba7b7e35c1614a6a87c4193437967a2\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:29:13-69
+270        <meta-data
+270-->D:\Source\AQI\app\src\main\AndroidManifest.xml:250:9-252:69
+271            android:name="com.google.android.gms.version"
+271-->D:\Source\AQI\app\src\main\AndroidManifest.xml:251:13-58
+272            android:value="@integer/google_play_services_version" />
+272-->D:\Source\AQI\app\src\main\AndroidManifest.xml:252:13-66
+273
+274        <service
+274-->D:\Source\AQI\app\src\main\AndroidManifest.xml:254:9-261:19
+275            android:name="vn.techres.android.weather.ui.notification.MyFirebaseMessagingService"
+275-->D:\Source\AQI\app\src\main\AndroidManifest.xml:255:13-71
+276            android:exported="false" >
+276-->D:\Source\AQI\app\src\main\AndroidManifest.xml:256:13-37
+277            <intent-filter>
+277-->D:\Source\AQI\app\src\main\AndroidManifest.xml:258:13-260:29
+278                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+278-->D:\Source\AQI\app\src\main\AndroidManifest.xml:259:17-78
+278-->D:\Source\AQI\app\src\main\AndroidManifest.xml:259:25-75
+279            </intent-filter>
+280        </service>
 281
-282        <provider
-282-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
-283            android:name="com.luck.picture.lib.basic.PictureFileProvider"
-283-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
-284            android:authorities="vn.techres.android.weather.luckProvider"
-284-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
-285            android:exported="false"
-285-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
-286            android:grantUriPermissions="true" >
-286-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
-287            <meta-data
-287-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:206:13-208:54
-288                android:name="android.support.FILE_PROVIDER_PATHS"
-288-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:207:17-67
-289                android:resource="@xml/ps_file_paths" />
-289-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:208:17-51
-290        </provider>
-291
-292        <service
-292-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:56
-293            android:name="com.luck.picture.lib.service.ForegroundService"
-293-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-74
-294            android:enabled="true"
-294-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
-295            android:foregroundServiceType="location" />
-295-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-53
-296
-297        <activity
-297-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:20
-298            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
-298-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-87
-299            android:configChanges="orientation|keyboardHidden|screenSize"
-299-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-74
-300            android:theme="@style/Base.Theme.NoActionBar" >
-300-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-58
-301        </activity>
-302        <activity
-302-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-34:20
-303            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
-303-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-89
-304            android:configChanges="orientation|keyboardHidden|screenSize"
-304-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-74
-305            android:theme="@style/Picture.Theme.Translucent" >
-305-->[:library:selector] D:\WeatherAQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-61
-306        </activity>
-307
-308        <service
-308-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:15:9-18:40
-309            android:name="net.gotev.uploadservice.UploadService"
-309-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:16:13-65
-310            android:enabled="true"
-310-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:17:13-35
-311            android:exported="false" />
-311-->[net.gotev:uploadservice:4.7.0] C:\Users\ADMIN\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:18:13-37
-312
-313        <activity
-313-->[pub.devrel:easypermissions:3.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
-314            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-314-->[pub.devrel:easypermissions:3.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
-315            android:exported="false"
-315-->[pub.devrel:easypermissions:3.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
-316            android:label=""
-316-->[pub.devrel:easypermissions:3.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
-317            android:theme="@style/EasyPermissions.Transparent" />
-317-->[pub.devrel:easypermissions:3.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
-318        <activity
-318-->[com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:15:9-21:20
-319            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-319-->[com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:16:13-91
-320            android:exported="false"
-320-->[com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:17:13-37
-321            android:label="@string/places_autocomplete_label"
-321-->[com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:18:13-62
-322            android:theme="@style/PlacesAutocompleteOverlay"
-322-->[com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:19:13-61
-323            android:windowSoftInputMode="adjustResize" >
-323-->[com.google.android.libraries.places:places:3.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:20:13-55
-324        </activity>
-325        <activity
-325-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
-326            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-326-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
-327            android:excludeFromRecents="true"
-327-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
-328            android:exported="true"
-328-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
-329            android:launchMode="singleTask"
-329-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
-330            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-330-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
-331            <intent-filter>
-331-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
-332                <action android:name="android.intent.action.VIEW" />
-332-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:17-69
-332-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:25-66
-333
-334                <category android:name="android.intent.category.DEFAULT" />
-334-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
-334-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
-335                <category android:name="android.intent.category.BROWSABLE" />
-335-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
-335-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
-336
-337                <data
-337-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-338                    android:host="firebase.auth"
-338-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-339                    android:path="/"
-339-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-340                    android:scheme="genericidp" />
-340-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
-341            </intent-filter>
-342        </activity>
-343        <activity
-343-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
-344            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-344-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
-345            android:excludeFromRecents="true"
-345-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
-346            android:exported="true"
-346-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
-347            android:launchMode="singleTask"
-347-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
-348            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-348-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
-349            <intent-filter>
-349-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
-350                <action android:name="android.intent.action.VIEW" />
-350-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:17-69
-350-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:244:25-66
-351
-352                <category android:name="android.intent.category.DEFAULT" />
-352-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
-352-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
-353                <category android:name="android.intent.category.BROWSABLE" />
-353-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
-353-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
-354
-355                <data
-355-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-356                    android:host="firebase.auth"
-356-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-357                    android:path="/"
-357-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-358                    android:scheme="recaptcha" />
-358-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
-359            </intent-filter>
-360        </activity>
-361
-362        <service
-362-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
-363            android:name="com.google.firebase.components.ComponentDiscoveryService"
-363-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:67:13-84
-364            android:directBootAware="true"
-364-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
-365            android:exported="false" >
-365-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
-366            <meta-data
-366-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
-367                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-367-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
-368                android:value="com.google.firebase.components.ComponentRegistrar" />
-368-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
-369            <meta-data
-369-->[com.google.firebase:firebase-appcheck:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\35c2e6890c46bf9fd4fab539fa6ddedb\transformed\jetified-firebase-appcheck-17.0.0\AndroidManifest.xml:27:13-29:85
-370                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
-370-->[com.google.firebase:firebase-appcheck:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\35c2e6890c46bf9fd4fab539fa6ddedb\transformed\jetified-firebase-appcheck-17.0.0\AndroidManifest.xml:28:17-117
-371                android:value="com.google.firebase.components.ComponentRegistrar" />
-371-->[com.google.firebase:firebase-appcheck:17.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\35c2e6890c46bf9fd4fab539fa6ddedb\transformed\jetified-firebase-appcheck-17.0.0\AndroidManifest.xml:29:17-82
-372            <meta-data
-372-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
-373                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-373-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
-374                android:value="com.google.firebase.components.ComponentRegistrar" />
-374-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
-375            <meta-data
-375-->[com.google.firebase:firebase-database:20.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\ce0beac79a9a9d8397e4eceb7eb72c14\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:31:13-33:85
-376                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-376-->[com.google.firebase:firebase-database:20.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\ce0beac79a9a9d8397e4eceb7eb72c14\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:32:17-109
-377                android:value="com.google.firebase.components.ComponentRegistrar" />
-377-->[com.google.firebase:firebase-database:20.2.1] C:\Users\ADMIN\.gradle\caches\transforms-3\ce0beac79a9a9d8397e4eceb7eb72c14\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:33:17-82
-378            <meta-data
-378-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
-379                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-379-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
-380                android:value="com.google.firebase.components.ComponentRegistrar" />
-380-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
-381            <meta-data
-381-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ADMIN\.gradle\caches\transforms-3\d9651374a314733bd2095bffa70050cc\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
-382                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-382-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ADMIN\.gradle\caches\transforms-3\d9651374a314733bd2095bffa70050cc\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
-383                android:value="com.google.firebase.components.ComponentRegistrar" />
-383-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ADMIN\.gradle\caches\transforms-3\d9651374a314733bd2095bffa70050cc\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
-384            <meta-data
-384-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ADMIN\.gradle\caches\transforms-3\56546a52bf77549a954d69219c8f7179\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
-385                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-385-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ADMIN\.gradle\caches\transforms-3\56546a52bf77549a954d69219c8f7179\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
-386                android:value="com.google.firebase.components.ComponentRegistrar" />
-386-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ADMIN\.gradle\caches\transforms-3\56546a52bf77549a954d69219c8f7179\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
-387        </service> <!-- Needs to be explicitly declared on P+ -->
-388        <uses-library
-388-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
-389            android:name="org.apache.http.legacy"
-389-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
-390            android:required="false" />
-390-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
-391
-392        <receiver
-392-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:31:9-39:20
-393            android:name="com.google.firebase.messaging.directboot.FirebaseMessagingDirectBootReceiver"
-393-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:32:13-104
-394            android:directBootAware="true"
-394-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:33:13-43
-395            android:exported="true"
-395-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:34:13-36
-396            android:permission="com.google.android.c2dm.permission.SEND" >
-396-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:35:13-73
-397            <intent-filter>
-397-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:36:13-38:29
-398                <action android:name="com.google.firebase.messaging.RECEIVE_DIRECT_BOOT" />
-398-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:37:17-92
-398-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:37:25-89
-399            </intent-filter>
-400        </receiver>
-401        <receiver
-401-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
-402            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-402-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
-403            android:exported="true"
-403-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
-404            android:permission="com.google.android.c2dm.permission.SEND" >
-404-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
-405            <intent-filter>
-405-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:35:13-37:29
-406                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-406-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:17-81
-406-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:25-78
-407            </intent-filter>
-408        </receiver>
-409        <!--
-410             FirebaseMessagingService performs security checks at runtime,
-411             but set to not exported to explicitly avoid allowing another app to call it.
-412        -->
-413        <service
-413-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
-414            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-414-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
-415            android:directBootAware="true"
-415-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
-416            android:exported="false" >
-416-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ADMIN\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
-417            <intent-filter android:priority="-500" >
-417-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:258:13-260:29
-418                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-418-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:259:17-78
-418-->D:\WeatherAQI\app\src\main\AndroidManifest.xml:259:25-75
-419            </intent-filter>
-420        </service>
-421
-422        <provider
-422-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
-423            android:name="com.google.firebase.provider.FirebaseInitProvider"
-423-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
-424            android:authorities="vn.techres.android.weather.firebaseinitprovider"
-424-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
-425            android:directBootAware="true"
-425-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
-426            android:exported="false"
-426-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
-427            android:initOrder="100" />
-427-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ADMIN\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
-428
-429        <activity
-429-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-430            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-430-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-431            android:exported="false"
-431-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-432            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-432-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ADMIN\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-433
-434        <uses-library
-434-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-435            android:name="androidx.window.extensions"
-435-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-436            android:required="false" />
-436-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-437        <uses-library
-437-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-438            android:name="androidx.window.sidecar"
-438-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-439            android:required="false" />
-439-->[androidx.window:window:1.0.0] C:\Users\ADMIN\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-440
-441        <provider
-441-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-442            android:name="androidx.startup.InitializationProvider"
-442-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-443            android:authorities="vn.techres.android.weather.androidx-startup"
-443-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-444            android:exported="false" >
-444-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-445            <meta-data
-445-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-446                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-446-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-447                android:value="androidx.startup" />
-447-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ADMIN\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-448            <meta-data
-448-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\d893d99844cc80f161f76c15d0711456\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-449                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-449-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\d893d99844cc80f161f76c15d0711456\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-450                android:value="androidx.startup" />
-450-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ADMIN\.gradle\caches\transforms-3\d893d99844cc80f161f76c15d0711456\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-451            <meta-data
-451-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-452                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-452-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-453                android:value="androidx.startup" />
-453-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-454        </provider>
-455
-456        <receiver
-456-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
-457            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-457-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
-458            android:enabled="true"
-458-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
-459            android:exported="false" >
-459-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
-460        </receiver>
-461
-462        <service
-462-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
-463            android:name="com.google.android.gms.measurement.AppMeasurementService"
-463-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
-464            android:enabled="true"
-464-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
-465            android:exported="false" />
-465-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
-466        <service
-466-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
-467            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-467-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
-468            android:enabled="true"
-468-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
-469            android:exported="false"
-469-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
-470            android:permission="android.permission.BIND_JOB_SERVICE" />
-470-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ADMIN\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
-471
-472        <receiver
-472-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-473            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-473-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-474            android:directBootAware="false"
-474-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-475            android:enabled="true"
-475-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-476            android:exported="true"
-476-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-477            android:permission="android.permission.DUMP" >
-477-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-478            <intent-filter>
-478-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-479                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-479-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-479-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-480            </intent-filter>
-481            <intent-filter>
-481-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-482                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-482-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-482-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-483            </intent-filter>
-484            <intent-filter>
-484-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-485                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-485-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-485-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-486            </intent-filter>
-487            <intent-filter>
-487-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-488                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-488-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-488-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ADMIN\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-489            </intent-filter>
-490        </receiver>
-491
-492        <service
-492-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
-493            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-493-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
-494            android:exported="false" >
-494-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
-495            <meta-data
-495-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
-496                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-496-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
-497                android:value="cct" />
-497-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
-498        </service>
-499        <service
-499-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
-500            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-500-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
-501            android:exported="false"
-501-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
-502            android:permission="android.permission.BIND_JOB_SERVICE" >
-502-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
-503        </service>
-504
-505        <receiver
-505-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
-506            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-506-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
-507            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-507-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ADMIN\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
-508        <activity
-508-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:18:9-24:45
-509            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-509-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:19:13-100
-510            android:enabled="false"
-510-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:20:13-36
-511            android:exported="false"
-511-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:21:13-37
-512            android:launchMode="singleInstance"
-512-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:22:13-48
-513            android:process=":playcore_missing_splits_activity"
-513-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:23:13-64
-514            android:stateNotNeeded="true" />
-514-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:24:13-42
-515        <activity
-515-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:25:9-29:65
-516            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-516-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:26:13-93
-517            android:exported="false"
-517-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:27:13-37
-518            android:stateNotNeeded="true"
-518-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:28:13-42
-519            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-519-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:29:13-62
-520        <service
-520-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:32:9-39:19
-521            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-521-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:33:13-94
-522            android:enabled="false"
-522-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:34:13-36
-523            android:exported="true" >
-523-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:35:13-36
+282        <activity
+282-->[com.karumi:dexter:6.2.1] C:\Users\Dell\.gradle\caches\transforms-3\2ba7b7e35c1614a6a87c4193437967a2\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:27:9-29:72
+283            android:name="com.karumi.dexter.DexterActivity"
+283-->[com.karumi:dexter:6.2.1] C:\Users\Dell\.gradle\caches\transforms-3\2ba7b7e35c1614a6a87c4193437967a2\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:28:13-60
+284            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+284-->[com.karumi:dexter:6.2.1] C:\Users\Dell\.gradle\caches\transforms-3\2ba7b7e35c1614a6a87c4193437967a2\transformed\jetified-dexter-6.2.1\AndroidManifest.xml:29:13-69
+285
+286        <provider
+286-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+287            android:name="com.luck.picture.lib.basic.PictureFileProvider"
+287-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+288            android:authorities="vn.techres.android.weather.luckProvider"
+288-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
+289            android:exported="false"
+289-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+290            android:grantUriPermissions="true" >
+290-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+291            <meta-data
+291-->D:\Source\AQI\app\src\main\AndroidManifest.xml:206:13-208:54
+292                android:name="android.support.FILE_PROVIDER_PATHS"
+292-->D:\Source\AQI\app\src\main\AndroidManifest.xml:207:17-67
+293                android:resource="@xml/ps_file_paths" />
+293-->D:\Source\AQI\app\src\main\AndroidManifest.xml:208:17-51
+294        </provider>
+295
+296        <service
+296-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:56
+297            android:name="com.luck.picture.lib.service.ForegroundService"
+297-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-74
+298            android:enabled="true"
+298-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
+299            android:foregroundServiceType="location" />
+299-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-53
+300
+301        <activity
+301-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-29:20
+302            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+302-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-87
+303            android:configChanges="orientation|keyboardHidden|screenSize"
+303-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-74
+304            android:theme="@style/Base.Theme.NoActionBar" >
+304-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-58
+305        </activity>
+306        <activity
+306-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-34:20
+307            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
+307-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-89
+308            android:configChanges="orientation|keyboardHidden|screenSize"
+308-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-74
+309            android:theme="@style/Picture.Theme.Translucent" >
+309-->[:library:selector] D:\Source\AQI\build\library\selector\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-61
+310        </activity>
+311
+312        <service
+312-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:15:9-18:40
+313            android:name="net.gotev.uploadservice.UploadService"
+313-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:16:13-65
+314            android:enabled="true"
+314-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:17:13-35
+315            android:exported="false" />
+315-->[net.gotev:uploadservice:4.7.0] C:\Users\Dell\.gradle\caches\transforms-3\cb1b76990162c7f44f2bb60550914881\transformed\jetified-uploadservice-4.7.0\AndroidManifest.xml:18:13-37
+316
+317        <activity
+317-->[pub.devrel:easypermissions:3.0.0] C:\Users\Dell\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+318            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+318-->[pub.devrel:easypermissions:3.0.0] C:\Users\Dell\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+319            android:exported="false"
+319-->[pub.devrel:easypermissions:3.0.0] C:\Users\Dell\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+320            android:label=""
+320-->[pub.devrel:easypermissions:3.0.0] C:\Users\Dell\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+321            android:theme="@style/EasyPermissions.Transparent" />
+321-->[pub.devrel:easypermissions:3.0.0] C:\Users\Dell\.gradle\caches\transforms-3\0bbe1c594b3fa3868fe449e489ffd95d\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+322        <activity
+322-->[com.google.android.libraries.places:places:3.2.0] C:\Users\Dell\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:15:9-21:20
+323            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+323-->[com.google.android.libraries.places:places:3.2.0] C:\Users\Dell\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:16:13-91
+324            android:exported="false"
+324-->[com.google.android.libraries.places:places:3.2.0] C:\Users\Dell\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:17:13-37
+325            android:label="@string/places_autocomplete_label"
+325-->[com.google.android.libraries.places:places:3.2.0] C:\Users\Dell\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:18:13-62
+326            android:theme="@style/PlacesAutocompleteOverlay"
+326-->[com.google.android.libraries.places:places:3.2.0] C:\Users\Dell\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:19:13-61
+327            android:windowSoftInputMode="adjustResize" >
+327-->[com.google.android.libraries.places:places:3.2.0] C:\Users\Dell\.gradle\caches\transforms-3\499f97dbac8952d7a11794da9fabb606\transformed\jetified-places-3.2.0\AndroidManifest.xml:20:13-55
+328        </activity>
+329        <activity
+329-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+330            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+330-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+331            android:excludeFromRecents="true"
+331-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+332            android:exported="true"
+332-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+333            android:launchMode="singleTask"
+333-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+334            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+334-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+335            <intent-filter>
+335-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+336                <action android:name="android.intent.action.VIEW" />
+336-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:17-69
+336-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:25-66
+337
+338                <category android:name="android.intent.category.DEFAULT" />
+338-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+338-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+339                <category android:name="android.intent.category.BROWSABLE" />
+339-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+339-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+340
+341                <data
+341-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+342                    android:host="firebase.auth"
+342-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+343                    android:path="/"
+343-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+344                    android:scheme="genericidp" />
+344-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+345            </intent-filter>
+346        </activity>
+347        <activity
+347-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+348            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+348-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+349            android:excludeFromRecents="true"
+349-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+350            android:exported="true"
+350-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+351            android:launchMode="singleTask"
+351-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+352            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+352-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+353            <intent-filter>
+353-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+354                <action android:name="android.intent.action.VIEW" />
+354-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:17-69
+354-->D:\Source\AQI\app\src\main\AndroidManifest.xml:244:25-66
+355
+356                <category android:name="android.intent.category.DEFAULT" />
+356-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+356-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+357                <category android:name="android.intent.category.BROWSABLE" />
+357-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+357-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+358
+359                <data
+359-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+360                    android:host="firebase.auth"
+360-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+361                    android:path="/"
+361-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+362                    android:scheme="recaptcha" />
+362-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+363            </intent-filter>
+364        </activity>
+365
+366        <service
+366-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
+367            android:name="com.google.firebase.components.ComponentDiscoveryService"
+367-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:67:13-84
+368            android:directBootAware="true"
+368-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+369            android:exported="false" >
+369-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
+370            <meta-data
+370-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+371                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+371-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+372                android:value="com.google.firebase.components.ComponentRegistrar" />
+372-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Dell\.gradle\caches\transforms-3\898dca2c95871e07a669ebf1ede3b669\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+373            <meta-data
+373-->[com.google.firebase:firebase-appcheck:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\35c2e6890c46bf9fd4fab539fa6ddedb\transformed\jetified-firebase-appcheck-17.0.0\AndroidManifest.xml:27:13-29:85
+374                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+374-->[com.google.firebase:firebase-appcheck:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\35c2e6890c46bf9fd4fab539fa6ddedb\transformed\jetified-firebase-appcheck-17.0.0\AndroidManifest.xml:28:17-117
+375                android:value="com.google.firebase.components.ComponentRegistrar" />
+375-->[com.google.firebase:firebase-appcheck:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\35c2e6890c46bf9fd4fab539fa6ddedb\transformed\jetified-firebase-appcheck-17.0.0\AndroidManifest.xml:29:17-82
+376            <meta-data
+376-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+377                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+377-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+378                android:value="com.google.firebase.components.ComponentRegistrar" />
+378-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+379            <meta-data
+379-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Dell\.gradle\caches\transforms-3\ce0beac79a9a9d8397e4eceb7eb72c14\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:31:13-33:85
+380                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+380-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Dell\.gradle\caches\transforms-3\ce0beac79a9a9d8397e4eceb7eb72c14\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:32:17-109
+381                android:value="com.google.firebase.components.ComponentRegistrar" />
+381-->[com.google.firebase:firebase-database:20.2.1] C:\Users\Dell\.gradle\caches\transforms-3\ce0beac79a9a9d8397e4eceb7eb72c14\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:33:17-82
+382            <meta-data
+382-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+383                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+383-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+384                android:value="com.google.firebase.components.ComponentRegistrar" />
+384-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\98e77fa0a0f290e446e1cfcf5d5d31c4\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+385            <meta-data
+385-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\d9651374a314733bd2095bffa70050cc\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+386                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+386-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\d9651374a314733bd2095bffa70050cc\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+387                android:value="com.google.firebase.components.ComponentRegistrar" />
+387-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\d9651374a314733bd2095bffa70050cc\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+388            <meta-data
+388-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Dell\.gradle\caches\transforms-3\56546a52bf77549a954d69219c8f7179\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+389                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+389-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Dell\.gradle\caches\transforms-3\56546a52bf77549a954d69219c8f7179\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+390                android:value="com.google.firebase.components.ComponentRegistrar" />
+390-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Dell\.gradle\caches\transforms-3\56546a52bf77549a954d69219c8f7179\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+391        </service> <!-- Needs to be explicitly declared on P+ -->
+392        <uses-library
+392-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+393            android:name="org.apache.http.legacy"
+393-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+394            android:required="false" />
+394-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\10e4009a1d201d4871ea9dab8d58c1be\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+395
+396        <receiver
+396-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:31:9-39:20
+397            android:name="com.google.firebase.messaging.directboot.FirebaseMessagingDirectBootReceiver"
+397-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:32:13-104
+398            android:directBootAware="true"
+398-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:33:13-43
+399            android:exported="true"
+399-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:34:13-36
+400            android:permission="com.google.android.c2dm.permission.SEND" >
+400-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:35:13-73
+401            <intent-filter>
+401-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:36:13-38:29
+402                <action android:name="com.google.firebase.messaging.RECEIVE_DIRECT_BOOT" />
+402-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:37:17-92
+402-->[com.google.firebase:firebase-messaging-directboot:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\1f3c4e45e866347ee3766789b3c7a5bd\transformed\jetified-firebase-messaging-directboot-23.1.2\AndroidManifest.xml:37:25-89
+403            </intent-filter>
+404        </receiver>
+405        <receiver
+405-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+406            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+406-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+407            android:exported="true"
+407-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+408            android:permission="com.google.android.c2dm.permission.SEND" >
+408-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+409            <intent-filter>
+409-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:35:13-37:29
+410                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+410-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:17-81
+410-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:25-78
+411            </intent-filter>
+412        </receiver>
+413        <!--
+414             FirebaseMessagingService performs security checks at runtime,
+415             but set to not exported to explicitly avoid allowing another app to call it.
+416        -->
+417        <service
+417-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+418            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+418-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+419            android:directBootAware="true"
+419-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+420            android:exported="false" >
+420-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\Dell\.gradle\caches\transforms-3\846bdbf8a8763674f80dced946f56655\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+421            <intent-filter android:priority="-500" >
+421-->D:\Source\AQI\app\src\main\AndroidManifest.xml:258:13-260:29
+422                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+422-->D:\Source\AQI\app\src\main\AndroidManifest.xml:259:17-78
+422-->D:\Source\AQI\app\src\main\AndroidManifest.xml:259:25-75
+423            </intent-filter>
+424        </service>
+425
+426        <provider
+426-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+427            android:name="com.google.firebase.provider.FirebaseInitProvider"
+427-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+428            android:authorities="vn.techres.android.weather.firebaseinitprovider"
+428-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+429            android:directBootAware="true"
+429-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+430            android:exported="false"
+430-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+431            android:initOrder="100" />
+431-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Dell\.gradle\caches\transforms-3\1295d66a6cebfc9b6c2edd99ecfc6e43\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+432
+433        <activity
+433-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+434            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+434-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+435            android:exported="false"
+435-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+436            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+436-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Dell\.gradle\caches\transforms-3\20079a3cc830ab56b53d4511cc0294b2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+437
+438        <uses-library
+438-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+439            android:name="androidx.window.extensions"
+439-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+440            android:required="false" />
+440-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+441        <uses-library
+441-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+442            android:name="androidx.window.sidecar"
+442-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+443            android:required="false" />
+443-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9af51824f3eaca1afd249c45659491ae\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+444
+445        <activity
+445-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:27:9-34:20
+446            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+446-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:28:13-99
+447            android:exported="true"
+447-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:29:13-36
+448            android:theme="@style/WhiteBackgroundTheme" >
+448-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:30:13-56
+449            <intent-filter android:priority="-100" >
+449-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:13-33:29
+449-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:28-51
+450                <category android:name="android.intent.category.LAUNCHER" />
+450-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:17-77
+450-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:27-74
+451            </intent-filter>
+452        </activity>
+453        <activity
+453-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:35:9-42:20
+454            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+454-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:36:13-95
+455            android:exported="true"
+455-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:37:13-36
+456            android:theme="@style/WhiteBackgroundTheme" >
+456-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:38:13-56
+457            <intent-filter android:priority="-100" >
+457-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:13-33:29
+457-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:28-51
+458                <category android:name="android.intent.category.LAUNCHER" />
+458-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:17-77
+458-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:27-74
+459            </intent-filter>
+460        </activity>
+461        <activity
+461-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:43:9-50:20
+462            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+462-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:44:13-103
+463            android:exported="true"
+463-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:45:13-36
+464            android:theme="@style/WhiteBackgroundDialogTheme" >
+464-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:46:13-62
+465            <intent-filter android:priority="-100" >
+465-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:13-33:29
+465-->[androidx.test:core:1.5.0] C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:28-51
+466                <category android:name="android.intent.category.LAUNCHER" />
+466-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:17-77
+466-->D:\Source\AQI\app\src\main\AndroidManifest.xml:246:27-74
+467            </intent-filter>
+468        </activity>
+469
+470        <provider
+470-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+471            android:name="androidx.startup.InitializationProvider"
+471-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+472            android:authorities="vn.techres.android.weather.androidx-startup"
+472-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+473            android:exported="false" >
+473-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+474            <meta-data
+474-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+475                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+475-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+476                android:value="androidx.startup" />
+476-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\72779820acf086a213e0466bc7c96451\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+477            <meta-data
+477-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\d893d99844cc80f161f76c15d0711456\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+478                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+478-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\d893d99844cc80f161f76c15d0711456\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+479                android:value="androidx.startup" />
+479-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\d893d99844cc80f161f76c15d0711456\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+480            <meta-data
+480-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+481                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+481-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+482                android:value="androidx.startup" />
+482-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+483        </provider>
+484
+485        <receiver
+485-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+486            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+486-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+487            android:enabled="true"
+487-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+488            android:exported="false" >
+488-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+489        </receiver>
+490
+491        <service
+491-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+492            android:name="com.google.android.gms.measurement.AppMeasurementService"
+492-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+493            android:enabled="true"
+493-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+494            android:exported="false" />
+494-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+495        <service
+495-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+496            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+496-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+497            android:enabled="true"
+497-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+498            android:exported="false"
+498-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+499            android:permission="android.permission.BIND_JOB_SERVICE" />
+499-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Dell\.gradle\caches\transforms-3\0e5a01cd47c70b3fb677251675465bac\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+500
+501        <receiver
+501-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+502            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+502-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+503            android:directBootAware="false"
+503-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+504            android:enabled="true"
+504-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+505            android:exported="true"
+505-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+506            android:permission="android.permission.DUMP" >
+506-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+507            <intent-filter>
+507-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+508                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+508-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+508-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+509            </intent-filter>
+510            <intent-filter>
+510-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+511                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+511-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+511-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+512            </intent-filter>
+513            <intent-filter>
+513-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+514                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+514-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+514-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+515            </intent-filter>
+516            <intent-filter>
+516-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+517                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+517-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+517-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\91829a7676cbe290f39311d2a7c5673d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+518            </intent-filter>
+519        </receiver>
+520
+521        <service
+521-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+522            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+522-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+523            android:exported="false" >
+523-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
 524            <meta-data
-524-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:36:13-38:41
-525                android:name="com.google.android.play.core.assetpacks.versionCode"
-525-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:37:17-83
-526                android:value="11003" />
-526-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:38:17-38
+524-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+525                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+525-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+526                android:value="cct" />
+526-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\09d07c4700aad23660c708325007f1a4\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
 527        </service>
 528        <service
-528-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:40:9-43:40
-529            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-529-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
-530            android:enabled="false"
-530-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:42:13-36
-531            android:exported="false" />
-531-->[com.google.android.play:core:1.10.3] C:\Users\ADMIN\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
-532
-533        <activity
-533-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
-534            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
-534-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-94
-535            android:exported="false"
-535-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
-536            android:splitName="home" />
-536-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
+528-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+529            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+529-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+530            android:exported="false"
+530-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+531            android:permission="android.permission.BIND_JOB_SERVICE" >
+531-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+532        </service>
+533
+534        <receiver
+534-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+535            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+535-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+536            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+536-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\0962c263e13e2dc08a2fb60100919007\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
 537        <activity
-537-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
-538            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
-538-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-97
-539            android:exported="false"
-539-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
-540            android:splitName="home" />
-540-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
-541        <activity
-541-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:32:9-35:40
-542            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
-542-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:33:13-86
-543            android:exported="false"
-543-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:34:13-37
-544            android:splitName="home" />
-544-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:35:13-37
-545        <activity
-545-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:36:9-39:40
-546            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
-546-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:37:13-91
-547            android:exported="false"
-547-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:38:13-37
-548            android:splitName="home" />
-548-->[:features:home] D:\WeatherAQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:39:13-37
-549        <activity
-549-->[:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:43
-550            android:name="vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity"
-550-->[:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-96
-551            android:exported="false"
-551-->[:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
-552            android:splitName="setting" />
-552-->[:features:setting] D:\WeatherAQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-40
-553    </application>
-554
-555</manifest>
+537-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:18:9-24:45
+538            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+538-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:19:13-100
+539            android:enabled="false"
+539-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:20:13-36
+540            android:exported="false"
+540-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:21:13-37
+541            android:launchMode="singleInstance"
+541-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:22:13-48
+542            android:process=":playcore_missing_splits_activity"
+542-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:23:13-64
+543            android:stateNotNeeded="true" />
+543-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:24:13-42
+544        <activity
+544-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:25:9-29:65
+545            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+545-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:26:13-93
+546            android:exported="false"
+546-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:27:13-37
+547            android:stateNotNeeded="true"
+547-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:28:13-42
+548            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+548-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:29:13-62
+549        <service
+549-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:32:9-39:19
+550            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+550-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:33:13-94
+551            android:enabled="false"
+551-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:34:13-36
+552            android:exported="true" >
+552-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:35:13-36
+553            <meta-data
+553-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:36:13-38:41
+554                android:name="com.google.android.play.core.assetpacks.versionCode"
+554-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:37:17-83
+555                android:value="11003" />
+555-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:38:17-38
+556        </service>
+557        <service
+557-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:40:9-43:40
+558            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+558-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
+559            android:enabled="false"
+559-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:42:13-36
+560            android:exported="false" />
+560-->[com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
+561
+562        <activity
+562-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
+563            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
+563-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-94
+564            android:exported="false"
+564-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
+565            android:splitName="home" />
+565-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
+566        <activity
+566-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
+567            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
+567-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-97
+568            android:exported="false"
+568-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
+569            android:splitName="home" />
+569-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
+570        <activity
+570-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:32:9-35:40
+571            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
+571-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:33:13-86
+572            android:exported="false"
+572-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:34:13-37
+573            android:splitName="home" />
+573-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:35:13-37
+574        <activity
+574-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:36:9-39:40
+575            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
+575-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:37:13-91
+576            android:exported="false"
+576-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:38:13-37
+577            android:splitName="home" />
+577-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:39:13-37
+578        <activity
+578-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:43
+579            android:name="vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity"
+579-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-96
+580            android:exported="false"
+580-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
+581            android:splitName="setting" />
+581-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-40
+582    </application>
+583
+584</manifest>

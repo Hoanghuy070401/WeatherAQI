@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-merged_res-5:\\values_values.arsc.flat",
+            "outputFile": "vn.techres.android.weather.home-merged_res-5:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\WeatherAQI\\features\\home\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\Source\\AQI\\features\\home\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\WeatherAQI\\features\\home\\src\\main\\res\\values\\ids.xml",
+                    "source": "D:\\Source\\AQI\\features\\home\\src\\main\\res\\values\\ids.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

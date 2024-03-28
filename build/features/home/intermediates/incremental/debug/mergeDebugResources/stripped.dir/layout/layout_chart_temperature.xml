@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="@dimen/dp_8"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:padding="@dimen/dp_16"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_border_button_8dp_gray_200"
+    android:backgroundTint="@color/gray_200_50">
+    <vn.techres.android.weather.widget.AppTextView
+        android:drawableStart="@drawable/ic_chart_histogram"
+        android:drawablePadding="@dimen/dp_8"
+        app:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:text="@string/map_chart"
+        android:textSize="@dimen/sp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartTemperature"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:background="@drawable/bg_border_button_8dp_gray_200"/>
+    <vn.techres.android.weather.widget.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/map_chart_temperature"
+        android:textColor="@color/white"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartAQI"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300"
+        android:background="@drawable/bg_border_button_8dp_gray_200"/>
+    <vn.techres.android.weather.widget.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/map_chart_AQI"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

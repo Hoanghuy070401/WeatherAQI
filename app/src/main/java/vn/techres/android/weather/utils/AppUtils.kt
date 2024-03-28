@@ -1374,6 +1374,16 @@ object AppUtils {
         }
         return result
     }
+    fun subAddress(address:String):String{
+        val secondCommaIndex = address.indexOf(',', address.indexOf(',') + 1)
+        var substringAfterSecondComma =""
+        if (secondCommaIndex != -1) {
+            substringAfterSecondComma = address.substring(0, secondCommaIndex)
+        } else {
+            //
+        }
+        return substringAfterSecondComma
+    }
 
 
 }

@@ -1,86 +1,78 @@
 [
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_weather_day.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_weather_day.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/fragment_weather.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/fragment_weather.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_item_other.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_item_other.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/item_five_day.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/item_five_day.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\item_forecast_hours.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_forecast_hours.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\item_five_day.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_five_day.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_home.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\weather_air_now.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\weather_air_now.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_data_air.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_data_air.xml"
     },
     {
         "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/weather_air_now.xml",
         "source": "vn.techres.android.weather.home-main-7:/layout/weather_air_now.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\fragment_weather.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\fragment_weather.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_chart_temperature.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_chart_temperature.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_weather_day_more.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_weather_day_more.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/activity_weather_day_more.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/activity_weather_day_more.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_data_weather.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_data_weather.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/item_weather_seven_day.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/item_weather_seven_day.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_details_weather_air.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_details_weather_air.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_weather_day.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_weather_day.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_forecast_hours.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_forecast_hours.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/item_suggest.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/item_suggest.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_chart_temperature.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_chart_temperature.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/activity_home.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_data_air.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_data_air.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/activity_search.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/activity_search.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_list_address.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_list_address.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_data_weather.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_data_weather.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\item_weather_seven_day.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_weather_seven_day.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/activity_list_address.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/activity_list_address.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\item_suggest.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_suggest.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/activity_details_weather_air.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/activity_details_weather_air.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\item_weather_days.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_weather_days.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_item_other.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_item_other.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\item_location.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\item_location.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_forecast_hours.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_forecast_hours.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\activity_search.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_search.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/item_weather_days.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/item_weather_days.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-mergeDebugResources-4:\\layout\\layout_new_find_location_layout.xml",
-        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_new_find_location_layout.xml"
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/item_location.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/item_location.xml"
+    },
+    {
+        "merged": "vn.techres.android.weather.home-mergeDebugResources-4:/layout/layout_new_find_location_layout.xml",
+        "source": "vn.techres.android.weather.home-main-7:/layout/layout_new_find_location_layout.xml"
     }
 ]

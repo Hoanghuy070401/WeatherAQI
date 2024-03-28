@@ -1,0 +1,9 @@
+vn.techres.android.weather.test.app-jetified-annotation-experimental-1.4.0-0 C:\Users\Dell\.gradle\caches\transforms-3\1e25908b7efaf3e44c669aef2de6797c\transformed\jetified-annotation-experimental-1.4.0\res
+vn.techres.android.weather.test.app-jetified-core-1.5.0-1 C:\Users\Dell\.gradle\caches\transforms-3\8d8a726fd06b7ff25a1ce90d783c5008\transformed\jetified-core-1.5.0\res
+vn.techres.android.weather.test.app-androidTest-2 D:\Source\AQI\app\src\androidTest\res
+vn.techres.android.weather.test.app-androidTestDebug-3 D:\Source\AQI\app\src\androidTestDebug\res
+vn.techres.android.weather.test.app-androidTest-4 D:\Source\AQI\build\app\generated\res\resValues\androidTest\debug
+vn.techres.android.weather.test.app-androidTest-5 D:\Source\AQI\build\app\generated\res\rs\androidTest\debug
+vn.techres.android.weather.test.app-mergeDebugAndroidTestResources-6 D:\Source\AQI\build\app\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+vn.techres.android.weather.test.app-mergeDebugAndroidTestResources-7 D:\Source\AQI\build\app\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+vn.techres.android.weather.test.app-merged_res-8 D:\Source\AQI\build\app\intermediates\merged_res\debugAndroidTest

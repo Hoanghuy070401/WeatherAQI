@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-91:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-92:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\d3f4fef64f555bdab95ddbc993e25254\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\d520bab809e57066c6522425e28253b2\\transformed\\material-1.10.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

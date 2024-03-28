@@ -10,5 +10,6 @@ object ModuleClassConstants {
     const val HOME_FRAGMENT ="vn.techres.android.weather.home.ui.fragment.HomeFragment"
     const val NEWS ="vn.techres.android.weather.setting.ui.fragment.NewsFragment"
     const val CONTROL_LIST_LOCATION ="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
+    const val SIGN_ACCOUNT ="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
 
 }

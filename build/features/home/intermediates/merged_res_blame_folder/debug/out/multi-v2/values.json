@@ -4,7 +4,7 @@
             "outputFile": "vn.techres.android.weather.home-mergeDebugResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "D:\\WeatherAQI\\features\\home\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\Source\\AQI\\features\\home\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\WeatherAQI\\features\\home\\src\\main\\res\\values\\ids.xml",
+                    "source": "D:\\Source\\AQI\\features\\home\\src\\main\\res\\values\\ids.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

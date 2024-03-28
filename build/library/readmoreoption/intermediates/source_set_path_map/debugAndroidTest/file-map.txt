@@ -1,0 +1,8 @@
+com.devs.readmoreoption.test.readmoreoption-androidTest-0 D:\Source\AQI\build\library\readmoreoption\generated\res\resValues\androidTest\debug
+com.devs.readmoreoption.test.readmoreoption-androidTest-1 D:\Source\AQI\build\library\readmoreoption\generated\res\rs\androidTest\debug
+com.devs.readmoreoption.test.readmoreoption-mergeDebugAndroidTestResources-2 D:\Source\AQI\build\library\readmoreoption\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.devs.readmoreoption.test.readmoreoption-mergeDebugAndroidTestResources-3 D:\Source\AQI\build\library\readmoreoption\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.devs.readmoreoption.test.readmoreoption-merged_res-4 D:\Source\AQI\build\library\readmoreoption\intermediates\merged_res\debugAndroidTest
+com.devs.readmoreoption.test.readmoreoption-packaged_res-5 D:\Source\AQI\build\library\readmoreoption\intermediates\packaged_res\debug
+com.devs.readmoreoption.test.readmoreoption-androidTest-6 D:\Source\AQI\library\readmoreoption\src\androidTest\res
+com.devs.readmoreoption.test.readmoreoption-androidTestDebug-7 D:\Source\AQI\library\readmoreoption\src\androidTestDebug\res
