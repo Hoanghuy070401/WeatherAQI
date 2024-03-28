@@ -159,4 +159,6 @@ class BrowserActivity : AppActivity(), vn.techres.android.weather.action.StatusA
             progressBar?.progress = newProgress
         }
     }
+
+
 }

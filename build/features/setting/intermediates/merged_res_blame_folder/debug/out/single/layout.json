@@ -1,14 +1,18 @@
 [
     {
-        "merged": "vn.techres.android.weather.setting-mergeDebugResources-4:/layout/items_news.xml",
-        "source": "vn.techres.android.weather.setting-main-7:/layout/items_news.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.setting-mergeDebugResources-4:\\layout\\fragment_news.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.setting-main-7:\\layout\\fragment_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.setting-mergeDebugResources-4:\\layout\\activity_crawl_data_news.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.setting-main-7:\\layout\\activity_crawl_data_news.xml"
     },
     {
         "merged": "vn.techres.android.weather.setting-mergeDebugResources-4:/layout/fragment_news.xml",
         "source": "vn.techres.android.weather.setting-main-7:/layout/fragment_news.xml"
     },
     {
-        "merged": "vn.techres.android.weather.setting-mergeDebugResources-4:/layout/activity_crawl_data_news.xml",
-        "source": "vn.techres.android.weather.setting-main-7:/layout/activity_crawl_data_news.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.setting-mergeDebugResources-4:\\layout\\items_news.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.setting-main-7:\\layout\\items_news.xml"
     }
 ]

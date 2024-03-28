@@ -4,62 +4,20 @@ package vn.techres.android.weather.setting.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 import vn.techres.android.weather.setting.R;
-import vn.techres.android.weather.widget.AppTextViewBold;
 
 public final class FragmentNewsBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
 
-  @NonNull
-  public final ImageView imvPhotoNews;
-
-  @NonNull
-  public final LinearLayout llDataNewsFist;
-
-  @NonNull
-  public final LinearLayout llNews1;
-
-  @NonNull
-  public final LinearLayout llTitle;
-
-  @NonNull
-  public final RecyclerView rcvNews;
-
-  @NonNull
-  public final Toolbar tbTT;
-
-  @NonNull
-  public final AppTextViewBold tvNewsOther;
-
-  @NonNull
-  public final AppTextViewBold tvTitle;
-
-  private FragmentNewsBinding(@NonNull RelativeLayout rootView, @NonNull ImageView imvPhotoNews,
-      @NonNull LinearLayout llDataNewsFist, @NonNull LinearLayout llNews1,
-      @NonNull LinearLayout llTitle, @NonNull RecyclerView rcvNews, @NonNull Toolbar tbTT,
-      @NonNull AppTextViewBold tvNewsOther, @NonNull AppTextViewBold tvTitle) {
+  private FragmentNewsBinding(@NonNull RelativeLayout rootView) {
     this.rootView = rootView;
-    this.imvPhotoNews = imvPhotoNews;
-    this.llDataNewsFist = llDataNewsFist;
-    this.llNews1 = llNews1;
-    this.llTitle = llTitle;
-    this.rcvNews = rcvNews;
-    this.tbTT = tbTT;
-    this.tvNewsOther = tvNewsOther;
-    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -85,62 +43,10 @@ public final class FragmentNewsBinding implements ViewBinding {
 
   @NonNull
   public static FragmentNewsBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.imvPhotoNews;
-      ImageView imvPhotoNews = ViewBindings.findChildViewById(rootView, id);
-      if (imvPhotoNews == null) {
-        break missingId;
-      }
-
-      id = R.id.llDataNewsFist;
-      LinearLayout llDataNewsFist = ViewBindings.findChildViewById(rootView, id);
-      if (llDataNewsFist == null) {
-        break missingId;
-      }
-
-      id = R.id.llNews1;
-      LinearLayout llNews1 = ViewBindings.findChildViewById(rootView, id);
-      if (llNews1 == null) {
-        break missingId;
-      }
-
-      id = R.id.llTitle;
-      LinearLayout llTitle = ViewBindings.findChildViewById(rootView, id);
-      if (llTitle == null) {
-        break missingId;
-      }
-
-      id = R.id.rcvNews;
-      RecyclerView rcvNews = ViewBindings.findChildViewById(rootView, id);
-      if (rcvNews == null) {
-        break missingId;
-      }
-
-      id = R.id.tbTT;
-      Toolbar tbTT = ViewBindings.findChildViewById(rootView, id);
-      if (tbTT == null) {
-        break missingId;
-      }
-
-      id = R.id.tvNewsOther;
-      AppTextViewBold tvNewsOther = ViewBindings.findChildViewById(rootView, id);
-      if (tvNewsOther == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTitle;
-      AppTextViewBold tvTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvTitle == null) {
-        break missingId;
-      }
-
-      return new FragmentNewsBinding((RelativeLayout) rootView, imvPhotoNews, llDataNewsFist,
-          llNews1, llTitle, rcvNews, tbTT, tvNewsOther, tvTitle);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    return new FragmentNewsBinding((RelativeLayout) rootView);
   }
 }
