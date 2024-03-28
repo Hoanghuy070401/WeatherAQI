@@ -26,13 +26,16 @@ class SignActivity : AppActivity() {
     }
 
     override fun initView() {
-        //
+        binding.tvSign.clickWithDebounce{
+            val i = client!!.signInIntent
+            startActivityForResult(i, 1234)
+        }
     }
 
     override fun initData() {
        //
         val options = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(vn.techres.android.weather.home.R.string.default_web_client_id))
+            .requestIdToken(getString(vn.techres.android.weather.R.string.default_web_client_id))
             .requestEmail()
             .build()
         client = GoogleSignIn.getClient(this, options)

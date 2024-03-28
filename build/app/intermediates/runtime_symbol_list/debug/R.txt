@@ -6342,6 +6342,7 @@ int id transition_transform 0x7f0a0360
 int id transparent 0x7f0a0361
 int id triangle 0x7f0a0362
 int id tvAQI 0x7f0a0363
+int id tvAccount 0x7f0a03d3
 int id tvAddress 0x7f0a0364
 int id tvAddressLocation 0x7f0a0365
 int id tvBgTag 0x7f0a0366
@@ -7405,6 +7406,7 @@ int string sex 0x7f130256
 int string side_sheet_accessibility_pane_title 0x7f130257
 int string side_sheet_behavior 0x7f130258
 int string sign 0x7f1302a3
+int string sign_to_google 0x7f1302a4
 int string snow_1h 0x7f130259
 int string snow_3h 0x7f13025a
 int string srl_component_falsify 0x7f13025b

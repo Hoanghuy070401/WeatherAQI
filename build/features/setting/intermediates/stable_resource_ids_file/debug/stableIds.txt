@@ -1,6 +1,6 @@
-vn.techres.android.weather:id/tvTitle = 0x7d010008
-vn.techres.android.weather:layout/fragment_news = 0x7d020001
 vn.techres.android.weather:layout/items_news = 0x7d020002
+vn.techres.android.weather:layout/fragment_news = 0x7d020001
+vn.techres.android.weather:id/tvTitle = 0x7d010008
 vn.techres.android.weather:id/llTitle = 0x7d010003
 vn.techres.android.weather:id/tvNewsOther = 0x7d010007
 vn.techres.android.weather:layout/activity_crawl_data_news = 0x7d020000

@@ -21,7 +21,7 @@ public final class ModuleClassConstants {
     @org.jetbrains.annotations.NotNull
     public static final java.lang.String CONTROL_LIST_LOCATION = "vn.techres.android.weather.home.ui.activity.ListAddressActivity";
     @org.jetbrains.annotations.NotNull
-    public static final java.lang.String SIGN_ACCOUNT = "vn.techres.android.weather.home.ui.activity.ListAddressActivity";
+    public static final java.lang.String SIGN_ACCOUNT = "vn.techres.android.weather.home.ui.activity.SignActivity";
     
     private ModuleClassConstants() {
         super();

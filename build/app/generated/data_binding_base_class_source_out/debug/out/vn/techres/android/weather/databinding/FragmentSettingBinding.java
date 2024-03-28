@@ -13,6 +13,7 @@ import java.lang.Deprecated;
 import java.lang.Object;
 import vn.techres.android.weather.R;
 import vn.techres.android.weather.widget.AppTextView;
+import vn.techres.android.weather.widget.AppTextViewBold;
 
 public abstract class FragmentSettingBinding extends ViewDataBinding {
   @NonNull
@@ -34,12 +35,15 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
   public final LinearLayout llSign;
 
   @NonNull
+  public final AppTextViewBold tvAccount;
+
+  @NonNull
   public final AppTextView tvAddressLocation;
 
   protected FragmentSettingBinding(Object _bindingComponent, View _root, int _localFieldCount,
       LinearLayout llAQI, LinearLayout llEnvironmentManager, LinearLayout llFeedback,
       LinearLayout llInfo, LinearLayout llLocationManager, LinearLayout llSign,
-      AppTextView tvAddressLocation) {
+      AppTextViewBold tvAccount, AppTextView tvAddressLocation) {
     super(_bindingComponent, _root, _localFieldCount);
     this.llAQI = llAQI;
     this.llEnvironmentManager = llEnvironmentManager;
@@ -47,6 +51,7 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
     this.llInfo = llInfo;
     this.llLocationManager = llLocationManager;
     this.llSign = llSign;
+    this.tvAccount = tvAccount;
     this.tvAddressLocation = tvAddressLocation;
   }
 

@@ -14,13 +14,14 @@ public class FragmentSettingBindingImpl extends FragmentSettingBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.tvAddressLocation, 1);
-        sViewsWithIds.put(R.id.llLocationManager, 2);
-        sViewsWithIds.put(R.id.llEnvironmentManager, 3);
-        sViewsWithIds.put(R.id.llAQI, 4);
-        sViewsWithIds.put(R.id.llFeedback, 5);
-        sViewsWithIds.put(R.id.llInfo, 6);
-        sViewsWithIds.put(R.id.llSign, 7);
+        sViewsWithIds.put(R.id.tvAccount, 1);
+        sViewsWithIds.put(R.id.tvAddressLocation, 2);
+        sViewsWithIds.put(R.id.llLocationManager, 3);
+        sViewsWithIds.put(R.id.llEnvironmentManager, 4);
+        sViewsWithIds.put(R.id.llAQI, 5);
+        sViewsWithIds.put(R.id.llFeedback, 6);
+        sViewsWithIds.put(R.id.llInfo, 7);
+        sViewsWithIds.put(R.id.llSign, 8);
     }
     // views
     @NonNull
@@ -31,17 +32,18 @@ public class FragmentSettingBindingImpl extends FragmentSettingBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentSettingBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private FragmentSettingBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.LinearLayout) bindings[4]
-            , (android.widget.LinearLayout) bindings[3]
             , (android.widget.LinearLayout) bindings[5]
+            , (android.widget.LinearLayout) bindings[4]
             , (android.widget.LinearLayout) bindings[6]
-            , (android.widget.LinearLayout) bindings[2]
             , (android.widget.LinearLayout) bindings[7]
-            , (vn.techres.android.weather.widget.AppTextView) bindings[1]
+            , (android.widget.LinearLayout) bindings[3]
+            , (android.widget.LinearLayout) bindings[8]
+            , (vn.techres.android.weather.widget.AppTextViewBold) bindings[1]
+            , (vn.techres.android.weather.widget.AppTextView) bindings[2]
             );
         this.mboundView0 = (android.widget.FrameLayout) bindings[0];
         this.mboundView0.setTag(null);

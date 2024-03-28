@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-92:/values-sl/values-sl.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-93:/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\499f97dbac8952d7a11794da9fabb606\\transformed\\jetified-places-3.2.0\\res\\values-sl\\values.xml",

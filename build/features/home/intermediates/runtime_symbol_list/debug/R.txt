@@ -78,6 +78,7 @@ int id tvPressure 0x7e01004b
 int id tvRain 0x7e01004c
 int id tvRain1h 0x7e01004d
 int id tvRain3h 0x7e01004e
+int id tvSign 0x7e010067
 int id tvSnow 0x7e01004f
 int id tvSnow1h 0x7e010050
 int id tvSnow3h 0x7e010051

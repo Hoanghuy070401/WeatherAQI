@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-92:/values-sw820dp-v13/values-sw820dp-v13.xml",
+            "outputFile": "vn.techres.android.weather.app-mergeDebugResources-93:/values-sw820dp-v13/values-sw820dp-v13.xml",
             "map": [
                 {
                     "source": "D:\\Source\\AQI\\build\\library\\base\\intermediates\\packaged_res\\debug\\values-sw820dp-v13\\values-sw820dp-v13.xml",

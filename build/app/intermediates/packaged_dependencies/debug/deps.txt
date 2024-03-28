@@ -143,7 +143,9 @@ com.google.android.exoplayer:exoplayer-smoothstreaming
 com.google.android.exoplayer:exoplayer-ui
 com.google.android.flexbox:flexbox
 com.google.android.gms:play-services-ads-identifier
+com.google.android.gms:play-services-auth
 com.google.android.gms:play-services-auth-api-phone
+com.google.android.gms:play-services-auth-base
 com.google.android.gms:play-services-base
 com.google.android.gms:play-services-basement
 com.google.android.gms:play-services-clearcut
@@ -178,6 +180,7 @@ com.google.firebase:firebase-appcheck-interop
 com.google.firebase:firebase-auth
 com.google.firebase:firebase-auth-interop
 com.google.firebase:firebase-common
+com.google.firebase:firebase-common-ktx
 com.google.firebase:firebase-components
 com.google.firebase:firebase-database
 com.google.firebase:firebase-database-collection

@@ -2,6 +2,7 @@ package vn.techres.android.weather.ui.fragment.setting
 
 import android.content.Intent
 import android.view.View
+import com.google.firebase.auth.FirebaseAuth
 import vn.techres.android.weather.R
 import vn.techres.android.weather.app.AppFragment
 import vn.techres.android.weather.constants.ModuleClassConstants
@@ -9,6 +10,8 @@ import vn.techres.android.weather.databinding.FragmentSettingBinding
 import vn.techres.android.weather.model.titles
 import vn.techres.android.weather.ui.activity.BrowserActivity
 import vn.techres.android.weather.ui.activity.HomeActivity
+import vn.techres.android.weather.utils.AppUtils.hide
+import vn.techres.android.weather.utils.AppUtils.show
 
 
 class SettingFragment : AppFragment<HomeActivity>() {
@@ -51,7 +54,7 @@ class SettingFragment : AppFragment<HomeActivity>() {
             try {
                 startActivity(
                     Intent(
-                        context, Class.forName(ModuleClassConstants.CONTROL_LIST_LOCATION)
+                        context, Class.forName(ModuleClassConstants.SIGN_ACCOUNT)
                     )
                 )
             } catch (e: ClassNotFoundException) {
@@ -59,6 +62,19 @@ class SettingFragment : AppFragment<HomeActivity>() {
             }
 
 
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            binding.llSign.hide()
+            binding.tvAccount.show()
+            binding.tvAccount.text=user.displayName
+        }else{
+            binding.llSign.show()
+            binding.tvAccount.hide()
         }
     }
 

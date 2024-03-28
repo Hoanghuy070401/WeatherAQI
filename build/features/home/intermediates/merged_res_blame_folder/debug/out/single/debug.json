@@ -44,6 +44,10 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\layout_forecast_hours.xml"
     },
     {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-merged_res-5:\\layout_activity_sign.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\activity_sign.xml"
+    },
+    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-merged_res-5:\\layout_weather_air_now.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\vn.techres.android.weather.home-main-7:\\layout\\weather_air_now.xml"
     },
