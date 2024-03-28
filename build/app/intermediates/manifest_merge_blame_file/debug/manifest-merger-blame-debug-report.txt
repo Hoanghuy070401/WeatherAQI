@@ -1047,44 +1047,52 @@
 561
 562        <activity
 562-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
-563            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
-563-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-94
+563            android:name="vn.techres.android.weather.home.ui.activity.SignActivity"
+563-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-84
 564            android:exported="false"
 564-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
 565            android:splitName="home" />
 565-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
 566        <activity
 566-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
-567            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
-567-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-97
+567            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
+567-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-94
 568            android:exported="false"
 568-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
 569            android:splitName="home" />
 569-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
 570        <activity
 570-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:32:9-35:40
-571            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
-571-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:33:13-86
+571            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
+571-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:33:13-97
 572            android:exported="false"
 572-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:34:13-37
 573            android:splitName="home" />
 573-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:35:13-37
 574        <activity
 574-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:36:9-39:40
-575            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
-575-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:37:13-91
+575            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
+575-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:37:13-86
 576            android:exported="false"
 576-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:38:13-37
 577            android:splitName="home" />
 577-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:39:13-37
 578        <activity
-578-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:43
-579            android:name="vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity"
-579-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-96
+578-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:40:9-43:40
+579            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
+579-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:41:13-91
 580            android:exported="false"
-580-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
-581            android:splitName="setting" />
-581-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-40
-582    </application>
-583
-584</manifest>
+580-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:42:13-37
+581            android:splitName="home" />
+581-->[:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:43:13-37
+582        <activity
+582-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:43
+583            android:name="vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity"
+583-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-96
+584            android:exported="false"
+584-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
+585            android:splitName="setting" />
+585-->[:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-40
+586    </application>
+587
+588</manifest>

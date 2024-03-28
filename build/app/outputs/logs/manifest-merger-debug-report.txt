@@ -199,7 +199,7 @@ MERGED from [org.simple:androideventbus:1.0.5.1] C:\Users\Dell\.gradle\caches\tr
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\50319b7de00565484b1085deceac0c8e\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.github.jinatonic.confetti:confetti:1.1.2] C:\Users\Dell\.gradle\caches\transforms-3\cd779ce692eb1cb23fe22e2a2b7d860b\transformed\jetified-confetti-1.1.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.test.espresso:espresso-idling-resource:3.5.1] C:\Users\Dell\.gradle\caches\transforms-3\ce4dba28bdebe42e725c524e3912bf53\transformed\espresso-idling-resource-3.5.1\AndroidManifest.xml:17:1-24:12
-MERGED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-42:12
+MERGED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-46:12
 MERGED from [:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:2:1-30:12
 INJECTED from D:\Source\AQI\app\src\main\AndroidManifest.xml:2:1-264:12
 INJECTED from D:\Source\AQI\app\src\main\AndroidManifest.xml:2:1-264:12
@@ -606,8 +606,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\De
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Dell\.gradle\caches\transforms-3\9fe71e8ecd5fe6f20a3ecb43d2613084\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:15:5-44:19
 MERGED from [com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:15:5-44:19
-MERGED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-40:19
-MERGED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-40:19
+MERGED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-44:19
+MERGED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-44:19
 MERGED from [:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-28:19
 MERGED from [:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:21:5-28:19
 	android:extractNativeLibs
@@ -1791,38 +1791,46 @@ ADDED from [com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\tr
 		ADDED from [com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
 	android:name
 		ADDED from [com.google.android.play:core:1.10.3] C:\Users\Dell\.gradle\caches\transforms-3\6bc047d15afe722f61f4363da8911cad\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
-activity#vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity
+activity#vn.techres.android.weather.home.ui.activity.SignActivity
 ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:40
 	android:exported
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:26:13-37
 	android:splitName
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-94
-activity#vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:25:13-84
+activity#vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity
 ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:28:9-31:40
 	android:exported
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:30:13-37
 	android:splitName
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-97
-activity#vn.techres.android.weather.home.ui.activity.SearchActivity
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:29:13-94
+activity#vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity
 ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:32:9-35:40
 	android:exported
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:34:13-37
 	android:splitName
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:33:13-86
-activity#vn.techres.android.weather.home.ui.activity.ListAddressActivity
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:33:13-97
+activity#vn.techres.android.weather.home.ui.activity.SearchActivity
 ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:36:9-39:40
 	android:exported
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:38:13-37
 	android:splitName
 		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:37:13-91
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:37:13-86
+activity#vn.techres.android.weather.home.ui.activity.ListAddressActivity
+ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:40:9-43:40
+	android:exported
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:42:13-37
+	android:splitName
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:43:13-37
+	android:name
+		ADDED from [:features:home] D:\Source\AQI\build\features\home\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:41:13-91
 activity#vn.techres.android.weather.setting.ui.activity.CrawlDataNewsActivity
 ADDED from [:features:setting] D:\Source\AQI\build\features\setting\intermediates\metadata_feature_manifest\debug\AndroidManifest.xml:24:9-27:43
 	android:exported

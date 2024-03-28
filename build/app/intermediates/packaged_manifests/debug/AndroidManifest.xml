@@ -560,6 +560,9 @@
             android:exported="false" />
 
         <activity
+            android:name="vn.techres.android.weather.home.ui.activity.SignActivity"
+            android:exported="false" />
+        <activity
             android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
             android:exported="false" />
         <activity

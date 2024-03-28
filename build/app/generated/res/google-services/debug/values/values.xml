@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="default_web_client_id" translatable="false">262352616839-hqrhi04713fcop04qff7jh511ktq5ia2.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://weather-aqi-9fc6a-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="gcm_defaultSenderId" translatable="false">262352616839</string>
     <string name="google_api_key" translatable="false">AIzaSyB6_eg7HyDDrdBfvoEHKpESMAQdIR9rIi4</string>

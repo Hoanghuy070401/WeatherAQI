@@ -13,7 +13,20 @@
           "package_name": "vn.techres.android.weather"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "262352616839-1kqt8j4akvlequ6mkg579jbd51ivmi6n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.techres.android.weather",
+            "certificate_hash": "b6593d4760e7d0435a23d3d7110076404ca8fc13"
+          }
+        },
+        {
+          "client_id": "262352616839-hqrhi04713fcop04qff7jh511ktq5ia2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyB6_eg7HyDDrdBfvoEHKpESMAQdIR9rIi4"
@@ -21,26 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:262352616839:android:9add2d6cc2654c9e05e722",
-        "android_client_info": {
-          "package_name": "vn.techres.android.weather.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB6_eg7HyDDrdBfvoEHKpESMAQdIR9rIi4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262352616839-hqrhi04713fcop04qff7jh511ktq5ia2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

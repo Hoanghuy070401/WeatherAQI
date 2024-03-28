@@ -90,6 +90,7 @@
     <string name="rating_app">Đánh giá ứng dụng</string>
     <string name="info">Thông tin ứng dụng</string>
     <string name="sign">Đăng nhập </string>
+    <string name="sign_to_google">Đăng nhập bằng Google </string>
     <string name="information">Thông tin</string>
     <string name="control_location">Quản lý vị trí </string>
     <string name="control_city">Quản lý thành phố </string>

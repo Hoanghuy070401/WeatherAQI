@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
 	package
 		INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:2:11-69
@@ -38,31 +38,37 @@ ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:12:9-44
 	dist:include
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:12:22-41
 application
-ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:15:5-28:19
-activity#vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity
+ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:15:5-31:19
+activity#vn.techres.android.weather.home.ui.activity.SignActivity
 ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:17:13-63
-activity#vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:17:13-53
+activity#vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity
 ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:20:13-66
-activity#vn.techres.android.weather.home.ui.activity.SearchActivity
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:20:13-63
+activity#vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity
 ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:23:13-55
-activity#vn.techres.android.weather.home.ui.activity.ListAddressActivity
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:23:13-66
+activity#vn.techres.android.weather.home.ui.activity.SearchActivity
 ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:26:13-60
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:26:13-55
+activity#vn.techres.android.weather.home.ui.activity.ListAddressActivity
+ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml:29:13-60
 uses-sdk
 INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Source\AQI\features\home\src\main\AndroidManifest.xml

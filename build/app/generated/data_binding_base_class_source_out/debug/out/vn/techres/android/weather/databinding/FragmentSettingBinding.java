@@ -31,17 +31,22 @@ public abstract class FragmentSettingBinding extends ViewDataBinding {
   public final LinearLayout llLocationManager;
 
   @NonNull
+  public final LinearLayout llSign;
+
+  @NonNull
   public final AppTextView tvAddressLocation;
 
   protected FragmentSettingBinding(Object _bindingComponent, View _root, int _localFieldCount,
       LinearLayout llAQI, LinearLayout llEnvironmentManager, LinearLayout llFeedback,
-      LinearLayout llInfo, LinearLayout llLocationManager, AppTextView tvAddressLocation) {
+      LinearLayout llInfo, LinearLayout llLocationManager, LinearLayout llSign,
+      AppTextView tvAddressLocation) {
     super(_bindingComponent, _root, _localFieldCount);
     this.llAQI = llAQI;
     this.llEnvironmentManager = llEnvironmentManager;
     this.llFeedback = llFeedback;
     this.llInfo = llInfo;
     this.llLocationManager = llLocationManager;
+    this.llSign = llSign;
     this.tvAddressLocation = tvAddressLocation;
   }
 

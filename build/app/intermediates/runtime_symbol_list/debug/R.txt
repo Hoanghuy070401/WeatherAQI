@@ -5924,6 +5924,7 @@ int id llLocationManager 0x7f0a01bf
 int id llMyLocation 0x7f0a01c0
 int id llNoSupport 0x7f0a01c1
 int id llRemoveMarker 0x7f0a01c2
+int id llSign 0x7f0a03d2
 int id llStyleWeather 0x7f0a01c3
 int id llTab 0x7f0a01c4
 int id llWidget 0x7f0a01c5
@@ -6925,6 +6926,7 @@ int string day_ago_notify 0x7f130078
 int string day_to_day 0x7f130079
 int string decrease 0x7f13007a
 int string default_error_msg 0x7f13007b
+int string default_web_client_id 0x7f1302a2
 int string delete 0x7f13007c
 int string describe_max 0x7f13007d
 int string detail_watch 0x7f13007e
@@ -7402,6 +7404,7 @@ int string seven_day_forecast 0x7f130255
 int string sex 0x7f130256
 int string side_sheet_accessibility_pane_title 0x7f130257
 int string side_sheet_behavior 0x7f130258
+int string sign 0x7f1302a3
 int string snow_1h 0x7f130259
 int string snow_3h 0x7f13025a
 int string srl_component_falsify 0x7f13025b

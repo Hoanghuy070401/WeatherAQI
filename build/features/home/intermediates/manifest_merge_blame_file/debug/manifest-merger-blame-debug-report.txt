@@ -30,37 +30,44 @@
 21    </dist:module>
 22
 23    <application
-23-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:15:5-28:19
+23-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:15:5-31:19
 24        android:debuggable="true"
 25        android:extractNativeLibs="false" >
 26        <activity
 26-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:16:9-18:40
-27            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
-27-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:17:13-63
+27            android:name="vn.techres.android.weather.home.ui.activity.SignActivity"
+27-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:17:13-53
 28            android:exported="false"
 28-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:18:13-37
 29            android:splitName="home" />
 30        <activity
 30-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:19:9-21:40
-31            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
-31-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:20:13-66
+31            android:name="vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity"
+31-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:20:13-63
 32            android:exported="false"
 32-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:21:13-37
 33            android:splitName="home" />
 34        <activity
 34-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:22:9-24:40
-35            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
-35-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:23:13-55
+35            android:name="vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity"
+35-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:23:13-66
 36            android:exported="false"
 36-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:24:13-37
 37            android:splitName="home" />
 38        <activity
 38-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:25:9-27:40
-39            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
-39-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:26:13-60
+39            android:name="vn.techres.android.weather.home.ui.activity.SearchActivity"
+39-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:26:13-55
 40            android:exported="false"
 40-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:27:13-37
 41            android:splitName="home" />
-42    </application>
-43
-44</manifest>
+42        <activity
+42-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:28:9-30:40
+43            android:name="vn.techres.android.weather.home.ui.activity.ListAddressActivity"
+43-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:29:13-60
+44            android:exported="false"
+44-->D:\Source\AQI\features\home\src\main\AndroidManifest.xml:30:13-37
+45            android:splitName="home" />
+46    </application>
+47
+48</manifest>

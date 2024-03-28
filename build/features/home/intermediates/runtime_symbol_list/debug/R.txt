@@ -42,6 +42,7 @@ int id llTempleteNow 0x7e010028
 int id llWin 0x7e010029
 int id ltWeather 0x7e01002a
 int id ltWeather1 0x7e01002b
+int id main 0x7e010066
 int id noData 0x7e01002c
 int id pgbSearch 0x7e01002d
 int id rcvListFiveDays 0x7e01002e
@@ -104,6 +105,7 @@ int layout activity_details_weather_air 0x7e020000
 int layout activity_home 0x7e020001
 int layout activity_list_address 0x7e020002
 int layout activity_search 0x7e020003
+int layout activity_sign 0x7e020013
 int layout activity_weather_day_more 0x7e020004
 int layout fragment_weather 0x7e020005
 int layout item_five_day 0x7e020006

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SignActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/dp_30"
+            android:background="@drawable/bg_border_30px_line_orange"
+            android:padding="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/logo_app"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"/>
+        </LinearLayout>
+
+        <vn.techres.android.weather.widget.AppTextView
+            android:id="@+id/tvSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_to_google"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@drawable/common_google_signin_btn_text_dark"/>
+    </LinearLayout>
+
+</RelativeLayout>

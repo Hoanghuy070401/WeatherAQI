@@ -1,6 +1,7 @@
 -keep class vn.techres.android.weather.home.ui.activity.DetailsWeatherAirActivity { <init>(); }
 -keep class vn.techres.android.weather.home.ui.activity.ListAddressActivity { <init>(); }
 -keep class vn.techres.android.weather.home.ui.activity.SearchActivity { <init>(); }
+-keep class vn.techres.android.weather.home.ui.activity.SignActivity { <init>(); }
 -keep class vn.techres.android.weather.home.ui.activity.WeatherDayMoreActivity { <init>(); }
 -keep class androidx.appcompat.widget.SearchView { <init>(android.content.Context, android.util.AttributeSet); }
 

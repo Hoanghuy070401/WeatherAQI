@@ -5925,6 +5925,7 @@ id llLocationManager
 id llMyLocation
 id llNoSupport
 id llRemoveMarker
+id llSign
 id llStyleWeather
 id llTab
 id llWidget
@@ -6926,6 +6927,7 @@ string day_ago_notify
 string day_to_day
 string decrease
 string default_error_msg
+string default_web_client_id
 string delete
 string describe_max
 string detail_watch
@@ -7403,6 +7405,7 @@ string seven_day_forecast
 string sex
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string sign
 string snow_1h
 string snow_3h
 string srl_component_falsify
